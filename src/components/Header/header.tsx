@@ -11,7 +11,7 @@ const Header = ({ siteTitle, navLinks }: HeaderProps) => {
     <div className={styles.header}>
       <p>{siteTitle}</p>
 
-      <ol>
+      <ol className={styles.headerNavigation}>
         {navLinks.map(({ name, page }, i) => (
           <li key={i}>
             <a href={`/${page}`}>{name}</a>

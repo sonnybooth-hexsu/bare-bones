@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "../Header/header"
+import "../../styles/reset.module.css"
 
 type LayoutProps = {
   children: React.ReactNode

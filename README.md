@@ -26,3 +26,33 @@
 3.  **Open the source code and start editing!**
 
     Site is now running at `http://localhost:8000`
+
+## Styles
+
+    Brand colours and theme variables live in variables.module.css. From here these variables can be changed to match clients colour scheme.
+
+    Example of use:
+
+    ```shell
+        @value colors: "../../styles/variables.module.css";
+        @value colorPrimary, colorWhite from colors;
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: colorPrimary;
+            color: colorWhite;
+            padding: 24px;
+        }
+    ```
+
+    Helper classes live in helpers.module.css.
+    
+    Example of use:
+
+    ```shell
+        .headerNavigation {
+            composes: listInline from "../../styles/helpers.module.css"
+        }
+    ```

@@ -1,3 +1,24 @@
+@value colors: "../../styles/variables.module.css";
+@value colorPrimary, colorWhite from colors;
+
 .header {
-  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: colorPrimary;
+  color: colorWhite;
+  padding: 24px;
+}
+
+.headerNavigation {
+  composes: listInline from "../../styles/helpers.module.css"
+}
+
+.headerNavigation li {
+  margin-right: 16px;
+}
+
+.headerNavigation li a {
+  color: colorWhite;
+  text-decoration: none;
 }
