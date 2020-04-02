@@ -9,7 +9,7 @@
 1.  **Create a Bare Bones site**
 
 
-    ```shell
+    ```sh
     # clone
     git clone https://github.com/sonnybooth-hexsu/bare-bones.git
     ```
@@ -18,7 +18,7 @@
 
     Navigate into your new site’s directory and start it up.
 
-    ```shell
+    ```sh
     cd bare-bones/
     yarn i; yarn run build; yarn run develop
     ```
@@ -31,7 +31,7 @@
 
 1.  **Adding color variable**
 
-    ```shell
+    ```sh
     @value colors: "../../styles/variables.module.css";
     @value colorPrimary, colorWhite from colors;
 
@@ -47,7 +47,7 @@
 
 2.  **Extending helper classes**
 
-    ```shell
+    ```sh
     .headerNavigation {
         composes: listInline from "../../styles/helpers.module.css"
     }
