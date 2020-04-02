@@ -6,7 +6,7 @@ type HeaderProps = {
   navLinks: Array<{ name: string; page: string; id: number }>
 }
 
-const Header = ({ siteTitle, navLinks }: HeaderProps) => {
+export const Header = ({ siteTitle, navLinks }: HeaderProps) => {
   return (
     <div className={styles.header}>
       <p>{siteTitle}</p>
