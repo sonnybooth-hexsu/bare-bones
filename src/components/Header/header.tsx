@@ -3,7 +3,7 @@ import styles from "./header.module.css"
 
 type HeaderProps = {
   siteTitle: string
-  navLinks: Array<{ name: string; page: number; id: number }>
+  navLinks: Array<{ name: string; page: string; id: number }>
 }
 
 const Header = ({ siteTitle, navLinks }: HeaderProps) => {
@@ -13,7 +13,7 @@ const Header = ({ siteTitle, navLinks }: HeaderProps) => {
 
       <ol className={styles.headerNavigation}>
         {navLinks.map(({ name, page }, i) => (
-          <li key={i}>
+          <li data-testid="headerNavigationLink" key={i}>
             <a href={`/${page}`}>{name}</a>
           </li>
         ))}
