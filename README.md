@@ -6,7 +6,7 @@
 
 ## Quick start
 
-1.  **Create a Bare Bones site**
+**Create a Bare Bones site**
 
 
     ```shell
@@ -14,7 +14,7 @@
     git clone https://github.com/sonnybooth-hexsu/bare-bones.git
     ```
 
-2.  **Start developing**
+**Start developing**
 
     Navigate into your new site’s directory and start it up.
 
@@ -23,13 +23,13 @@
     yarn i; yarn run build; yarn run develop
     ```
 
-3.  **Open the source code and start editing**
+**Open the source code and start editing**
 
     Site is now running at `http://localhost:8000`
 
 ## Styles
 
-1. **Adding color variable**
+**Adding color variable**
 
     ```shell
     @value colors: "../../styles/variables.module.css";
@@ -45,7 +45,7 @@
     }
     ```
 
-2. **Extending helper classes**
+**Extending helper classes**
 
     ```shell
     .headerNavigation {
