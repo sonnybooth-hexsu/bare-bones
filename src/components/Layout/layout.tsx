@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Header } from "../Header"
+import { Footer } from "../Footer"
 
 type LayoutProps = {
   children: React.ReactNode
@@ -28,6 +29,7 @@ const Layout = ({ children }: LayoutProps) => {
         navLinks={data.site.siteMetadata.navLinks}
       />
       <main>{children}</main>
+      <Footer />
     </>
   )
 }
