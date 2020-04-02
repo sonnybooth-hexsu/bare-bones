@@ -29,30 +29,26 @@
 
 ## Styles
 
-    Brand colours and theme variables live in variables.module.css. From here these variables can be changed to match clients colour scheme.
-
-    Example of use:
+1. **Adding color variable**
 
     ```shell
-        @value colors: "../../styles/variables.module.css";
-        @value colorPrimary, colorWhite from colors;
+    @value colors: "../../styles/variables.module.css";
+    @value colorPrimary, colorWhite from colors;
 
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: colorPrimary;
-            color: colorWhite;
-            padding: 24px;
-        }
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: colorPrimary;
+        color: colorWhite;
+        padding: 24px;
+    }
     ```
 
-    Helper classes live in helpers.module.css.
-    
-    Example of use:
+2. **Extending helper classes**
 
     ```shell
-        .headerNavigation {
-            composes: listInline from "../../styles/helpers.module.css"
-        }
+    .headerNavigation {
+        composes: listInline from "../../styles/helpers.module.css"
+    }
     ```
