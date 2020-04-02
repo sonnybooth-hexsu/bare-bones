@@ -9,7 +9,7 @@ type SEOProps = {
   title: string
 }
 
-function SEO({ description, lang, meta, title }: SEOProps) {
+export const SEO = ({ description, lang, meta, title }: SEOProps) => {
   const { site } = useStaticQuery(
     graphql`
       query {

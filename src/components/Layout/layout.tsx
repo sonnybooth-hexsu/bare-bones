@@ -7,7 +7,7 @@ type LayoutProps = {
   children: React.ReactNode
 }
 
-const Layout = ({ children }: LayoutProps) => {
+export const Layout = ({ children }: LayoutProps) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
