@@ -6,7 +6,7 @@
 
 ## Quick start
 
-1.  **Create a Bare Bones site.**
+1.  **Create a Bare Bones site**
 
 
     ```shell
@@ -14,7 +14,7 @@
     git clone https://github.com/sonnybooth-hexsu/bare-bones.git
     ```
 
-2.  **Start developing.**
+2.  **Start developing**
 
     Navigate into your new site’s directory and start it up.
 
@@ -23,7 +23,7 @@
     yarn i; yarn run build; yarn run develop
     ```
 
-3.  **Open the source code and start editing!**
+3.  **Open the source code and start editing**
 
     Site is now running at `http://localhost:8000`
 
