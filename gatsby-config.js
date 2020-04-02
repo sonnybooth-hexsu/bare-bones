@@ -53,5 +53,7 @@ module.exports = {
     },
     `gatsby-plugin-typescript-checker`,
     `gatsby-plugin-offline`,
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-css-customs`,
   ],
 }

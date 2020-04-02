@@ -1,4 +1,5 @@
 import React from "react"
+import styles from "./header.module.css"
 
 type HeaderProps = {
   siteTitle: string
@@ -7,17 +8,17 @@ type HeaderProps = {
 
 const Header = ({ siteTitle, navLinks }: HeaderProps) => {
   return (
-    <>
+    <div className={styles.header}>
       <p>{siteTitle}</p>
 
       <ol>
-        {navLinks.map(({ name, page, id }) => (
-          <li key={id}>
+        {navLinks.map(({ name, page }, i) => (
+          <li key={i}>
             <a href={`/${page}`}>{name}</a>
           </li>
         ))}
       </ol>
-    </>
+    </div>
   )
 }
 
