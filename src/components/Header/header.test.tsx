@@ -1,3 +1,5 @@
+/* eslint no-undef: 0 */
+
 import React from "react"
 import { render, cleanup } from "@testing-library/react"
 import { queryAllByTestId } from "@testing-library/dom"
