@@ -13,8 +13,8 @@ export const PostCard = ({ heading }) => {
           Health
         </div>
       </div>
-      <div className="flex flex-col flex-grow p-5">
-        <h3 className="flex-grow pb-20 text-2xl leading-snug">{heading}</h3>
+      <div className="flex flex-col flex-grow p-6">
+        <h3 className="flex-grow pb-20 text-2xl leading-tight">{heading}</h3>
         <p>October 07, 2019</p>
       </div>
     </div>

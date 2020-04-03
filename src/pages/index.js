@@ -39,11 +39,11 @@ const IndexPage = () => (
         </div>
         <div className="md:flex mb-12">
           <div className="md:w-5/12 flex flex-col justify-center">
-            <h2 className="text-3xl">
+            <h2 className="text-3xl leading-tight pb-2">
               Enhance and restore your natural beauty with non-surgical cosmetic
               treatments.
             </h2>
-            <p>
+            <p className="pb-4">
               Dr Yalda is an expert in identifying the treatments that will help
               you look and feel your best. Her experience and artistic eye in
               conjunction with using the most premium brands allows her to
