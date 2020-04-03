@@ -2,14 +2,14 @@ import React from "react"
 
 export const PostCard = ({ heading }) => {
   return (
-    <div className="flex flex-col bg-gray-300 h-full">
+    <div className="flex flex-col bg-white h-full">
       <div className="relative">
         <img
           width="100%"
           src="https://frosty-ardinghelli-04f7f2.netlify.com/assets/blog-02.jpg"
           alt=""
         />
-        <div className="p-2 bg-red-500 inline-block inline-block absolute bottom-0">
+        <div className="p-4 bg-red-500 inline-block inline-block absolute bottom-0">
           Health
         </div>
       </div>

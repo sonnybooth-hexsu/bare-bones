@@ -1,23 +1,33 @@
 module.exports = {
   siteMetadata: {
-    title: `Bare Bones`,
+    title: `Dr Yalda`,
     description: `A bare bones website for client development`,
     author: `@sonnybooth-hexsu`,
     navLinks: [
       {
-        name: `Link 1`,
+        name: `Home`,
         page: `link-1`,
         id: 1,
       },
       {
-        name: `Link 2`,
+        name: `Treatments`,
         page: `link-2`,
         id: 2,
       },
       {
-        name: `Link 3`,
+        name: `About`,
         page: `link-3`,
         id: 3,
+      },
+      {
+        name: `Blog`,
+        page: `link-4`,
+        id: 4,
+      },
+      {
+        name: `Contact`,
+        page: `link-5`,
+        id: 5,
       },
     ],
   },

@@ -5,8 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: colorPrimary;
-  color: colorWhite;
+  background-color: white;
+  color: black;
+  font-size: 2rem;
   padding: 24px;
 }
 
@@ -19,6 +20,7 @@
 }
 
 .headerNavigation li a {
-  color: colorWhite;
+  font-size: 1.5rem;
+  color: black;
   text-decoration: none;
 }
