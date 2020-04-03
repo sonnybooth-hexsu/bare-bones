@@ -15,7 +15,7 @@
 }
 
 .headerNavigation {
-  composes: listInline from "../../styles/helpers.module.css"
+  composes: listInline from "../../styles/helpers.module.css";
 }
 
 .headerNavigation li {
@@ -28,6 +28,6 @@
 
 .headerNavigation li a {
   font-size: 1rem;
-  color: black;
+  color: colorBlack;
   text-decoration: none;
 }

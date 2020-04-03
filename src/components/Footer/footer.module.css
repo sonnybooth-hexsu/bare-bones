@@ -15,8 +15,7 @@
     text-align: center;
     padding: 4rem 0;
     color: colorWhite;
-    content: fromMedium;
-
+    
     @media (fromMedium) {
         flex-direction: row;
     }
