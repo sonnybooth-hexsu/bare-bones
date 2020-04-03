@@ -4,6 +4,9 @@ import { SEO } from "../components/SEO"
 import { PostCard } from "../components/PostCard"
 import { TestimonialCard } from "../components/TestimonialCard"
 import { CTABlock } from "../components/CTABlock"
+import { ProductSlider } from "../components/ProductSlider"
+import lipsBefore from "../assets/images/lips-before.jpg"
+import lipsAfter from "../assets/images/lips-after.jpg"
 
 const IndexPage = () => (
   <Layout>
@@ -17,7 +20,7 @@ const IndexPage = () => (
           </h2>
         </div>
         <h2 className="text-2xl pt-8 pb-8">
-          <span className="text-4xl text-red-500 font-bold">
+          <span className="text-3xl md:text-4xl text-red-500 font-bold">
             Post Card component
           </span>{" "}
           - for blogs and articles
@@ -29,7 +32,7 @@ const IndexPage = () => (
           <PostCard heading="Getting you wedding-ready!" />
         </div>
         <h2 className="text-2xl pt-8 pb-8">
-          <span className="text-4xl text-red-500 font-bold">
+          <span className="text-3xl md:text-4xl text-red-500 font-bold">
             Testimonial component
           </span>{" "}
           - for client reviews and such alike
@@ -41,7 +44,7 @@ const IndexPage = () => (
           <TestimonialCard testimonial="Just had my lips done with Yalda and I absolutely love them. She’s absolutely brilliant and has done a fantastic job." />
         </div>
         <h2 className="text-2xl pt-8 pb-8">
-          <span className="text-4xl text-red-500 font-bold">
+          <span className="text-3xl md:text-4xl text-red-500 font-bold">
             Cover component
           </span>{" "}
           - for image & text client info. Order can be switched depending on
@@ -72,7 +75,7 @@ const IndexPage = () => (
             />
           </div>
         </div>
-        <div className="md:flex mb-12">
+        <div className="md:flex mb-2">
           <div className="w-full mt-8 md:mt-0 md:w-7/12 md:pr-20">
             <img
               className=""
@@ -98,7 +101,7 @@ const IndexPage = () => (
           </div>
         </div>
         <h2 className="text-2xl pt-8 pb-8">
-          <span className="text-4xl text-red-500 font-bold">
+          <span className="text-3xl md:text-4xl text-red-500 font-bold">
             Call To Action component
           </span>{" "}
           - Used to usher users to info/sale points
@@ -106,6 +109,22 @@ const IndexPage = () => (
       </div>
     </div>
     <CTABlock />
+    <div className="bg-gray-100">
+      <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0">
+        <h2 className="text-2xl pt-8 pb-8">
+          <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            Product Slider component
+          </span>
+          - for before and after images of clients/products
+        </h2>
+        <div className="grid pb-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+          <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
+          <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
+          <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
+          <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
+        </div>
+      </div>
+    </div>
   </Layout>
 )
 

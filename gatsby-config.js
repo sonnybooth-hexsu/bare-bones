@@ -21,11 +21,6 @@ module.exports = {
         page: `link-3`,
         id: 3,
       },
-      {
-        name: `Link 4`,
-        page: `link-4`,
-        id: 4,
-      },
     ],
   },
   plugins: [

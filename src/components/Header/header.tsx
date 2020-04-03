@@ -11,7 +11,7 @@ export const Header = ({ siteTitle, navLinks }: HeaderProps) => {
     <div className={styles.headerContainer}>
       <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0">
         <div className={styles.header}>
-          <p>{siteTitle}</p>
+          <p className="text-xl sm:text-3xl">{siteTitle}</p>
           <nav>
             <ol className={styles.headerNavigation}>
               {navLinks.map(({ name, page }, i) => (

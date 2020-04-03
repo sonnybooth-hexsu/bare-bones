@@ -1,5 +1,14 @@
 import React from "react"
+import ReactCompareImage from "react-compare-image"
 
-export const ProductSlider = () => {
-  return <p>kasjbdkjsa</p>
+type ProductSliderProps = {
+  leftImage: string
+  rightImage: string
+}
+
+export const ProductSlider = ({
+  leftImage,
+  rightImage,
+}: ProductSliderProps) => {
+  return <ReactCompareImage leftImage={leftImage} rightImage={rightImage} />
 }
