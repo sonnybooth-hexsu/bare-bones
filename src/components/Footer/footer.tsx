@@ -6,7 +6,7 @@ type FooterProps = {
   navLinks: Array<{ name: string; page: string; id: number }>
   description: string
   email: string
-  telephone: number
+  telephone: string
 }
 
 export const Footer = ({

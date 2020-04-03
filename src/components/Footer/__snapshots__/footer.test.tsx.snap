@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should match snapshot 1`] = `
+<div>
+  <div
+    class="footerContainer"
+  >
+    <div
+      class="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0"
+    >
+      <div
+        class="footer"
+      >
+        <div
+          class="footerLogoContainer"
+        >
+          <div
+            class="footerLogo"
+          >
+            Test Site
+          </div>
+          <p>
+            I am test description
+          </p>
+        </div>
+        <div>
+          <nav
+            class="footerNav"
+          >
+            <ol
+              class="headerNavigation"
+            >
+              <li
+                data-testid="headerNavigationLink"
+              >
+                <a
+                  href="/link-1"
+                >
+                  Link 1
+                </a>
+              </li>
+              <li
+                data-testid="headerNavigationLink"
+              >
+                <a
+                  href="/link-2"
+                >
+                  Link 2
+                </a>
+              </li>
+              <li
+                data-testid="headerNavigationLink"
+              >
+                <a
+                  href="/link-3"
+                >
+                  Link 3
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <div
+          class="footerMeta"
+        >
+          <p>
+            test@email.com
+          </p>
+          <p>
+            +441111111111
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

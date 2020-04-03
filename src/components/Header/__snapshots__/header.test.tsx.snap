@@ -3,42 +3,52 @@
 exports[`<Header /> should match snapshot 1`] = `
 <div>
   <div
-    class="header"
+    class="headerContainer"
   >
-    <p>
-      Test Site
-    </p>
-    <ol
-      class="headerNavigation"
+    <div
+      class="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0"
     >
-      <li
-        data-testid="headerNavigationLink"
+      <div
+        class="header"
       >
-        <a
-          href="/link-1"
-        >
-          Link 1
-        </a>
-      </li>
-      <li
-        data-testid="headerNavigationLink"
-      >
-        <a
-          href="/link-2"
-        >
-          Link 2
-        </a>
-      </li>
-      <li
-        data-testid="headerNavigationLink"
-      >
-        <a
-          href="/link-3"
-        >
-          Link 3
-        </a>
-      </li>
-    </ol>
+        <p>
+          Test Site
+        </p>
+        <nav>
+          <ol
+            class="headerNavigation"
+          >
+            <li
+              data-testid="headerNavigationLink"
+            >
+              <a
+                href="/link-1"
+              >
+                Link 1
+              </a>
+            </li>
+            <li
+              data-testid="headerNavigationLink"
+            >
+              <a
+                href="/link-2"
+              >
+                Link 2
+              </a>
+            </li>
+            <li
+              data-testid="headerNavigationLink"
+            >
+              <a
+                href="/link-3"
+              >
+                Link 3
+              </a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
   </div>
 </div>
 `;
