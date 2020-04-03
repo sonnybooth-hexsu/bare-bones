@@ -4,8 +4,8 @@ export const CTABlock = () => {
   return (
     <div className="bg-gray-500">
       <div className="container mx-auto text-center pt-20 pb-20">
-        <h2>Book Your Appointment Today</h2>
-        <p className="mt-6">
+        <h2 className="text-4xl">Book Your Appointment Today</h2>
+        <p className="mt-6 w-6/12 mx-auto">
           Book your appointment with Dr Yalda today. A complimentary
           consultation and assessment takes place before each treatment.
         </p>

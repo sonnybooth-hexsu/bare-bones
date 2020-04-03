@@ -13,6 +13,9 @@ export const Layout = ({ children }: LayoutProps) => {
       site {
         siteMetadata {
           title
+          description
+          email
+          telephone
           navLinks {
             name
             page
@@ -29,7 +32,13 @@ export const Layout = ({ children }: LayoutProps) => {
         navLinks={data.site.siteMetadata.navLinks}
       />
       <main>{children}</main>
-      <Footer />
+      <Footer
+        siteTitle={data.site.siteMetadata.title}
+        navLinks={data.site.siteMetadata.navLinks}
+        description={data.site.siteMetadata.description}
+        email={data.site.siteMetadata.email}
+        telephone={data.site.siteMetadata.telephone}
+      />
     </>
   )
 }

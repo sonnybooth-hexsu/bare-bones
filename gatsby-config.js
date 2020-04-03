@@ -2,6 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Bare Bones`,
     description: `A bare bones website for client development`,
+    email: `sonnyboothwebdesign@gmail.com`,
+    telephone: `+447792471765`,
     author: `@sonnybooth-hexsu`,
     navLinks: [
       {

@@ -9,7 +9,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="bg-gray-100">
-      <div className="container mx-auto">
+      <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0">
         <div className="grid grid-cols-1 pt-8 pb-8">
           <h1 className="text-4xl">Bare Bones</h1>
           <h2 className="text-2xl text-red-500">
@@ -18,7 +18,7 @@ const IndexPage = () => (
         </div>
         <h2 className="text-2xl pt-8 pb-8">
           <span className="text-4xl text-red-500 font-bold">
-            PostCard component
+            Post Card component
           </span>{" "}
           - for blogs and articles
         </h2>
@@ -49,10 +49,10 @@ const IndexPage = () => (
         </h2>
         <div className="md:flex mb-12">
           <div className="md:w-5/12 flex flex-col justify-center">
-            <h2 className="text-3xl leading-tight pb-2">
+            <h3 className="text-3xl leading-tight pb-2">
               Enhance and restore your natural beauty with non-surgical cosmetic
               treatments.
-            </h2>
+            </h3>
             <p className="pb-4">
               Dr Yalda is an expert in identifying the treatments that will help
               you look and feel your best. Her experience and artistic eye in
@@ -79,11 +79,11 @@ const IndexPage = () => (
               src="https://frosty-ardinghelli-04f7f2.netlify.com/static/home-3-e5af273814dfcb6ee426fd73f696247e.jpg"
             />
           </div>
-          <div className="md:w-5/12 flex flex-col justify-center">
-            <h2 className="text-3xl leading-tight pb-2">
+          <div className="md:w-5/12 mt-8 flex flex-col justify-center pb-10">
+            <h3 className="text-3xl leading-tight pb-2">
               Enhance and restore your natural beauty with non-surgical cosmetic
               treatments.
-            </h2>
+            </h3>
             <p className="pb-4">
               Dr Yalda is an expert in identifying the treatments that will help
               you look and feel your best. Her experience and artistic eye in
@@ -97,6 +97,12 @@ const IndexPage = () => (
             </ul>
           </div>
         </div>
+        <h2 className="text-2xl pt-8 pb-8">
+          <span className="text-4xl text-red-500 font-bold">
+            Call To Action component
+          </span>{" "}
+          - Used to usher users to info/sale points
+        </h2>
       </div>
     </div>
     <CTABlock />

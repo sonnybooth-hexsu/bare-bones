@@ -8,18 +8,21 @@ type HeaderProps = {
 
 export const Header = ({ siteTitle, navLinks }: HeaderProps) => {
   return (
-    <div className={styles.header}>
-      <p>{siteTitle}</p>
-
-      <nav>
-        <ol className={styles.headerNavigation}>
-          {navLinks.map(({ name, page }, i) => (
-            <li data-testid="headerNavigationLink" key={i}>
-              <a href={`/${page}`}>{name}</a>
-            </li>
-          ))}
-        </ol>
-      </nav>
+    <div className={styles.headerContainer}>
+      <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0">
+        <div className={styles.header}>
+          <p>{siteTitle}</p>
+          <nav>
+            <ol className={styles.headerNavigation}>
+              {navLinks.map(({ name, page }, i) => (
+                <li data-testid="headerNavigationLink" key={i}>
+                  <a href={`/${page}`}>{name}</a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        </div>
+      </div>
     </div>
   )
 }

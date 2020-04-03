@@ -1,14 +1,17 @@
 @value colors: "../../styles/variables.module.css";
 @value colorPrimary, colorWhite from colors;
 
+.headerContainer {
+  background-color: colorWhite;
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
-  color: black;
+  color: colorBlack;
   font-size: 1.8rem;
-  padding: 24px;
+  padding: 1.5rem 0;
 }
 
 .headerNavigation {
@@ -17,6 +20,10 @@
 
 .headerNavigation li {
   margin-right: 16px;
+}
+
+.headerNavigation li:last-of-type {
+  margin-right: 0;
 }
 
 .headerNavigation li a {
