@@ -11,13 +11,15 @@ export const Header = ({ siteTitle, navLinks }: HeaderProps) => {
     <div className={styles.header}>
       <p>{siteTitle}</p>
 
-      <ol className={styles.headerNavigation}>
-        {navLinks.map(({ name, page }, i) => (
-          <li data-testid="headerNavigationLink" key={i}>
-            <a href={`/${page}`}>{name}</a>
-          </li>
-        ))}
-      </ol>
+      <nav>
+        <ol className={styles.headerNavigation}>
+          {navLinks.map(({ name, page }, i) => (
+            <li data-testid="headerNavigationLink" key={i}>
+              <a href={`/${page}`}>{name}</a>
+            </li>
+          ))}
+        </ol>
+      </nav>
     </div>
   )
 }
