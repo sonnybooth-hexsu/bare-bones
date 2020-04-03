@@ -22,13 +22,13 @@ export const Footer = ({
         <div className={styles.footer}>
           <div className={styles.footerLogoContainer}>
             <div className={styles.footerLogo}>{siteTitle}</div>
-            <p>{description}</p>
+            <p data-testid="footerNavigationDescription">{description}</p>
           </div>
           <div>
             <nav className={styles.footerNav}>
-              <ol className={styles.headerNavigation}>
+              <ol>
                 {navLinks.map(({ name, page }, i) => (
-                  <li data-testid="headerNavigationLink" key={i}>
+                  <li data-testid="footerNavigationLink" key={i}>
                     <a href={`/${page}`}>{name}</a>
                   </li>
                 ))}
