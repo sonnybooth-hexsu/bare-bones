@@ -11,6 +11,11 @@ module.exports = {
         page: `/blogs`,
         id: 1,
       },
+      {
+        name: `CMS Products`,
+        page: `/products`,
+        id: 2,
+      },
     ],
   },
   plugins: [
@@ -59,6 +64,13 @@ module.exports = {
       options: {
         name: `blogs`,
         path: `${__dirname}/blogs`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `products`,
+        path: `${__dirname}/products`,
       },
     },
     `gatsby-transformer-remark`,

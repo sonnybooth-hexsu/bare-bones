@@ -31,7 +31,7 @@ const IndexPage = () => (
         <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0 md:col-span-5">
           <h1>Dr Yalda Jamali</h1>
           <p className="mb-10">
-            Providing a medical approach to facial aesthetics in London &
+            Providing a medical approach to facial aesthetics in London &amp;
             Nottingham. Another sentence here is required approximately this
             length.
           </p>
@@ -76,62 +76,6 @@ const IndexPage = () => (
             See reviews on{" "}
             <i className="border-b-4 border-solid border-black">Facebook</i>.
           </h1>
-        </div>
-        <h2 className="text-2xl pt-8 pb-8">
-          <span className="text-3xl md:text-4xl text-red-500 font-bold">
-            Post Card component
-          </span>{" "}
-          - for blogs and articles
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4 mb-12">
-          <PostCard
-            key={`post-card-${1}`}
-            title={
-              "Considerations for darker skin types when choosing in-clinic skin treatments"
-            }
-            category="Category"
-            path="/cheek-fillers"
-            date="October 07, 2019"
-            excerpt="Cheek Fillers description"
-            image="assets/cheek-filler-image.jpg"
-            imageLarge="assets/cheek-filler-image.jpg"
-          />
-          <PostCard
-            key={`post-card-${2}`}
-            title={
-              "Considerations for darker skin types when choosing in-clinic skin treatments"
-            }
-            category="Category"
-            path="/cheek-fillers"
-            date="October 07, 2019"
-            excerpt="Cheek Fillers description"
-            image="assets/cheek-filler-image.jpg"
-            imageLarge="assets/cheek-filler-image.jpg"
-          />
-          <PostCard
-            key={`post-card-${3}`}
-            title={
-              "Considerations for darker skin types when choosing in-clinic skin treatments"
-            }
-            category="Category"
-            path="/cheek-fillers"
-            date="October 07, 2019"
-            excerpt="Cheek Fillers description"
-            image="assets/cheek-filler-image.jpg"
-            imageLarge="assets/cheek-filler-image.jpg"
-          />
-          <PostCard
-            key={`post-card-${4}`}
-            title={
-              "Considerations for darker skin types when choosing in-clinic skin treatments"
-            }
-            category="Category"
-            path="/cheek-fillers"
-            date="October 07, 2019"
-            excerpt="Cheek Fillers description"
-            image="assets/cheek-filler-image.jpg"
-            imageLarge="assets/cheek-filler-image.jpg"
-          />
         </div>
         <h2 className="text-2xl pt-8 pb-8">
           <span className="text-3xl md:text-4xl text-red-500 font-bold">

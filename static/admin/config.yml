@@ -9,6 +9,7 @@ collections:
     folder: blogs
     create: true
     fields:
+    - { name: layout, label: Layout, widget: hidden, default: blog }
     - { name: path, label: Path }
     - { name: date, label: Date, widget: datetime }
     - { name: title, label: Title }
@@ -18,3 +19,23 @@ collections:
     - { name: image, label: Image, widget: image}
     - { name: imageLarge, label: ImageLarge, widget: image}
     - { name: body, label: Body, widget: markdown }
+  - name: product
+    label: Product
+    folder: products
+    create: true
+    fields:
+    - { name: layout, label: Layout, widget: hidden, default: product }
+    - { name: path, label: Path }
+    - { name: title, label: Title }
+    - { name: excerpt, label: Excerpt}
+    - { name: category, label: Category}
+    - { name: image, label: Image, widget: image}
+    - { name: body, label: Body, widget: markdown }
+    - { name: productAttributeTitleOne, label: productAttributeTitleOne }
+    - { name: productAttributeValueOne, label: productAttributeValueOne }
+    - { name: productAttributeTitleTwo, label: productAttributeTitleTwo }
+    - { name: productAttributeValueTwo, label: productAttributeValueTwo }
+    - { name: productAttributeTitleThree, label: productAttributeTitleThree }
+    - { name: productAttributeValueThree, label: productAttributeValueThree }
+    - { name: productAttributeTitleFour, label: productAttributeTitleFour }
+    - { name: productAttributeValueFour, label: productAttributeValueFour }

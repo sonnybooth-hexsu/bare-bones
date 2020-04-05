@@ -57,6 +57,7 @@ export const query = graphql`
         node {
           childMarkdownRemark {
             frontmatter {
+              layout
               title
               category
               path

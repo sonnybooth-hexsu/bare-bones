@@ -1,4 +1,5 @@
 ---
+layout: product
 path: /product-1
 title: I am a treatment
 excerpt: I am the treatments excerpt

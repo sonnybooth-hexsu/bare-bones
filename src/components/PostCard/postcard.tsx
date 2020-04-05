@@ -1,6 +1,6 @@
 import React from "react"
 
-type PostTypes = {
+type PostCardProps = {
   title: string
   category: string
   path: string
@@ -8,7 +8,13 @@ type PostTypes = {
   image: string
 }
 
-export const PostCard = ({ title, category, path, date, image }: PostTypes) => {
+export const PostCard = ({
+  title,
+  category,
+  path,
+  date,
+  image,
+}: PostCardProps) => {
   return (
     <div className="flex flex-col bg-white h-full relative">
       <div className="relative">
