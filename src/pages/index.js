@@ -112,9 +112,9 @@ const IndexPage = () => (
               provide her patients with satisfied, long lasting results:
             </p>
             <ul>
-              <li>Reducing the signs of ageing</li>
-              <li>Defining your facial features</li>
-              <li>Improving your overall skin health</li>
+              <li><Clock />Reducing the signs of ageing</li>
+              <li><Clock />Defining your facial features</li>
+              <li><Clock />Improving your overall skin health</li>
             </ul>
           </div>
         </div>
@@ -207,6 +207,9 @@ const IndexPage = () => (
               <a href="#">View Treatment</a>
             </div>
           </div>
+          <h2>About This Treatment</h2>
+          <p>The revolutionary treatment has been around since the 1980’s and with very few risks and no recovery time it still remains one of the most popular non-surical cosmetic treatments. Botulinum Toxin injections minimises the appearance of lines and wrinkles by temporarily relaxing specific muscles, with results lasting 3 to 4 months. They are also used for treatment of hyperhidrosis (excess sweating) and bruxism (involuntary habitual grinding of the teeth).</p>
+          <div class></div>         
         </div>
       </div>
     </div>
