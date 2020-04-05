@@ -22,7 +22,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: big-caslon-fb, serif;
 }
 
-
+.hero-block {
+  background-color: #a9c5EA;
+}
 
 @tailwind components;
 @tailwind utilities;
+
+@responsive {
+  .h-screen-80 {
+    height: 80vh;
+  }
+}
