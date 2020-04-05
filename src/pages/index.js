@@ -28,12 +28,12 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div className="bg-gray-100">
       <div
-        className="hero-block pt-10 md:grid-cols-12 bg-unset md:bg-cover md:h-screen-80 md:flex md:pt-0 md:items-center"
+        className="hero-block pt-10 md:grid-cols-12 bg-unset md:bg-cover md:h-screen-80 md:flex md:pt-0 md:items-center md:bg-bottom"
         style={{ backgroundImage: `url(${heroImageMd})` }}
       >
         <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0 md:pr-30">
           <div className="md:w-1/2">
-            <h1>Dr Yalda Jamali</h1>
+            <h1 className="md:text-6xl">Dr Yalda Jamali</h1>
             <p className="mb-10">
               Providing a medical approach to facial aesthetics in London &amp;
               Nottingham. Another sentence here is required approximately this
@@ -101,10 +101,11 @@ const IndexPage = () => (
           - for image &amp; text client info. Order can be switched depending on
           design choice
         </h2>
-        <div className="md:flex mb-12">
+          {/* Image with text block (Image Right) */}
+        <div className="md:flex pb-16 pt-16">
           <div className="md:w-5/12 flex flex-col justify-center">
-            <h3 className="text-3xl leading-tight pb-2">
-              Enhance and restore your natural beauty with non-surgical cosmetic
+            <h3 className="text-4xl leading-tight pb-2">
+              Enhance <i>&amp;</i> restore your natural beauty with non-surgical cosmetic
               treatments.
             </h3>
             <p className="pb-4">
@@ -114,11 +115,12 @@ const IndexPage = () => (
               provide her patients with satisfied, long lasting results:
             </p>
             <ul>
-              <li>Reducing the signs of ageing</li>
-              <li>Defining your facial features</li>
-              <li>Improving your overall skin health</li>
+              <li><Check className="inline mr-2" /> Reducing the signs of ageing</li>
+              <li>    <Check className="inline mr-2" />Defining your facial features</li>
+              <li>    <Check className="inline mr-2" />Improving your overall skin health</li>
             </ul>
           </div>
+          {/* Image with text block (Image Left) */}
           <div className="w-full mt-8 md:mt-0 md:w-7/12 md:pl-20">
             <img
               className=""
@@ -127,7 +129,7 @@ const IndexPage = () => (
             />
           </div>
         </div>
-        <div className="md:flex mb-2">
+        <div className="md:flex pb-16 pt-16">
           <div className="w-full mt-8 md:mt-0 md:w-7/12 md:pr-20">
             <img
               className=""
@@ -135,9 +137,9 @@ const IndexPage = () => (
               alt="Dr Yalda pushing a client's hair back, as part of the consultation process."
             />
           </div>
-          <div className="md:w-5/12 mt-8 flex flex-col justify-center pb-10">
-            <h3 className="text-3xl leading-tight pb-2">
-              Enhance and restore your natural beauty with non-surgical cosmetic
+          <div className="md:w-5/12 flex flex-col justify-center">
+            <h3 className="text-4xl leading-tight pb-2">
+              Enhance <i>&amp;</i> restore your natural beauty with non-surgical cosmetic
               treatments.
             </h3>
             <p className="pb-4">
@@ -152,15 +154,15 @@ const IndexPage = () => (
                 Reducing the signs of ageing
               </li>
               <li>
-                <CheckCircle className="inline mr-2" />
+                <Check className="inline mr-2" />
                 Defining your facial features
               </li>
               <li>
-                <CheckSquare className="inline mr-2" />
+                <Check className="inline mr-2" />
                 Reducing the signs of ageing
               </li>
             </ul>
-          </div>
+        </div>
         </div>
         <h2 className="text-2xl pt-8 pb-8">
           <span className="text-3xl md:text-4xl text-red-500 font-bold">
@@ -360,7 +362,7 @@ const IndexPage = () => (
         <div className="grid grid-cols-1 grid md:grid-cols-12 gap-6 pb-12">
           <div className="md:col-span-8">
             <h2>About This Treatment</h2>
-            <p>
+            <p className="p-2">
               The revolutionary treatment has been around since the 1980’s and
               with very few risks and no recovery time it still remains one of
               the most popular non-surical cosmetic treatments. Botulinum Toxin
@@ -433,7 +435,7 @@ const IndexPage = () => (
         {/* About Content */}
         <div className="grid grid-cols-1 grid md:grid-cols-2 gap-6">
           <div>
-            <h2 className="text-2xl leading-tight tracking-wide md:text-3xl">
+            <h2 className="text-2xl leading-tight md:text-4xl">
               Dr. Yalda Jamali is a qualified medical doctor specialising in
               aesthetic medicine. She runs a successful clinic and mentors at
               the Harley Academy.
