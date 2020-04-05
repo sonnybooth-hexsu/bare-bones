@@ -14,11 +14,12 @@ exports[`<Footer /> should match snapshot 1`] = `
         <div
           class="footerLogoContainer"
         >
-          <div
+          <a
             class="footerLogo"
+            href="/"
           >
             Test Site
-          </div>
+          </a>
           <p
             data-testid="footerNavigationDescription"
           >
@@ -34,7 +35,7 @@ exports[`<Footer /> should match snapshot 1`] = `
                 data-testid="footerNavigationLink"
               >
                 <a
-                  href="/link-1"
+                  href="link-1"
                 >
                   Link 1
                 </a>
@@ -43,7 +44,7 @@ exports[`<Footer /> should match snapshot 1`] = `
                 data-testid="footerNavigationLink"
               >
                 <a
-                  href="/link-2"
+                  href="link-2"
                 >
                   Link 2
                 </a>
@@ -52,7 +53,7 @@ exports[`<Footer /> should match snapshot 1`] = `
                 data-testid="footerNavigationLink"
               >
                 <a
-                  href="/link-3"
+                  href="link-3"
                 >
                   Link 3
                 </a>

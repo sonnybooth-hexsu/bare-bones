@@ -6,7 +6,6 @@ import { CTABlock } from "../components/CTABlock"
 import { ProductSlider } from "../components/ProductSlider"
 import lipsBefore from "../assets/images/lips-before.jpg"
 import lipsAfter from "../assets/images/lips-after.jpg"
-import lipsFillers from "../assets/images/lip-fillers.svg"
 import treatmentHeader from "../assets/images/treatment-header.jpg"
 import signature from "../assets/images/signature.svg"
 import heroImageSm from "../assets/images/hero-image-sm.jpg"
@@ -20,7 +19,6 @@ import {
   Check,
   CheckCircle,
   CheckSquare,
-  ArrowRight,
 } from "react-feather"
 
 const IndexPage = () => (
@@ -188,168 +186,6 @@ const IndexPage = () => (
           <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
           <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
           <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
-        </div>
-        {/* Fullwidth Image Product Card Title */}
-        <h2 className="text-2xl pt-8 pb-8">
-          <span className="text-3xl md:text-4xl text-red-500 font-bold">
-            Fullwidth Image Product Card
-          </span>{" "}
-          - Used to show off products and services
-        </h2>
-        {/* Fullwidth Image Product Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 pb-12">
-          <div className="bg-white">
-            <div className="bg-red-200 pt-16 pb-16 flex justify-center">
-              <img className="h-20" src={lipsFillers} alt="Lips" />
-            </div>
-            <div className="pr-8 pb-8 pl-8">
-              <h2 className="mt-12 mb-2 text-3xl tracking-wide">
-                Soft Tissue Fillers
-              </h2>
-              <p className="mb-12">
-                Instantly soften fine lines &amp; wrinkles, restore age-related
-                volume loss and augment and contour facial features.
-              </p>
-              <a href="#">View</a>
-            </div>
-          </div>
-          <div className="bg-white">
-            <div className="bg-red-200 pt-16 pb-16 flex justify-center">
-              <img className="h-20" src={lipsFillers} alt="Lips" />
-            </div>
-            <div className="pr-8 pb-8 pl-8">
-              <h2 className="mt-12 mb-2 text-3xl tracking-wide">Profhilo</h2>
-              <p className="mb-12">
-                A skin bio-remodelling treatment which improves skin quality and
-                laxity and combats signs of ageing.
-              </p>
-              <a href="#">View</a>
-            </div>
-          </div>
-          <div className="bg-white">
-            <div className="bg-red-200 pt-16 pb-16 flex justify-center">
-              <img className="h-20" src={lipsFillers} alt="Lips" />
-            </div>
-            <div className="pr-8 pb-8 pl-8">
-              <h2 className="mt-12 mb-2 text-3xl tracking-wide">
-                Chemical Peels
-              </h2>
-              <p className="mb-12">
-                Removes dead skin cells and encourages new ones to form. Treats
-                acne, sun damage and pigmentation
-              </p>
-              <a href="#">View</a>
-            </div>
-          </div>
-          <div className="bg-white">
-            <div className="bg-red-200 pt-16 pb-16 flex justify-center">
-              <img className="h-20" src={lipsFillers} alt="Lips" />
-            </div>
-            <div className="pr-8 pb-8 pl-8">
-              <h2 className="mt-12 mb-2 text-3xl tracking-wide">
-                Soft Tissue Fillers
-              </h2>
-              <p className="mb-12">
-                Instantly soften fine lines &amp; wrinkles, restore age-related
-                volume loss and augment and contour facial features.
-              </p>
-              <a href="#">View</a>
-            </div>
-          </div>
-        </div>
-        {/* Fullwidth Image Product Card Title */}
-        <h2 className="text-2xl pt-8 pb-8">
-          <span className="text-3xl md:text-4xl text-red-500 font-bold">
-            Icon Product Card
-          </span>{" "}
-          - Used to show off products and services
-        </h2>
-        {/* Icon Product Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6">
-          {/* Icon Product Card */}
-          <div className="bg-white pr-12 pt-12 pb-12 pl-12">
-            <img className="h-12" src={lipsFillers} alt="Lips" />
-            <h2 className="mt-8 mb-2 text-3xl tracking-wide">
-              Soft Tissue Fillers
-            </h2>
-            <p className="mb-12">
-              Instantly soften fine lines &amp; wrinkles, restore age-related
-              volume loss and augment and contour facial features.
-            </p>
-            <div className="flex justify-end items-end">
-              {" "}
-              <ArrowRight className="mr-2 text-gray-900" />
-            </div>
-          </div>
-          {/* Icon Product Card */}
-          <div className="bg-white pr-12 pt-12 pb-12 pl-12">
-            <img className="h-12" src={lipsFillers} alt="Lips" />
-            <h2 className="mt-8 mb-2 text-3xl tracking-wide">Profhilo</h2>
-            <p className="mb-12">
-              A skin bio-remodelling treatment which improves skin quality and
-              laxity and combats signs of ageing.
-            </p>
-            <div className="flex justify-end items-end">
-              {" "}
-              <ArrowRight className="mr-2 text-gray-900" />
-            </div>
-          </div>
-          {/* Icon Product Card */}
-          <div className="bg-white pr-12 pt-12 pb-12 pl-12">
-            <img className="h-12" src={lipsFillers} alt="Lips" />
-            <h2 className="mt-8 mb-2 text-3xl tracking-wide">Chemical Peels</h2>
-            <p className="mb-12">
-              Removes dead skin cells and encourages new ones to form. Treats
-              acne, sun damage and pigmentation
-            </p>
-            <div className="flex justify-end items-end">
-              {" "}
-              <ArrowRight className="mr-2 text-gray-900" />
-            </div>
-          </div>
-          {/* Icon Product Card */}
-          <div className="bg-white pr-12 pt-12 pb-12 pl-12">
-            <img className="h-12" src={lipsFillers} alt="Lips" />
-            <h2 className="mt-8 mb-2 text-3xl tracking-wide">Microneedling</h2>
-            <p className="mb-12">
-              Treat a multitude of skin concerns, including scarring,
-              pigmentation, ageing and sun damage.
-            </p>
-            <div className="flex justify-end items-end">
-              {" "}
-              <ArrowRight className="mr-2 text-gray-900" />
-            </div>
-          </div>
-          {/* Icon Product Card */}
-          <div className="bg-white pr-12 pt-12 pb-12 pl-12">
-            <img className="h-12" src={lipsFillers} alt="Lips" />
-            <h2 className="mt-8 mb-2 text-3xl tracking-wide">
-              Medical Grade Skincare
-            </h2>
-            <p className="mb-12">
-              Treat a multitude of skin concerns including skin tags, treat deep
-              lines and excess sagging skin around the eyes.
-            </p>
-            <div className="flex justify-end items-end">
-              {" "}
-              <ArrowRight className="mr-2 text-gray-900" />
-            </div>
-          </div>
-          {/* Icon Product Card */}
-          <div className="bg-white pr-12 pt-12 pb-12 pl-12">
-            <img className="h-12" src={lipsFillers} alt="Lips" />
-            <h2 className="mt-8 mb-2 text-3xl tracking-wide">
-              Lines &amp; Wrinkles
-            </h2>
-            <p className="mb-12">
-              Minimise the appearance of fine lines and wrinkles by temporarily
-              relaxing specific muscles.
-            </p>
-            <div className="flex justify-end items-end">
-              {" "}
-              <ArrowRight className="mr-2 text-gray-900" />
-            </div>
-          </div>
         </div>
         {/* Treatment Content Title */}
         <h2 className="text-2xl pt-8 pb-8">
