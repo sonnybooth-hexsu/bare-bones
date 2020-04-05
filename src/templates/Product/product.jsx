@@ -20,7 +20,7 @@ export default function Template({ data }) {
       <SEO title="Blogs" />
       <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0">
         <div className="grid grid-cols-1 mb-12">
-          <p>Blog template</p>
+          <p>Product template</p>
           <p>{date}</p>
           <p>{title}</p>
           <p>{author}</p>

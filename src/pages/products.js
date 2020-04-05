@@ -7,11 +7,11 @@ const Products = props => {
   const data = props.data.allFile.edges
   const products = []
 
-  console.log(props);
-
   data.map(product => {
     return products.push(product.node.childMarkdownRemark.frontmatter)
   })
+
+  console.log(products)
 
   return (
     <Layout>
@@ -42,13 +42,20 @@ export const query = graphql`
         node {
           childMarkdownRemark {
             frontmatter {
+              layout
               title
               category
               path
-              date(formatString: "MMMM DD, YYYY")
               excerpt
               image
-              imageLarge
+              productAttributeTitleOne
+              productAttributeTitleTwo
+              productAttributeTitleThree
+              productAttributeTitleFour
+              productAttributeValueOne
+              productAttributeValueTwo
+              productAttributeValueThree
+              productAttributeValueFour
             }
           }
         }

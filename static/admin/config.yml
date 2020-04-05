@@ -9,6 +9,7 @@ collections:
     folder: blogs
     create: true
     fields:
+    - { name: layout, label: Layout, widget: hidden, default: blog }
     - { name: path, label: Path }
     - { name: date, label: Date, widget: datetime }
     - { name: title, label: Title }
@@ -23,6 +24,7 @@ collections:
     folder: products
     create: true
     fields:
+    - { name: layout, label: Layout, widget: hidden, default: blog }
     - { name: path, label: Path }
     - { name: title, label: Title }
     - { name: excerpt, label: Excerpt}
