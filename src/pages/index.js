@@ -1,7 +1,6 @@
 import React from "react"
 import { Layout } from "../components/Layout"
 import { SEO } from "../components/SEO"
-import { PostCard } from "../components/PostCard"
 import { TestimonialCard } from "../components/TestimonialCard"
 import { CTABlock } from "../components/CTABlock"
 import { ProductSlider } from "../components/ProductSlider"
@@ -11,6 +10,7 @@ import lipsFillers from "../assets/images/lip-fillers.svg"
 import treatmentHeader from "../assets/images/treatment-header.jpg"
 import signature from "../assets/images/signature.svg"
 import heroImageSm from "../assets/images/hero-image-sm.jpg"
+import heroImageMd from "../assets/images/hero-image-md.jpg"
 
 import {
   Clock,
@@ -27,30 +27,35 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="bg-gray-100">
-      <div className="hero-block pt-10 md:grid-cols-12">
-        <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0 md:col-span-5">
-          <h1>Dr Yalda Jamali</h1>
-          <p className="mb-10">
-            Providing a medical approach to facial aesthetics in London &amp;
-            Nottingham. Another sentence here is required approximately this
-            length.
-          </p>
-          <a
-            href="#"
-            className="btn__primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 text-center rounded block mb-5 md:inline"
-          >
-            Book a consultation
-          </a>
-          <a
-            href="#"
-            className="btn__secondary bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 text-center border-2 border-solid border-blue-500 hover:border-transparent rounded block md:inline"
-          >
-            See Treatments
-          </a>
+      <div
+        className="hero-block pt-10 md:grid-cols-12 bg-unset md:bg-cover md:h-screen-80 md:flex md:pt-0 md:items-center"
+        style={{ backgroundImage: `url(${heroImageMd})` }}
+      >
+        <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0 md:pr-30">
+          <div className="md:w-1/2">
+            <h1>Dr Yalda Jamali</h1>
+            <p className="mb-10">
+              Providing a medical approach to facial aesthetics in London &amp;
+              Nottingham. Another sentence here is required approximately this
+              length.
+            </p>
+            <a
+              href="#"
+              className="block btn__primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 text-center rounded block mb-5 md:inline-block"
+            >
+              Book a consultation
+            </a>
+            <a
+              href="#"
+              className="block btn__secondary bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 text-center border-2 border-solid border-blue-500 hover:border-transparent rounded block md:inline"
+            >
+              See Treatments
+            </a>
+          </div>
         </div>
       </div>
       <img
-        className="md:object-none"
+        className="md:hidden"
         src={heroImageSm}
         alt="A mock signature of Dr Yalda "
       />
@@ -269,7 +274,7 @@ const IndexPage = () => (
               Instantly soften fine lines &amp; wrinkles, restore age-related
               volume loss and augment and contour facial features.
             </p>
-            <div className="flex items-end">
+            <div className="flex justify-end items-end">
               {" "}
               <ArrowRight className="mr-2 text-gray-900" />
             </div>
@@ -282,7 +287,7 @@ const IndexPage = () => (
               A skin bio-remodelling treatment which improves skin quality and
               laxity and combats signs of ageing.
             </p>
-            <div className="flex items-end">
+            <div className="flex justify-end items-end">
               {" "}
               <ArrowRight className="mr-2 text-gray-900" />
             </div>
@@ -295,7 +300,7 @@ const IndexPage = () => (
               Removes dead skin cells and encourages new ones to form. Treats
               acne, sun damage and pigmentation
             </p>
-            <div className="flex items-end">
+            <div className="flex justify-end items-end">
               {" "}
               <ArrowRight className="mr-2 text-gray-900" />
             </div>
@@ -308,7 +313,7 @@ const IndexPage = () => (
               Treat a multitude of skin concerns, including scarring,
               pigmentation, ageing and sun damage.
             </p>
-            <div className="flex items-end">
+            <div className="flex justify-end items-end">
               {" "}
               <ArrowRight className="mr-2 text-gray-900" />
             </div>
@@ -323,7 +328,7 @@ const IndexPage = () => (
               Treat a multitude of skin concerns including skin tags, treat deep
               lines and excess sagging skin around the eyes.
             </p>
-            <div className="flex items-end">
+            <div className="flex justify-end items-end">
               {" "}
               <ArrowRight className="mr-2 text-gray-900" />
             </div>
@@ -338,7 +343,7 @@ const IndexPage = () => (
               Minimise the appearance of fine lines and wrinkles by temporarily
               relaxing specific muscles.
             </p>
-            <div className="flex items-end">
+            <div className="flex justify-end items-end">
               {" "}
               <ArrowRight className="mr-2 text-gray-900" />
             </div>
