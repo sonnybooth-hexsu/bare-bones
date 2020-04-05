@@ -150,13 +150,6 @@ const IndexPage = () => (
           <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
           <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
         </div>
-        {/* Product Card Title */}
-        <h2 className="text-2xl pt-8 pb-8">
-          <span className="text-3xl md:text-4xl text-red-500 font-bold">
-            Product Card
-          </span>{" "}
-          - Used to show off products and services
-        </h2>
         {/* Treatment Content Title */}
         <h2 className="text-2xl pt-8 pb-8">
           <span className="text-3xl md:text-4xl text-red-500 font-bold">
