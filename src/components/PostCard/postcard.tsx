@@ -12,7 +12,7 @@ export const PostCard = ({ title, category, path, date, image }: PostTypes) => {
   return (
     <div className="flex flex-col bg-white h-full relative">
       <div className="relative">
-        <img width="100%" src={`/${image}`} alt="" />
+        <img width="100%" src={`/${image}`} alt="Post" />
         <div className="p-4 bg-red-500 inline-block inline-block absolute bottom-0">
           {category}
         </div>

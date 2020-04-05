@@ -134,6 +134,7 @@ const IndexPage = () => (
             <img
               className=""
               src="https://frosty-ardinghelli-04f7f2.netlify.com/static/home-3-e5af273814dfcb6ee426fd73f696247e.jpg"
+              alt="Client during consulation"
             />
           </div>
         </div>
@@ -142,6 +143,7 @@ const IndexPage = () => (
             <img
               className=""
               src="https://frosty-ardinghelli-04f7f2.netlify.com/static/home-3-e5af273814dfcb6ee426fd73f696247e.jpg"
+              alt="Client during consulation"
             />
           </div>
           <div className="md:w-5/12 mt-8 flex flex-col justify-center pb-10">
@@ -203,7 +205,7 @@ const IndexPage = () => (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4 pb-12">
           <div className="bg-white">
             <div className="bg-red-200 pt-16 pb-16 flex justify-center">
-              <img className="h-20" src={lipsFillers} />
+              <img className="h-20" src={lipsFillers} alt="Lips" />
             </div>
             <div className="pr-8 pb-8 pl-8">
               <h2 className="mt-12 mb-2 text-3xl tracking-wide">
@@ -218,7 +220,7 @@ const IndexPage = () => (
           </div>
           <div className="bg-white">
             <div className="bg-red-200 pt-16 pb-16 flex justify-center">
-              <img className="h-20" src={lipsFillers} />
+              <img className="h-20" src={lipsFillers} alt="Lips" />
             </div>
             <div className="pr-8 pb-8 pl-8">
               <h2 className="mt-12 mb-2 text-3xl tracking-wide">
@@ -233,7 +235,7 @@ const IndexPage = () => (
           </div>
           <div className="bg-white">
             <div className="bg-red-200 pt-16 pb-16 flex justify-center">
-              <img className="h-20" src={lipsFillers} />
+              <img className="h-20" src={lipsFillers} alt="Lips" />
             </div>
             <div className="pr-8 pb-8 pl-8">
               <h2 className="mt-12 mb-2 text-3xl tracking-wide">
@@ -248,7 +250,7 @@ const IndexPage = () => (
           </div>
           <div className="bg-white">
             <div className="bg-red-200 pt-16 pb-16 flex justify-center">
-              <img className="h-20" src={lipsFillers} />
+              <img className="h-20" src={lipsFillers} alt="Lips" />
             </div>
             <div className="pr-8 pb-8 pl-8">
               <h2 className="mt-12 mb-2 text-3xl tracking-wide">
