@@ -18,3 +18,22 @@ collections:
     - { name: image, label: Image, widget: image}
     - { name: imageLarge, label: ImageLarge, widget: image}
     - { name: body, label: Body, widget: markdown }
+  - name: product
+    label: Product
+    folder: products
+    create: true
+    fields:
+    - { name: path, label: Path }
+    - { name: title, label: Title }
+    - { name: excerpt, label: Excerpt}
+    - { name: category, label: Category}
+    - { name: image, label: Image, widget: image}
+    - { name: body, label: Body, widget: markdown }
+    - { name: productAttributeTitleOne, label: productAttributeTitleOne }
+    - { name: productAttributeValueOne, label: productAttributeValueOne }
+    - { name: productAttributeTitleTwo, label: productAttributeTitleTwo }
+    - { name: productAttributeValueTwo, label: productAttributeValueTwo }
+    - { name: productAttributeTitleThree, label: productAttributeTitleThree }
+    - { name: productAttributeValueThree, label: productAttributeValueThree }
+    - { name: productAttributeTitleFour, label: productAttributeTitleFour }
+    - { name: productAttributeValueFour, label: productAttributeValueFour }

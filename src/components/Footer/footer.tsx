@@ -31,7 +31,7 @@ export const Footer = ({
               <ol>
                 {navLinks.map(({ name, page }, i) => (
                   <li data-testid="footerNavigationLink" key={i}>
-                    <a href={`/${page}`}>{name}</a>
+                    <a href={page}>{name}</a>
                   </li>
                 ))}
               </ol>
