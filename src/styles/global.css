@@ -18,11 +18,17 @@ body {
   font-style: normal;
 }
 
-p, a {
+p, a, button, ul, li, dt, dl {
   font-family: acumin-pro, sans-serif;
   font-weight: 300;
   font-style: normal;
 }
+
+
+/* h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.025em;
+} */
+
 
 @tailwind components;
 @tailwind utilities;
