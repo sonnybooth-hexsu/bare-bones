@@ -1,4 +1,5 @@
 ---
+layout: blog
 path: /test-blog
 date: 2020-04-05T11:57:01.732Z
 title: I am a text blog

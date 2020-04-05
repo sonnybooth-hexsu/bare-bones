@@ -17,7 +17,7 @@ export default function Template({ data }) {
   } = frontmatter
   return (
     <Layout>
-      <SEO title="Blogs" />
+      <SEO title="Blog" />
       <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0">
         <div className="grid grid-cols-1 mb-12">
           <p>Blog template</p>
