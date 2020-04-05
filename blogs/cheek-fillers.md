@@ -2,11 +2,11 @@
 path: /cheek-fillers
 date: 2019-10-07T22:08:44.137Z
 title: Considerations for darker skin types when choosing in-clinic skin treatments
-excerpt: 'Cheek Fillers description'
+excerpt: Cheek Fillers excerpt
 author: Dr Yalda
 category: Category
-image: /assets/blog-02.jpg
-imageLarge: /assets/face-cleansing.jpg
+image: assets/cheek-filler-image.jpg
+imageLarge: assets/cheek-filler-image.jpg
 ---
 When assessing your skin, your practitioner might refer to your 'Fitzpatrick Skin Type'. The Fitzpatrick scale classifies human skin type, based on the colour of your skin, hair and eyes and your sensitivity towards UV radiation.
 
