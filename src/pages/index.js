@@ -144,7 +144,7 @@ const IndexPage = () => (
             <img
               className=""
               src="https://frosty-ardinghelli-04f7f2.netlify.com/static/home-3-e5af273814dfcb6ee426fd73f696247e.jpg"
-              alt="Client during consulation"
+              alt="Dr Yalda pushing a client's hair back, as part of the consultation process."
             />
           </div>
         </div>
@@ -153,7 +153,7 @@ const IndexPage = () => (
             <img
               className=""
               src="https://frosty-ardinghelli-04f7f2.netlify.com/static/home-3-e5af273814dfcb6ee426fd73f696247e.jpg"
-              alt="Client during consulation"
+              alt="Dr Yalda pushing a client's hair back, as part of the consultation process."
             />
           </div>
           <div className="md:w-5/12 mt-8 flex flex-col justify-center pb-10">
@@ -179,14 +179,6 @@ const IndexPage = () => (
               <li>
                 <CheckSquare className="inline mr-2" />
                 Reducing the signs of ageing
-              </li>
-              <li>
-                <Clock />
-                Defining your facial features
-              </li>
-              <li>
-                <Clock />
-                Improving your overall skin health
               </li>
             </ul>
           </div>
@@ -361,14 +353,14 @@ const IndexPage = () => (
         {/* Treatment Content Title */}
         <h2 className="text-2xl pt-8 pb-8">
           <span className="text-3xl md:text-4xl text-red-500 font-bold">
-            About Content Block
+            50/50 Content Block
           </span>{" "}
-          - I dont know
+          - To display 50/50 content with text hierarchy
         </h2>
         {/* About Content */}
         <div className="grid grid-cols-1 grid md:grid-cols-2 gap-6">
           <div>
-            <h2 className="text-2xl leading-tight tracking-wide pb-0 md:text-3xl">
+            <h2 className="text-2xl leading-tight tracking-wide md:text-3xl">
               Dr. Yalda Jamali is a qualified medical doctor specialising in
               aesthetic medicine. She runs a successful clinic and mentors at
               the Harley Academy.
@@ -406,7 +398,7 @@ const IndexPage = () => (
               in London, focusing on the practical application of facial
               injectables and skin rejuvenation.
             </p>
-            <img className="pt-5 h-20" src={signature} />
+            <img className="pt-5 h-20" src={signature} alt="A mock signature of Dr Yalda "/>
           </div>
         </div>
         {/* 50/50 Header Title */}
@@ -431,17 +423,7 @@ const IndexPage = () => (
           </button>
         </div>
         <div className="md:h-full">
-          <img src={treatmentHeader} />
-          <h2>About This Treatment</h2>
-          <p>
-            The revolutionary treatment has been around since the 1980’s and
-            with very few risks and no recovery time it still remains one of the
-            most popular non-surical cosmetic treatments. Botulinum Toxin
-            injections minimises the appearance of lines and wrinkles by
-            temporarily relaxing specific muscles, with results lasting 3 to 4
-            months. They are also used for treatment of hyperhidrosis (excess
-            sweating) and bruxism (involuntary habitual grinding of the teeth).
-          </p>
+          <img src={treatmentHeader} alt="Close up of model in profile pose, with head turned to the left."/>
         </div>
       </div>
     </div>
