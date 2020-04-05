@@ -7,6 +7,8 @@ import { CTABlock } from "../components/CTABlock"
 import { ProductSlider } from "../components/ProductSlider"
 import lipsBefore from "../assets/images/lips-before.jpg"
 import lipsAfter from "../assets/images/lips-after.jpg"
+import lipsFillers from "../assets/images/lip-fillers.svg"
+import { Clock } from "react-feather"
 
 const IndexPage = () => (
   <Layout>
@@ -14,10 +16,26 @@ const IndexPage = () => (
     <div className="bg-gray-100">
       <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0">
         <div className="grid grid-cols-1 pt-8 pb-8">
-          <h1 className="text-4xl">Bare Bones</h1>
+          <h1>Bare Bones</h1>
           <h2 className="text-2xl text-red-500">
             A bare bones website for client development
           </h2>
+        </div>
+        <div className="">
+          <h2 className="text-2xl pt-8 pb-8">
+            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+              Linked Title Component - for hotspot areas
+            </span>{" "}
+          </h2>
+          <h1 className="mb-12 mt-2 text-6xl leading-tight tracking-tight">
+            <i className="border-b-4 border-solid border-black">Email</i>, or
+            leave a message in the{" "}
+            <i className="border-b-4 border-solid border-black">contact form</i>
+            . View work on{" "}
+            <i className="border-b-4 border-solid border-black">Instagram</i>.
+            See reviews on{" "}
+            <i className="border-b-4 border-solid border-black">Facebook</i>.
+          </h1>
         </div>
         <h2 className="text-2xl pt-8 pb-8">
           <span className="text-3xl md:text-4xl text-red-500 font-bold">
@@ -47,7 +65,7 @@ const IndexPage = () => (
           <span className="text-3xl md:text-4xl text-red-500 font-bold">
             Cover component
           </span>{" "}
-          - for image & text client info. Order can be switched depending on
+          - for image &amp; text client info. Order can be switched depending on
           design choice
         </h2>
         <div className="md:flex mb-12">
@@ -109,7 +127,7 @@ const IndexPage = () => (
       </div>
     </div>
     <CTABlock />
-    <div className="bg-gray-100">
+    <div className="bg-gray-200">
       <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0">
         <h2 className="text-2xl pt-8 pb-8">
           <span className="text-3xl md:text-4xl text-red-500 font-bold">
@@ -122,6 +140,104 @@ const IndexPage = () => (
           <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
           <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
           <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
+        </div>
+        <h2 className="text-2xl pt-8 pb-8">
+          <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            Product Card
+          </span>{" "}
+          - Used to show off products and services
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 pb-12">
+          <div className="bg-white">
+            <div className="bg-blue-200 pt-16 pb-16 flex justify-center">
+              <img src={lipsFillers} />
+            </div>
+            <div className="pr-8 pb-8 pl-8">
+              <h2 className="mt-12 mb-2 text-3xl tracking-wide">
+                Soft Tissue Fillers
+              </h2>
+              <p className="mb-12">
+                Instantly soften fine lines &amp; wrinkles, restore age-related
+                volume loss and augment and contour facial features.
+              </p>
+              <a href="#">View Treatment</a>
+            </div>
+          </div>
+          <div className="bg-white">
+            <div className="bg-red-200 pt-16 pb-16 flex justify-center">
+              <Clock size="96" className="text-red-400" />
+            </div>
+            <div className="pr-8 pb-8 pl-8">
+              <h2 className="mt-12 mb-2 text-3xl tracking-wide">
+                Soft Tissue Fillers
+              </h2>
+              <p className="mb-12">
+                Instantly soften fine lines &amp; wrinkles, restore age-related
+                volume loss and augment and contour facial features.
+              </p>
+              <a href="#">View Treatment</a>
+            </div>
+          </div>
+          <div className="bg-white">
+            <div className="bg-red-200 pt-16 pb-16 flex justify-center">
+              <Clock size="96" className="text-red-400" />
+            </div>
+            <div className="pr-8 pb-8 pl-8">
+              <h2 className="mt-12 mb-2 text-3xl tracking-wide">
+                Soft Tissue Fillers
+              </h2>
+              <p className="mb-12">
+                Instantly soften fine lines &amp; wrinkles, restore age-related
+                volume loss and augment and contour facial features.
+              </p>
+              <a href="#">View Treatment</a>
+            </div>
+          </div>
+          <div className="bg-white">
+            <div className="bg-red-200 pt-16 pb-16 flex justify-center">
+              <Clock size="96" className="text-red-400" />
+            </div>
+            <div className="pr-8 pb-8 pl-8">
+              <h2 className="mt-12 mb-2 text-3xl tracking-wide">
+                Soft Tissue Fillers
+              </h2>
+              <p className="mb-12">
+                Instantly soften fine lines &amp; wrinkles, restore age-related
+                volume loss and augment and contour facial features.
+              </p>
+              <a href="#">View Treatment</a>
+            </div>
+          </div>
+          <div className="bg-white">
+            <div className="bg-red-200 pt-16 pb-16 flex justify-center">
+              <Clock size="96" className="text-red-400" />
+            </div>
+            <div className="pr-8 pb-8 pl-8">
+              <h2 className="mt-12 mb-2 text-3xl tracking-wide">
+                Soft Tissue Fillers
+              </h2>
+              <p className="mb-12">
+                Instantly soften fine lines &amp; wrinkles, restore age-related
+                volume loss and augment and contour facial features.
+              </p>
+              <a href="#">View Treatment</a>
+            </div>
+          </div>
+          <div className="bg-white">
+            <div className="bg-red-200 pt-16 pb-16 flex justify-center">
+              <Clock size="96" className="text-red-400" />
+            </div>
+            <div className="pr-8 pb-8 pl-8">
+              <h2 className="mt-12 mb-2 text-3xl tracking-wide">
+                Soft Tissue Fillers
+              </h2>
+              <p className="mb-12">
+                Instantly soften fine lines &amp; wrinkles, restore age-related
+                volume loss and augment and contour facial features.
+              </p>
+              <a href="#">View Treatment</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
