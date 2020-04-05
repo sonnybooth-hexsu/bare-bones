@@ -44,10 +44,54 @@ const IndexPage = () => (
           - for blogs and articles
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4 mb-12">
-          <PostCard heading="Considerations for darker skin types when choosing in-clinic skin treatments" />
-          <PostCard heading="Getting you wedding-ready!" />
-          <PostCard heading="Considerations for darker skin types when choosing in-clinic skin treatments" />
-          <PostCard heading="Getting you wedding-ready!" />
+          <PostCard
+            key={`post-card-${1}`}
+            title={
+              "Considerations for darker skin types when choosing in-clinic skin treatments"
+            }
+            category="Category"
+            path="/cheek-fillers"
+            date="October 07, 2019"
+            excerpt="Cheek Fillers description"
+            image="assets/cheek-filler-image.jpg"
+            imageLarge="assets/cheek-filler-image.jpg"
+          />
+          <PostCard
+            key={`post-card-${2}`}
+            title={
+              "Considerations for darker skin types when choosing in-clinic skin treatments"
+            }
+            category="Category"
+            path="/cheek-fillers"
+            date="October 07, 2019"
+            excerpt="Cheek Fillers description"
+            image="assets/cheek-filler-image.jpg"
+            imageLarge="assets/cheek-filler-image.jpg"
+          />
+          <PostCard
+            key={`post-card-${3}`}
+            title={
+              "Considerations for darker skin types when choosing in-clinic skin treatments"
+            }
+            category="Category"
+            path="/cheek-fillers"
+            date="October 07, 2019"
+            excerpt="Cheek Fillers description"
+            image="assets/cheek-filler-image.jpg"
+            imageLarge="assets/cheek-filler-image.jpg"
+          />
+          <PostCard
+            key={`post-card-${4}`}
+            title={
+              "Considerations for darker skin types when choosing in-clinic skin treatments"
+            }
+            category="Category"
+            path="/cheek-fillers"
+            date="October 07, 2019"
+            excerpt="Cheek Fillers description"
+            image="assets/cheek-filler-image.jpg"
+            imageLarge="assets/cheek-filler-image.jpg"
+          />
         </div>
         <h2 className="text-2xl pt-8 pb-8">
           <span className="text-3xl md:text-4xl text-red-500 font-bold">
@@ -227,7 +271,6 @@ const IndexPage = () => (
             months. They are also used for treatment of hyperhidrosis (excess
             sweating) and bruxism (involuntary habitual grinding of the teeth).
           </p>
-          <div className></div>
         </div>
       </div>
     </div>

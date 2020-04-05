@@ -28,6 +28,21 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-css-customs`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/assets`,
+        name: "images",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blogs`,
+        path: `${__dirname}/blogs`,
+      },
+    },
+    `gatsby-transformer-remark`,
     `gatsby-plugin-netlify-cms`,
   ],
 }

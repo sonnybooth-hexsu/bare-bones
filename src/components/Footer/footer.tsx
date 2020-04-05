@@ -21,7 +21,9 @@ export const Footer = ({
       <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0">
         <div className={styles.footer}>
           <div className={styles.footerLogoContainer}>
-            <div className={styles.footerLogo}>{siteTitle}</div>
+            <a href="/" className={styles.footerLogo}>
+              {siteTitle}
+            </a>
             <p data-testid="footerNavigationDescription">{description}</p>
           </div>
           <div>
