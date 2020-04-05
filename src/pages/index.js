@@ -53,11 +53,55 @@ const IndexPage = () => (
           </span>{" "}
           - for blogs and articles
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 mb-12">
-          <PostCard heading="Considerations for darker skin types when choosing in-clinic skin treatments" />
-          <PostCard heading="Getting you wedding-ready!" />
-          <PostCard heading="Considerations for darker skin types when choosing in-clinic skin treatments" />
-          <PostCard heading="Getting you wedding-ready!" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4 mb-12">
+          <PostCard
+            key={`post-card-${1}`}
+            title={
+              "Considerations for darker skin types when choosing in-clinic skin treatments"
+            }
+            category="Category"
+            path="/cheek-fillers"
+            date="October 07, 2019"
+            excerpt="Cheek Fillers description"
+            image="assets/cheek-filler-image.jpg"
+            imageLarge="assets/cheek-filler-image.jpg"
+          />
+          <PostCard
+            key={`post-card-${2}`}
+            title={
+              "Considerations for darker skin types when choosing in-clinic skin treatments"
+            }
+            category="Category"
+            path="/cheek-fillers"
+            date="October 07, 2019"
+            excerpt="Cheek Fillers description"
+            image="assets/cheek-filler-image.jpg"
+            imageLarge="assets/cheek-filler-image.jpg"
+          />
+          <PostCard
+            key={`post-card-${3}`}
+            title={
+              "Considerations for darker skin types when choosing in-clinic skin treatments"
+            }
+            category="Category"
+            path="/cheek-fillers"
+            date="October 07, 2019"
+            excerpt="Cheek Fillers description"
+            image="assets/cheek-filler-image.jpg"
+            imageLarge="assets/cheek-filler-image.jpg"
+          />
+          <PostCard
+            key={`post-card-${4}`}
+            title={
+              "Considerations for darker skin types when choosing in-clinic skin treatments"
+            }
+            category="Category"
+            path="/cheek-fillers"
+            date="October 07, 2019"
+            excerpt="Cheek Fillers description"
+            image="assets/cheek-filler-image.jpg"
+            imageLarge="assets/cheek-filler-image.jpg"
+          />
         </div>
         <h2 className="text-2xl pt-8 pb-8">
           <span className="text-3xl md:text-4xl text-red-500 font-bold">
@@ -100,6 +144,7 @@ const IndexPage = () => (
             <img
               className=""
               src="https://frosty-ardinghelli-04f7f2.netlify.com/static/home-3-e5af273814dfcb6ee426fd73f696247e.jpg"
+              alt="Client during consulation"
             />
           </div>
         </div>
@@ -108,6 +153,7 @@ const IndexPage = () => (
             <img
               className=""
               src="https://frosty-ardinghelli-04f7f2.netlify.com/static/home-3-e5af273814dfcb6ee426fd73f696247e.jpg"
+              alt="Client during consulation"
             />
           </div>
           <div className="md:w-5/12 mt-8 flex flex-col justify-center pb-10">
@@ -132,6 +178,14 @@ const IndexPage = () => (
               </li>
               <li>
                 <CheckSquare className="inline mr-2" />
+                Reducing the signs of ageing
+              </li>
+              <li>
+                <Clock />
+                Defining your facial features
+              </li>
+              <li>
+                <Clock />
                 Improving your overall skin health
               </li>
             </ul>
@@ -171,7 +225,7 @@ const IndexPage = () => (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 pb-12">
           <div className="bg-white">
             <div className="bg-red-200 pt-16 pb-16 flex justify-center">
-              <img className="h-20" src={lipsFillers} />
+              <img className="h-20" src={lipsFillers} alt="Lips" />
             </div>
             <div className="pr-8 pb-8 pl-8">
               <h2 className="mt-12 mb-2 text-3xl tracking-wide">
@@ -186,7 +240,7 @@ const IndexPage = () => (
           </div>
           <div className="bg-white">
             <div className="bg-red-200 pt-16 pb-16 flex justify-center">
-              <img className="h-20" src={lipsFillers} />
+              <img className="h-20" src={lipsFillers} alt="Lips" />
             </div>
             <div className="pr-8 pb-8 pl-8">
               <h2 className="mt-12 mb-2 text-3xl tracking-wide">
@@ -201,7 +255,7 @@ const IndexPage = () => (
           </div>
           <div className="bg-white">
             <div className="bg-red-200 pt-16 pb-16 flex justify-center">
-              <img className="h-20" src={lipsFillers} />
+              <img className="h-20" src={lipsFillers} alt="Lips" />
             </div>
             <div className="pr-8 pb-8 pl-8">
               <h2 className="mt-12 mb-2 text-3xl tracking-wide">
@@ -216,7 +270,7 @@ const IndexPage = () => (
           </div>
           <div className="bg-white">
             <div className="bg-red-200 pt-16 pb-16 flex justify-center">
-              <img className="h-20" src={lipsFillers} />
+              <img className="h-20" src={lipsFillers} alt="Lips" />
             </div>
             <div className="pr-8 pb-8 pl-8">
               <h2 className="mt-12 mb-2 text-3xl tracking-wide">
@@ -378,6 +432,16 @@ const IndexPage = () => (
         </div>
         <div className="md:h-full">
           <img src={treatmentHeader} />
+          <h2>About This Treatment</h2>
+          <p>
+            The revolutionary treatment has been around since the 1980’s and
+            with very few risks and no recovery time it still remains one of the
+            most popular non-surical cosmetic treatments. Botulinum Toxin
+            injections minimises the appearance of lines and wrinkles by
+            temporarily relaxing specific muscles, with results lasting 3 to 4
+            months. They are also used for treatment of hyperhidrosis (excess
+            sweating) and bruxism (involuntary habitual grinding of the teeth).
+          </p>
         </div>
       </div>
     </div>

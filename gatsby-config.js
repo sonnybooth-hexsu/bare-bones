@@ -7,23 +7,32 @@ module.exports = {
     author: `@sonnybooth-hexsu`,
     navLinks: [
       {
-        name: `Link 1`,
-        page: `link-1`,
+        name: `CMS Blogs`,
+        page: `/blogs`,
         id: 1,
-      },
-      {
-        name: `Link 2`,
-        page: `link-2`,
-        id: 2,
-      },
-      {
-        name: `Link 3`,
-        page: `link-3`,
-        id: 3,
       },
     ],
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Bare Bones",
+        short_name: "Bare Bones",
+        start_url: "/",
+        background_color: "#6b37bf",
+        theme_color: "#6b37bf",
+        icon: "src/assets/images/favicon.png",
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: "standalone",
+        // An optional attribute which provides support for CORS check.
+        // If you do not provide a crossOrigin option, it will skip CORS for manifest.
+        // Any invalid keyword or empty string defaults to `anonymous`
+        crossOrigin: `use-credentials`,
+      },
+    },
+    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -38,5 +47,21 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-css-customs`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/assets`,
+        name: "images",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blogs`,
+        path: `${__dirname}/blogs`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-netlify-cms`,
   ],
 }

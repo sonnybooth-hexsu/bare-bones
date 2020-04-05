@@ -8,6 +8,7 @@ export const TestimonialCard = ({ testimonial }) => {
           <img
             className="h-full w-full"
             src="https://i.pravatar.cc/150?img=32"
+            alt="Testimonial client face"
           />
         </div>
         <div>
