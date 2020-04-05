@@ -147,10 +147,10 @@ const IndexPage = () => (
           </span>{" "}
           - Used to show off products and services
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 pb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4 pb-12">
           <div className="bg-white">
-            <div className="bg-blue-200 pt-16 pb-16 flex justify-center">
-              <img src={lipsFillers} />
+            <div className="bg-red-200 pt-16 pb-16 flex justify-center">
+              <img className="h-20" src={lipsFillers} />
             </div>
             <div className="pr-8 pb-8 pl-8">
               <h2 className="mt-12 mb-2 text-3xl tracking-wide">
@@ -165,7 +165,7 @@ const IndexPage = () => (
           </div>
           <div className="bg-white">
             <div className="bg-red-200 pt-16 pb-16 flex justify-center">
-              <Clock size="96" className="text-red-400" />
+              <img className="h-20" src={lipsFillers} />
             </div>
             <div className="pr-8 pb-8 pl-8">
               <h2 className="mt-12 mb-2 text-3xl tracking-wide">
@@ -180,7 +180,7 @@ const IndexPage = () => (
           </div>
           <div className="bg-white">
             <div className="bg-red-200 pt-16 pb-16 flex justify-center">
-              <Clock size="96" className="text-red-400" />
+              <img className="h-20" src={lipsFillers} />
             </div>
             <div className="pr-8 pb-8 pl-8">
               <h2 className="mt-12 mb-2 text-3xl tracking-wide">
@@ -192,40 +192,9 @@ const IndexPage = () => (
               </p>
               <a href="#">View Treatment</a>
             </div>
-          </div>
-          <div className="bg-white">
+          </div><div className="bg-white">
             <div className="bg-red-200 pt-16 pb-16 flex justify-center">
-              <Clock size="96" className="text-red-400" />
-            </div>
-            <div className="pr-8 pb-8 pl-8">
-              <h2 className="mt-12 mb-2 text-3xl tracking-wide">
-                Soft Tissue Fillers
-              </h2>
-              <p className="mb-12">
-                Instantly soften fine lines &amp; wrinkles, restore age-related
-                volume loss and augment and contour facial features.
-              </p>
-              <a href="#">View Treatment</a>
-            </div>
-          </div>
-          <div className="bg-white">
-            <div className="bg-red-200 pt-16 pb-16 flex justify-center">
-              <Clock size="96" className="text-red-400" />
-            </div>
-            <div className="pr-8 pb-8 pl-8">
-              <h2 className="mt-12 mb-2 text-3xl tracking-wide">
-                Soft Tissue Fillers
-              </h2>
-              <p className="mb-12">
-                Instantly soften fine lines &amp; wrinkles, restore age-related
-                volume loss and augment and contour facial features.
-              </p>
-              <a href="#">View Treatment</a>
-            </div>
-          </div>
-          <div className="bg-white">
-            <div className="bg-red-200 pt-16 pb-16 flex justify-center">
-              <Clock size="96" className="text-red-400" />
+              <img className="h-20" src={lipsFillers} />
             </div>
             <div className="pr-8 pb-8 pl-8">
               <h2 className="mt-12 mb-2 text-3xl tracking-wide">
