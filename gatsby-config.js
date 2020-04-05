@@ -7,19 +7,9 @@ module.exports = {
     author: `@sonnybooth-hexsu`,
     navLinks: [
       {
-        name: `Link 1`,
-        page: `link-1`,
+        name: `CMS Blogs`,
+        page: `/blogs`,
         id: 1,
-      },
-      {
-        name: `Link 2`,
-        page: `link-2`,
-        id: 2,
-      },
-      {
-        name: `Link 3`,
-        page: `link-3`,
-        id: 3,
       },
     ],
   },
@@ -38,5 +28,6 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-css-customs`,
+    `gatsby-plugin-netlify-cms`,
   ],
 }
