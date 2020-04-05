@@ -1,6 +1,14 @@
 import React from "react"
 
-export const PostCard = ({ title, category, path, date, image }) => {
+type PostTypes = {
+  title: string
+  category: string
+  path: string
+  date: string
+  image: string
+}
+
+export const PostCard = ({ title, category, path, date, image }: PostTypes) => {
   return (
     <div className="flex flex-col bg-white h-full relative">
       <div className="relative">
