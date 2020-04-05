@@ -398,7 +398,11 @@ const IndexPage = () => (
               in London, focusing on the practical application of facial
               injectables and skin rejuvenation.
             </p>
-            <img className="pt-5 h-20" src={signature} alt="A mock signature of Dr Yalda "/>
+            <img
+              className="pt-5 h-20"
+              src={signature}
+              alt="A mock signature of Dr Yalda "
+            />
           </div>
         </div>
         {/* 50/50 Header Title */}
@@ -423,7 +427,10 @@ const IndexPage = () => (
           </button>
         </div>
         <div className="md:h-full">
-          <img src={treatmentHeader} alt="Close up of model in profile pose, with head turned to the left."/>
+          <img
+            src={treatmentHeader}
+            alt="Close up of model in profile pose, with head turned to the left."
+          />
         </div>
       </div>
     </div>
