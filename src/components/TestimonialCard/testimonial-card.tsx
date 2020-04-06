@@ -28,7 +28,7 @@ export const TestimonialCard = ({
           </p>
         </div>
       </div>
-      <p>{message}</p>
+      <p data-testid="testimonialCardMessage">{message}</p>
     </div>
   )
 }

@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductCard /> should match snapshot 1`] = `
+<div>
+  <div
+    class="bg-white pt-16 pr-16 pl-16 pb-10 md:pl-24 shadow-md h-full"
+  >
+    <div
+      class="flex"
+    >
+      <div
+        class="rounded-full h-12 w-12 mr-2 mb-4 overflow-hidden"
+      >
+        <img
+          alt="Testimonial client face"
+          class="h-full w-full"
+          src="/test-img.jpg"
+        />
+      </div>
+      <div>
+        <h3
+          class="text-lg mb-1"
+        >
+          Mr Test
+        </h3>
+        <p
+          class="text-xs leading-5 text-blue-400 font-semibold"
+        >
+          Client
+        </p>
+      </div>
+    </div>
+    <p
+      data-testid="testimonialCardMessage"
+    >
+      I am a test review
+    </p>
+  </div>
+</div>
+`;
