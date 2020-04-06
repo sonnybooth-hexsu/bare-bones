@@ -74,9 +74,7 @@ export const SEO = ({ description, lang, meta, title }: SEOProps) => {
                 content: metaDescription,
               },
             ].concat(meta)}
-          >
-            <link rel="stylesheet" href="https://use.typekit.net/nbx8okc.css" />
-          </Helmet>
+          ></Helmet>
         )
       }}
     </ThemeContext.Consumer>
