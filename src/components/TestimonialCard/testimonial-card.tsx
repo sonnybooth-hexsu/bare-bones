@@ -17,7 +17,7 @@ export const TestimonialCard = ({
         <div className="rounded-full h-12 w-12 mr-2 mb-4 overflow-hidden">
           <img
             className="h-full w-full"
-            src={image}
+            src={`/${image}`}
             alt="Testimonial client face"
           />
         </div>
