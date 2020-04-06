@@ -18,7 +18,7 @@ const Reviews = props => {
       <div className="bg-gray-200">
         <div className="container mx-auto pl-6 pr-6 pb-10 md:pl-0 md:pr-0">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl md:text-4xl font-bold">
               Client service testimonial list CMS content
             </span>{" "}
             - add new testimonials at /admin
