@@ -228,34 +228,42 @@ const IndexPage = () => (
           {/* Overview Attributes */}
           <div className="md:col-start-10 md:col-span-3">
             <dl className="mb-8">
-              <dt className="pb-4 pt-4 border-solid border-t-2 border-gray-900 flex justify-between">
-                <div>
-                  <Clock className="inline mr-2 text-gray-900" />
-                  <p className="inline font-bold">Treatment Time</p>
-                </div>
+              <div className="pb-4 pt-4 border-solid border-t-2 border-gray-900 flex justify-between">
+                <dt>
+                  <div>
+                    <Clock className="inline mr-2 text-gray-900" />
+                    <p className="inline font-bold">Treatment Time</p>
+                  </div>
+                </dt>
                 <dd className="text-right inline">10 Minutes</dd>
-              </dt>
-              <dt className="pb-4 pt-4 border-solid border-t-2 border-gray-900 flex justify-between">
-                <div>
-                  <Watch className="inline mr-2 text-gray-900" />
-                  <p className="inline font-bold">Downtime</p>
-                </div>
+              </div>
+              <div className="pb-4 pt-4 border-solid border-t-2 border-gray-900 flex justify-between">
+                <dt>
+                  <div>
+                    <Watch className="inline mr-2 text-gray-900" />
+                    <p className="inline font-bold">Downtime</p>
+                  </div>
+                </dt>
                 <dd className="text-right inline">One day</dd>
-              </dt>
-              <dt className="pb-4 pt-4 border-solid border-t-2 border-gray-900 flex justify-between">
-                <div>
-                  <Calendar className="inline mr-2 text-gray-900" />
-                  <p className="inline font-bold">Results Last</p>
-                </div>
+              </div>
+              <div className="pb-4 pt-4 border-solid border-t-2 border-gray-900 flex justify-between">
+                <dt>
+                  <div>
+                    <Calendar className="inline mr-2 text-gray-900" />
+                    <p className="inline font-bold">Results Last</p>
+                  </div>
+                </dt>
                 <dd className="text-right inline">3–4 Months</dd>
-              </dt>
-              <dt className="pb-4 pt-4 border-solid border-t-2 border-gray-900 border-solid border-b-2 border-gray-900 flex justify-between">
-                <div>
-                  <Tag className="inline mr-2 text-gray-900" />
-                  <p className="inline font-bold">Price</p>
-                </div>
+              </div>
+              <div className="flex justify-between pb-4 pt-4 border-solid border-t-2 border-gray-900 flex justify-between">
+                <dt>
+                  <div>
+                    <Tag className="inline mr-2 text-gray-900" />
+                    <p className="inline font-bold">Price</p>
+                  </div>
+                </dt>
                 <dd className="text-right inline">Staring from £100</dd>
-              </dt>
+              </div>
             </dl>
           </div>
         </div>
