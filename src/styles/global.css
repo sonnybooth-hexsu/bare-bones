@@ -21,7 +21,7 @@ body {
 
 .p-2 {
   font-family: big-caslon-fb, serif;
-  letter-spacing: 2;
+  letter-spacing: .02em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-block {
-  background-color: #a9c5EA;
+  background-color: #aac2da;
 }
 
 @tailwind components;

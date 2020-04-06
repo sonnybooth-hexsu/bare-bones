@@ -8,8 +8,9 @@ import lipsBefore from "../assets/images/lips-before.jpg"
 import lipsAfter from "../assets/images/lips-after.jpg"
 import treatmentHeader from "../assets/images/treatment-header.jpg"
 import signature from "../assets/images/signature.svg"
-import heroImageSm from "../assets/images/hero-image-sm.jpg"
-import heroImageMd from "../assets/images/hero-image-md.jpg"
+import heroImageSm from "../assets/images/hero-image-sm-2.jpg"
+import heroImageMd from "../assets/images/hero-image-MD.jpg"
+import yaldaAbout from "../assets/images/yalda-about.jpg"
 
 import {
   Clock,
@@ -27,7 +28,7 @@ const IndexPage = () => (
     <div className="bg-gray-100">
       <div
         className="hero-block pt-10 md:grid-cols-12 bg-unset md:bg-cover md:h-screen-80 md:flex md:pt-0 md:items-center md:bg-bottom"
-        style={{ backgroundImage: `url(${heroImageMd})` }}
+        style={{ backgroundImage: `url(${yaldaAbout})` }}
       >
         <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0 md:pr-30">
           <div className="md:w-1/2">
@@ -70,7 +71,7 @@ const IndexPage = () => (
               Linked Title Component - for hotspot areas
             </span>{" "}
           </h2>
-          <h1 className="mb-12 mt-2 text-6xl leading-tight tracking-tight">
+          <h1 className="mb-12 mt-2 text-6xl leading-tight tracking-tight pt-20 pb-20">
             <i className="border-b-4 border-solid border-black">Email</i>, or
             leave a message in the{" "}
             <i className="border-b-4 border-solid border-black">contact form</i>
@@ -101,7 +102,7 @@ const IndexPage = () => (
         </h2>
           {/* Image with text block (Image Right) */}
         <div className="md:flex pb-16 pt-16">
-          <div className="md:w-5/12 flex flex-col justify-center">
+          <div className="md:w-5/12 flex flex-col justify-center pb-20 pt-20">
             <h3 className="text-4xl leading-tight pb-2">
               Enhance <i>&amp;</i> restore your natural beauty with non-surgical cosmetic
               treatments.
@@ -272,16 +273,16 @@ const IndexPage = () => (
         <div className="grid grid-cols-1 grid md:grid-cols-2 gap-6">
           <div>
             <h2 className="text-2xl leading-tight md:text-4xl">
-              Dr. Yalda Jamali is a qualified medical doctor specialising in
-              aesthetic medicine. She runs a successful clinic and mentors at
-              the Harley Academy.
+              A little bit about Dr Yalda.
             </h2>
           </div>
           <div>
             <p className="pb-4">
-              She graduated from the University of Manchester with a Bachelor of
+            Dr. Yalda Jamali is a qualified medical doctor specialising in
+              aesthetic medicine. She runs a successful clinic and mentors at
+              the Harley Academy. She graduated from the University of Manchester with a Bachelor of
               Medicine, Bachelor of Surgery (MBChB) and holds a Level 7
-              postgraduate qualification in facial injectables. Dr Yalda is
+              postgraduate qualification in facial injectables. She is
               passionate about ensuring aesthetics is a carefully regulated
               industry, conducted with extreme precision, diligence and care.{" "}
             </p>
@@ -289,12 +290,7 @@ const IndexPage = () => (
               She has a key artistic eye for detail. Her clients regard her as a
               personable, results-oriented aesthetics doctor. Dr Yalda goes
               above and beyond to ensure that her clients are completely
-              satisfied by their results. In addition to running a successful
-              clinic in Nottingham, Dr Yalda is a mentor at the Harley Academy
-              in London for medical professionals wishing to enter the
-              aesthetics field. In her capacity as a mentor, Dr Yalda provides
-              her insights and expert observations into the aesthetics industry
-              to the next generation of medical aesthetic professionals.
+              satisfied by their results.
             </p>
             <p className="pb-4">
               In addition to running a successful clinic in Nottingham, Dr Yalda
@@ -345,6 +341,13 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+    <div>
+        <img
+        className=""
+        src={yaldaAbout}
+        alt=""
+      />
+        </div>
   </Layout>
 )
 
