@@ -4,6 +4,17 @@ backend:
 media_folder: static/assets
 public_folder: assets
 collections:
+  - name: review
+    label: Review
+    folder: reviews
+    create: true
+    fields:
+    - { name: layout, label: Layout, widget: hidden, default: review }
+    - { name: path, label: Path }
+    - { name: date, label: Date, widget: datetime }
+    - { name: message, label: Message}
+    - { name: author, label: Author}
+    - { name: image, label: Image, widget: image}
   - name: blog
     label: Blog
     folder: blogs

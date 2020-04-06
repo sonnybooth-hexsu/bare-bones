@@ -1,7 +1,6 @@
 import React from "react"
 import { Layout } from "../components/Layout"
 import { SEO } from "../components/SEO"
-import { TestimonialCard } from "../components/TestimonialCard"
 import { CTABlock } from "../components/CTABlock"
 import { ProductSlider } from "../components/ProductSlider"
 import lipsBefore from "../assets/images/lips-before.jpg"
@@ -80,18 +79,6 @@ const IndexPage = () => (
             See reviews on{" "}
             <i className="border-b-4 border-solid border-black">Facebook</i>.
           </h1>
-        </div>
-        <h2 className="text-2xl pt-8 pb-8">
-          <span className="text-3xl md:text-4xl text-red-500 font-bold">
-            Testimonial component
-          </span>{" "}
-          - for client reviews and such alike
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 mb-12">
-          <TestimonialCard testimonial="I have had lip fillers with Yalda for a while now and the results are amazing. Not only is she professional, but she makes you feel at ease immediately. It’s been 6 months since my fillers and my lips are as juicy as ever!" />
-          <TestimonialCard testimonial="Just had my lips done with Yalda and I absolutely love them. She’s absolutely brilliant and has done a fantastic job." />
-          <TestimonialCard testimonial="I have had lip fillers with Yalda for a while now and the results are amazing. Not only is she professional, but she makes you feel at ease immediately. It’s been 6 months since my fillers and my lips are as juicy as ever!" />
-          <TestimonialCard testimonial="Just had my lips done with Yalda and I absolutely love them. She’s absolutely brilliant and has done a fantastic job." />
         </div>
         <h2 className="text-2xl pt-8 pb-8">
           <span className="text-3xl md:text-4xl text-red-500 font-bold">
@@ -231,34 +218,42 @@ const IndexPage = () => (
           {/* Overview Attributes */}
           <div className="md:col-start-10 md:col-span-3">
             <dl className="mb-8">
-              <dt className="pb-4 pt-4 border-solid border-t-2 border-gray-900 flex justify-between">
-                <div>
-                  <Clock className="inline mr-2 text-gray-900" />
-                  <p className="inline font-bold">Treatment Time</p>
-                </div>
+              <div className="pb-4 pt-4 border-solid border-t-2 border-gray-900 flex justify-between">
+                <dt>
+                  <div>
+                    <Clock className="inline mr-2 text-gray-900" />
+                    <p className="inline font-bold">Treatment Time</p>
+                  </div>
+                </dt>
                 <dd className="text-right inline">10 Minutes</dd>
-              </dt>
-              <dt className="pb-4 pt-4 border-solid border-t-2 border-gray-900 flex justify-between">
-                <div>
-                  <Watch className="inline mr-2 text-gray-900" />
-                  <p className="inline font-bold">Downtime</p>
-                </div>
+              </div>
+              <div className="pb-4 pt-4 border-solid border-t-2 border-gray-900 flex justify-between">
+                <dt>
+                  <div>
+                    <Watch className="inline mr-2 text-gray-900" />
+                    <p className="inline font-bold">Downtime</p>
+                  </div>
+                </dt>
                 <dd className="text-right inline">One day</dd>
-              </dt>
-              <dt className="pb-4 pt-4 border-solid border-t-2 border-gray-900 flex justify-between">
-                <div>
-                  <Calendar className="inline mr-2 text-gray-900" />
-                  <p className="inline font-bold">Results Last</p>
-                </div>
+              </div>
+              <div className="pb-4 pt-4 border-solid border-t-2 border-gray-900 flex justify-between">
+                <dt>
+                  <div>
+                    <Calendar className="inline mr-2 text-gray-900" />
+                    <p className="inline font-bold">Results Last</p>
+                  </div>
+                </dt>
                 <dd className="text-right inline">3–4 Months</dd>
-              </dt>
-              <dt className="pb-4 pt-4 border-solid border-t-2 border-gray-900 border-solid border-b-2 border-gray-900 flex justify-between">
-                <div>
-                  <Tag className="inline mr-2 text-gray-900" />
-                  <p className="inline font-bold">Price</p>
-                </div>
+              </div>
+              <div className="flex justify-between pb-4 pt-4 border-solid border-t-2 border-gray-900 flex justify-between">
+                <dt>
+                  <div>
+                    <Tag className="inline mr-2 text-gray-900" />
+                    <p className="inline font-bold">Price</p>
+                  </div>
+                </dt>
                 <dd className="text-right inline">Staring from £100</dd>
-              </dt>
+              </div>
             </dl>
           </div>
         </div>

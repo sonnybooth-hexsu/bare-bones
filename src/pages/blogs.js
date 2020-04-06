@@ -1,8 +1,8 @@
 import React from "react"
+import { graphql } from "gatsby"
 import { Layout } from "../components/Layout"
 import { SEO } from "../components/SEO"
 import { PostCard } from "../components/PostCard"
-import { graphql } from "gatsby"
 
 const Blogs = props => {
   const data = props.data.allFile.edges
@@ -16,7 +16,7 @@ const Blogs = props => {
     <Layout>
       <SEO title="Blogs" />
       <div className="bg-gray-200">
-        <div className="container mx-auto pb-10">
+        <div className="container mx-auto pb-10 pl-6 pr-6 md:pl-0 md:pr-0">
           <h2 className="text-2xl pt-8 pb-8">
             <span className="text-3xl md:text-4xl text-red-500 font-bold">
               Post list CMS content
