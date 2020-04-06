@@ -4,6 +4,17 @@ backend:
 media_folder: static/assets
 public_folder: assets
 collections:
+  - name: review
+    label: Review
+    folder: reviews
+    create: true
+    fields:
+    - { name: layout, label: Layout, widget: hidden, default: review }
+    - { name: path, label: Path }
+    - { name: date, label: Date, widget: datetime }
+    - { name: name, label: Name }
+    - { name: message, label: Message}
+    - { name: image, label: Image, widget: image}
   - name: blog
     label: Blog
     folder: blogs
@@ -39,11 +50,3 @@ collections:
     - { name: productAttributeValueThree, label: productAttributeValueThree }
     - { name: productAttributeTitleFour, label: productAttributeTitleFour }
     - { name: productAttributeValueFour, label: productAttributeValueFour }
-  - name: testimonial
-    label: Testimonial
-    folder: testimonials
-    create: true
-    fields:
-    - { name: name, label: Name }
-    - { name: message, label: Message }
-    - { name: image, label: Image, widget: image}

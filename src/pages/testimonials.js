@@ -5,12 +5,7 @@ import { TestimonialCard } from "../components/TestimonialCard"
 import { graphql } from "gatsby"
 
 const Testimonials = props => {
-  const data = props.data.allFile.edges
   const testimonials = []
-
-  data.map(testimonials => {
-    return testimonials.push(testimonials.node.childMarkdownRemark.frontmatter)
-  })
 
   return (
     <Layout>
@@ -43,7 +38,7 @@ export default Testimonials
 
 export const query = graphql`
   query {
-    allFile(filter: { sourceInstanceName: { eq: "testimonials" } }) {
+    allFile(filter: { sourceInstanceName: { eq: "testimonial" } }) {
       edges {
         node {
           childMarkdownRemark {
