@@ -2,7 +2,6 @@ import React from "react"
 import { Layout } from "../components/Layout"
 import { SEO } from "../components/SEO"
 import { TestimonialCard } from "../components/TestimonialCard"
-import { graphql } from "gatsby"
 
 const Testimonials = props => {
   console.log(props)
@@ -36,21 +35,3 @@ const Testimonials = props => {
 }
 
 export default Testimonials
-
-export const query = graphql`
-  query {
-    allFile(filter: { sourceInstanceName: { eq: "review" } }) {
-      edges {
-        node {
-          childMarkdownRemark {
-            frontmatter {
-              name
-              message
-              image
-            }
-          }
-        }
-      }
-    }
-  }
-`

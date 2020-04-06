@@ -1,7 +1,6 @@
 import React from "react"
 import { Layout } from "../components/Layout"
 import { SEO } from "../components/SEO"
-import { TestimonialCard } from "../components/TestimonialCard"
 import { CTABlock } from "../components/CTABlock"
 import { ProductSlider } from "../components/ProductSlider"
 import lipsBefore from "../assets/images/lips-before.jpg"
