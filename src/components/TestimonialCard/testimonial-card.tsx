@@ -1,24 +1,34 @@
 import React from "react"
 
-export const TestimonialCard = ({ testimonial }) => {
+type TestimonialCardProps = {
+  name: string
+  message: string
+  image: string
+}
+
+export const TestimonialCard = ({
+  name,
+  message,
+  image,
+}: TestimonialCardProps) => {
   return (
     <div className="bg-white pt-16 pr-16 pl-16 pb-10 md:pl-24 shadow-md h-full">
       <div className="flex">
         <div className="rounded-full h-12 w-12 mr-2 mb-4 overflow-hidden">
           <img
             className="h-full w-full"
-            src="https://i.pravatar.cc/150?img=32"
+            src={image}
             alt="Testimonial client face"
           />
         </div>
         <div>
-          <h3 className="text-lg mb-1">Amelia</h3>
+          <h3 className="text-lg mb-1">{name}</h3>
           <p className="text-xs leading-5 text-blue-400 font-semibold">
             Client
           </p>
         </div>
       </div>
-      <p>{testimonial}</p>
+      <p>{message}</p>
     </div>
   )
 }

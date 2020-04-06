@@ -82,18 +82,6 @@ const IndexPage = () => (
         </div>
         <h2 className="text-2xl pt-8 pb-8">
           <span className="text-3xl md:text-4xl text-red-500 font-bold">
-            Testimonial component
-          </span>{" "}
-          - for client reviews and such alike
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 mb-12">
-          <TestimonialCard testimonial="I have had lip fillers with Yalda for a while now and the results are amazing. Not only is she professional, but she makes you feel at ease immediately. It’s been 6 months since my fillers and my lips are as juicy as ever!" />
-          <TestimonialCard testimonial="Just had my lips done with Yalda and I absolutely love them. She’s absolutely brilliant and has done a fantastic job." />
-          <TestimonialCard testimonial="I have had lip fillers with Yalda for a while now and the results are amazing. Not only is she professional, but she makes you feel at ease immediately. It’s been 6 months since my fillers and my lips are as juicy as ever!" />
-          <TestimonialCard testimonial="Just had my lips done with Yalda and I absolutely love them. She’s absolutely brilliant and has done a fantastic job." />
-        </div>
-        <h2 className="text-2xl pt-8 pb-8">
-          <span className="text-3xl md:text-4xl text-red-500 font-bold">
             Cover component
           </span>{" "}
           - for image &amp; text client info. Order can be switched depending on
