@@ -1,0 +1,19 @@
+@value colors: "../../styles/variables.module.css";
+@value colorPrimary, colorWhite from colors;
+
+.headerContainer {
+  background-color: colorWhite;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: colorBlack;
+  font-size: 1.8rem;
+  padding: 1.5rem 0;
+}
+
+.headerNavigation li {
+  margin: 1rem 0;
+}

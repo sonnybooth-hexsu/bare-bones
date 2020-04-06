@@ -33,4 +33,32 @@ h1, h2, h3, h4, h5, h6 {
   .h-screen-80 {
     height: 80vh;
   }
+
+  .animate-reveal {
+    opacity: 0;
+    animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+  }
+
+  .delay-0 {
+    animation-delay: 0;
+  }
+  
+  .delay-1 {
+    animation-delay: 200ms;
+  }
+  
+  .delay-2 {
+    animation-delay: 400ms;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
