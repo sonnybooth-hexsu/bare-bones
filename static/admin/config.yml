@@ -44,6 +44,6 @@ collections:
     folder: testimonials
     create: true
     fields:
-    - { name: name label: Name }
-    - { name: message label: Message }
+    - { name: name, label: Name }
+    - { name: message, label: Message }
     - { name: image, label: Image, widget: image}
