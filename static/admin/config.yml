@@ -39,3 +39,11 @@ collections:
     - { name: productAttributeValueThree, label: productAttributeValueThree }
     - { name: productAttributeTitleFour, label: productAttributeTitleFour }
     - { name: productAttributeValueFour, label: productAttributeValueFour }
+  - name: testimonial
+    label: Testimonial
+    folder: testimonials
+    create: true
+    fields:
+    - { name: name label: Name }
+    - { name: message label: Message }
+    - { name: image, label: Image, widget: image}
