@@ -24,9 +24,9 @@ const SearchBar = ({ data }) => {
   }, [searchTerm])
 
   return (
-    <div className="relative w-1/4">
+    <div className="flex-grow ml-3 mr-3 h-10 md:relative md:ml-6 md:mr-6 md:flex-grow-0">
       <input
-        className="text-base appearance-none bg-gray-200 text-gray-700 rounded w-full p-2 leading-tight focus:outline-none focus:bg-gray-800"
+        className="block h-full text-base appearance-none bg-gray-200 text-gray-700 rounded w-full p-2 leading-tight focus:outline-none focus:bg-gray-800"
         type="text"
         placeholder="Search"
         value={searchTerm}

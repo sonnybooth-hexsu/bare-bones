@@ -17,10 +17,10 @@ export const HeaderOpen = ({
     <div className={styles.headerContainer}>
       <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0">
         <div className={styles.header}>
-          <a href="/" className="text-xl sm:text-3xl">
+          <a href="/" className={styles.headerLogo}>
             {siteTitle}
           </a>
-          <X className="cursor-pointer" onClick={navToggle} />
+          <X className={styles.headerMenuIcon} onClick={navToggle} />
         </div>
         <nav className={styles.headerNavigation}>
           <ol>

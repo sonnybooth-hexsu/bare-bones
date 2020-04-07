@@ -3,6 +3,7 @@
 import React from "react"
 import { render, cleanup } from "@testing-library/react"
 import { queryAllByTestId } from "@testing-library/dom"
+import { StaticQuery } from "gatsby"
 import Header from "./header"
 
 const testNavLinks = [
@@ -30,7 +31,11 @@ afterEach(() => {
 describe("<Header />", () => {
   it("should match snapshot", () => {
     const { container } = render(
-      <Header siteTitle="Test Site" navLinks={testNavLinks} />
+      <Header
+        siteTitle="Test Site"
+        navLinks={testNavLinks}
+        navToggle={() => Function}
+      />
     )
 
     expect(container).toMatchSnapshot()
@@ -38,7 +43,11 @@ describe("<Header />", () => {
 
   it("should have the length of links passed through", () => {
     const { container } = render(
-      <Header siteTitle="Test Site" navLinks={testNavLinks} />
+      <Header
+        siteTitle="Test Site"
+        navLinks={testNavLinks}
+        navToggle={() => Function}
+      />
     )
 
     expect(queryAllByTestId(container, "headerNavigationLink")).toHaveLength(
