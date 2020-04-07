@@ -22,19 +22,9 @@ module.exports = {
         id: 3,
       },
       {
-        name: `Link 4`,
-        page: `/link-4`,
+        name: `Contact`,
+        page: `/contact`,
         id: 4,
-      },
-      {
-        name: `Link 5`,
-        page: `/link-5`,
-        id: 5,
-      },
-      {
-        name: `Link 6`,
-        page: `/link-6`,
-        id: 6,
       },
     ],
   },
