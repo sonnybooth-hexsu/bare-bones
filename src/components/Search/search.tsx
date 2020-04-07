@@ -32,7 +32,7 @@ const SearchBar = ({ data }) => {
         value={searchTerm}
         onChange={handleChange}
       />
-      {searchTerm.length > 3 && searchResults.length && (
+      {searchTerm.length > 3 && searchResults.length > 0 && (
         <ul className="bg-white p-4 w-full absolute">
           <nav>
             {searchResults.map(({ title, path }, i) => (
