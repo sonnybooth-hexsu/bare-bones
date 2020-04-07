@@ -30,18 +30,19 @@ export const Layout = ({ children }: LayoutProps) => {
 
   return (
     <>
-      <Header
-        siteTitle={data.site.siteMetadata.title}
-        navLinks={data.site.siteMetadata.navLinks}
-        navToggle={navToggle}
-        navOpen={navOpen}
-      />
-      <HeaderOpen
-        siteTitle={data.site.siteMetadata.title}
-        navLinks={data.site.siteMetadata.navLinks}
-        navToggle={navToggle}
-        navOpen={navOpen}
-      />
+      {!navOpen ? (
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          navLinks={data.site.siteMetadata.navLinks}
+          navToggle={navToggle}
+        />
+      ) : (
+        <HeaderOpen
+          siteTitle={data.site.siteMetadata.title}
+          navLinks={data.site.siteMetadata.navLinks}
+          navToggle={navToggle}
+        />
+      )}
       <main>{children}</main>
       <Footer
         siteTitle={data.site.siteMetadata.title}

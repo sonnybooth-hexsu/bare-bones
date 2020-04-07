@@ -6,17 +6,13 @@ type HeaderOpenProps = {
   siteTitle: string
   navLinks: Array<{ name: string; page: string; id: number }>
   navToggle?: () => {}
-  navOpen: boolean
 }
 
 export const HeaderOpen = ({
   siteTitle,
   navLinks,
   navToggle,
-  navOpen,
 }: HeaderOpenProps) => {
-  if (!navOpen) return null
-
   return (
     <div className={styles.headerContainer}>
       <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0">

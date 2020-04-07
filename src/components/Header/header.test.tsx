@@ -30,7 +30,7 @@ afterEach(() => {
 describe("<Header />", () => {
   it("should match snapshot", () => {
     const { container } = render(
-      <Header siteTitle="Test Site" navLinks={testNavLinks} navOpen={false} />
+      <Header siteTitle="Test Site" navLinks={testNavLinks} />
     )
 
     expect(container).toMatchSnapshot()
@@ -38,7 +38,7 @@ describe("<Header />", () => {
 
   it("should have the length of links passed through", () => {
     const { container } = render(
-      <Header siteTitle="Test Site" navLinks={testNavLinks} navOpen={false} />
+      <Header siteTitle="Test Site" navLinks={testNavLinks} />
     )
 
     expect(queryAllByTestId(container, "headerNavigationLink")).toHaveLength(

@@ -1,22 +1,15 @@
 import React from "react"
 import styles from "./header.module.css"
 import { Menu } from "react-feather"
+import { Search } from "../Search"
 
 type HeaderProps = {
   siteTitle: string
   navLinks: Array<{ name: string; page: string; id: number }>
   navToggle?: () => {}
-  navOpen: boolean
 }
 
-export const Header = ({
-  siteTitle,
-  navLinks,
-  navToggle,
-  navOpen,
-}: HeaderProps) => {
-  if (navOpen) return null
-
+export const Header = ({ siteTitle, navLinks, navToggle }: HeaderProps) => {
   return (
     <div className={styles.headerContainer}>
       <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0">
@@ -24,6 +17,7 @@ export const Header = ({
           <a href="/" className="text-xl sm:text-3xl">
             {siteTitle}
           </a>
+          <Search />
           <nav className="hidden md:inline">
             <ol className={styles.headerNavigation}>
               {navLinks.map(({ name, page }, i) => (
