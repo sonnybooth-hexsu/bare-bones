@@ -1,16 +1,16 @@
-import React from "react"
+import React, { useContext } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Header } from "../Header"
 import { HeaderOpen } from "../HeaderOpen"
 import { Footer } from "../Footer"
-import ThemeContext from "../../context/ThemeContext"
+import { ThemeContext } from "../../context/ThemeContext"
 
 type LayoutProps = {
   children: React.ReactNode
-  theme: React.Provider<{}>
 }
 
 export const Layout = ({ children }: LayoutProps) => {
+  const { navOpen, navToggle } = useContext(ThemeContext)
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -29,34 +29,28 @@ export const Layout = ({ children }: LayoutProps) => {
   `)
 
   return (
-    <ThemeContext.Consumer>
-      {theme => {
-        return (
-          <>
-            <Header
-              siteTitle={data.site.siteMetadata.title}
-              navLinks={data.site.siteMetadata.navLinks}
-              navToggle={theme.navToggle}
-              navOpen={theme.navOpen}
-            />
-            <HeaderOpen
-              siteTitle={data.site.siteMetadata.title}
-              navLinks={data.site.siteMetadata.navLinks}
-              navToggle={theme.navToggle}
-              navOpen={theme.navOpen}
-            />
-            <main>{children}</main>
-            <Footer
-              siteTitle={data.site.siteMetadata.title}
-              navLinks={data.site.siteMetadata.navLinks}
-              description={data.site.siteMetadata.description}
-              email={data.site.siteMetadata.email}
-              telephone={data.site.siteMetadata.telephone}
-            />
-          </>
-        )
-      }}
-    </ThemeContext.Consumer>
+    <>
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        navLinks={data.site.siteMetadata.navLinks}
+        navToggle={navToggle}
+        navOpen={navOpen}
+      />
+      <HeaderOpen
+        siteTitle={data.site.siteMetadata.title}
+        navLinks={data.site.siteMetadata.navLinks}
+        navToggle={navToggle}
+        navOpen={navOpen}
+      />
+      <main>{children}</main>
+      <Footer
+        siteTitle={data.site.siteMetadata.title}
+        navLinks={data.site.siteMetadata.navLinks}
+        description={data.site.siteMetadata.description}
+        email={data.site.siteMetadata.email}
+        telephone={data.site.siteMetadata.telephone}
+      />
+    </>
   )
 }
 
