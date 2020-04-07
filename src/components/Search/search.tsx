@@ -33,7 +33,7 @@ const SearchBar = ({ data }) => {
         onChange={handleChange}
       />
       {searchTerm.length > 3 && searchResults.length > 0 && (
-        <ul className="bg-white p-4 w-full absolute">
+        <ul className="bg-white p-4 w-full absolute left-0">
           <nav>
             {searchResults.map(({ title, path }, i) => (
               <li className="text-base" key={`search-item-${i}`}>
