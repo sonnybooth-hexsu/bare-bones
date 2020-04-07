@@ -1,0 +1,33 @@
+@value colors: "../../styles/variables.module.css";
+@value colorPrimary, colorBlack, colorWhite from colors;
+
+.headerContainer {
+  background-color: colorWhite;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: colorBlack;
+  font-size: 1.8rem;
+  padding: 1.5rem 0;
+}
+
+.headerLogo {
+  font-size: 1.5rem;
+
+  @media (fromMedium) {
+    flex-grow: 1;
+    font-size: 2rem;
+  }
+}
+
+.headerNavigation li {
+  margin-bottom: 1rem;
+}
+
+.headerMenuIcon {
+  cursor: pointer;
+}

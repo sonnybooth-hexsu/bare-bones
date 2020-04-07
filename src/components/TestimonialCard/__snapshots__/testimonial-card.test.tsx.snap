@@ -24,7 +24,7 @@ exports[`<ProductCard /> should match snapshot 1`] = `
           Mr Test
         </h3>
         <p
-          class="text-xs leading-5 text-blue-400 font-semibold"
+          class="text-xs leading-5 font-semibold"
         >
           Client
         </p>

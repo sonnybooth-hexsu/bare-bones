@@ -1,5 +1,7 @@
 @value colors: "../../styles/variables.module.css";
-@value colorPrimary, colorWhite from colors;
+@value mqs: "../../styles/mqs.module.css";
+@value colorPrimary, colorBlack, colorWhite from colors;
+@value fromMedium from mqs;
 
 .headerContainer {
   background-color: colorWhite;
@@ -14,12 +16,31 @@
   padding: 1rem 0;
 }
 
+.headerLogo {
+  font-size: 1.5rem;
+
+  @media (fromMedium) {
+    flex-grow: 1;
+    font-size: 2rem;
+  }
+}
+
 .headerNavigation {
   composes: listInline from "../../styles/helpers.module.css";
+  display: none;
+
+  @media (fromMedium) {
+    display: flex;
+  }
+}
+
+.headerNavigation ol {
+  display: flex;
 }
 
 .headerNavigation li {
-  margin-right: 16px;
+  display: inline-block;
+  margin-right: 2rem;
 }
 
 .headerNavigation li:last-of-type {
@@ -27,7 +48,16 @@
 }
 
 .headerNavigation li a {
-  font-size: 1rem;
+  display: block;
+  font-size: 0.75rem;
   color: colorBlack;
   text-decoration: underline;
+}
+
+.headerMenuIcon {
+  cursor: pointer;
+
+  @media (fromMedium) {
+    display: none;
+  }
 }

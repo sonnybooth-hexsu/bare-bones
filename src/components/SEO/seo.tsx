@@ -1,15 +1,17 @@
-import React from "react"
+import React, { useContext } from "react"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import { ThemeContext } from "../../context/ThemeContext"
 
 type SEOProps = {
   description: string
   lang: string
-  meta: Array<any>
+  meta: Array<{ name: string; content: string }>
   title: string
 }
 
 export const SEO = ({ description, lang, meta, title }: SEOProps) => {
+  const { navOpen } = useContext(ThemeContext)
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -30,6 +32,9 @@ export const SEO = ({ description, lang, meta, title }: SEOProps) => {
     <Helmet
       htmlAttributes={{
         lang,
+      }}
+      bodyAttributes={{
+        class: `${navOpen ? "overflow-hidden" : ""}`,
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}

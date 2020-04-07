@@ -21,6 +21,11 @@ module.exports = {
         page: `/reviews`,
         id: 3,
       },
+      {
+        name: `Contact`,
+        page: `/contact`,
+        id: 4,
+      },
     ],
   },
   plugins: [
