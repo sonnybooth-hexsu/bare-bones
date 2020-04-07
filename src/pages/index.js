@@ -364,8 +364,8 @@ const IndexPage = () => (
     <div className="bg-gray-300">
       <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0 pt-20 pb-20">
         <h1 className="mb-12 mt-2 md:text-6xl leading-snug pb-12">
-          Dr Yaldar offers a range of non-surgical cosmetic treatments using high
-          quality, medically approved products.
+          Dr Yaldar offers a range of non-surgical cosmetic treatments using
+          high quality, medically approved products.
         </h1>
         <button className="bg-black hover:bg-gray-900 text-white font-light py-6 px-12 inline">
           Book a consultation

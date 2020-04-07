@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React, { useState, useEffect } from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 const SearchBar = ({ data }) => {
   const productsData = data.allFile.edges
@@ -47,9 +47,9 @@ const SearchBar = ({ data }) => {
   )
 }
 
-export const Search = props => (
-  <StaticQuery
-    query={graphql`
+export const Search = () => {
+  const data = useStaticQuery(
+    graphql`
       query {
         allFile(filter: { sourceInstanceName: { eq: "products" } }) {
           edges {
@@ -76,7 +76,7 @@ export const Search = props => (
           }
         }
       }
-    `}
-    render={data => <SearchBar data={data} {...props} />}
-  />
-)
+    `
+  )
+  return <SearchBar data={data} />
+}
