@@ -13,9 +13,13 @@ const Contact = () => {
         <form
           className="w-full max-w-lg mx-auto mt-10 mb-10"
           name="contact"
-          method="POST"
+          method="post"
+          action="/success"
           data-netlify="true"
+          data-netlify-honeypot="bot-field"
         >
+          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="bot-field" />
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
@@ -27,7 +31,7 @@ const Contact = () => {
               <input
                 className="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 id="first-name"
-                name="first-name"
+                name="firstName"
                 type="text"
                 placeholder="Jane"
               />
@@ -42,7 +46,7 @@ const Contact = () => {
               <input
                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="last-name"
-                name="last-name"
+                name="lastName"
                 type="text"
                 placeholder="Doe"
               />
@@ -99,7 +103,6 @@ const Contact = () => {
               />
             </div>
           </div>
-          <div data-netlify-recaptcha="true"></div>
           <button
             className="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded"
             type="submit"
