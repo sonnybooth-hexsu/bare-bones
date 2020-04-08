@@ -5,13 +5,13 @@ title: Lip treatment 2
 excerpt: I am lip treatment 2
 category: Lips
 image: assets/lips.svg
-productAttributeTitleOne: Attr
+productAttributeTitleOne: Attr 1
 productAttributeValueOne: '100'
-productAttributeTitleTwo: Attr
+productAttributeTitleTwo: Attr 2
 productAttributeValueTwo: '200'
-productAttributeTitleThree: Attr
+productAttributeTitleThree: Attr 3
 productAttributeValueThree: '300'
-productAttributeTitleFour: Attr
+productAttributeTitleFour: Attr 4
 productAttributeValueFour: '400'
 ---
 Body text
