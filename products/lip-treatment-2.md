@@ -4,14 +4,14 @@ path: /lip-treatment-2
 title: Lip treatment 2
 excerpt: I am lip treatment 2
 category: Lips
-image: assets/lip-fillers.svg
+image: assets/lips.svg
 productAttributeTitleOne: Attr
-productAttributeValueOne: Value
+productAttributeValueOne: '100'
 productAttributeTitleTwo: Attr
-productAttributeValueTwo: Value
+productAttributeValueTwo: '200'
 productAttributeTitleThree: Attr
-productAttributeValueThree: Value
+productAttributeValueThree: '300'
 productAttributeTitleFour: Attr
-productAttributeValueFour: Value
+productAttributeValueFour: '400'
 ---
-Hello
+Body text
