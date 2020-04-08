@@ -3,7 +3,6 @@
 import React from "react"
 import { render, cleanup } from "@testing-library/react"
 import { queryAllByTestId } from "@testing-library/dom"
-import { StaticQuery } from "gatsby"
 import Header from "./header"
 
 const testNavLinks = [
