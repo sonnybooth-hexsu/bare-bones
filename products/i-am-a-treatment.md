@@ -1,9 +1,9 @@
 ---
 layout: product
-path: /product-1
-title: I am a treatment
-excerpt: I am the treatments excerpt
-category: Face
+path: /lip-filler
+title: Lip fillers
+excerpt: I am lip fillers
+category: Lips
 image: assets/lip-fillers.svg
 productAttributeTitleOne: Attr 1
 productAttributeValueOne: '100'
