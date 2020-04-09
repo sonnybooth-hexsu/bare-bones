@@ -1,17 +1,20 @@
-import React from "react"
+import React, { useState } from "react"
 import { Layout } from "../components/Layout"
 import { SEO } from "../components/SEO"
 import { graphql } from "gatsby"
 import { ProductCard } from "../components/ProductCard"
 import { ProductCardIcon } from "../components/ProductCardIcon"
+import { Filter } from "../components/Filter"
 
 const Products = props => {
   const data = props.data.allFile.edges
-  const products = []
+  const productsDestructured = []
 
-  data.map(product => {
-    return products.push(product.node.childMarkdownRemark.frontmatter)
+  data.map(obj => {
+    return productsDestructured.push(obj.node.childMarkdownRemark.frontmatter)
   })
+
+  const [products, setProductsState] = useState(productsDestructured)
 
   return (
     <Layout>
@@ -24,16 +27,28 @@ const Products = props => {
             </span>{" "}
             - add new products at /admin
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4 mb-12">
-            {products.map(({ title, path, excerpt, image }, i) => (
-              <ProductCard
-                key={`product-card-${i}`}
-                title={title}
-                path={path}
-                excerpt={excerpt}
-                image={image}
-              />
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-12">
+            <div className="col-span-2 grid grid-cols-1">
+              <div>
+                <h3 className="text-2xl ">Filter</h3>
+                <Filter
+                  types={["category", "layout"]}
+                  items={productsDestructured}
+                  setItemsState={setProductsState}
+                />
+              </div>
+            </div>
+            <div className="col-span-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-12">
+              {products.map(({ title, path, excerpt, image }, i) => (
+                <ProductCard
+                  key={`product-card-${i}`}
+                  title={title}
+                  path={path}
+                  excerpt={excerpt}
+                  image={image}
+                />
+              ))}
+            </div>
           </div>
           <h2 className="text-2xl pt-8 pb-8">
             <span className="text-3xl md:text-4xl text-red-500 font-bold">

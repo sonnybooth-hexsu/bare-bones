@@ -1,4 +1,4 @@
-/* eslint no-undef: 0 */
+/* eslint-disable */
 
 const React = require("react")
 const gatsby = jest.requireActual("gatsby")
