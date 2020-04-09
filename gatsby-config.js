@@ -29,6 +29,16 @@ module.exports = {
         id: 4,
       },
     ],
+    productCategories: [
+      {
+        title: "Categories",
+        uid: "category"
+      },
+      {
+        title: "Title",
+        uid: "title"
+      },
+    ]
   },
   plugins: [
     {

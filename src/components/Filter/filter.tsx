@@ -15,16 +15,20 @@ type CheckboxProps = {
 type FieldsetProps = {
   items: []
   type: string
+  title: string
   setItemsState: (newItemsState: {}[]) => []
 }
 
 type FilterProps = {
   items: []
-  types: [string]
+  types: {
+    uid: string
+    title: string
+  }[]
   setItemsState: (newItemsState: {}[]) => []
 }
 
-const Fieldset = ({ items, type, setItemsState }: FieldsetProps) => {
+const Fieldset = ({ items, type, title, setItemsState }: FieldsetProps) => {
   const fieldsetTypes = filterByKey(items, type)
   const fieldsetTypesList = duplicateCount(fieldsetTypes)
   const checkboxes = fieldsetTypesList.map(
@@ -66,7 +70,7 @@ const Fieldset = ({ items, type, setItemsState }: FieldsetProps) => {
 
   return (
     <fieldset className="mt-3">
-      <legend>Categories:</legend>
+      <legend>{title}</legend>
       {checkboxes.map(
         ({ id, title, count, isChecked }: CheckboxProps, i: number) => (
           <div key={`category-${i}`}>
@@ -91,12 +95,13 @@ const Fieldset = ({ items, type, setItemsState }: FieldsetProps) => {
 export const Filter = ({ items, setItemsState, types }: FilterProps) => {
   return (
     <form>
-      {types.map((type, i) => (
+      {types.map(({ uid, title }, i) => (
         <Fieldset
           key={`filter-fieldset${i}`}
           items={items}
-          type={type}
+          type={uid}
           setItemsState={setItemsState}
+          title={title}
         />
       ))}
     </form>
