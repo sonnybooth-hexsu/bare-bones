@@ -1,5 +1,9 @@
 import React, { useState, SyntheticEvent } from "react"
-import { duplicateCount, filterByKey } from "../../utils/functions"
+import {
+  duplicateCount,
+  filterByKey,
+  filterByKeyMatch,
+} from "../../utils/functions"
 
 type CheckboxProps = {
   title: string
@@ -55,11 +59,7 @@ const Fieldset = ({ items, type, setItemsState }: FieldsetProps) => {
       return setItemsState(items)
     }
 
-    const newItemsState = items.filter(({ category }) => {
-      for (const value of checkedItems) {
-        if (category === value) return true
-      }
-    })
+    const newItemsState = filterByKeyMatch(items, type, checkedItems)
 
     setItemsState(newItemsState)
   }

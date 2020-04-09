@@ -29,3 +29,17 @@ export const filterByKey = (arr, criteria) => {
   })
   return criteriaList
 }
+
+export const filterByKeyMatch = (arr, criteria, values) => {
+  const criteriaList = []
+
+  arr.map(obj => {
+    for (const value of values) {
+      if (obj[criteria] === value) {
+        criteriaList.push(obj)
+      }
+    }
+  })
+
+  return criteriaList
+}
