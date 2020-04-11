@@ -1,4 +1,5 @@
 ---
+id: 3
 layout: product
 path: /lip-treatment-1
 title: Lip treatment 1
