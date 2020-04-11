@@ -1,6 +1,49 @@
-// @ts-nocheck
-import React, { useState } from "react"
+import React, { useState, SyntheticEvent } from "react"
 import { filterBySelected, createListOfTypes } from "../../utils/functions"
+
+type FilterProps = {
+  items: []
+  setItemsState: () => []
+  types: [
+    {
+      title: string
+      uid: string
+    }
+  ]
+}
+
+type FieldsetsProps = {
+  items: []
+  setItemsState: () => []
+  types: [
+    {
+      title: string
+      uid: string
+    }
+  ]
+}
+
+type Checkbox = {
+  title: string
+  count: number
+  id: number
+  isChecked: boolean
+}
+
+type FieldsetTypeProps = {
+  title: string
+  uid: string
+  checkboxes: [Checkbox]
+}
+
+type Fieldset = {
+  title: string
+  items: []
+  checkboxes: [Checkbox]
+  fieldsetsState: FieldsetTypeProps[]
+  setFieldsetsState: (newFieldsetsState: []) => void
+  setItemsState: () => []
+}
 
 const Fieldset = ({
   title,
@@ -9,9 +52,9 @@ const Fieldset = ({
   fieldsetsState,
   setFieldsetsState,
   setItemsState,
-}) => {
-  const handleCheck = () => {
-    const target = event.target
+}: Fieldset) => {
+  const handleCheck = (event: SyntheticEvent) => {
+    const target = event.target as HTMLInputElement
     const value = target.name
     const checked = target.checked
 
@@ -26,8 +69,8 @@ const Fieldset = ({
     const checkedItems = fieldsetsState
       .map(({ checkboxes }) => checkboxes)
       .flat()
-      .filter(({ isChecked }: CheckboxProps) => isChecked)
-      .map(({ title }: CheckboxProps) => title)
+      .filter(({ isChecked }) => isChecked)
+      .map(({ title }) => title)
 
     const checkedTypes = fieldsetsState.map(({ uid }) => uid).flat()
 
@@ -43,62 +86,64 @@ const Fieldset = ({
   return (
     <fieldset className="mt-3">
       <legend>{title}</legend>
-      {checkboxes.map(
-        ({ id, title, count, isChecked }: CheckboxProps, i: number) => (
-          <div key={`category-${i}`}>
-            <label className="inline-flex items-center">
-              <input
-                type="checkbox"
-                className="form-checkbox"
-                id={`${title}-${id}`}
-                name={title}
-                onChange={e => handleCheck(e)}
-                defaultChecked={isChecked}
-              />
-              <span className="ml-2">{`${title} (${count})`}</span>
-            </label>
-          </div>
-        )
-      )}
+      {checkboxes.map(({ id, title, count, isChecked }, i) => (
+        <div key={`category-${i}`}>
+          <label className="inline-flex items-center">
+            <input
+              type="checkbox"
+              className="form-checkbox"
+              id={`${title}-${id}`}
+              name={title}
+              onChange={e => handleCheck(e)}
+              defaultChecked={isChecked}
+            />
+            <span className="ml-2">{`${title} (${count})`}</span>
+          </label>
+        </div>
+      ))}
     </fieldset>
   )
 }
 
-const Fieldsets = ({ types, items, setItemsState }) => {
+const Fieldsets = ({ types, items, setItemsState }: FieldsetsProps) => {
   const fieldsetTypes = createListOfTypes(items, types)
 
-  const fieldsets = fieldsetTypes.map(({ title, uid, checkboxes }) => {
-    return {
-      title,
-      uid,
-      checkboxes: checkboxes.map(({ title, count }, i) => {
-        return {
-          title,
-          count,
-          id: i,
-          isChecked: false,
-        }
-      }),
+  const fieldsets = fieldsetTypes.map(
+    ({ title, uid, checkboxes }: FieldsetTypeProps) => {
+      return {
+        title,
+        uid,
+        checkboxes: checkboxes.map(({ title, count }, i) => {
+          return {
+            title,
+            count,
+            id: i,
+            isChecked: false,
+          }
+        }),
+      }
     }
-  })
+  )
 
-  const [fieldsetsState, setFieldsetsState] = useState(fieldsets)
+  const [fieldsetsState, setFieldsetsState] = useState<[] | []>(fieldsets)
 
   if (!fieldsets.length) return null
 
   return (
     <>
-      {fieldsetsState.map(({ title, checkboxes }, i) => (
-        <Fieldset
-          key={`fieldset-${i}`}
-          title={title}
-          items={items}
-          checkboxes={checkboxes}
-          fieldsetsState={fieldsetsState}
-          setFieldsetsState={setFieldsetsState}
-          setItemsState={setItemsState}
-        />
-      ))}
+      {fieldsetsState.map(
+        ({ title, checkboxes }: FieldsetTypeProps, i: number) => (
+          <Fieldset
+            key={`fieldset-${i}`}
+            title={title}
+            items={items}
+            checkboxes={checkboxes}
+            fieldsetsState={fieldsetsState}
+            setFieldsetsState={setFieldsetsState}
+            setItemsState={setItemsState}
+          />
+        )
+      )}
     </>
   )
 }

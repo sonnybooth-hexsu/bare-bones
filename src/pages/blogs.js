@@ -15,7 +15,7 @@ const Blogs = props => {
   })
 
   const [blogs, setBlogsState] = useState(blogsDestructured)
-  
+
   return (
     <Layout>
       <SEO title="Blogs" />
