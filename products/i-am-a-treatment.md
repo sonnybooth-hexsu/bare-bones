@@ -1,19 +1,18 @@
 ---
+id: 3
 layout: product
-path: /product-1
-title: I am a treatment
-excerpt: I am the treatments excerpt
-category: Face
-image: assets/lip-fillers.svg
+path: /lip-treatment-1
+title: Lip treatment 1
+excerpt: I am lip treatment 1
+category: Lips
+image: assets/lips.svg
 productAttributeTitleOne: Attr 1
 productAttributeValueOne: '100'
 productAttributeTitleTwo: Attr 2
-productAttributeValueTwo: '9999'
+productAttributeValueTwo: '200'
 productAttributeTitleThree: Attr 3
-productAttributeValueThree: 10 o'clock
+productAttributeValueThree: '300'
 productAttributeTitleFour: Attr 4
-productAttributeValueFour: Friday
+productAttributeValueFour: '400'
 ---
-**LOL**
-
-## **Hello**
+Body text

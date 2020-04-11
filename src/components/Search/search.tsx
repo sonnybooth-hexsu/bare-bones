@@ -1,25 +1,54 @@
-// @ts-nocheck
-import React, { useState, useEffect } from "react"
-import { StaticQuery, graphql } from "gatsby"
+import React, { useState, useEffect, SyntheticEvent } from "react"
 
-const SearchBar = ({ data }) => {
-  const productsData = data.allFile.edges
-  const products = []
+type ProductItemProps = {
+  node: {
+    childMarkdownRemark: {
+      frontmatter: ProductProps
+    }
+  }
+}
 
-  productsData.map(product => {
+type SearchBarProps = {
+  items: ProductItemProps[]
+}
+
+type ProductProps = {
+  layout: string
+  title: string
+  category: string
+  path: string
+  excerpt: string
+  image: string
+  productAttributeTitleOne: string
+  productAttributeTitleTwo: string
+  productAttributeTitleThree: string
+  productAttributeTitleFour: string
+  productAttributeValueOne: string
+  productAttributeValueTwo: string
+  productAttributeValueThree: string
+  productAttributeValueFour: string
+}
+
+export const Search = ({ items }: SearchBarProps) => {
+  const products: ProductProps[] = []
+
+  items.map((product: ProductItemProps) => {
     return products.push(product.node.childMarkdownRemark.frontmatter)
   })
 
-  const [searchResults, setSearchResults] = useState([])
+  const [searchResults, setSearchResults] = useState<ProductProps[] | []>([])
   const [searchTerm, setSearchTerm] = useState("")
-  const handleChange = event => {
-    setSearchTerm(event.target.value)
+  const handleChange = (event: SyntheticEvent) => {
+    const target = event.target as HTMLInputElement
+    const value = target.value
+    setSearchTerm(value)
   }
 
   useEffect(() => {
-    const results = products.filter(({ title }) =>
+    const results = products.filter(({ title }: ProductProps) =>
       title.toLowerCase().includes(searchTerm)
     )
+
     setSearchResults(results)
   }, [searchTerm])
 
@@ -33,9 +62,9 @@ const SearchBar = ({ data }) => {
         onChange={handleChange}
       />
       {searchTerm.length > 3 && searchResults.length > 0 && (
-        <ul className="bg-white p-4 w-full absolute">
+        <ul className="bg-white p-4 w-full absolute left-0">
           <nav>
-            {searchResults.map(({ title, path }, i) => (
+            {(searchResults as ProductProps[]).map(({ title, path }, i) => (
               <li className="text-base" key={`search-item-${i}`}>
                 <a href={path}>{title}</a>
               </li>
@@ -46,37 +75,3 @@ const SearchBar = ({ data }) => {
     </div>
   )
 }
-
-export const Search = props => (
-  <StaticQuery
-    query={graphql`
-      query {
-        allFile(filter: { sourceInstanceName: { eq: "products" } }) {
-          edges {
-            node {
-              childMarkdownRemark {
-                frontmatter {
-                  layout
-                  title
-                  category
-                  path
-                  excerpt
-                  image
-                  productAttributeTitleOne
-                  productAttributeTitleTwo
-                  productAttributeTitleThree
-                  productAttributeTitleFour
-                  productAttributeValueOne
-                  productAttributeValueTwo
-                  productAttributeValueThree
-                  productAttributeValueFour
-                }
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={data => <SearchBar data={data} {...props} />}
-  />
-)

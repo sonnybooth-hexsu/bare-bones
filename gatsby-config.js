@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 module.exports = {
   siteMetadata: {
     title: `Bare Bones`,
@@ -27,6 +29,18 @@ module.exports = {
         id: 4,
       },
     ],
+    productCategories: [
+      {
+        title: "Categories",
+        uid: "category"
+      },
+    ],
+    blogCategories: [
+      {
+        title: "Author",
+        uid: "author"
+      },
+    ]
   },
   plugins: [
     {

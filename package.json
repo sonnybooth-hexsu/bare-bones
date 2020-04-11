@@ -17,6 +17,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "gatsby": "^2.19.45",
+    "gatsby-cli": "^2.11.7",
     "gatsby-image": "^2.2.44",
     "gatsby-plugin-css-customs": "^0.4.0",
     "gatsby-plugin-manifest": "^2.3.3",
