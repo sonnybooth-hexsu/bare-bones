@@ -22,21 +22,19 @@ const Products = props => {
       <SEO title="Products" />
       <div className="bg-gray-200">
         <div className="container mx-auto pl-6 pr-6 pb-10 md:pl-0 md:pr-0">
-          <div className="grid grid-cols-1 md:grid-cols-5 xl:grid-cols-7 md:gap-12 mb-12">
-            <div className="grid grid-cols-1 md:col-span-2 xl:col-span-2">
-              <div className="mt-8">
-                <div className="bg-white p-10 pt-6">
-                  <h3 className="text-2xl ">Filter</h3>
-                  <Filter
-                    types={productCategories}
-                    items={productsDestructured}
-                    setItemsState={setProductsState}
-                  />
-                </div>
+          <div className="grid grid-cols-1 pt-12 md:grid-cols-5 xl:grid-cols-7 md:gap-12">
+            <div className="grid-cols-1 md:col-span-2 xl:col-span-2">
+              <div className="bg-white p-10 pt-6">
+                <h3 className="text-2xl ">Filter</h3>
+                <Filter
+                  types={productCategories}
+                  items={productsDestructured}
+                  setItemsState={setProductsState}
+                />
               </div>
             </div>
             <div className="col-span-3 xl:col-span-5">
-              <h2 className="text-2xl pt-8 pb-8">
+              <h2 className="text-2xl pb-8">
                 <span className="text-3xl md:text-4xl text-red-500 font-bold">
                   Product list CMS content cards (one)
                 </span>{" "}

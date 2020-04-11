@@ -34,9 +34,11 @@ module.exports = {
         title: "Categories",
         uid: "category"
       },
+    ],
+    blogCategories: [
       {
-        title: "Title",
-        uid: "title"
+        title: "Author",
+        uid: "author"
       },
     ]
   },
