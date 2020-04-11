@@ -1,4 +1,5 @@
 ---
+id: 2
 layout: product
 path: /face-treatment-1
 title: Face treatment 1
