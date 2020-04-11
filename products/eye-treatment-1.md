@@ -1,4 +1,5 @@
 ---
+id: 1
 layout: product
 path: /eye-treatment-1
 title: Eye treatment 1
