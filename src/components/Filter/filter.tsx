@@ -1,69 +1,41 @@
-import React, { useState, SyntheticEvent } from "react"
-import {
-  duplicateCount,
-  filterByKey,
-  filterByKeyMatch,
-} from "../../utils/functions"
+// @ts-nocheck
+import React, { useState } from "react"
+import { filterBySelected, createListOfTypes } from "../../utils/functions"
 
-type CheckboxProps = {
-  title: string
-  count: number
-  isChecked: boolean
-  id: number
-}
-
-type FieldsetProps = {
-  items: []
-  type: string
-  title: string
-  setItemsState: (newItemsState: {}[]) => []
-}
-
-type FilterProps = {
-  items: []
-  types: {
-    uid: string
-    title: string
-  }[]
-  setItemsState: (newItemsState: {}[]) => []
-}
-
-const Fieldset = ({ items, type, title, setItemsState }: FieldsetProps) => {
-  const fieldsetTypes = filterByKey(items, type)
-  const fieldsetTypesList = duplicateCount(fieldsetTypes)
-  const checkboxes = fieldsetTypesList.map(
-    ({ title, count }: CheckboxProps, i: number) => {
-      return {
-        title,
-        count,
-        id: i,
-        isChecked: false,
-      }
-    }
-  )
-
-  const [checkboxesState, setCheckboxesState] = useState(checkboxes)
-
-  const handleCheck = (event: SyntheticEvent) => {
-    const target = event.target as HTMLInputElement
+const Fieldset = ({
+  title,
+  items,
+  checkboxes,
+  fieldsetsState,
+  setFieldsetsState,
+  setItemsState,
+}) => {
+  const handleCheck = () => {
+    const target = event.target
     const value = target.name
     const checked = target.checked
 
-    checkboxesState.forEach((checkbox: CheckboxProps) => {
-      if (checkbox.title === value) checkbox.isChecked = checked
+    fieldsetsState.map(({ checkboxes }) => {
+      return checkboxes.forEach(checkbox => {
+        if (checkbox.title === value) checkbox.isChecked = checked
+      })
     })
 
-    setCheckboxesState(checkboxesState)
+    setFieldsetsState(fieldsetsState)
 
-    const checkedItems = checkboxesState
+    const checkedItems = fieldsetsState
+      .map(({ checkboxes }) => checkboxes)
+      .flat()
       .filter(({ isChecked }: CheckboxProps) => isChecked)
       .map(({ title }: CheckboxProps) => title)
+
+    const checkedTypes = fieldsetsState.map(({ uid }) => uid).flat()
 
     if (!checkedItems.length) {
       return setItemsState(items)
     }
 
-    const newItemsState = filterByKeyMatch(items, type, checkedItems)
+    const newItemsState = filterBySelected(items, checkedTypes, checkedItems)
 
     setItemsState(newItemsState)
   }
@@ -92,18 +64,49 @@ const Fieldset = ({ items, type, title, setItemsState }: FieldsetProps) => {
   )
 }
 
+const Fieldsets = ({ types, items, setItemsState }) => {
+  const fieldsetTypes = createListOfTypes(items, types)
+
+  const fieldsets = fieldsetTypes.map(({ title, uid, checkboxes }) => {
+    return {
+      title,
+      uid,
+      checkboxes: checkboxes.map(({ title, count }, i) => {
+        return {
+          title,
+          count,
+          id: i,
+          isChecked: false,
+        }
+      }),
+    }
+  })
+
+  const [fieldsetsState, setFieldsetsState] = useState(fieldsets)
+
+  if (!fieldsets.length) return null
+
+  return (
+    <>
+      {fieldsetsState.map(({ title, checkboxes }, i) => (
+        <Fieldset
+          key={`fieldset-${i}`}
+          title={title}
+          items={items}
+          checkboxes={checkboxes}
+          fieldsetsState={fieldsetsState}
+          setFieldsetsState={setFieldsetsState}
+          setItemsState={setItemsState}
+        />
+      ))}
+    </>
+  )
+}
+
 export const Filter = ({ items, setItemsState, types }: FilterProps) => {
   return (
     <form>
-      {types.map(({ uid, title }, i) => (
-        <Fieldset
-          key={`filter-fieldset${i}`}
-          items={items}
-          type={uid}
-          setItemsState={setItemsState}
-          title={title}
-        />
-      ))}
+      <Fieldsets types={types} items={items} setItemsState={setItemsState} />
     </form>
   )
 }

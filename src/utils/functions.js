@@ -1,7 +1,3 @@
-export const removeDuplicates = array => {
-  return array.filter((a, b) => array.indexOf(a) === b)
-}
-
 export const duplicateCount = array => {
   const counts = {}
   const countsArray = []
@@ -22,24 +18,44 @@ export const duplicateCount = array => {
   return countsArray
 }
 
-export const filterByKey = (arr, criteria) => {
-  const criteriaList = []
-  arr.map(obj => {
-    criteriaList.push(obj[criteria])
+export const createListOfTypes = (arr, criterias) => {
+  const criteriaLists = []
+
+  criterias.map(({ uid, title }) => {
+    const criteriaList = []
+    arr.map(obj => {
+      criteriaList.push(obj[uid])
+    })
+
+    criteriaLists.push({
+      title,
+      uid,
+      checkboxes: duplicateCount(criteriaList),
+    })
   })
-  return criteriaList
+
+  return criteriaLists
 }
 
-export const filterByKeyMatch = (arr, criteria, values) => {
+export const filterBySelected = (arr, types, values) => {
   const criteriaList = []
 
-  arr.map(obj => {
-    for (const value of values) {
-      if (obj[criteria] === value) {
-        criteriaList.push(obj)
+  types.forEach(type => {
+    arr.map(obj => {
+      for (const value of values) {
+        if (obj[type] === value) {
+          criteriaList.push(obj)
+        }
       }
-    }
+    })
   })
 
-  return criteriaList
+  return criteriaList.reduce((acc, current) => {
+    const x = acc.find(({ id }) => id === current.id)
+    if (!x) {
+      return acc.concat([current])
+    } else {
+      return acc
+    }
+  }, [])
 }

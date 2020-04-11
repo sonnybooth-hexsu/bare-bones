@@ -87,6 +87,7 @@ export const query = graphql`
         node {
           childMarkdownRemark {
             frontmatter {
+              id
               layout
               title
               category

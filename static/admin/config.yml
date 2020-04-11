@@ -9,6 +9,7 @@ collections:
     folder: reviews
     create: true
     fields:
+    - { name: id, label: UniqueID, widget: number}
     - { name: layout, label: Layout, widget: hidden, default: review }
     - { name: path, label: Path }
     - { name: date, label: Date, widget: datetime }
@@ -20,6 +21,7 @@ collections:
     folder: blogs
     create: true
     fields:
+    - { name: id, label: UniqueID, widget: number}
     - { name: layout, label: Layout, widget: hidden, default: blog }
     - { name: path, label: Path }
     - { name: date, label: Date, widget: datetime }
@@ -35,6 +37,7 @@ collections:
     folder: products
     create: true
     fields:
+    - { name: id, label: UniqueID, widget: number}
     - { name: layout, label: Layout, widget: hidden, default: product }
     - { name: path, label: Path }
     - { name: title, label: Title }
