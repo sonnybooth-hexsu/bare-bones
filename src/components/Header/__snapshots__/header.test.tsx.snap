@@ -11,12 +11,15 @@ exports[`<Header /> should match snapshot 1`] = `
       <div
         class="header"
       >
-        <a
+        <div
           class="headerLogo"
-          href="/"
         >
-          Test Site
-        </a>
+          <a
+            href="/"
+          >
+            Test Site
+          </a>
+        </div>
         <nav
           class="headerNavigation"
         >

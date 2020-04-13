@@ -16,6 +16,7 @@ describe("<ProductCard />", () => {
         name="Mr Test"
         message="I am a test review"
         image="test-img.jpg"
+        classes="mb-4"
       />
     )
 
@@ -28,6 +29,7 @@ describe("<ProductCard />", () => {
         name="Mr Test"
         message="I am a test review"
         image="test-img.jpg"
+        classes="mb-4"
       />
     )
 
