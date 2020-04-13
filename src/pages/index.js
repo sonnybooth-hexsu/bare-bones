@@ -25,34 +25,29 @@ const IndexPage = () => (
     {/* Hero Block */}
     <div className="bg-gray-400">
       <div
-        className="hero-block pt-10 lg:grid-cols-12 bg-unset lg:bg-cover lg:h-screen-80 lg:flex lg:pt-0 lg:items-center lg:bg-bottom"
+        className="hero-block pt-10 bg-unset lg:grid-cols-12 lg:bg-cover lg:h-screen-80 lg:flex lg:pt-0 lg:items-end lg:pb-24 lg:bg-bottom"
         style={{ backgroundImage: `url(${heroImageMd})` }}
       >
-        <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0 md:pr-0">
+        <div className="container mx-auto pl-6 pr-6">
           <div className="pl-4 pr-4">
-            <div className="md:w-1/2 flex flex-col">
-              <p className="text-s uppercase tracking-wider font-semibold mb-0 text-center md:text-left">
-                Dr Yalda Jamali
-              </p>
-              <h1 className="uppercase text-center mb-8 leading-tight tracking-tight md:text-left">
-                <span className="italic-text capitalize">Providing a</span>{" "}
-                medical <span className="italic-text">approach to </span>facial
+            <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
+              {/* <p className="text-lg uppercase font-semibold tracking-widest mb-4 text-center lg:text-left">Welcome to</p> */}
+              <h1 className="text-center mb-12 leading-tight tracking-tight md:text-left">
+                Dr Yalda – Providing a{" "}
+                <span className="italic-text">medical</span> approach to facial
                 aesthetics.
               </h1>
-              <p className="text-center font-medium mb-10 md:text-left lg:mb-24">
+              {/* <p className="text-center font-medium mb-4 md:text-left lg:mb-8">
                 Providing a medical approach to facial aesthetics in London
                 &amp; Nottingham. Another sentence here is required
                 approximately this length.
-              </p>
+              </p> */}
               <div>
-                <a
-                  className="btn__primary block md:inline-block mb-4 md:mb-0 lg:mr-4"
-                  href="#"
-                >
+                <a className="btn__primary mb-8 lg:mb-0 lg:mr-4" href="#">
                   Book a consultation
                 </a>
-                <a className="btn__tertiary block md:inline-block" href="#">
-                  See Treatments{" "}
+                <a className="btn__tertiary" href="#">
+                  Treatments{" "}
                   <ArrowRight className="inline mr-2 text-gray-900" />
                 </a>
               </div>
@@ -60,11 +55,7 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <img
-        className="md:hidden lg:hidden"
-        src={heroImageSm}
-        alt="Dr Yalda smiling"
-      />
+      <img className="lg:hidden" src={heroImageSm} alt="Dr Yalda smiling" />
     </div>
     {/*  Logo Quilt*/}
     <div className="bg-gray-200">
