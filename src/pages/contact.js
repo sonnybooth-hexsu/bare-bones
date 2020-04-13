@@ -33,7 +33,7 @@ const Contact = () => {
                 Dr Yalda would love to hear from you
               </p>
               <p className="text-center text-gray-600 pb-6 md:text-left md:pr-10 lg:pb-16">
-                If you'd like to get in touch, please leave a message in the
+                If you&aposd like to get in touch, please leave a message in the
                 quick form. Dr Yalda repond to you within two days.
               </p>
             </div>
