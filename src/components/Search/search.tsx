@@ -54,9 +54,13 @@ export const Search = ({ items }: SearchBarProps) => {
 
   return (
     <div className="flex-grow ml-3 mr-3 h-10 md:relative md:ml-6 md:mr-6 md:flex-grow-0">
+      <label className="hidden" htmlFor="site-search">
+        Search site
+      </label>
       <input
         className="block h-full text-base appearance-none bg-gray-200 text-gray-700 rounded w-full p-2 leading-tight focus:outline-none focus:bg-gray-800"
         type="text"
+        id="site-search"
         placeholder="Search"
         value={searchTerm}
         onChange={handleChange}

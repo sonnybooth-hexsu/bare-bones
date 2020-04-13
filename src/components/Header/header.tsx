@@ -46,9 +46,9 @@ export const Header = ({ siteTitle, navLinks, navToggle }: HeaderProps) => {
     <div className={styles.headerContainer}>
       <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0">
         <div className={styles.header}>
-          <a href="/" className={styles.headerLogo}>
-            {siteTitle}
-          </a>
+          <div className={styles.headerLogo}>
+            <a href="/">{siteTitle}</a>
+          </div>
           {data && <Search items={data.allFile.edges} />}
           <nav className={styles.headerNavigation}>
             <ol>
