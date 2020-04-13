@@ -19,7 +19,7 @@
 }
 
 :global(.slick-slide > div) {
-    margin-right: 3rem;
+    margin-right: 1rem;
     height: 100%;
 }
 
@@ -38,7 +38,10 @@
 }
 
 :global(.slick-dots li button) {
-    font-size: 0;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    opacity: 0;
 }
 
 :global(.slick-dots li.slick-active) {
