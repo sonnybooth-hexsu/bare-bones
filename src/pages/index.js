@@ -11,6 +11,12 @@ import heroImageSm from "../assets/images/hero-image-sm.jpg"
 import heroImageMd from "../assets/images/hero-image-MD.jpg"
 import yaldaAbout from "../assets/images/yalda-about.jpg"
 import yaldaAboutSm from "../assets/images/about-image.png"
+import avatar from "../assets/images/avatar.jpg"
+import mesoestetic from "../assets/images/brand-logo-mesoestetic.svg"
+import perfectPeel from "../assets/images/brand-logo-perfect-peel.png"
+import profhilo from "../assets/images/brand-logo-profhilo.svg"
+import teoxane from "../assets/images/brand-logo-teoxane.svg"
+import zo from "../assets/images/brand-logo-zo.png"
 
 import { Clock, Watch, Calendar, Tag, Check, ArrowRight } from "react-feather"
 
@@ -20,7 +26,7 @@ const IndexPage = () => (
     {/* Hero Block */}
     <div className="bg-gray-400">
       <div
-        className="hero-block pt-10 md:grid-cols-12 bg-unset md:bg-cover md:h-screen-80 md:flex md:pt-0 md:items-center md:bg-bottom"
+        className="hero-block pt-10 lg:grid-cols-12 bg-unset lg:bg-cover lg:h-screen-80 lg:flex lg:pt-0 lg:items-center lg:bg-bottom"
         style={{ backgroundImage: `url(${heroImageMd})` }}
       >
         <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0 md:pr-0">
@@ -36,12 +42,12 @@ const IndexPage = () => (
               </p>
               <div>
                 <a
-                  className="btn__primary inline-block mb-4 md:mb-0 lg:mr-4"
+                  className="btn__primary block md:inline-block mb-4 md:mb-0 lg:mr-4"
                   href="#"
                 >
                   Book a consultation
                 </a>
-                <a className="btn__tertiary inline-block" href="#">
+                <a className="btn__tertiary block md:inline-block" href="#">
                   See Treatments{" "}
                   <ArrowRight className="inline mr-2 text-gray-900" />
                 </a>
@@ -50,7 +56,70 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <img className="md:hidden" src={heroImageSm} alt="Dr Yalda smiling" />
+      <img
+        className="md:hidden lg:hidden"
+        src={heroImageSm}
+        alt="Dr Yalda smiling"
+      />
+    </div>
+    {/* Logo Quilt Title
+        <div className="bg-gray-200">
+      <div className="container mx-auto pr-6 pl-6">
+        <div className="pl-4 pr-4">
+          <h2 className="text-2xl pt-8 pb-8">
+            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+              Logo Quilt
+            </span>{" "}
+            - To display clients, partnerships, social proof ETC
+          </h2>
+        </div>
+      </div>
+    </div> */}
+    {/*  Logo Quilt*/}
+    <div className="bg-gray-200">
+      <div className="container mx-auto pl-6 pr-6 pt-10 pb-10">
+        <div className="grid gap-6 pl-4 pr-4 lg:grid-cols-6 ">
+          <p className="text-sm font-medium text-center text-gray-600 md:items-center lg:flex lg:text-left ">
+            Partnerships with leading aesthetics brands:
+          </p>
+          <div className="w-full h-16 flex items-center justify-center mb-5 lg:mb-0">
+            {" "}
+            <img
+              className="h-full p-4 lg:p-4"
+              src={teoxane}
+              alt="Teoxane logo"
+            />
+          </div>
+          <div className="h-16 flex items-center justify-center mb-5 lg:mb-0">
+            {" "}
+            <img
+              className="h-full p-4 lg:p-4"
+              src={profhilo}
+              alt="Profhilo logo"
+            />
+          </div>
+          <div className="w-full h-16 flex items-center justify-center mb-5 lg:mb-0">
+            {" "}
+            <img className="p-8 lg:p-4" src={zo} alt="Zo Skin Health logo" />
+          </div>
+          <div className="w-full h-16 flex items-center justify-center mb-5 lg:mb-0">
+            {" "}
+            <img
+              className="p-6 lg:p-2"
+              src={perfectPeel}
+              alt="Perfect Peel logo"
+            />
+          </div>
+          <div className="w-full h-16 flex items-center justify-center mb-5 lg:mb-0">
+            {" "}
+            <img
+              className="h-full p-4 lg:p-4"
+              src={mesoestetic}
+              alt="Mesoestetic logo"
+            />
+          </div>
+        </div>
+      </div>
     </div>
     {/* Buttons Title */}
     <div className="bg-gray-200">
@@ -251,8 +320,8 @@ const IndexPage = () => (
     </div>
     {/* Treatment Content */}
     <div className="container mx-auto pr-6 pl-6">
-      <div className="grid grid-cols-1 grid md:grid-cols-12 gap-6 pt-20 pb-20 pl-4 pr-4">
-        <div className="md:col-span-8">
+      <div className="grid grid-cols-1 grid lg:grid-cols-12 gap-6 pt-20 pb-20 pl-4 pr-4">
+        <div className="lg:col-span-8">
           <h2>About This Treatment</h2>
           <p className="mb-8">
             The revolutionary treatment has been around since the 1980’s and
@@ -263,7 +332,7 @@ const IndexPage = () => (
             months. They are also used for treatment of hyperhidrosis (excess
             sweating) and bruxism (involuntary habitual grinding of the teeth).
           </p>
-          <div className="border-solid border-l-4 border-red-500 pl-6 md:pr-48 md:ml-10">
+          <div className="border-solid border-l-4 border-red-500 pl-6 lg:pr-48 lg:ml-10">
             <h5 className="text-2xl leading-tight mt-12 mb-16 md:text-3xl">
               &quot;I have had lip fillers with Yalda for a while now and the
               results are amazing. Not only is she professional but she makes
@@ -303,7 +372,7 @@ const IndexPage = () => (
           </p>
         </div>
         {/* Treatment Content/Overview Attributes */}
-        <div className="md:col-start-10 md:col-span-3">
+        <div className="lg:col-start-10 lg:col-span-3">
           <dl className="mb-8">
             <div className="flex justify-between pb-5 pt-5 border-solid border-t-2 border-gray-900 flex justify-between">
               <dt>
@@ -447,8 +516,8 @@ const IndexPage = () => (
       </div>
     </div>
     {/* 50/50 Header*/}
-    <div className="grid grid-rows-2 md:grid-cols-2 md:grid-rows-1">
-      <div className="flex flex-col justify-center bg-white pt-20 pb-20 pr-8 pl-8 md:pt-0 md:pb-0 md:h-full md:pr-12 md:pl-12 lg:pr-20 lg:pl-20 xl:pr-50 xl:pl-50">
+    <div className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1">
+      <div className="flex flex-col justify-center bg-white pt-20 pb-20 pr-8 pl-8 lg:pt-0 lg:pb-0 lg:h-full md:pr-12 md:pl-12 lg:pr-20 lg:pl-20 xl:pr-50 xl:pl-50">
         <div className="pl-4 pr-4">
           <h1 className="text-3xl mb-2 md:text-6xl">Soft Tissue Fillers</h1>
           <p className="mb-12">
@@ -458,7 +527,7 @@ const IndexPage = () => (
           <button className="btn__primary">Book a consultation</button>
         </div>
       </div>
-      <div className="md:h-full">
+      <div className="lg:h-full">
         <img
           src={treatmentHeader}
           alt="Close up of model in profile pose, with head turned to the left."
@@ -541,6 +610,157 @@ const IndexPage = () => (
           <button className="bg-black hover:bg-gray-900 text-white font-light py-6 px-12 inline">
             Book a consultation
           </button>
+        </div>
+      </div>
+    </div>
+    {/*  Blog Post Title Title */}
+    <div className="bg-gray-200">
+      <div className="container mx-auto pr-6 pl-6">
+        <div className="pl-4 pr-4">
+          <h2 className="text-2xl pt-8 pb-8">
+            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+              Blog Post Title
+            </span>{" "}
+            - Just another hero title, aligned center
+          </h2>
+        </div>
+      </div>
+    </div>
+    {/*  Blog Post Title */}
+    <div className="bg-white">
+      <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
+        <div className="pl-4 pr-4 flex flex-col">
+          <p className="text-center text-xs font-semi-bold">Category</p>
+          <h1 className="mb-12 mt-2 md:text-6xl leading-tight text-center font-normal">
+            Considerations for darker skin types when choosing in-clinic skin
+            treatments.
+          </h1>
+          <p className="text-center font-semi-bold">
+            Cleansing is an essential step in any skin regime. Learn how to
+            properly double cleanse your skin.
+          </p>
+        </div>
+      </div>
+    </div>
+    {/*  Blog Post Title  */}
+    <div className="bg-gray-200">
+      <div className="container mx-auto pr-6 pl-6">
+        <div className="pl-4 pr-4">
+          <h2 className="text-2xl pt-8 pb-8">
+            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+              Blog Post
+            </span>{" "}
+            - Blog post
+          </h2>
+        </div>
+      </div>
+    </div>
+    {/* Blog Post */}
+    <div className="container mx-auto pr-6 pl-6">
+      <div className="grid grid-cols-1 grid lg:grid-cols-12 gap-6 pt-20 pb-20 pl-4 pr-4">
+        {/* Blog Post Avatar, Posted by, Date Stamp */}
+        <div className="lg:col-span-2">
+          <div className="flex items-center">
+            <div className="rounded-full h-12 w-12 mr-2 mr-2 overflow-hidden h-16 w-16">
+              <img
+                className="h-full w-full"
+                src={avatar}
+                alt="Dr Yalda Avatar"
+              />
+            </div>
+            <div>
+              <p className="pb-0 mb-0 text-md font-medium tracking-wide">
+                By Dr Yalda
+              </p>
+              <p className="pb-0 mb-0 text-gray-600 text-sm font-medium">
+                8th Oct, 2020
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* Fullwidth Blog Image */}
+        <div className="lg:col-span-8">
+          <div className="mt-0 mb-8">
+            <div className="">
+              <img
+                className="w-full"
+                src={yaldaAbout}
+                alt="Dr Yalda slightly smiling"
+              />
+            </div>
+          </div>
+          {/* Main body blog content */}
+          <p className="mb-8">
+            The revolutionary treatment has been around since the 1980’s and
+            with very few risks and no recovery time it still remains one of the
+            most popular non-surical cosmetic treatments. Botulinum Toxin
+            injections minimises the appearance of lines and wrinkles by
+            temporarily relaxing specific muscles, with results lasting 3 to 4
+            months. They are also used for treatment of hyperhidrosis (excess
+            sweating) and bruxism (involuntary habitual grinding of the teeth).
+          </p>
+          <h2>About This Treatment</h2>
+          <p className="mb-8">
+            The revolutionary treatment has been around since the 1980’s and
+            with very few risks and no recovery time it still remains one of the
+            most popular non-surical cosmetic treatments. Botulinum Toxin
+            injections minimises the appearance of lines and wrinkles by
+            temporarily relaxing specific muscles, with results lasting 3 to 4
+            months. They are also used for treatment of hyperhidrosis (excess
+            sweating) and bruxism (involuntary habitual grinding of the teeth).
+          </p>
+          <h2>More about This Treatment</h2>
+          <p className="mb-8">
+            The revolutionary treatment has been around since the 1980’s and
+            with very few risks and no recovery time it still remains one of the
+            most popular non-surical cosmetic treatments. Botulinum Toxin
+            injections minimises the appearance of lines and wrinkles by
+            temporarily relaxing specific muscles, with results lasting 3 to 4
+            months. They are also used for treatment of hyperhidrosis (excess
+            sweating) and bruxism (involuntary habitual grinding of the teeth).
+          </p>
+          <h2>More about This Treatment</h2>
+          <p className="mb-8">
+            The revolutionary treatment has been around since the 1980’s and
+            with very few risks and no recovery time it still remains one of the
+            most popular non-surical cosmetic treatments. Botulinum Toxin
+            injections minimises the appearance of lines and wrinkles by
+            temporarily relaxing specific muscles, with results lasting 3 to 4
+            months. They are also used for treatment of hyperhidrosis (excess
+            sweating) and bruxism (involuntary habitual grinding of the teeth).
+          </p>
+          <h2>More about This Treatment</h2>
+          <p className="mb-8">
+            The revolutionary treatment has been around since the 1980’s and
+            with very few risks and no recovery time it still remains one of the
+            most popular non-surical cosmetic treatments. Botulinum Toxin
+            injections minimises the appearance of lines and wrinkles by
+            temporarily relaxing specific muscles, with results lasting 3 to 4
+            months. They are also used for treatment of hyperhidrosis (excess
+            sweating) and bruxism (involuntary habitual grinding of the teeth).
+          </p>
+        </div>
+        {/* Right hand column (Share Links) */}
+        <div className="lg:col-span-2">
+          <div className="flex items-center">
+            <a
+              href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+              className="twitter-share-button"
+              data-show-count="false"
+            >
+              Tweet
+            </a>
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+          </div>
+          <div
+            className="fb-share-button"
+            data-href="https://www.your-domain.com/your-page.html"
+            data-layout="button_count"
+          ></div>
         </div>
       </div>
     </div>
