@@ -1,7 +1,7 @@
 ---
 id: 4
 layout: review
-path: Kat
+path: /kat
 date: 2020-04-13T13:22:39.039Z
 message: I am a short review
 author: Kat
