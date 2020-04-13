@@ -1,7 +1,7 @@
 @tailwind base;
 
 h1 {
-    @apply text-4xl;
+  @apply text-6xl;
 }
 
 h2 {
@@ -20,6 +20,10 @@ body {
   font-size: 17.6px;
 }
 
+p {
+  letter-spacing: 1;
+}
+
 .p-2 {
   font-family: big-caslon-fb, serif;
   letter-spacing: .02em;
@@ -27,18 +31,74 @@ body {
 
 
 .paragraph-large {
-  font-family: big-caslon-fb, serif;
-  letter-spacing: .02em;
+  letter-spacing: .025em;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 1.8;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: big-caslon-fb, serif;
+  font-family: myriad-pro, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-feature-settings: 'calt', 'clig', 'kern', 'liga', 'locl', 'rlig';
   letter-spacing: 0.025em;
+}
+
+.btn__primary {
+  background-color: #2E2C73;
+  padding: 24px 40px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+
+  &:hover {
+    background-color: #7271A6;
+    transition: color .30s ease-in-out,background-color .30s ease-in-out,border-color .30s ease-in-out,box-shadow .30s ease-in-out; 
+  }
+}
+
+.btn__secondary {
+  background-color: #7271A6;
+  padding: 24px 40px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+
+  &:hover {
+    background-color: #2E2C73;
+    transition: color .30s ease-in-out,background-color .30s ease-in-out,border-color .30s ease-in-out,box-shadow .30s ease-in-out; 
+  }
+}
+
+.btn__secondary__outline {
+  background-color: transparent;
+  border: 2px #2E2C73 solid;
+  padding: 22px 38px;
+  color: #2E2C73;
+  font-weight: 400;
+  text-align: center;
+
+  &:hover {
+    background-color: #2E2C73;
+    color: #fff;
+    transition: color .30s ease-in-out,background-color .30s ease-in-out,border-color .30s ease-in-out,box-shadow .30s ease-in-out; 
+  }
+}
+
+.btn__tertiary {
+  background-color: transparent;
+  padding: 24px 40px;
+  color: #2E2C73;
+  font-weight: 400;
+  text-align: center;
+
+  &:hover {
+    background-color: #7271A6;
+    padding: 24px 40px;
+    color: #fff;
+    transition: color .30s ease-in-out,background-color .30s ease-in-out,border-color .30s ease-in-out,box-shadow .30s ease-in-out; 
+  }
 }
 
 .hero-block {

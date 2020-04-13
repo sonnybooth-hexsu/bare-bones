@@ -9,7 +9,7 @@ exports[`<ProductCard /> should match snapshot 1`] = `
       class="flex"
     >
       <div
-        class="rounded-full h-12 w-12 mr-2 mb-4 overflow-hidden"
+        class="rounded-full mr-2 mb-4 overflow-hidden h-16 w-16"
       >
         <img
           alt="Testimonial client face"
