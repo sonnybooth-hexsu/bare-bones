@@ -3,8 +3,6 @@
 @value colorPrimary, colorBlack, colorWhite from colors;
 @value fromMedium from mqs;
 
-@import "../../styles/mqs.module.css";
-
 .footerContainer {
     background-color: colorBlack;
 }
