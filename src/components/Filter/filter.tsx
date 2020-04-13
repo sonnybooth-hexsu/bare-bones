@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React, { useState, SyntheticEvent } from "react"
 import { filterBySelected, createListOfTypes } from "../../utils/functions"
 

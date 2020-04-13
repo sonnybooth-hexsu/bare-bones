@@ -10,7 +10,7 @@ export const CTABlock = () => {
             Book your appointment with Dr Yalda today. A bespoke consultation,
             without obligation, is provided before each treatment.
           </p>
-          <a className="btn__primary inline-block mt-8" href="#">
+          <a className="btn__primary inline-block mt-8" href="/contact">
             Book a consultation
           </a>
         </div>

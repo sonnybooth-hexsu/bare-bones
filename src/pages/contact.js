@@ -29,7 +29,7 @@ const Contact = () => {
         <div className="pl-4 pr-4">
           <div className="md:flex md:flex-wrap lg:flex-col lg:relative">
             <div className="md:order-1 md:w-1/2">
-              <p className="text-center text-2xl pb-2 md:text-left md:pr-10 font-semibold">
+              <p className="text-center font-semibold text-2xl pb-2 md:text-left md:pr-10">
                 Dr Yalda would love to hear from you
               </p>
               <p className="text-center text-gray-600 pb-6 md:text-left md:pr-10 lg:pb-16">
@@ -66,7 +66,7 @@ const Contact = () => {
                   </div>
                   <div className="w-full md:w-1/2 px-3 lg:w-full">
                     <label
-                      className="block uppercase tracking-wide text-gray-700 text-xs font-bold 1 mb-2"
+                      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                       htmlFor="last-name"
                     >
                       Email Address *
@@ -83,13 +83,13 @@ const Contact = () => {
                 <div className="flex flex-wrap -mx-3 mb-6">
                   <div className="w-full px-3">
                     <label
-                      className="block uppercase tracking-wide text-gray-700 text-xs font-bold 1 mb-2"
+                      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                       htmlFor="message"
                     >
                       Message *
                     </label>
                     <textarea
-                      className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200  py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-40"
+                      className="appearance-none h-40 block w-full bg-gray-200 text-gray-700 border border-gray-200  py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       id="message"
                       name="message"
                       placeholder="Please leave your message here, be as brief or detailed as you like."
@@ -97,7 +97,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <button
-                  className="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2  w-full px-4 py-4"
+                  className="text-sm border-4 text-white w-full px-4 py-4 flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700"
                   type="submit"
                 >
                   Submit

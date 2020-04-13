@@ -10,7 +10,6 @@ import signature from "../assets/images/signature.svg"
 import heroImageSm from "../assets/images/hero-image-sm.jpg"
 import heroImageMd from "../assets/images/hero-image-MD.jpg"
 import yaldaAbout from "../assets/images/yalda-about.jpg"
-import yaldaAboutSm from "../assets/images/about-image.png"
 import avatar from "../assets/images/avatar.jpg"
 import mesoestetic from "../assets/images/brand-logo-mesoestetic.svg"
 import perfectPeel from "../assets/images/brand-logo-perfect-peel.png"
@@ -105,7 +104,7 @@ const IndexPage = () => (
           <div className="w-full h-16 flex items-center justify-center mb-5 lg:mb-0">
             {" "}
             <img
-              className="p-12 lg:p-2" 
+              className="p-12 lg:p-2"
               src={perfectPeel}
               alt="Perfect Peel logo"
             />
@@ -519,7 +518,9 @@ const IndexPage = () => (
     <div className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1">
       <div className="flex flex-col justify-center bg-white pt-20 pb-20 pr-8 pl-8 lg:pt-0 lg:pb-0 lg:h-full md:pr-12 md:pl-12 lg:pr-20 lg:pl-20 xl:pr-50 xl:pl-50">
         <div className="pl-4 pr-4">
-          <h1 className="text-5xl leading-tight tracking-normal mb-2 md:text-6xl">Soft Tissue Fillers</h1>
+          <h1 className="text-5xl leading-tight tracking-normal mb-2 md:text-6xl">
+            Soft Tissue Fillers
+          </h1>
           <p className="mb-12">
             Instantly soften fine lines &amp; wrinkles, restore age-related
             volume loss and augment and contour facial features.
