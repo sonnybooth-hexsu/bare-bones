@@ -1,5 +1,9 @@
 module.exports = {
   theme: {
+    fontFamily: {
+      sans: ["myriad-pro", "sans-serif"],
+      serif: ["orpheuspro", "sans-serif"],
+    },
     extend: {
       colors: {
         jacarta: "#2E2C73;",

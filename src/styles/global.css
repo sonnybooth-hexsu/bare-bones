@@ -39,19 +39,21 @@
 
 h1 {
   @apply text-6xl;
+  @apply font-serif;
 }
 
 h2 {
   @apply text-xl;
+  @apply font-serif;
 }
 
 h3 {
   @apply text-lg;
+  @apply font-serif;
 }
 
 /* Hacky code */
 body {
-  font-family: myriad-pro, sans-serif;
   font-weight: 300;
   font-style: normal;
   letter-spacing: 1;
@@ -62,21 +64,8 @@ p {
   letter-spacing: 1;
 }
 
-.p-2 {
-  font-family: big-caslon-fb, serif;
-  letter-spacing: .02em;
-}
-
-.paragraph-large {
-  letter-spacing: .025em;
-  font-size: 24px;
-  line-height: 1.8;
-}
-
 h1, h2, h3, h4, h5, h6 {
-  font-family: big-caslon-fb, serif;
-  font-family: myriad-pro, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
   font-feature-settings: 'calt', 'clig', 'kern', 'liga', 'locl', 'rlig';
   letter-spacing: 0.025em;

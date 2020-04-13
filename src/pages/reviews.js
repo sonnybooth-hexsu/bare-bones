@@ -16,6 +16,7 @@ const Reviews = props => {
   return (
     <Layout>
       <SEO title="Reviews" />
+      {/*  Reviews Title */}
       <div className="bg-gray-200">
         <div className="container mx-auto pl-6 pr-6 pb-10 md:pl-0 md:pr-0">
           <div className="grid grid-cols-12 gap-4">

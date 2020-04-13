@@ -26,20 +26,22 @@ const IndexPage = () => (
     {/* Hero Block */}
     <div className="bg-gray-400">
       <div
-        className="hero-block pt-10 lg:grid-cols-12 bg-unset lg:bg-cover lg:h-screen-80 lg:flex lg:pt-0 lg:items-center lg:bg-bottom"
+        className="hero-block pt-10 bg-unset lg:grid-cols-12 lg:bg-cover lg:h-screen-80 lg:flex lg:pt-0 lg:items-end lg:pb-24 lg:bg-bottom"
         style={{ backgroundImage: `url(${heroImageMd})` }}
       >
-        <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0 md:pr-0">
+        <div className="container mx-auto pl-6 pr-6">
           <div className="pl-4 pr-4">
-            <div className="md:w-1/2 flex flex-col">
-              <h1 className="text-5xl text-center mb-0 md:text-left md:text-7xl">
-                Dr Yalda Jamali
+            <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
+              {/* <p className="text-lg uppercase font-semibold tracking-widest mb-4 text-center lg:text-left">Welcome to</p> */}
+              <h1 className="text-center mb-12 leading-tight tracking-tight md:text-left">
+                Dr Yalda – Providing a <i className="lowercase">medical</i>{" "}
+                approach to facial aesthetics.
               </h1>
-              <p className="text-center font-medium mb-10 md:text-left lg:mb-24">
+              {/* <p className="text-center font-medium mb-4 md:text-left lg:mb-8">
                 Providing a medical approach to facial aesthetics in London
                 &amp; Nottingham. Another sentence here is required
                 approximately this length.
-              </p>
+              </p> */}
               <div>
                 <a
                   className={`${buttons.btnPrimary} block md:inline-block mb-4 md:mb-0 lg:mr-4`}
@@ -59,11 +61,7 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <img
-        className="md:hidden lg:hidden"
-        src={heroImageSm}
-        alt="Dr Yalda smiling"
-      />
+      <img className="lg:hidden" src={heroImageSm} alt="Dr Yalda smiling" />
     </div>
     {/*  Logo Quilt*/}
     <div className="bg-gray-200">
@@ -174,8 +172,9 @@ const IndexPage = () => (
       <div className="pl-4 pr-4">
         <div className="md:flex md:flex-wrap lg:flex-col lg:relative">
           <div className="md:order-1 md:w-1/2 lg:pr-3">
-            <h3 className="text-4xl leading-tight tracking-normal mb-6 md:text-5xl">
-              Enhance <i>&amp;</i> restore your natural beauty.
+            <h3 className="uppercase text-5xl leading-tight tracking-tight mb-6 md:text-6xl">
+              Enhance and <i className="lowercase">restore</i> your{" "}
+              <i className="lowercase">natural</i> beauty.
             </h3>
           </div>
           <div className="md:w-full md:order-3 lg:absolute lg:w-1/2 lg:top-0 lg:right-0">
@@ -187,7 +186,7 @@ const IndexPage = () => (
           </div>
           <div className="md:order-2 md:w-1/2 lg:pr-10 lg:pb-20">
             <div>
-              <p className="mb-8 text-gray-700">
+              <p className="mb-4 text-gray-900">
                 Dr Yalda is an expert in identifying the treatments that will
                 help you look and feel your best. Her experience and artistic
                 eye in conjunction with using the most premium brands allows her
@@ -195,22 +194,22 @@ const IndexPage = () => (
               </p>
               <ul>
                 <li className="pb-1 pt-1">
-                  <Check className="inline mr-2 text-gray-700" />
-                  <p className="text-gray-700 inline">
+                  <Check className="inline mr-2 text-gray-900" />
+                  <p className="text-gray-900 inline">
                     Reducing the signs of ageing
                   </p>
                 </li>
                 <li className="pb-1 pt-1">
                   {" "}
-                  <Check className="inline mr-2 text-gray-700" />
-                  <p className="text-gray-700 inline">
+                  <Check className="inline mr-2 text-gray-900" />
+                  <p className="text-gray-900 inline">
                     Defining your facial features
                   </p>
                 </li>
                 <li className="pb-1 pt-1">
                   {" "}
-                  <Check className="inline mr-2 text-gray-700" />
-                  <p className="text-gray-700 inline">
+                  <Check className="inline mr-2 text-gray-900" />
+                  <p className="text-gray-900 inline">
                     Improving your overall skin health
                   </p>
                 </li>
@@ -238,8 +237,8 @@ const IndexPage = () => (
       <div className="pl-4 pr-4">
         <div className="md:flex  md:flex-wrap lg:flex-col lg:relative">
           <div className="md:order-2 md:w-1/2 lg:pr-3">
-            <h3 className="text-4xl leading-tight tracking-normal mb-6 md:text-5xl">
-              From a registered, medical doctor.
+            <h3 className="uppercase text-5xl leading-tight tracking-tight mb-6 md:text-6xl">
+              From a registered, <i className="lowercase">medical</i> doctor.
             </h3>
           </div>
           <div className="md:w-full md:order-1 lg:w-1/2">
@@ -251,7 +250,7 @@ const IndexPage = () => (
           </div>
           <div className="md:order-3 md:w-1/2 lg:pr-10 lg:pb-20">
             <div>
-              <p className="mb-10 text-gray-700">
+              <p className="mb-10 text-gray-900">
                 Dr Yalda is an expert in identifying the treatments that will
                 help you look and feel your best. Her experience and artistic
                 eye in conjunction with using the most premium brands allows her
@@ -322,7 +321,7 @@ const IndexPage = () => (
     <div className="container mx-auto pr-6 pl-6">
       <div className="grid grid-cols-1 grid lg:grid-cols-12 gap-6 pt-20 pb-20 pl-4 pr-4">
         <div className="lg:col-span-8">
-          <h2>About This Treatment</h2>
+          <p className="font-semibold">About This Treatment</p>
           <p className="mb-8">
             The revolutionary treatment has been around since the 1980’s and
             with very few risks and no recovery time it still remains one of the
@@ -333,14 +332,16 @@ const IndexPage = () => (
             sweating) and bruxism (involuntary habitual grinding of the teeth).
           </p>
           <div className="border-solid border-l-4 border-red-500 pl-6 lg:pr-48 lg:ml-10">
-            <h5 className="text-2xl leading-tight mt-12 mb-16 md:text-3xl">
+            <h5 className="text-2xl leading-tight tracking-tight mt-12 mb-16 md:text-3xl text">
               &quot;I have had lip fillers with Yalda for a while now and the
-              results are amazing. Not only is she professional but she makes
-              you feel at ease. It’s been nearly 6 months since my fillers and
-              my lips are still juicy as ever!&quot;
+              results are <i className="lowercase">amazing.</i> Not only is she
+              professional but she makes you feel{" "}
+              <i className="lowercase">at ease.</i> It’s been nearly{" "}
+              <i className="lowercase">6 months</i> since my fillers and my lips
+              are still juicy as ever!&quot;
             </h5>
           </div>
-          <h2>More about This Treatment</h2>
+          <p className="font-semibold">About This Treatment</p>
           <p className="mb-8">
             The revolutionary treatment has been around since the 1980’s and
             with very few risks and no recovery time it still remains one of the
@@ -350,7 +351,7 @@ const IndexPage = () => (
             months. They are also used for treatment of hyperhidrosis (excess
             sweating) and bruxism (involuntary habitual grinding of the teeth).
           </p>
-          <h2>More about This Treatment</h2>
+          <p className="font-semibold">About This Treatment</p>
           <p className="mb-8">
             The revolutionary treatment has been around since the 1980’s and
             with very few risks and no recovery time it still remains one of the
@@ -360,7 +361,7 @@ const IndexPage = () => (
             months. They are also used for treatment of hyperhidrosis (excess
             sweating) and bruxism (involuntary habitual grinding of the teeth).
           </p>
-          <h2>More about This Treatment</h2>
+          <p className="font-semibold">About This Treatment</p>
           <p className="mb-8">
             The revolutionary treatment has been around since the 1980’s and
             with very few risks and no recovery time it still remains one of the
@@ -372,44 +373,58 @@ const IndexPage = () => (
           </p>
         </div>
         {/* Treatment Content/Overview Attributes */}
-        <div className="lg:col-start-10 lg:col-span-3">
+        <div className="lg:col-start-10 lg:col-span-3 bg-gray-100">
           <dl className="mb-8">
-            <div className="flex justify-between pb-5 pt-5 border-solid border-t-2 border-gray-900 flex justify-between">
+            <div className="flex justify-between pb-5 pt-5 border-solid border-t border-gray-900 flex justify-between">
               <dt>
                 <div className="flex items-center">
-                  <Clock size="28" className="inline mr-1 text-gray-900" />
-                  <p className="inline font-semibold">Treatment Time</p>
+                  <Clock size="28" className="inline mr-2 text-gray-900" />
+                  <p className="inline font-semibold uppercase tracking-wide">
+                    Treatment Time
+                  </p>
                 </div>
               </dt>
-              <dd className="text-right inline">10 Minutes</dd>
+              <dd className="text-right inline">
+                <h6>10 Minutes</h6>
+              </dd>
             </div>
-            <div className="flex justify-between pb-5 pt-5 border-solid border-t-2 border-gray-900 flex justify-between">
+            <div className="flex justify-between pb-5 pt-5 border-solid border-t border-gray-900 flex justify-between">
               <dt>
                 <div className="flex items-center">
-                  <Watch size="28" className="inline mr-1 text-gray-900" />
-                  <p className="inline font-semibold">Downtime</p>
+                  <Watch size="28" className="inline mr-2 text-gray-900" />
+                  <p className="inline font-semibold uppercase tracking-wide">
+                    Downtime
+                  </p>
                 </div>
               </dt>
-              <dd className="text-right inline">One day</dd>
+              <dd className="text-right inline">
+                <h6>One day</h6>
+              </dd>
             </div>
-            <div className="flex justify-between pb-5 pt-5 border-solid border-t-2 border-gray-900 flex justify-between">
+            <div className="flex justify-between pb-5 pt-5 border-solid border-t border-gray-900 flex justify-between">
               <dt>
                 <div className="flex items-center">
-                  <Calendar size="28" className="inline mr-1 text-gray-900" />
-                  <p className="inline font-semibold">Results Last</p>
+                  <Calendar size="28" className="inline mr-2 text-gray-900" />
+                  <p className="inline font-semibold uppercase tracking-wide">
+                    Results
+                  </p>
                 </div>
               </dt>
-              <dd className="text-right inline">3–4 Months</dd>
+              <dd className="text-right inline">
+                <h6>3–4 Months</h6>
+              </dd>
             </div>
-            <div className="flex justify-between pb-5 pt-5 border-solid border-t-2 border-b-2 border-gray-900 flex justify-between">
+            <div className="flex justify-between pb-5 pt-5 border-solid border-t border-b border-gray-900 flex justify-between">
               <dt>
                 <div className="flex items-center">
-                  <Tag size="28" className="inline mr-1 text-gray-900" />
-                  <p className="inline font-semibold">Price</p>
+                  <Tag size="28" className="inline mr-2 text-gray-900" />
+                  <p className="text-s inline font-semibold uppercase tracking-wide">
+                    Price
+                  </p>
                 </div>
               </dt>
-              <dd className="text-right inline border-solid border-gray-900">
-                Staring from £100
+              <dd className="text-right inline">
+                <h6>From £100</h6>
               </dd>
             </div>
           </dl>
@@ -433,10 +448,11 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid gap-6 pt-20 pb-20">
         <div className="pl-4 pr-4 grid gap-6 lg:grid-cols-2">
-          <h2 className="text-4xl leading-tight tracking-normal md:text-6xl md:pr-10">
-            Look &amp; feel your best.
+          <h2 className="uppercase text-4xl leading-tight tracking-tight md:text-6xl md:pr-10">
+            Look and <i className="lowercase">feel</i> your{" "}
+            <i className="lowercase">very</i> best.
           </h2>
-          <p className="paragraph-large">
+          <p className="leading-relaxed tracking-wide text-xl md:text-2xl ">
             Dr Yalda offers a range of cosmetic injectables and skin treatment
             plans tailored to your concerns. From facial contouring to subtle
             but effective &apos;tweakments&apos; and the use of medical-grade
@@ -462,8 +478,8 @@ const IndexPage = () => (
     {/* About Content */}
     <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid gap-6 pt-20 pb-20">
       <div className="pl-4 pr-4 grid gap-6 lg:grid-cols-2">
-        <h2 className="text-4xl leading-tight tracking-normal md:text-6xl md:pr-20">
-          A little bit about Dr Yalda.
+        <h2 className="uppercase text-4xl leading-tight tracking-tight md:text-6xl md:pr-20">
+          A <i className="lowercase">little bit</i> about Dr Yalda Jamali.
         </h2>
         <div>
           <p className="mb-4">
@@ -519,7 +535,7 @@ const IndexPage = () => (
     <div className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1">
       <div className="flex flex-col justify-center bg-white pt-20 pb-20 pr-8 pl-8 lg:pt-0 lg:pb-0 lg:h-full md:pr-12 md:pl-12 lg:pr-20 lg:pl-20 xl:pr-50 xl:pl-50">
         <div className="pl-4 pr-4">
-          <h1 className="text-4xl leading-tight tracking-normal mb-2 md:text-6xl">
+          <h1 className="text-4xl leading-tight tracking-tight mb-2 md:text-6xl">
             Soft Tissue Fillers
           </h1>
           <p className="mb-12">
@@ -552,7 +568,7 @@ const IndexPage = () => (
       </div>
     </div>
     {/* Fullwidth Image*/}
-    <div className="pt-20 pb-20">
+    <div className="pt-8 pb-8">
       <div className="lg:pl-8 lg:pr-8">
         <img
           className="w-full"
@@ -578,14 +594,27 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4">
-          <h1 className="text-4xl leading-tight tracking-normal pt-20 pb-20 mb-12 mt-2 md:text-6xl md:leading-snug">
-            <i className="border-b-4 border-solid border-black">Email</i>, or
-            leave a message in the{" "}
-            <i className="border-b-4 border-solid border-black">contact form</i>
+          <h1 className="mb-12 text-4xl leading-tight tracking-tight pt-20 pb-20 md:text-6xl md:leading-snug md:tracking-tighter">
+            <p className="text-xs uppercase tracking-wider font-semibold mb-6">
+              Get in touch
+            </p>
+            Send an{" "}
+            <i className="border-b-2 border-solid border-black uppercase">
+              Email
+            </i>
+            , or leave a message in the{" "}
+            <span className="italic-text border-b-2 border-solid border-black uppercase">
+              contact form
+            </span>
             . View work on{" "}
-            <i className="border-b-4 border-solid border-black">Instagram</i>.
-            See reviews on{" "}
-            <i className="border-b-4 border-solid border-black">Facebook</i>.
+            <i className="border-b-2 border-solid border-black uppercase">
+              Instagram
+            </i>
+            . See reviews on{" "}
+            <i className="border-b-2 border-solid border-black uppercase">
+              Facebook
+            </i>
+            .
           </h1>
         </div>
       </div>
@@ -607,9 +636,13 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4">
-          <h1 className="text-4xl leading-tight tracking-normal mb-12 mt-2 md:text-6xl pt-20 pb-20 md:leading-snug">
-            Dr Yalda offers a range of non-surgical cosmetic treatments using
-            high quality, medically approved products.
+          <p className="text-xs uppercase tracking-wider font-semibold mb-6">
+            Treatments
+          </p>
+          <h1 className="uppercase text-4xl leading-tight tracking-tight mb-16 mt-2 md:text-6xl md:leading-snug md:tracking-tighter">
+            Dr Yalda offers a range of <i className="lowercase">non-surgical</i>{" "}
+            cosmetic treatments using high quality,{" "}
+            <i className="lowercase">medical</i> products.
           </h1>
           <button className="bg-black hover:bg-gray-900 text-white font-light py-6 px-12 inline">
             Book a consultation
@@ -634,8 +667,12 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4 flex flex-col">
-          <p className="text-center text-xs font-semi-bold">Category</p>
-          <h1 className="text-4xl leading-tight tracking-normal mb-8 mt-2 leading-tight text-center font-normal md:text-6xl">
+          <div className="inline ">
+            <p className="text-center text-xs font-semibold tracking-widest uppercase bg-black text-white rounded-full py-2 px-2 mb-4">
+              Category
+            </p>
+          </div>
+          <h1 className="uppercase text-4xl leading-tight tracking-tight mb-8 mt-2 text-center font-normal md:text-6xl ">
             Considerations for darker skin types when choosing in-clinic skin
             treatments.
           </h1>
@@ -703,7 +740,7 @@ const IndexPage = () => (
             months. They are also used for treatment of hyperhidrosis (excess
             sweating) and bruxism (involuntary habitual grinding of the teeth).
           </p>
-          <h2>About This Treatment</h2>
+          <p className="font-semibold">About This Treatment</p>
           <p className="mb-8">
             The revolutionary treatment has been around since the 1980’s and
             with very few risks and no recovery time it still remains one of the
@@ -713,7 +750,7 @@ const IndexPage = () => (
             months. They are also used for treatment of hyperhidrosis (excess
             sweating) and bruxism (involuntary habitual grinding of the teeth).
           </p>
-          <h2>More about This Treatment</h2>
+          <p className="font-semibold">About This Treatment</p>
           <p className="mb-8">
             The revolutionary treatment has been around since the 1980’s and
             with very few risks and no recovery time it still remains one of the
@@ -723,7 +760,7 @@ const IndexPage = () => (
             months. They are also used for treatment of hyperhidrosis (excess
             sweating) and bruxism (involuntary habitual grinding of the teeth).
           </p>
-          <h2>More about This Treatment</h2>
+          <p className="font-semibold">About This Treatment</p>
           <p className="mb-8">
             The revolutionary treatment has been around since the 1980’s and
             with very few risks and no recovery time it still remains one of the
@@ -733,7 +770,7 @@ const IndexPage = () => (
             months. They are also used for treatment of hyperhidrosis (excess
             sweating) and bruxism (involuntary habitual grinding of the teeth).
           </p>
-          <h2>More about This Treatment</h2>
+          <p className="font-semibold">About This Treatment</p>
           <p className="mb-8">
             The revolutionary treatment has been around since the 1980’s and
             with very few risks and no recovery time it still remains one of the
