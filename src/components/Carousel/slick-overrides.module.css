@@ -24,6 +24,7 @@
 }
 
 :global(.slick-dots) {
+    display: flex !important;
     justify-content: center;
     margin-top: 1rem;
 }
