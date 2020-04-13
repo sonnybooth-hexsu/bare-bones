@@ -34,7 +34,7 @@ const IndexPage = () => (
               <h1 className="text-5xl text-center mb-0 md:text-left md:text-7xl">
                 Dr Yalda Jamali
               </h1>
-              <p className="text-center md:text-left font-medium mb-10 lg:mb-24">
+              <p className="text-center font-medium mb-10 md:text-left lg:mb-24">
                 Providing a medical approach to facial aesthetics in London
                 &amp; Nottingham. Another sentence here is required
                 approximately this length.
@@ -61,19 +61,6 @@ const IndexPage = () => (
         alt="Dr Yalda smiling"
       />
     </div>
-    {/* Logo Quilt Title
-        <div className="bg-gray-200">
-      <div className="container mx-auto pr-6 pl-6">
-        <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
-              Logo Quilt
-            </span>{" "}
-            - To display clients, partnerships, social proof ETC
-          </h2>
-        </div>
-      </div>
-    </div> */}
     {/*  Logo Quilt*/}
     <div className="bg-gray-200">
       <div className="container mx-auto pl-6 pr-6 pt-10 pb-10">
@@ -125,7 +112,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
               Buttons
             </span>{" "}
             - For clicking
@@ -160,7 +147,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
               Cover 01 Right
             </span>{" "}
             - To display some text, and an image on the right
@@ -285,7 +272,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
               Product Slider
             </span>{" "}
             - For before and after images of clients/products
@@ -309,7 +296,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl ">
               Treatment Content
             </span>{" "}
             - Used to describe a treatment or service
@@ -420,7 +407,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
               Text Block 01
             </span>{" "}
             - For text
@@ -450,7 +437,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
               About Content Block
             </span>{" "}
             - To display about content
@@ -506,7 +493,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
               50/50 Header
             </span>{" "}
             - Display a 50/50 hero image and text
@@ -540,7 +527,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
               Fullwidth Image
             </span>{" "}
             - To display a fullwidth image
@@ -563,7 +550,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
               Contact Title
             </span>{" "}
             - Just another hero title, with anchor links
@@ -575,7 +562,7 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4">
-          <h1 className="text-4xl leading-tight tracking-normal mb-12 mt-2 md:text-6xl md:leading-snug pt-20 pb-20 ">
+          <h1 className="text-4xl leading-tight tracking-normal pt-20 pb-20 mb-12 mt-2 md:text-6xl md:leading-snug">
             <i className="border-b-4 border-solid border-black">Email</i>, or
             leave a message in the{" "}
             <i className="border-b-4 border-solid border-black">contact form</i>
@@ -592,7 +579,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl ">
               Treatment Title
             </span>{" "}
             - Just another hero title, with a CTA button
@@ -604,7 +591,7 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4">
-          <h1 className="text-4xl leading-tight tracking-normal mb-12 mt-2 md:text-6xl md:leading-snug pt-20 pb-20">
+          <h1 className="text-4xl leading-tight tracking-normal mb-12 mt-2 md:text-6xl pt-20 pb-20 md:leading-snug">
             Dr Yalda offers a range of non-surgical cosmetic treatments using
             high quality, medically approved products.
           </h1>
@@ -632,7 +619,7 @@ const IndexPage = () => (
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4 flex flex-col">
           <p className="text-center text-xs font-semi-bold">Category</p>
-          <h1 className="text-4xl leading-tight tracking-normal mb-8 mt-2 md:text-6xl leading-tight text-center font-normal">
+          <h1 className="text-4xl leading-tight tracking-normal mb-8 mt-2 leading-tight text-center font-normal md:text-6xl">
             Considerations for darker skin types when choosing in-clinic skin
             treatments.
           </h1>
@@ -648,7 +635,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
               Blog Post
             </span>{" "}
             - Blog post
