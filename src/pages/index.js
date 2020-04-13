@@ -34,9 +34,8 @@ const IndexPage = () => (
             <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
               {/* <p className="text-lg uppercase font-semibold tracking-widest mb-4 text-center lg:text-left">Welcome to</p> */}
               <h1 className="text-center mb-12 leading-tight tracking-tight md:text-left">
-                Dr Yalda – Providing a{" "}
-                <span className="italic-text">medical</span> approach to facial
-                aesthetics.
+                Dr Yalda – Providing a <i className="lowercase">medical</i>{" "}
+                approach to facial aesthetics.
               </h1>
               {/* <p className="text-center font-medium mb-4 md:text-left lg:mb-8">
                 Providing a medical approach to facial aesthetics in London
@@ -174,8 +173,8 @@ const IndexPage = () => (
         <div className="md:flex md:flex-wrap lg:flex-col lg:relative">
           <div className="md:order-1 md:w-1/2 lg:pr-3">
             <h3 className="uppercase text-5xl leading-tight tracking-tight mb-6 md:text-6xl">
-              Enhance and <span className="italic-text">restore</span> your{" "}
-              <span className="italic-text">natural</span> beauty.
+              Enhance and <i className="lowercase">restore</i> your{" "}
+              <i className="lowercase">natural</i> beauty.
             </h3>
           </div>
           <div className="md:w-full md:order-3 lg:absolute lg:w-1/2 lg:top-0 lg:right-0">
@@ -239,8 +238,7 @@ const IndexPage = () => (
         <div className="md:flex  md:flex-wrap lg:flex-col lg:relative">
           <div className="md:order-2 md:w-1/2 lg:pr-3">
             <h3 className="uppercase text-5xl leading-tight tracking-tight mb-6 md:text-6xl">
-              From a registered, <span className="italic-text">medical</span>{" "}
-              doctor.
+              From a registered, <i className="lowercase">medical</i> doctor.
             </h3>
           </div>
           <div className="md:w-full md:order-1 lg:w-1/2">
@@ -336,11 +334,11 @@ const IndexPage = () => (
           <div className="border-solid border-l-4 border-red-500 pl-6 lg:pr-48 lg:ml-10">
             <h5 className="text-2xl leading-tight tracking-tight mt-12 mb-16 md:text-3xl text">
               &quot;I have had lip fillers with Yalda for a while now and the
-              results are <span className="italic-text">amazing.</span> Not only
-              is she professional but she makes you feel{" "}
-              <span className="italic-text">at ease.</span> It’s been nearly{" "}
-              <span className="italic-text">6 months</span> since my fillers and
-              my lips are still juicy as ever!&quot;
+              results are <i className="lowercase">amazing.</i> Not only is she
+              professional but she makes you feel{" "}
+              <i className="lowercase">at ease.</i> It’s been nearly{" "}
+              <i className="lowercase">6 months</i> since my fillers and my lips
+              are still juicy as ever!&quot;
             </h5>
           </div>
           <p className="font-semibold">About This Treatment</p>
@@ -451,8 +449,8 @@ const IndexPage = () => (
       <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid gap-6 pt-20 pb-20">
         <div className="pl-4 pr-4 grid gap-6 lg:grid-cols-2">
           <h2 className="uppercase text-4xl leading-tight tracking-tight md:text-6xl md:pr-10">
-            Look and <span className="italic-text">feel</span> your{" "}
-            <span className="italic-text">very</span> best.
+            Look and <i className="lowercase">feel</i> your{" "}
+            <i className="lowercase">very</i> best.
           </h2>
           <p className="leading-relaxed tracking-wide text-xl md:text-2xl ">
             Dr Yalda offers a range of cosmetic injectables and skin treatment
@@ -481,8 +479,7 @@ const IndexPage = () => (
     <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid gap-6 pt-20 pb-20">
       <div className="pl-4 pr-4 grid gap-6 lg:grid-cols-2">
         <h2 className="uppercase text-4xl leading-tight tracking-tight md:text-6xl md:pr-20">
-          A <span className="italic-text">little bit</span> about Dr Yalda
-          Jamali.
+          A <i className="lowercase">little bit</i> about Dr Yalda Jamali.
         </h2>
         <div>
           <p className="mb-4">
@@ -643,10 +640,9 @@ const IndexPage = () => (
             Treatments
           </p>
           <h1 className="uppercase text-4xl leading-tight tracking-tight mb-16 mt-2 md:text-6xl md:leading-snug md:tracking-tighter">
-            Dr Yalda offers a range of{" "}
-            <span className="italic-text">non-surgical</span> cosmetic
-            treatments using high quality,{" "}
-            <span className="italic-text">medical</span> products.
+            Dr Yalda offers a range of <i className="lowercase">non-surgical</i>{" "}
+            cosmetic treatments using high quality,{" "}
+            <i className="lowercase">medical</i> products.
           </h1>
           <button className="bg-black hover:bg-gray-900 text-white font-light py-6 px-12 inline">
             Book a consultation
