@@ -85,7 +85,7 @@ const IndexPage = () => (
           <div className="w-full h-16 flex items-center justify-center mb-5 lg:mb-0">
             {" "}
             <img
-              className="h-full p-4 lg:p-4"
+              className="h-full p-5 lg:p-4"
               src={teoxane}
               alt="Teoxane logo"
             />
@@ -93,19 +93,19 @@ const IndexPage = () => (
           <div className="h-16 flex items-center justify-center mb-5 lg:mb-0">
             {" "}
             <img
-              className="h-full p-4 lg:p-4"
+              className="h-full p-5 lg:p-4"
               src={profhilo}
               alt="Profhilo logo"
             />
           </div>
           <div className="w-full h-16 flex items-center justify-center mb-5 lg:mb-0">
             {" "}
-            <img className="p-8 lg:p-4" src={zo} alt="Zo Skin Health logo" />
+            <img className="p-12 lg:p-4" src={zo} alt="Zo Skin Health logo" />
           </div>
           <div className="w-full h-16 flex items-center justify-center mb-5 lg:mb-0">
             {" "}
             <img
-              className="p-6 lg:p-2"
+              className="p-12 lg:p-2" 
               src={perfectPeel}
               alt="Perfect Peel logo"
             />
@@ -174,7 +174,7 @@ const IndexPage = () => (
       <div className="pl-4 pr-4">
         <div className="md:flex md:flex-wrap lg:flex-col lg:relative">
           <div className="md:order-1 md:w-1/2 lg:pr-3">
-            <h3 className="text-5xl leading-none mb-6">
+            <h3 className="text-5xl leading-tight tracking-normal mb-6">
               Enhance <i>&amp;</i> restore your natural beauty.
             </h3>
           </div>
@@ -238,7 +238,7 @@ const IndexPage = () => (
       <div className="pl-4 pr-4">
         <div className="md:flex  md:flex-wrap lg:flex-col lg:relative">
           <div className="md:order-2 md:w-1/2 lg:pr-3">
-            <h3 className="text-5xl leading-none mb-6">
+            <h3 className="text-5xl leading-tight tracking-normal mb-6">
               From a registered, medical doctor.
             </h3>
           </div>
@@ -433,7 +433,7 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid gap-6 pt-20 pb-20">
         <div className="pl-4 pr-4 grid gap-6 lg:grid-cols-2">
-          <h2 className="text-5xl leading-tight md:text-6xl md:pr-10">
+          <h2 className="text-5xl leading-tight tracking-normal md:text-6xl md:pr-10">
             Look &amp; feel your best.
           </h2>
           <p className="paragraph-large">
@@ -462,7 +462,7 @@ const IndexPage = () => (
     {/* About Content */}
     <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid gap-6 pt-20 pb-20">
       <div className="pl-4 pr-4 grid gap-6 lg:grid-cols-2">
-        <h2 className="text-5xl leading-tight md:text-6xl md:pr-10">
+        <h2 className="text-5xl leading-tight tracking-normal md:text-6xl md:pr-20">
           A little bit about Dr Yalda.
         </h2>
         <div>
@@ -519,7 +519,7 @@ const IndexPage = () => (
     <div className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1">
       <div className="flex flex-col justify-center bg-white pt-20 pb-20 pr-8 pl-8 lg:pt-0 lg:pb-0 lg:h-full md:pr-12 md:pl-12 lg:pr-20 lg:pl-20 xl:pr-50 xl:pl-50">
         <div className="pl-4 pr-4">
-          <h1 className="text-3xl mb-2 md:text-6xl">Soft Tissue Fillers</h1>
+          <h1 className="text-5xl leading-tight tracking-normal mb-2 md:text-6xl">Soft Tissue Fillers</h1>
           <p className="mb-12">
             Instantly soften fine lines &amp; wrinkles, restore age-related
             volume loss and augment and contour facial features.
@@ -574,7 +574,7 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4">
-          <h1 className="mb-12 mt-2 text-6xl leading-tight pt-20 pb-20 ">
+          <h1 className="text-5xl leading-tight tracking-normal mb-12 mt-2 md:text-6xl md:leading-snug pt-20 pb-20 ">
             <i className="border-b-4 border-solid border-black">Email</i>, or
             leave a message in the{" "}
             <i className="border-b-4 border-solid border-black">contact form</i>
@@ -603,7 +603,7 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4">
-          <h1 className="mb-12 mt-2 md:text-6xl leading-snug">
+          <h1 className="text-5xl leading-tight tracking-normal mb-12 mt-2 md:text-6xl md:leading-snug pt-20 pb-20">
             Dr Yalda offers a range of non-surgical cosmetic treatments using
             high quality, medically approved products.
           </h1>
@@ -631,7 +631,7 @@ const IndexPage = () => (
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4 flex flex-col">
           <p className="text-center text-xs font-semi-bold">Category</p>
-          <h1 className="mb-12 mt-2 md:text-6xl leading-tight text-center font-normal">
+          <h1 className="text-5xl leading-tight tracking-normal mb-8 mt-2 md:text-6xl leading-tight text-center font-normal">
             Considerations for darker skin types when choosing in-clinic skin
             treatments.
           </h1>
