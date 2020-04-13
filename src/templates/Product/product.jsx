@@ -4,18 +4,24 @@ import { SEO } from "../../components/SEO"
 import { graphql } from "gatsby"
 
 export default function Template({ data }) {
-  const fbShare = () => {
-    ;((d, s, id) => {
-      const fjs = d.getElementsByTagName(s)[0]
-      if (d.getElementById(id)) return
-      const js = d.createElement(s)
-      js.id = id
-      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0"
-      fjs.parentNode.insertBefore(js, fjs)
-    })(document, "script", "facebook-jssdk")
+  const isSSR = typeof window === "undefined"
+
+  if (!isSSR) {
+    const fbShare = () => {
+      return ((d, s, id) => {
+        const fjs = d.getElementsByTagName(s)[0]
+        if (d.getElementById(id)) return
+        const js = d.createElement(s)
+        js.id = id
+        js.src =
+          "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0"
+        fjs.parentNode.insertBefore(js, fjs)
+      })(document, "script", "facebook-jssdk")
+    }
+
+    fbShare()
   }
 
-  fbShare()
   const domain = data.site.siteMetadata.domain
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark

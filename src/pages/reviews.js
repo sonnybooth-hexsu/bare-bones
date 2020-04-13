@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Layout } from "../components/Layout"
 import { SEO } from "../components/SEO"
+import { Carousel } from "../components/Carousel"
 import { TestimonialCard } from "../components/TestimonialCard"
 
 const Reviews = props => {
@@ -23,15 +24,17 @@ const Reviews = props => {
             </span>{" "}
             - add new testimonials at /admin
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
-            {reviews.map(({ name, message, image }, i) => (
-              <TestimonialCard
-                key={`testimonial-${i}`}
-                name={name}
-                image={image}
-                message={message}
-              />
-            ))}
+          <div className="grid grid-cols-1">
+            <Carousel>
+              {reviews.map(({ name, message, image }, i) => (
+                <TestimonialCard
+                  key={`testimonial-${i}`}
+                  name={name}
+                  image={image}
+                  message={message}
+                />
+              ))}
+            </Carousel>
           </div>
         </div>
       </div>
