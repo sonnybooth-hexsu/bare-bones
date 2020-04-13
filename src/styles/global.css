@@ -12,6 +12,7 @@ h3 {
   @apply text-lg;
 }
 
+
 body {
   font-family: myriad-pro, sans-serif;
   font-weight: 300;
@@ -30,19 +31,19 @@ p {
 }
 
 
-.paragraph-large {
-  letter-spacing: .025em;
-  font-size: 24px;
-  line-height: 1.8;
-}
+
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: big-caslon-fb, serif;
-  font-family: myriad-pro, sans-serif;
-  font-weight: 700;
+  font-family: orpheuspro, serif;
+  font-weight: 400;
   font-style: normal;
   font-feature-settings: 'calt', 'clig', 'kern', 'liga', 'locl', 'rlig';
   letter-spacing: 0.025em;
+}
+
+.italic-text {
+  font-style: italic;
+  text-transform: lowercase;
 }
 
 .btn__primary {

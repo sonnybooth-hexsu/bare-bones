@@ -73,11 +73,7 @@ export const SEO = ({ description, lang, meta, title }: SEOProps) => {
         },
       ].concat(meta)}
     >
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://use.typekit.net/rul4vmj.css"
-      />
+      <link rel="stylesheet" href="https://use.typekit.net/rul4vmj.css" />
     </Helmet>
   )
 }
