@@ -3,7 +3,7 @@
 exports[`<ProductCard /> should match snapshot 1`] = `
 <div>
   <div
-    class="bg-white pt-16 pr-16 pl-16 pb-10 md:pl-24 shadow-md h-full"
+    class="bg-white pt-16 pr-16 pl-16 pb-10 md:pl-24 shadow-md h-full mb-4"
   >
     <div
       class="flex"

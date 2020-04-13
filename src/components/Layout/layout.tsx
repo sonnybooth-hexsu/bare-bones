@@ -1,4 +1,4 @@
-import React, { useContext } from "react"
+import React, { useContext, ReactNode } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Header } from "../Header"
 import { HeaderOpen } from "../HeaderOpen"
@@ -6,7 +6,7 @@ import { Footer } from "../Footer"
 import { ThemeContext } from "../../context/ThemeContext"
 
 type LayoutProps = {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 export const Layout = ({ children }: LayoutProps) => {
