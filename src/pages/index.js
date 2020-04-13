@@ -3,6 +3,7 @@ import { Layout } from "../components/Layout"
 import { SEO } from "../components/SEO"
 import { CTABlock } from "../components/CTABlock"
 import { ProductSlider } from "../components/ProductSlider"
+import buttons from "../styles/buttons.module.css"
 import lipsBefore from "../assets/images/lips-before.jpg"
 import lipsAfter from "../assets/images/lips-after.jpg"
 import treatmentHeader from "../assets/images/treatment-header.jpg"
@@ -41,14 +42,17 @@ const IndexPage = () => (
               </p>
               <div>
                 <a
-                  className="btn__primary block md:inline-block mb-4 md:mb-0 lg:mr-4"
+                  className={`${buttons.btnPrimary} block md:inline-block mb-4 md:mb-0 lg:mr-4`}
                   href="#"
                 >
                   Book a consultation
                 </a>
-                <a className="btn__tertiary block md:inline-block" href="#">
+                <a
+                  className={`${buttons.btnTertiary} block md:inline-block`}
+                  href="#"
+                >
                   See Treatments{" "}
-                  <ArrowRight className="inline mr-2 text-gray-900" />
+                  <ArrowRight color="currentColor" className="inline mr-2" />
                 </a>
               </div>
             </div>
@@ -124,20 +128,30 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid pt-20 pb-20">
         <div className="pl-4 pr-4 lg:flex lg:justify-between">
-          <a className="btn__primary inline-block mt-8 lg:mt-0" href="#">
-            Book a consultation
-          </a>
-          <a className="btn__secondary inline-block mt-8 lg:mt-0" href="#">
-            Book a consultation
-          </a>
           <a
-            className="btn__secondary__outline inline-block mt-8 lg:mt-0"
+            className={`${buttons.btnPrimary} inline-block mt-8 lg:mt-0`}
             href="#"
           >
             Book a consultation
           </a>
-          <a className="btn__tertiary inline-block mt-8 lg:mt-0" href="#">
-            See Treatments <ArrowRight className="inline mr-2 text-gray-900" />
+          <a
+            className={`${buttons.btnSecondary} inline-block mt-8 lg:mt-0`}
+            href="#"
+          >
+            Book a consultation
+          </a>
+          <a
+            className={`${buttons.btnSecondaryOutline} inline-block mt-8 lg:mt-0`}
+            href="#"
+          >
+            Book a consultation
+          </a>
+          <a
+            className={`${buttons.btnTertiary} inline-block mt-8 lg:mt-0`}
+            href="#"
+          >
+            See Treatments{" "}
+            <ArrowRight color="currentColor" className="inline mr-2" />
           </a>
         </div>
       </div>
@@ -512,7 +526,9 @@ const IndexPage = () => (
             Instantly soften fine lines &amp; wrinkles, restore age-related
             volume loss and augment and contour facial features.
           </p>
-          <button className="btn__primary">Book a consultation</button>
+          <button className={`${buttons.btnPrimary}`}>
+            Book a consultation
+          </button>
         </div>
       </div>
       <div className="lg:h-full">
