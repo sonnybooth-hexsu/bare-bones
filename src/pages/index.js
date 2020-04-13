@@ -173,7 +173,7 @@ const IndexPage = () => (
       <div className="pl-4 pr-4">
         <div className="md:flex md:flex-wrap lg:flex-col lg:relative">
           <div className="md:order-1 md:w-1/2 lg:pr-3">
-            <h3 className="text-4xl md:text-5xl leading-tight tracking-normal mb-6">
+            <h3 className="text-4xl leading-tight tracking-normal mb-6 md:text-5xl">
               Enhance <i>&amp;</i> restore your natural beauty.
             </h3>
           </div>
@@ -237,7 +237,7 @@ const IndexPage = () => (
       <div className="pl-4 pr-4">
         <div className="md:flex  md:flex-wrap lg:flex-col lg:relative">
           <div className="md:order-2 md:w-1/2 lg:pr-3">
-            <h3 className="text-4xl md:text-5xl leading-tight tracking-normal mb-6">
+            <h3 className="text-4xl leading-tight tracking-normal mb-6 md:text-5xl">
               From a registered, medical doctor.
             </h3>
           </div>
