@@ -31,10 +31,10 @@ const IndexPage = () => (
         <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0 md:pr-0">
           <div className="pl-4 pr-4">
             <div className="md:w-1/2 flex flex-col">
-              <h1 className="text-center mb-12 md:text-left md:text-7xl">
+              <h1 className="text-5xl text-center mb-0 md:text-left md:text-7xl">
                 Dr Yalda Jamali
               </h1>
-              <p className="text-center md:text-left font-medium mb-10 lg:mb-20">
+              <p className="text-center font-medium mb-10 md:text-left lg:mb-24">
                 Providing a medical approach to facial aesthetics in London
                 &amp; Nottingham. Another sentence here is required
                 approximately this length.
@@ -61,19 +61,6 @@ const IndexPage = () => (
         alt="Dr Yalda smiling"
       />
     </div>
-    {/* Logo Quilt Title
-        <div className="bg-gray-200">
-      <div className="container mx-auto pr-6 pl-6">
-        <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
-              Logo Quilt
-            </span>{" "}
-            - To display clients, partnerships, social proof ETC
-          </h2>
-        </div>
-      </div>
-    </div> */}
     {/*  Logo Quilt*/}
     <div className="bg-gray-200">
       <div className="container mx-auto pl-6 pr-6 pt-10 pb-10">
@@ -125,7 +112,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
               Buttons
             </span>{" "}
             - For clicking
@@ -160,7 +147,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
               Cover 01 Right
             </span>{" "}
             - To display some text, and an image on the right
@@ -173,7 +160,7 @@ const IndexPage = () => (
       <div className="pl-4 pr-4">
         <div className="md:flex md:flex-wrap lg:flex-col lg:relative">
           <div className="md:order-1 md:w-1/2 lg:pr-3">
-            <h3 className="text-5xl leading-tight tracking-normal mb-6">
+            <h3 className="text-4xl leading-tight tracking-normal mb-6 md:text-5xl">
               Enhance <i>&amp;</i> restore your natural beauty.
             </h3>
           </div>
@@ -237,7 +224,7 @@ const IndexPage = () => (
       <div className="pl-4 pr-4">
         <div className="md:flex  md:flex-wrap lg:flex-col lg:relative">
           <div className="md:order-2 md:w-1/2 lg:pr-3">
-            <h3 className="text-5xl leading-tight tracking-normal mb-6">
+            <h3 className="text-4xl leading-tight tracking-normal mb-6 md:text-5xl">
               From a registered, medical doctor.
             </h3>
           </div>
@@ -285,7 +272,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
               Product Slider
             </span>{" "}
             - For before and after images of clients/products
@@ -309,7 +296,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl ">
               Treatment Content
             </span>{" "}
             - Used to describe a treatment or service
@@ -420,7 +407,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
               Text Block 01
             </span>{" "}
             - For text
@@ -432,7 +419,7 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid gap-6 pt-20 pb-20">
         <div className="pl-4 pr-4 grid gap-6 lg:grid-cols-2">
-          <h2 className="text-5xl leading-tight tracking-normal md:text-6xl md:pr-10">
+          <h2 className="text-4xl leading-tight tracking-normal md:text-6xl md:pr-10">
             Look &amp; feel your best.
           </h2>
           <p className="paragraph-large">
@@ -450,7 +437,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
               About Content Block
             </span>{" "}
             - To display about content
@@ -461,7 +448,7 @@ const IndexPage = () => (
     {/* About Content */}
     <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid gap-6 pt-20 pb-20">
       <div className="pl-4 pr-4 grid gap-6 lg:grid-cols-2">
-        <h2 className="text-5xl leading-tight tracking-normal md:text-6xl md:pr-20">
+        <h2 className="text-4xl leading-tight tracking-normal md:text-6xl md:pr-20">
           A little bit about Dr Yalda.
         </h2>
         <div>
@@ -506,7 +493,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
               50/50 Header
             </span>{" "}
             - Display a 50/50 hero image and text
@@ -518,7 +505,7 @@ const IndexPage = () => (
     <div className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1">
       <div className="flex flex-col justify-center bg-white pt-20 pb-20 pr-8 pl-8 lg:pt-0 lg:pb-0 lg:h-full md:pr-12 md:pl-12 lg:pr-20 lg:pl-20 xl:pr-50 xl:pl-50">
         <div className="pl-4 pr-4">
-          <h1 className="text-5xl leading-tight tracking-normal mb-2 md:text-6xl">
+          <h1 className="text-4xl leading-tight tracking-normal mb-2 md:text-6xl">
             Soft Tissue Fillers
           </h1>
           <p className="mb-12">
@@ -540,7 +527,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
               Fullwidth Image
             </span>{" "}
             - To display a fullwidth image
@@ -563,7 +550,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
               Contact Title
             </span>{" "}
             - Just another hero title, with anchor links
@@ -575,7 +562,7 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4">
-          <h1 className="text-5xl leading-tight tracking-normal mb-12 mt-2 md:text-6xl md:leading-snug pt-20 pb-20 ">
+          <h1 className="text-4xl leading-tight tracking-normal pt-20 pb-20 mb-12 mt-2 md:text-6xl md:leading-snug">
             <i className="border-b-4 border-solid border-black">Email</i>, or
             leave a message in the{" "}
             <i className="border-b-4 border-solid border-black">contact form</i>
@@ -592,7 +579,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl ">
               Treatment Title
             </span>{" "}
             - Just another hero title, with a CTA button
@@ -604,7 +591,7 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4">
-          <h1 className="text-5xl leading-tight tracking-normal mb-12 mt-2 md:text-6xl md:leading-snug pt-20 pb-20">
+          <h1 className="text-4xl leading-tight tracking-normal mb-12 mt-2 md:text-6xl pt-20 pb-20 md:leading-snug">
             Dr Yalda offers a range of non-surgical cosmetic treatments using
             high quality, medically approved products.
           </h1>
@@ -632,7 +619,7 @@ const IndexPage = () => (
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4 flex flex-col">
           <p className="text-center text-xs font-semi-bold">Category</p>
-          <h1 className="text-5xl leading-tight tracking-normal mb-8 mt-2 md:text-6xl leading-tight text-center font-normal">
+          <h1 className="text-4xl leading-tight tracking-normal mb-8 mt-2 leading-tight text-center font-normal md:text-6xl">
             Considerations for darker skin types when choosing in-clinic skin
             treatments.
           </h1>
@@ -648,7 +635,7 @@ const IndexPage = () => (
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
               Blog Post
             </span>{" "}
             - Blog post
