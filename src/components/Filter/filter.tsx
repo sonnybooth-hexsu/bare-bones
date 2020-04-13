@@ -4,7 +4,7 @@ import { filterBySelected, createListOfTypes } from "../../utils/functions"
 
 type FilterProps = {
   items: []
-  setItemsState: () => []
+  setItemsState: (newItemsState: []) => void
   types: [
     {
       title: string
@@ -15,7 +15,7 @@ type FilterProps = {
 
 type FieldsetsProps = {
   items: []
-  setItemsState: () => []
+  setItemsState: (newItemsState: []) => void
   types: [
     {
       title: string
@@ -41,9 +41,9 @@ type Fieldset = {
   title: string
   items: []
   checkboxes: [Checkbox]
-  fieldsetsState: FieldsetTypeProps[]
-  setFieldsetsState: (newFieldsetsState: []) => void
-  setItemsState: () => []
+  fieldsetsState: [FieldsetTypeProps]
+  setFieldsetsState: (newFieldsetsState: [FieldsetTypeProps]) => void
+  setItemsState: (newItemsState: []) => void
 }
 
 const Fieldset = ({
@@ -126,7 +126,7 @@ const Fieldsets = ({ types, items, setItemsState }: FieldsetsProps) => {
     }
   )
 
-  const [fieldsetsState, setFieldsetsState] = useState<[] | []>(fieldsets)
+  const [fieldsetsState, setFieldsetsState] = useState(fieldsets)
 
   if (!fieldsets.length) return null
 

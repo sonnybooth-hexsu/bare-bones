@@ -4,6 +4,25 @@ import { SEO } from "../../components/SEO"
 import { graphql } from "gatsby"
 
 export default function Template({ data }) {
+  const isSSR = typeof window === "undefined"
+
+  if (!isSSR) {
+    const fbShare = () => {
+      return ((d, s, id) => {
+        const fjs = d.getElementsByTagName(s)[0]
+        if (d.getElementById(id)) return
+        const js = d.createElement(s)
+        js.id = id
+        js.src =
+          "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0"
+        fjs.parentNode.insertBefore(js, fjs)
+      })(document, "script", "facebook-jssdk")
+    }
+
+    fbShare()
+  }
+
+  const domain = data.site.siteMetadata.domain
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   const {
@@ -12,6 +31,7 @@ export default function Template({ data }) {
     category,
     excerpt,
     image,
+    path,
     productAttributeTitleOne,
     productAttributeTitleTwo,
     productAttributeTitleThree,
@@ -41,6 +61,14 @@ export default function Template({ data }) {
           <p>{productAttributeValueThree}</p>
           <p>{productAttributeValueFour}</p>
           <div dangerouslySetInnerHTML={{ __html: html }} />
+          <div id="fb-root"></div>
+          <div
+            className="fb-share-button"
+            data-href={`${domain}${path}`}
+            data-layout="button_count"
+          >
+            Share to Facebook
+          </div>
         </div>
       </div>
     </Layout>
@@ -57,6 +85,7 @@ export const pageQuery = graphql`
         category
         excerpt
         image
+        path
         productAttributeTitleOne
         productAttributeTitleTwo
         productAttributeTitleThree
@@ -65,6 +94,11 @@ export const pageQuery = graphql`
         productAttributeValueTwo
         productAttributeValueThree
         productAttributeValueFour
+      }
+    }
+    site {
+      siteMetadata {
+        domain
       }
     }
   }
