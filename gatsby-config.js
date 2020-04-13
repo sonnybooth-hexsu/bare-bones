@@ -7,6 +7,7 @@ module.exports = {
     email: `sonnyboothwebdesign@gmail.com`,
     telephone: `+447792471765`,
     author: `@sonnybooth-hexsu`,
+    domain: `https://hexsu-bare-bones.netlify.com`,
     navLinks: [
       {
         name: `CMS Blogs`,
