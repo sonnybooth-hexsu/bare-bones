@@ -15,7 +15,7 @@ const Contact = () => {
               <p className="text-xs uppercase tracking-wider font-semibold mb-6">
                 Get in touch
               </p>
-              <i className="border-b-4 border-solid border-black lowercase">
+              <i className="border-b-4 border-solid border-grey-900 lowercase">
                 Email
               </i>
               , or leave a message in the{" "}

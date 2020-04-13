@@ -587,7 +587,7 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4">
-          <h1 className="mb-12 text-4xl leading-tight tracking-tight pt-20 pb-20">
+          <h1 className="mb-12 text-4xl leading-tight tracking-tight pt-20 pb-20 md:text-6xl md:leading-snug md:tracking-tighter">
             <p className="text-xs uppercase tracking-wider font-semibold mb-6">
               Get in touch
             </p>
