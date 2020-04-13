@@ -12,16 +12,25 @@ const Contact = () => {
         <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
           <div className="pl-4 pr-4">
             <h1 className="mb-12 text-6xl leading-tight pt-20 pb-20 ">
-            <p className="text-xs uppercase tracking-wider font-semibold mb-6">Get in touch</p>
-              <i className="border-b-4 border-solid border-black lowercase">Email</i>, or
-              leave a message in the{" "}
+              <p className="text-xs uppercase tracking-wider font-semibold mb-6">
+                Get in touch
+              </p>
+              <i className="border-b-4 border-solid border-black lowercase">
+                Email
+              </i>
+              , or leave a message in the{" "}
               <i className="border-b-4 border-solid border-black lowercase">
                 contact form
               </i>
               . View work on{" "}
-              <i className="border-b-4 border-solid border-black lowercase">Instagram</i>.
-              See reviews on{" "}
-              <i className="border-b-4 border-solid border-black lowercase">Facebook</i>.
+              <i className="border-b-4 border-solid border-black lowercase">
+                Instagram
+              </i>
+              . See reviews on{" "}
+              <i className="border-b-4 border-solid border-black lowercase">
+                Facebook
+              </i>
+              .
             </h1>
           </div>
         </div>
