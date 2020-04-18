@@ -4,6 +4,7 @@ import { SEO } from "../../components/SEO"
 import { graphql } from "gatsby"
 import { Clock, Watch, Calendar, Tag } from "react-feather"
 import { CTABlock } from "../../components/CTABlock"
+import buttons from "../../styles/buttons.module.css"
 
 export default function Template({ data }) {
   const isSSR = typeof window === "undefined"
@@ -47,21 +48,26 @@ export default function Template({ data }) {
   return (
     <Layout>
       <SEO title="Product" />
-      <div className="container mx-auto pl-6 pr-6 pt-8 pb-8 md:pl-0 md:pr-0">
-        <div className="grid md:grid-cols-2">
-          <div className="flex flex-col align-center justify-center">
-            <h1>{title}</h1>
-            <p>{excerpt}</p>
+      <div className="grid lg:grid-cols-2">
+        <div className="bg-gray-500 flex flex-col align-center justify-center">
+          <div className="container mx-auto pl-6 pr-6 pt-8 pb-8 lg:pl-0 lg:pr-0 lg:w-screen lg:left-tran-half">
+            <div className="lg:w-1/2">
+              <h1>{title}</h1>
+              <p className="mt-4">{excerpt}</p>
+              <button className={`${buttons.btnPrimary} mt-8`}>
+                Book a consultation
+              </button>
+            </div>
           </div>
-          <div className="">
-            <img src={`/${imageLarge}`} alt="product ad" />
-          </div>
+        </div>
+        <div className="">
+          <img src={`/${imageLarge}`} alt="product ad" />
         </div>
       </div>
       <div className="container mx-auto pl-6 pr-6 pt-8 pb-8 md:pl-0 md:pr-0">
         <div className="grid md:grid-cols-12">
           <div
-            className="mb-6 md:col-span-8 md:pr-24 lg:col-span-7 lg:col-start-2"
+            className="mb-6 md:col-span-8 md:pr-24 lg:col-span-7 lg:col-start-1"
             dangerouslySetInnerHTML={{ __html: html }}
           />
           <div className="md:col-span-4 lg:col-span-3">

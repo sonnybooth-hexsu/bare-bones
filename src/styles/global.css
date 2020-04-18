@@ -35,6 +35,12 @@
   .delay-5 {
     animation-delay: 750ms;
   }
+
+  .left-tran-half {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 h1 {
@@ -69,10 +75,6 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-feature-settings: 'calt', 'clig', 'kern', 'liga', 'locl', 'rlig';
   letter-spacing: 0.025em;
-}
-
-.hero-block {
-  background-color: #aac2da;
 }
 
 @keyframes reveal {
