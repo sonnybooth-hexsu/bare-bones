@@ -44,22 +44,24 @@ export const Header = ({ siteTitle, navLinks, navToggle }: HeaderProps) => {
 
   return (
     <div className={styles.headerContainer}>
-      <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0">
-        <div className={styles.header}>
-          <div className={styles.headerLogo}>
-            <a href="/">{siteTitle}</a>
+      <div className="container mx-auto pl-6 pr-6">
+        <div className="pl-4 pr-4">
+          <div className={styles.header}>
+            <div className={styles.headerLogo}>
+              <a href="/">{siteTitle}</a>
+            </div>
+            {data && <Search items={data.allFile.edges} />}
+            <nav className={styles.headerNavigation}>
+              <ol>
+                {navLinks.map(({ name, page }, i) => (
+                  <li data-testid="headerNavigationLink" key={i}>
+                    <a href={`${page}`}>{name}</a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+            <Menu onClick={navToggle} className={styles.headerMenuIcon} />
           </div>
-          {data && <Search items={data.allFile.edges} />}
-          <nav className={styles.headerNavigation}>
-            <ol>
-              {navLinks.map(({ name, page }, i) => (
-                <li data-testid="headerNavigationLink" key={i}>
-                  <a href={`${page}`}>{name}</a>
-                </li>
-              ))}
-            </ol>
-          </nav>
-          <Menu onClick={navToggle} className={styles.headerMenuIcon} />
         </div>
       </div>
     </div>

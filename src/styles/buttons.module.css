@@ -1,6 +1,6 @@
 .btnPrimary {
     background-color: theme('colors.jacarta');
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 2rem;
     color: theme('colors.white');
     font-weight: 400;
     text-align: center;
@@ -13,7 +13,7 @@
   
 .btnSecondary {
     background-color: theme('colors.kimberly');
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 2rem;
     color: theme('colors.white');
     font-weight: 400;
     text-align: center;
@@ -29,7 +29,7 @@
     border-width: 2px;
     border-style: solid;
     border-color: theme('colors.jacarta');
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 2rem;
     color: theme('colors.jacarta');
     font-weight: 400;
     text-align: center;
@@ -43,7 +43,7 @@
   
 .btnTertiary {
     background-color: transparent;
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 2rem;
     color: theme('colors.jacarta');
     font-weight: 400;
     text-align: center;
@@ -51,7 +51,7 @@
 
 .btnTertiary:hover {
     background-color: theme('colors.kimberly');
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 2rem;
     color: theme('colors.white');
     transition: color .30s ease-in-out,background-color .30s ease-in-out,border-color .30s ease-in-out,box-shadow .30s ease-in-out; 
 }

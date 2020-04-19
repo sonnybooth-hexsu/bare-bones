@@ -6,13 +6,13 @@ import { ProductSlider } from "../components/ProductSlider"
 import buttons from "../styles/buttons.module.css"
 import lipsBefore from "../assets/images/lips-before.jpg"
 import lipsAfter from "../assets/images/lips-after.jpg"
-import treatmentHeader from "../assets/images/treatment-header.jpg"
 import signature from "../assets/images/signature.svg"
 import heroImageSm from "../assets/images/hero-image-sm.jpg"
 import heroImageMd from "../assets/images/hero-image-md.jpg"
 import yaldaAbout from "../assets/images/yalda-about.jpg"
 import avatar from "../assets/images/avatar.jpg"
 import mesoestetic from "../assets/images/brand-logo-mesoestetic.svg"
+import consultation from "../assets/images/consultation.svg"
 import perfectPeel from "../assets/images/brand-logo-perfect-peel.png"
 import profhilo from "../assets/images/brand-logo-profhilo.svg"
 import teoxane from "../assets/images/brand-logo-teoxane.svg"
@@ -31,26 +31,25 @@ const IndexPage = () => (
       >
         <div className="container mx-auto pl-6 pr-6">
           <div className="pl-4 pr-4">
-            <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
+            <div className="flex flex-col items-center lg:items-start lg:w-1/2">
               {/* <p className="text-lg uppercase font-semibold tracking-widest mb-4 text-center lg:text-left">Welcome to</p> */}
-              <h1 className="text-center mb-12 leading-tight tracking-tight md:text-left">
-                Dr Yalda – Providing a <i className="lowercase">medical</i>{" "}
-                approach to facial aesthetics.
+              <h1 className="text-center text-4xl leading-tight mb-16 md:text-5xl md:w-2/3 md:mb-4 lg:text-left">
+                Welcome to your new wireframe kit
               </h1>
-              {/* <p className="text-center font-medium mb-4 md:text-left lg:mb-8">
-                Providing a medical approach to facial aesthetics in London
-                &amp; Nottingham. Another sentence here is required
-                approximately this length.
-              </p> */}
+              <p className="text-sm text-center font-medium mb-8 md:mb-12 md:w-2/3 lg:w-full lg:text-left lg:mb-8">
+                If you&lsquo;re looking for the latest in wireless headphones,
+                look no further. These are perfect for TV, stereo, home, and
+                cell phone.
+              </p>
               <div>
                 <a
-                  className={`${buttons.btnPrimary} block md:inline-block mb-4 md:mb-0 lg:mr-4`}
+                  className={`${buttons.btnPrimary} block mb-6 lg:mr-4 lg:inline-block`}
                   href="#"
                 >
                   Book a consultation
                 </a>
                 <a
-                  className={`${buttons.btnTertiary} block md:inline-block`}
+                  className={`${buttons.btnTertiary} block mb-6 lg:inline-block`}
                   href="#"
                 >
                   See Treatments{" "}
@@ -127,25 +126,25 @@ const IndexPage = () => (
       <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid pt-20 pb-20">
         <div className="pl-4 pr-4 text-center lg:flex lg:justify-between">
           <a
-            className={`${buttons.btnPrimary} block md:inline-block mt-8 lg:mt-0`}
+            className={`${buttons.btnPrimary} block mt-8 md:inline-block lg:mt-0`}
             href="#"
           >
             Book a consultation
           </a>
           <a
-            className={`${buttons.btnSecondary} block md:inline-block mt-8 md:ml-2 md:mr-2 lg:ml-0 lg:mr-0 lg:mt-0`}
+            className={`${buttons.btnSecondary} block mt-8 md:ml-2 md:mr-2  md:inline-block lg:ml-0 lg:mr-0 lg:mt-0`}
             href="#"
           >
             Book a consultation
           </a>
           <a
-            className={`${buttons.btnSecondaryOutline} block md:inline-block mt-8 lg:mt-0`}
+            className={`${buttons.btnSecondaryOutline} block mt-8 lg:mt-0  md:inline-block`}
             href="#"
           >
             Book a consultation
           </a>
           <a
-            className={`${buttons.btnTertiary} block md:inline-block mt-8 md:ml-2 lg:ml-0 lg:mt-0`}
+            className={`${buttons.btnTertiary} block mt-8 md:inline-block md:ml-2 lg:ml-0 lg:mt-0`}
             href="#"
           >
             See Treatments{" "}
@@ -172,7 +171,7 @@ const IndexPage = () => (
       <div className="pl-4 pr-4">
         <div className="md:flex md:flex-wrap lg:flex-col lg:relative">
           <div className="md:order-1 md:w-1/2 lg:pr-3">
-            <h3 className="uppercase text-5xl leading-tight tracking-tight mb-6 md:text-6xl">
+            <h3 className="uppercase text-4xl leading-tight tracking-tight mb-6 md:text-5xl lg:pr-4">
               Enhance and <i className="lowercase">restore</i> your{" "}
               <i className="lowercase">natural</i> beauty.
             </h3>
@@ -237,8 +236,9 @@ const IndexPage = () => (
       <div className="pl-4 pr-4">
         <div className="md:flex  md:flex-wrap lg:flex-col lg:relative">
           <div className="md:order-2 md:w-1/2 lg:pr-3">
-            <h3 className="uppercase text-5xl leading-tight tracking-tight mb-6 md:text-6xl">
-              From a registered, <i className="lowercase">medical</i> doctor.
+            <h3 className="uppercase text-4xl leading-tight tracking-tight mb-6 md:text-5xl">
+              From a registered, <i className="lowercase">medical</i> doctor,
+              and Mentor.
             </h3>
           </div>
           <div className="md:w-full md:order-1 lg:w-1/2">
@@ -295,7 +295,16 @@ const IndexPage = () => (
     </div>
     {/* Product Slider */}
     <div className="bg-white">
-      <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
+      <div className="container mx-auto pl-6 pr-6 pt-20 pb-20 flex align-center">
+        <div className="pl-4 pr-4">
+          <h2 className="uppercase text-4xl text-center md:text-5xl lg:w-1/2">
+            It&lsquo;s the <i className="lowercase">results</i> that count
+          </h2>
+          <p className="mb-20 text-center lg:w-1/2">
+            Dr Yalda is a results-oriented aesthetics doctor that goes above and
+            beyond to ensure clients are completely satisfied.
+          </p>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 pl-4 pr-4">
           <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
           <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
@@ -518,42 +527,6 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    {/* 50/50 Header Title */}
-    <div className="bg-gray-200">
-      <div className="container mx-auto pr-6 pl-6">
-        <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl text-red-500 font-bold md:text-4xl">
-              50/50 Header
-            </span>{" "}
-            - Display a 50/50 hero image and text
-          </h2>
-        </div>
-      </div>
-    </div>
-    {/* 50/50 Header*/}
-    <div className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1">
-      <div className="flex flex-col justify-center bg-white pt-20 pb-20 pr-8 pl-8 lg:pt-0 lg:pb-0 lg:h-full md:pr-12 md:pl-12 lg:pr-20 lg:pl-20 xl:pr-50 xl:pl-50">
-        <div className="pl-4 pr-4">
-          <h1 className="text-4xl leading-tight tracking-tight mb-2 md:text-6xl">
-            Soft Tissue Fillers
-          </h1>
-          <p className="mb-12">
-            Instantly soften fine lines &amp; wrinkles, restore age-related
-            volume loss and augment and contour facial features.
-          </p>
-          <button className={`${buttons.btnPrimary}`}>
-            Book a consultation
-          </button>
-        </div>
-      </div>
-      <div className="lg:h-full">
-        <img
-          src={treatmentHeader}
-          alt="Close up of model in profile pose, with head turned to the left."
-        />
-      </div>
-    </div>
     {/* Fullwidth Image Title */}
     <div className="bg-gray-200">
       <div className="container mx-auto pr-6 pl-6">
@@ -594,24 +567,24 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4">
-          <h1 className="mb-12 text-4xl leading-tight tracking-tight pt-20 pb-20 md:text-6xl md:leading-snug md:tracking-tighter">
-            <p className="text-xs uppercase tracking-wider font-semibold mb-6">
+          <h1 className="normal-case mb-12 text-4xl leading-tight tracking-tight pt-20 pb-20 md:text-6xl md:leading-snug md:tracking-tighter">
+            {/* <p className="text-xs uppercase tracking-wider font-semibold mb-6">
               Get in touch
-            </p>
+            </p> */}
             Send an{" "}
-            <i className="border-b-2 border-solid border-black uppercase">
-              Email
+            <i className="border-b-2 border-solid border-black normal-case">
+              email
             </i>
             , or leave a message in the{" "}
-            <span className="italic-text border-b-2 border-solid border-black uppercase">
+            <i className="italic-text border-b-2 border-solid border-black normal-case">
               contact form
-            </span>
+            </i>
             . View work on{" "}
-            <i className="border-b-2 border-solid border-black uppercase">
+            <i className="border-b-2 border-solid border-black normal-case">
               Instagram
             </i>
             . See reviews on{" "}
-            <i className="border-b-2 border-solid border-black uppercase">
+            <i className="border-b-2 border-solid border-black normal-case">
               Facebook
             </i>
             .
@@ -702,7 +675,7 @@ const IndexPage = () => (
         {/* Blog Post Avatar, Posted by, Date Stamp */}
         <div className="lg:col-span-2">
           <div className="flex items-center">
-            <div className="rounded-full h-12 w-12 mr-2 mr-2 overflow-hidden h-16 w-16">
+            <div className="rounded-full mr-3 overflow-hidden h-16 w-16">
               <img
                 className="h-full w-full"
                 src={avatar}
@@ -710,10 +683,10 @@ const IndexPage = () => (
               />
             </div>
             <div>
-              <p className="pb-0 mb-0 text-md font-medium tracking-wide">
+              <p className="text-md font-medium tracking-wide leading-none mb-1">
                 By Dr Yalda
               </p>
-              <p className="pb-0 mb-0 text-gray-600 text-sm font-medium">
+              <p className="text-gray-600 text-sm font-medium leading-none">
                 8th Oct, 2020
               </p>
             </div>
@@ -802,6 +775,87 @@ const IndexPage = () => (
             data-href="https://www.your-domain.com/your-page.html"
             data-layout="button_count"
           ></div>
+        </div>
+      </div>
+    </div>
+    {/*  How It Works Title  */}
+    <div className="bg-gray-200">
+      <div className="container mx-auto pr-6 pl-6">
+        <div className="pl-4 pr-4">
+          <h2 className="text-2xl pt-8 pb-8">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
+              How It Works
+            </span>{" "}
+            - To explain product or services step by step
+          </h2>
+        </div>
+      </div>
+    </div>
+    {/* How it works */}
+    <div className="container mx-auto pr-6 pl-6">
+      <div className="pt-20 pb-20 pl-4 pr-4">
+        <h2 className="text-4xl text-center mb-10 md:text-5xl">How it works</h2>
+        <div className="grid gap-6 pl-4 pr-4 lg:grid-cols-3 ">
+          <div className="pb-16 pt-10 pr-5 pl-5">
+            <div className="relative pl-6 -mb-12">
+              <div className="text-10xl leading-none font-bold text-blue-300">
+                1
+              </div>
+              <img
+                className="absolute bottom-2 left-0 top-12 mb-4 h-10"
+                src={consultation}
+                alt="Doctor's clipboard icon"
+              />
+            </div>
+            <div className="relative mt-4 z-20">
+              <h3 className="font-bold text-xl">Consultation</h3>
+              <p>
+                First, a discussion of your goals and any previous treatments.
+                Dr Yalda will then recommend the right treatment and plan for
+                you.
+              </p>
+            </div>
+          </div>
+          <div className="pb-16 pt-10 pr-5 pl-5">
+            <div className="relative pl-6 -mb-12">
+              <div className="text-10xl leading-none font-bold text-blue-300">
+                2
+              </div>
+              <img
+                className="absolute bottom-2 left-0 top-12 mb-4 h-10"
+                src={consultation}
+                alt="Doctor's clipboard icon"
+              />
+            </div>
+            <div className="relative mt-4 z-20">
+              <h3 className="font-bold text-xl">Treatment</h3>
+              <p>
+                Most treatments take about 10 minutes, and are not painful
+                because of the minimally invasive nature of non surgical
+                treatments.
+              </p>
+            </div>
+          </div>
+          <div className="pb-16 pt-10 pr-5 pl-5">
+            <div className="relative pl-6 -mb-12">
+              <div className="text-10xl leading-none font-bold text-blue-300">
+                3
+              </div>
+              <img
+                className="absolute bottom-2 left-0 top-12 mb-4 h-10"
+                src={consultation}
+                alt="Doctor's clipboard icon"
+              />
+            </div>
+            <div className="relative mt-4 z-20">
+              <h3 className="font-bold text-xl">Aftercare and advice</h3>
+              <p>
+                You will be briefed about aftercare in your consultation. Dr
+                Yalda will be on hand around the clock for any follow-up
+                questions you might have.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
