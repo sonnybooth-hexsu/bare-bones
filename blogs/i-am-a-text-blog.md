@@ -9,6 +9,7 @@ author: Sonny and Bab
 category: Love
 image: assets/cheek-filler-image.jpg
 imageLarge: assets/cheek-filler-image.jpg
+authorImage: assets/amelia.jpeg
 ---
 **Lol**
 

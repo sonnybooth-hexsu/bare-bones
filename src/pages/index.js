@@ -125,27 +125,27 @@ const IndexPage = () => (
     {/* Buttons */}
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid pt-20 pb-20">
-        <div className="pl-4 pr-4 lg:flex lg:justify-between">
+        <div className="pl-4 pr-4 text-center lg:flex lg:justify-between">
           <a
-            className={`${buttons.btnPrimary} inline-block mt-8 lg:mt-0`}
+            className={`${buttons.btnPrimary} block md:inline-block mt-8 lg:mt-0`}
             href="#"
           >
             Book a consultation
           </a>
           <a
-            className={`${buttons.btnSecondary} inline-block mt-8 lg:mt-0`}
+            className={`${buttons.btnSecondary} block md:inline-block mt-8 md:ml-2 md:mr-2 lg:ml-0 lg:mr-0 lg:mt-0`}
             href="#"
           >
             Book a consultation
           </a>
           <a
-            className={`${buttons.btnSecondaryOutline} inline-block mt-8 lg:mt-0`}
+            className={`${buttons.btnSecondaryOutline} block md:inline-block mt-8 lg:mt-0`}
             href="#"
           >
             Book a consultation
           </a>
           <a
-            className={`${buttons.btnTertiary} inline-block mt-8 lg:mt-0`}
+            className={`${buttons.btnTertiary} block md:inline-block mt-8 md:ml-2 lg:ml-0 lg:mt-0`}
             href="#"
           >
             See Treatments{" "}
