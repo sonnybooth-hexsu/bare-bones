@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import styles from "./header.module.css"
 import { Menu } from "react-feather"
 import { Search } from "../Search"
+import { Whatsapp } from "../Whatsapp"
 
 type HeaderProps = {
   siteTitle: string
@@ -38,6 +39,11 @@ export const Header = ({ siteTitle, navLinks, navToggle }: HeaderProps) => {
             }
           }
         }
+        site {
+          siteMetadata {
+            telephone
+          }
+        }
       }
     `
   )
@@ -60,6 +66,7 @@ export const Header = ({ siteTitle, navLinks, navToggle }: HeaderProps) => {
                 ))}
               </ol>
             </nav>
+            {data && <Whatsapp telephone={data.site.siteMetadata.telephone} />}
             <Menu onClick={navToggle} className={styles.headerMenuIcon} />
           </div>
         </div>

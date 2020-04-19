@@ -2,6 +2,7 @@ import React from "react"
 import { Layout } from "../components/Layout"
 import { SEO } from "../components/SEO"
 import { CTABlock } from "../components/CTABlock"
+import { Carousel } from "../components/Carousel"
 import { ProductSlider } from "../components/ProductSlider"
 import buttons from "../styles/buttons.module.css"
 import lipsBefore from "../assets/images/lips-before.jpg"
@@ -65,7 +66,81 @@ const IndexPage = () => (
     {/*  Logo Quilt*/}
     <div className="bg-gray-200">
       <div className="container mx-auto pl-6 pr-6 pt-10 pb-10">
-        <div className="grid gap-6 pl-4 pr-4 lg:grid-cols-6 ">
+        <div className="md:hidden">
+          <Carousel
+            settingsOverrides={{
+              dots: false,
+              arrows: false,
+              infinite: true,
+              autoplay: true,
+              draggable: false,
+              autoplaySpeed: 2000,
+              waitForAnimate: true,
+              swipeToSlide: false,
+              speed: 300,
+              responsive: [
+                {
+                  breakpoint: 768, //Tailwind md default
+                  settings: {
+                    slidesToShow: 2,
+                  },
+                },
+              ],
+            }}
+          >
+            <div>
+              <div className="h-16 flex align-center justify-center">
+                {" "}
+                <img
+                  className="h-full pt-5 pb-5 pr-5 pl-5"
+                  src={teoxane}
+                  alt="Teoxane logo"
+                />
+              </div>
+            </div>
+            <div>
+              <div className="h-16 flex align-center justify-center">
+                {" "}
+                <img
+                  className="h-full pt-5 pb-5 pr-5 pl-5"
+                  src={profhilo}
+                  alt="Profhilo logo"
+                />
+              </div>
+            </div>
+            <div>
+              <div className="h-16 flex align-center justify-center">
+                {" "}
+                <img
+                  className="h-full pt-5 pb-5 pr-5 pl-5"
+                  src={zo}
+                  alt="Zo Skin Health logo"
+                />
+              </div>
+            </div>
+            <div>
+              <div className="h-16 flex align-center justify-center">
+                {" "}
+                <img
+                  className="h-full pt-3 pb-3 pr-3 pl-3"
+                  src={perfectPeel}
+                  alt="Perfect Peel logo"
+                />
+              </div>
+            </div>
+            <div>
+              <div className="h-16 flex align-center justify-center">
+                {" "}
+                <img
+                  className="h-full pt-5 pb-5 pr-5 pl-5"
+                  src={mesoestetic}
+                  alt="Mesoestetic logo"
+                />
+              </div>
+            </div>
+          </Carousel>
+        </div>
+        <div className="gap-6 pl-4 pr-4 hidden md:grid lg:grid-cols-6 ">
           <p className="text-sm font-medium text-center text-gray-600 md:items-center lg:flex lg:text-left ">
             Partnerships with leading aesthetics brands:
           </p>
