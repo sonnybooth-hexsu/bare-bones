@@ -10,6 +10,7 @@ type ArrowProps = {
 }
 
 type CarouselProps = {
+  settingsOverrides?: object
   children: ReactNode
 }
 
@@ -29,7 +30,7 @@ const PrevArrow = ({ className, style, onClick }: ArrowProps) => {
   )
 }
 
-export const Carousel = ({ children }: CarouselProps) => {
+export const Carousel = ({ settingsOverrides, children }: CarouselProps) => {
   const settings = {
     dots: true,
     infinite: false,
@@ -53,6 +54,7 @@ export const Carousel = ({ children }: CarouselProps) => {
         },
       },
     ],
+    ...settingsOverrides,
   }
 
   return <Slider {...settings}>{children}</Slider>

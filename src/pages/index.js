@@ -2,6 +2,7 @@ import React from "react"
 import { Layout } from "../components/Layout"
 import { SEO } from "../components/SEO"
 import { CTABlock } from "../components/CTABlock"
+import { Carousel } from "../components/Carousel"
 import { ProductSlider } from "../components/ProductSlider"
 import buttons from "../styles/buttons.module.css"
 import lipsBefore from "../assets/images/lips-before.jpg"
@@ -65,7 +66,45 @@ const IndexPage = () => (
     {/*  Logo Quilt*/}
     <div className="bg-gray-200">
       <div className="container mx-auto pl-6 pr-6 pt-10 pb-10">
-        <div className="grid gap-6 pl-4 pr-4 lg:grid-cols-6 ">
+        <div className="md:hidden">
+          <Carousel
+            settingsOverrides={{
+              dots: false,
+              arrows: false,
+              infinite: true,
+              autoplaySpeed: 2000,
+              draggable: false,
+              slidesToShow: 1,
+              waitForAnimate: true,
+              swipeToSlide: false,
+              autoplay: true,
+              speed: 300,
+            }}
+          >
+            <img
+              className="h-full p-5 lg:p-4"
+              src={teoxane}
+              alt="Teoxane logo"
+            />
+            <img
+              className="h-full p-5 lg:p-4"
+              src={profhilo}
+              alt="Profhilo logo"
+            />
+            <img className="p-12 lg:p-4" src={zo} alt="Zo Skin Health logo" />
+            <img
+              className="p-12 lg:p-2"
+              src={perfectPeel}
+              alt="Perfect Peel logo"
+            />
+            <img
+              className="h-full p-4 lg:p-4"
+              src={mesoestetic}
+              alt="Mesoestetic logo"
+            />
+          </Carousel>
+        </div>
+        <div className="grid gap-6 pl-4 pr-4 hidden md:block lg:grid-cols-6 ">
           <p className="text-sm font-medium text-center text-gray-600 md:items-center lg:flex lg:text-left ">
             Partnerships with leading aesthetics brands:
           </p>
