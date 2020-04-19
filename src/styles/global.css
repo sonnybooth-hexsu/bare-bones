@@ -8,6 +8,14 @@
     height: 80vh;
   }
 
+  .text-10xl {
+    font-size: 10rem;
+  }
+
+  .bottom-2 {
+    bottom: 1.5rem;
+  }
+
   .animate-reveal {
     opacity: 0;
     animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
@@ -69,10 +77,6 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-feature-settings: 'calt', 'clig', 'kern', 'liga', 'locl', 'rlig';
   letter-spacing: 0.025em;
-}
-
-.hero-block {
-  background-color: #aac2da;
 }
 
 @keyframes reveal {

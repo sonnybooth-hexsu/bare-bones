@@ -13,6 +13,7 @@ import heroImageMd from "../assets/images/hero-image-md.jpg"
 import yaldaAbout from "../assets/images/yalda-about.jpg"
 import avatar from "../assets/images/avatar.jpg"
 import mesoestetic from "../assets/images/brand-logo-mesoestetic.svg"
+import consultation from "../assets/images/consultation.svg"
 import perfectPeel from "../assets/images/brand-logo-perfect-peel.png"
 import profhilo from "../assets/images/brand-logo-profhilo.svg"
 import teoxane from "../assets/images/brand-logo-teoxane.svg"
@@ -33,7 +34,7 @@ const IndexPage = () => (
           <div className="pl-4 pr-4">
             <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
               {/* <p className="text-lg uppercase font-semibold tracking-widest mb-4 text-center lg:text-left">Welcome to</p> */}
-              <h1 className="text-center mb-12 leading-tight tracking-tight md:text-left">
+              <h1 className="text-center text-4xl mb-12 leading-tight tracking-tight md:text-6xl md:text-left">
                 Dr Yalda – Providing a <i className="lowercase">medical</i>{" "}
                 approach to facial aesthetics.
               </h1>
@@ -172,7 +173,7 @@ const IndexPage = () => (
       <div className="pl-4 pr-4">
         <div className="md:flex md:flex-wrap lg:flex-col lg:relative">
           <div className="md:order-1 md:w-1/2 lg:pr-3">
-            <h3 className="uppercase text-5xl leading-tight tracking-tight mb-6 md:text-6xl">
+            <h3 className="uppercase text-4xl leading-tight tracking-tight mb-6 md:text-5xl">
               Enhance and <i className="lowercase">restore</i> your{" "}
               <i className="lowercase">natural</i> beauty.
             </h3>
@@ -237,7 +238,7 @@ const IndexPage = () => (
       <div className="pl-4 pr-4">
         <div className="md:flex  md:flex-wrap lg:flex-col lg:relative">
           <div className="md:order-2 md:w-1/2 lg:pr-3">
-            <h3 className="uppercase text-5xl leading-tight tracking-tight mb-6 md:text-6xl">
+            <h3 className="uppercase text-4xl leading-tight tracking-tight mb-6 md:text-5xl">
               From a registered, <i className="lowercase">medical</i> doctor.
             </h3>
           </div>
@@ -594,24 +595,24 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4">
-          <h1 className="mb-12 text-4xl leading-tight tracking-tight pt-20 pb-20 md:text-6xl md:leading-snug md:tracking-tighter">
-            <p className="text-xs uppercase tracking-wider font-semibold mb-6">
+          <h1 className="uppercase mb-12 text-4xl leading-tight tracking-tight pt-20 pb-20 md:text-6xl md:leading-snug md:tracking-tighter">
+            {/* <p className="text-xs uppercase tracking-wider font-semibold mb-6">
               Get in touch
-            </p>
+            </p> */}
             Send an{" "}
-            <i className="border-b-2 border-solid border-black uppercase">
-              Email
+            <i className="border-b-2 border-solid border-black normal-case">
+              email
             </i>
             , or leave a message in the{" "}
-            <span className="italic-text border-b-2 border-solid border-black uppercase">
+            <i className="italic-text border-b-2 border-solid border-black normal-case">
               contact form
-            </span>
+            </i>
             . View work on{" "}
-            <i className="border-b-2 border-solid border-black uppercase">
+            <i className="border-b-2 border-solid border-black normal-case">
               Instagram
             </i>
             . See reviews on{" "}
-            <i className="border-b-2 border-solid border-black uppercase">
+            <i className="border-b-2 border-solid border-black normal-case">
               Facebook
             </i>
             .
@@ -803,6 +804,82 @@ const IndexPage = () => (
             data-layout="button_count"
           ></div>
         </div>
+      </div>
+    </div>
+    {/*  How It Works Title  */}
+    <div className="bg-gray-200">
+      <div className="container mx-auto pr-6 pl-6">
+        <div className="pl-4 pr-4">
+          <h2 className="text-2xl pt-8 pb-8">
+            <span className="text-3xl text-red-500 font-bold md:text-4xl">
+              How It Works
+            </span>{" "}
+            - To explain product or services step by step
+          </h2>
+        </div>
+      </div>
+    </div>
+    {/* Blog Post */}
+    <div className="container mx-auto pr-6 pl-6">
+      <div className="pt-20 pb-20 pl-4 pr-4">
+      <h2  className="text-3xl text-center mb-10">How it works</h2>
+      <div className="grid gap-6 pl-4 pr-4 lg:grid-cols-3 ">
+      <div className="pb-16 pt-10 pr-5 pl-5">
+          <div className="relative pl-6 -mb-12">
+            <div className="text-10xl leading-none font-bold text-blue-300">
+              1
+            </div>
+            <img
+              className="absolute bottom-2 left-0 top-12 mb-4 h-10"
+              src={consultation}
+              alt="Doctor's clipboard icon"
+            />
+          </div>
+          <div className="relative mt-4 z-20">
+            <h3 className="font-bold text-xl">Consultation</h3>
+            <p>
+              First, a discussion of your goals and any previous treatments. Dr
+              Yalda will then recommend the right treatment and plan for you.
+            </p>
+          </div>
+        </div>
+        <div className="pb-16 pt-10 pr-5 pl-5">
+          <div className="relative pl-6 -mb-12">
+            <div className="text-10xl leading-none font-bold text-blue-300">
+              2
+            </div>
+            <img
+              className="absolute bottom-2 left-0 top-12 mb-4 h-10"
+              src={consultation}
+              alt="Doctor's clipboard icon"
+            />
+          </div>
+          <div className="relative mt-4 z-20">
+          <h3 className="font-bold text-xl">Treatment</h3>
+            <p>
+            Most treatments take about 10 minutes, and are not painful because of the minimally invasive nature of non surgical treatments.
+            </p>
+          </div>
+        </div>
+        <div className="pb-16 pt-10 pr-5 pl-5">
+          <div className="relative pl-6 -mb-12">
+            <div className="text-10xl leading-none font-bold text-blue-300">
+              3
+            </div>
+            <img
+              className="absolute bottom-2 left-0 top-12 mb-4 h-10"
+              src={consultation}
+              alt="Doctor's clipboard icon"
+            />
+          </div>
+          <div className="relative mt-4 z-20">
+          <h3 className="font-bold text-xl">Aftercare and advice</h3>
+            <p>
+            You will be briefed about aftercare in your consultation. Dr Yalda will be on hand around the clock for any follow-up questions you might have.
+            </p>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   </Layout>

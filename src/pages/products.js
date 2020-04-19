@@ -21,8 +21,8 @@ const Products = props => {
     <Layout>
       <SEO title="Products" />
       <div className="bg-gray-200">
-        <div className="container mx-auto pl-6 pr-6 pb-10 md:pl-0 md:pr-0">
-          <div className="grid grid-cols-1 pt-12 md:grid-cols-5 xl:grid-cols-7 md:gap-12">
+        <div className="container mx-auto pl-6 pr-6 pb-10">
+          <div className="grid grid-cols-1 pr-4 pl-4 pt-12 md:grid-cols-5 xl:grid-cols-7 md:gap-12">
             <div className="grid-cols-1 md:col-span-2 xl:col-span-2">
               <div className="bg-white p-10 pt-6">
                 <h3 className="text-2xl ">Filter</h3>

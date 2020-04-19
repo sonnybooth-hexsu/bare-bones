@@ -4,6 +4,7 @@ import { Layout } from "../components/Layout"
 import { SEO } from "../components/SEO"
 import { Carousel } from "../components/Carousel"
 import { TestimonialCard } from "../components/TestimonialCard"
+import buttons from "../styles/buttons.module.css"
 
 const Reviews = props => {
   const data = props.data.allFile.edges
@@ -16,42 +17,70 @@ const Reviews = props => {
   return (
     <Layout>
       <SEO title="Reviews" />
-      {/*  Reviews Title */}
-      <div className="bg-gray-200">
-        <div className="container mx-auto pl-6 pr-6 pb-10 md:pl-0 md:pr-0">
-          <div className="grid grid-cols-12 gap-4">
-            <div className="col-start-3 col-span-8">
-              <h2 className="text-2xl pt-8 pb-8 text-center">
-                <span className="text-3xl md:text-4xl font-bold">
-                  Client service testimonial list CMS content
-                </span>{" "}
-                - add new testimonials at /admin
-              </h2>
-            </div>
-
-            <div className="col-start-2 col-span-10">
-              <Carousel>
-                {reviews.map(({ name, message, image }, i) => (
-                  <TestimonialCard
-                    key={`testimonial-${i}`}
-                    name={name}
-                    image={image}
-                    message={message}
-                  />
-                ))}
-              </Carousel>
-            </div>
+      {/* Review Slider Title */}
+      <div className="bg-gray-300">
+        <div className="container mx-auto pr-6 pl-6">
+          <div className="pl-4 pr-4">
+            <h2 className="text-2xl pt-8 pb-8">
+              <span className="text-3xl text-red-500 font-bold md:text-4xl">
+                Review Slider CMS content
+              </span>{" "}
+              - add new testimonials at /admin
+            </h2>
           </div>
-          <div className="grid grid-cols-12 gap-4 mt-24">
-            <div className="col-span-12 text-center md:pr-8 md:col-span-8 md:text-left lg:col-span-4">
-              <h2 className="text-3xl">Reviews</h2>
-              <p>
+        </div>
+      </div>
+      {/* Review Slider */}
+      <div className="bg-gray-200 pt-20 pb-10">
+        <div className="container mx-auto pl-6 pr-6 pb-10">
+          <div className="col-start-2 col-span-10 pr-4 pl-4">
+            <Carousel>
+              {reviews.map(({ name, message, image }, i) => (
+                <TestimonialCard
+                  key={`testimonial-${i}`}
+                  name={name}
+                  image={image}
+                  message={message}
+                />
+              ))}
+            </Carousel>
+          </div>
+        </div>
+      </div>
+      {/* Reviews 2  Title*/}
+      <div className="bg-gray-300">
+        <div className="container mx-auto pr-6 pl-6">
+          <div className="pl-4 pr-4">
+            <h2 className="text-2xl pt-8 pb-8">
+              <span className="text-3xl text-red-500 font-bold md:text-4xl">
+                Reviews 2
+              </span>{" "}
+              - Lorem
+            </h2>
+          </div>
+        </div>
+      </div>
+      {/* Reviews 2 */}
+      <div className="bg-gray-200 pt-20 pb-16">
+        <div className="container mx-auto grid grid-cols-12 gap-4">
+          <div className="col-span-12 text-center md:pr-8 md:col-span-10 md:text-left lg:col-span-4">
+            <div className="pr-4 pl-4">
+              <h2 className="text-4xl mb-6">Client Testimonials</h2>
+              <p className="mb-6">
                 A description about reviews, a description about reviews, a
                 description about reviews, a description about reviews, a
                 description about reviews.
               </p>
+              <a
+                className={`${buttons.btnPrimary} block md:inline-block mb-4 md:mb-0 lg:mr-4`}
+                href="#"
+              >
+                See more reviews
+              </a>
             </div>
-            <div className="col-span-12 lg:col-span-8">
+          </div>
+          <div className="col-span-12 lg:col-span-8">
+            <div className="pr-4 pl-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
                 {reviews.map(({ name, message, image }, i) => (
                   <TestimonialCard

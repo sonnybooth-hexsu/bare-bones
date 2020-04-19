@@ -11,23 +11,24 @@ const Contact = () => {
       <div className="bg-white">
         <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
           <div className="pl-4 pr-4">
-            <h1 className="mb-12 text-6xl leading-tight pt-20 pb-20 ">
-              <p className="text-xs uppercase tracking-wider font-semibold mb-6">
+            <h1 className="uppercase mb-12 text-4xl leading-tight tracking-tight pt-20 pb-20 md:text-6xl md:leading-snug md:tracking-tighter">
+              {/* <p className="text-xs uppercase tracking-wider font-semibold mb-6">
                 Get in touch
-              </p>
-              <i className="border-b-4 border-solid border-grey-900 lowercase">
-                Email
+              </p> */}
+              Send an{" "}
+              <i className="border-b-2 border-solid border-black normal-case">
+                email
               </i>
               , or leave a message in the{" "}
-              <i className="border-b-4 border-solid border-black lowercase">
+              <i className="italic-text border-b-2 border-solid border-black normal-case">
                 contact form
               </i>
               . View work on{" "}
-              <i className="border-b-4 border-solid border-black lowercase">
+              <i className="border-b-2 border-solid border-black normal-case">
                 Instagram
               </i>
               . See reviews on{" "}
-              <i className="border-b-4 border-solid border-black lowercase">
+              <i className="border-b-2 border-solid border-black normal-case">
                 Facebook
               </i>
               .
@@ -35,6 +36,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      {/*  Treatment Title Title */}
       <div className="container mx-auto pl-6 pr-6 pb-10 pt-20 pb-20">
         <div className="pl-4 pr-4">
           <div className="md:flex md:flex-wrap lg:flex-col lg:relative">
