@@ -27,7 +27,7 @@ const IndexPage = () => (
     {/* Hero Block */}
     <div className="bg-gray-400">
       <div
-        className="hero-block pt-10 bg-unset lg:grid-cols-12 lg:bg-cover lg:h-screen-80 lg:flex lg:pt-0 lg:items-end lg:pb-24 lg:bg-bottom"
+        className="pt-10 bg-unset lg:grid-cols-12 lg:bg-cover lg:h-screen-80 lg:flex lg:pt-0 lg:items-end lg:pb-24 lg:bg-bottom"
         style={{ backgroundImage: `url(${heroImageMd})` }}
       >
         <div className="container mx-auto pl-6 pr-6">
@@ -795,7 +795,7 @@ const IndexPage = () => (
             <script
               async
               src="https://platform.twitter.com/widgets.js"
-              charset="utf-8"
+              charSet="utf-8"
             ></script>
           </div>
           <div

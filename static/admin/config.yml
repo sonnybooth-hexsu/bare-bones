@@ -44,6 +44,7 @@ collections:
     - { name: excerpt, label: Excerpt}
     - { name: category, label: Category}
     - { name: image, label: Image, widget: image}
+    - { name: imageLarge, label: ImageLarge, widget: image}
     - { name: body, label: Body, widget: markdown }
     - { name: productAttributeTitleOne, label: productAttributeTitleOne }
     - { name: productAttributeValueOne, label: productAttributeValueOne }

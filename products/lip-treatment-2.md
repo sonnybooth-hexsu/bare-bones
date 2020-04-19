@@ -6,6 +6,7 @@ title: Lip treatment 2
 excerpt: I am lip treatment 2
 category: Lips
 image: assets/lips.svg
+imageLarge: assets/cheek-filler-image.jpg
 productAttributeTitleOne: Attr 1
 productAttributeValueOne: '100'
 productAttributeTitleTwo: Attr 2
