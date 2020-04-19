@@ -6,7 +6,6 @@ import { ProductSlider } from "../components/ProductSlider"
 import buttons from "../styles/buttons.module.css"
 import lipsBefore from "../assets/images/lips-before.jpg"
 import lipsAfter from "../assets/images/lips-after.jpg"
-import treatmentHeader from "../assets/images/treatment-header.jpg"
 import signature from "../assets/images/signature.svg"
 import heroImageSm from "../assets/images/hero-image-sm.jpg"
 import heroImageMd from "../assets/images/hero-image-md.jpg"
@@ -31,32 +30,32 @@ const IndexPage = () => (
         style={{ backgroundImage: `url(${heroImageMd})` }}
       >
         <div className="container mx-auto pl-6 pr-6">
-        <div className="pl-4 pr-4">
-            <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
+          <div className="pl-4 pr-4">
+            <div className="flex flex-col items-center lg:items-start lg:w-1/2">
               {/* <p className="text-lg uppercase font-semibold tracking-widest mb-4 text-center lg:text-left">Welcome to</p> */}
-              <h1 className="text-center text-4xl leading-tight mb-16 md:text-5xl md:text-left">
-              Welcome to your new wireframe kit
+              <h1 className="text-center text-4xl leading-tight mb-16 md:text-5xl md:w-2/3 md:mb-4 lg:text-left">
+                Welcome to your new wireframe kit
               </h1>
-              <p className="text-sm text-center font-medium mb-8 md:w-2/3 lg:w-full lg:text-left lg:mb-8">
+              <p className="text-sm text-center font-medium mb-8 md:mb-12 md:w-2/3 lg:w-full lg:text-left lg:mb-8">
                 If you&lsquo;re looking for the latest in wireless headphones,
                 look no further. These are perfect for TV, stereo, home, and
                 cell phone.
               </p>
               <div>
                 <a
-                  className={`${buttons.btnPrimary} block lg:inline-block mb-6 md:mb-0 lg:mr-4 py-2 px-2`}
+                  className={`${buttons.btnPrimary} block mb-6 lg:mr-4 lg:inline-block`}
                   href="#"
                 >
                   Book a consultation
                 </a>
                 <a
-                  className={`${buttons.btnTertiary} block lg:inline-block mb-6`}
+                  className={`${buttons.btnTertiary} block mb-6 lg:inline-block`}
                   href="#"
                 >
                   See Treatments{" "}
                   <ArrowRight color="currentColor" className="inline mr-2" />
                 </a>
-                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -127,25 +126,25 @@ const IndexPage = () => (
       <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid pt-20 pb-20">
         <div className="pl-4 pr-4 text-center lg:flex lg:justify-between">
           <a
-            className={`${buttons.btnPrimary} block md:inline-block mt-8 lg:mt-0`}
+            className={`${buttons.btnPrimary} block mt-8 md:inline-block lg:mt-0`}
             href="#"
           >
             Book a consultation
           </a>
           <a
-            className={`${buttons.btnSecondary} block md:inline-block mt-8 md:ml-2 md:mr-2 lg:ml-0 lg:mr-0 lg:mt-0`}
+            className={`${buttons.btnSecondary} block mt-8 md:ml-2 md:mr-2  md:inline-block lg:ml-0 lg:mr-0 lg:mt-0`}
             href="#"
           >
             Book a consultation
           </a>
           <a
-            className={`${buttons.btnSecondaryOutline} block md:inline-block mt-8 lg:mt-0`}
+            className={`${buttons.btnSecondaryOutline} block mt-8 lg:mt-0  md:inline-block`}
             href="#"
           >
             Book a consultation
           </a>
           <a
-            className={`${buttons.btnTertiary} block md:inline-block mt-8 md:ml-2 lg:ml-0 lg:mt-0`}
+            className={`${buttons.btnTertiary} block mt-8 md:inline-block md:ml-2 lg:ml-0 lg:mt-0`}
             href="#"
           >
             See Treatments{" "}
@@ -526,42 +525,6 @@ const IndexPage = () => (
             alt="A mock signature of Dr Yalda "
           />
         </div>
-      </div>
-    </div>
-    {/* 50/50 Header Title */}
-    <div className="bg-gray-200">
-      <div className="container mx-auto pr-6 pl-6">
-        <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl text-red-500 font-bold md:text-4xl">
-              50/50 Header
-            </span>{" "}
-            - Display a 50/50 hero image and text
-          </h2>
-        </div>
-      </div>
-    </div>
-    {/* 50/50 Header*/}
-    <div className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1">
-      <div className="flex flex-col justify-center bg-white pt-20 pb-20 pr-8 pl-8 lg:pt-0 lg:pb-0 lg:h-full md:pr-12 md:pl-12 lg:pr-20 lg:pl-20 xl:pr-50 xl:pl-50">
-        <div className="pl-4 pr-4">
-          <h1 className="text-4xl leading-tight tracking-tight mb-2 md:text-6xl">
-            Soft Tissue Fillers
-          </h1>
-          <p className="mb-12">
-            Instantly soften fine lines &amp; wrinkles, restore age-related
-            volume loss and augment and contour facial features.
-          </p>
-          <button className={`${buttons.btnPrimary}`}>
-            Book a consultation
-          </button>
-        </div>
-      </div>
-      <div className="lg:h-full">
-        <img
-          src={treatmentHeader}
-          alt="Close up of model in profile pose, with head turned to the left."
-        />
       </div>
     </div>
     {/* Fullwidth Image Title */}

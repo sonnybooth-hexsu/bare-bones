@@ -21,7 +21,7 @@ const Blogs = props => {
       <SEO title="Blogs" />
       <div className="bg-gray-200">
         <div className="container mx-auto pb-10 pl-6 pr-6">
-          <div className="grid grid-cols-1 pr-4 pl-4 pt-12 md:grid-cols-5 xl:grid-cols-7 md:gap-12">
+          <div className="grid grid-cols-1 pr-4 pl-4 pt-12 md:gap-12 md:grid-cols-5 xl:grid-cols-7">
             <div className="grid-cols-1 md:col-span-2 xl:col-span-2">
               <div className="bg-white p-10 pt-6">
                 <h3 className="text-xl ">Filter</h3>
