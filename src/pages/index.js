@@ -31,33 +31,32 @@ const IndexPage = () => (
         style={{ backgroundImage: `url(${heroImageMd})` }}
       >
         <div className="container mx-auto pl-6 pr-6">
-          <div className="pl-4 pr-4">
+        <div className="pl-4 pr-4">
             <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
               {/* <p className="text-lg uppercase font-semibold tracking-widest mb-4 text-center lg:text-left">Welcome to</p> */}
-              <h1 className="text-center text-4xl mb-12 leading-tight tracking-tight md:text-6xl md:text-left">
-                Dr Yalda – Providing a <i className="lowercase">medical</i>{" "}
-                approach to facial aesthetics.
+              <h1 className="text-center text-4xl leading-tight mb-16 md:text-5xl md:text-left">
+              Welcome to your new wireframe kit
               </h1>
-              {/* <p className="text-center font-medium mb-4 md:text-left lg:mb-8">
-                Providing a medical approach to facial aesthetics in London
-                &amp; Nottingham. Another sentence here is required
-                approximately this length.
-              </p> */}
+              <p className="text-sm text-center font-medium mb-8 md:w-2/3 lg:w-full lg:text-left lg:mb-8">
+                If you&lsquo;re looking for the latest in wireless headphones,
+                look no further. These are perfect for TV, stereo, home, and
+                cell phone.
+              </p>
               <div>
                 <a
-                  className={`${buttons.btnPrimary} block md:inline-block mb-4 md:mb-0 lg:mr-4`}
+                  className={`${buttons.btnPrimary} block lg:inline-block mb-6 md:mb-0 lg:mr-4 py-2 px-2`}
                   href="#"
                 >
                   Book a consultation
                 </a>
                 <a
-                  className={`${buttons.btnTertiary} block md:inline-block`}
+                  className={`${buttons.btnTertiary} block lg:inline-block mb-6`}
                   href="#"
                 >
                   See Treatments{" "}
                   <ArrowRight color="currentColor" className="inline mr-2" />
                 </a>
-              </div>
+                </div>
             </div>
           </div>
         </div>
@@ -173,7 +172,7 @@ const IndexPage = () => (
       <div className="pl-4 pr-4">
         <div className="md:flex md:flex-wrap lg:flex-col lg:relative">
           <div className="md:order-1 md:w-1/2 lg:pr-3">
-            <h3 className="uppercase text-4xl leading-tight tracking-tight mb-6 md:text-5xl">
+            <h3 className="uppercase text-4xl leading-tight tracking-tight mb-6 md:text-5xl lg:pr-4">
               Enhance and <i className="lowercase">restore</i> your{" "}
               <i className="lowercase">natural</i> beauty.
             </h3>
@@ -239,7 +238,8 @@ const IndexPage = () => (
         <div className="md:flex  md:flex-wrap lg:flex-col lg:relative">
           <div className="md:order-2 md:w-1/2 lg:pr-3">
             <h3 className="uppercase text-4xl leading-tight tracking-tight mb-6 md:text-5xl">
-              From a registered, <i className="lowercase">medical</i> doctor.
+              From a registered, <i className="lowercase">medical</i> doctor,
+              and Mentor.
             </h3>
           </div>
           <div className="md:w-full md:order-1 lg:w-1/2">
@@ -296,7 +296,16 @@ const IndexPage = () => (
     </div>
     {/* Product Slider */}
     <div className="bg-white">
-      <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
+      <div className="container mx-auto pl-6 pr-6 pt-20 pb-20 flex align-center">
+        <div className="pl-4 pr-4">
+          <h2 className="uppercase text-4xl text-center md:text-5xl lg:w-1/2">
+            It&lsquo;s the <i className="lowercase">results</i> that count
+          </h2>
+          <p className="mb-20 text-center lg:w-1/2">
+            Dr Yalda is a results-oriented aesthetics doctor that goes above and
+            beyond to ensure clients are completely satisfied.
+          </p>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 pl-4 pr-4">
           <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
           <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
@@ -595,7 +604,7 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4">
-          <h1 className="uppercase mb-12 text-4xl leading-tight tracking-tight pt-20 pb-20 md:text-6xl md:leading-snug md:tracking-tighter">
+          <h1 className="normal-case mb-12 text-4xl leading-tight tracking-tight pt-20 pb-20 md:text-6xl md:leading-snug md:tracking-tighter">
             {/* <p className="text-xs uppercase tracking-wider font-semibold mb-6">
               Get in touch
             </p> */}
@@ -703,7 +712,7 @@ const IndexPage = () => (
         {/* Blog Post Avatar, Posted by, Date Stamp */}
         <div className="lg:col-span-2">
           <div className="flex items-center">
-            <div className="rounded-full h-12 w-12 mr-2 mr-2 overflow-hidden h-16 w-16">
+            <div className="rounded-full mr-3 overflow-hidden h-16 w-16">
               <img
                 className="h-full w-full"
                 src={avatar}
@@ -711,10 +720,10 @@ const IndexPage = () => (
               />
             </div>
             <div>
-              <p className="pb-0 mb-0 text-md font-medium tracking-wide">
+              <p className="text-md font-medium tracking-wide leading-none mb-1">
                 By Dr Yalda
               </p>
-              <p className="pb-0 mb-0 text-gray-600 text-sm font-medium">
+              <p className="text-gray-600 text-sm font-medium leading-none">
                 8th Oct, 2020
               </p>
             </div>
@@ -819,67 +828,72 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    {/* Blog Post */}
+    {/* How it works */}
     <div className="container mx-auto pr-6 pl-6">
       <div className="pt-20 pb-20 pl-4 pr-4">
-      <h2  className="text-3xl text-center mb-10">How it works</h2>
-      <div className="grid gap-6 pl-4 pr-4 lg:grid-cols-3 ">
-      <div className="pb-16 pt-10 pr-5 pl-5">
-          <div className="relative pl-6 -mb-12">
-            <div className="text-10xl leading-none font-bold text-blue-300">
-              1
+        <h2 className="text-4xl text-center mb-10 md:text-5xl">How it works</h2>
+        <div className="grid gap-6 pl-4 pr-4 lg:grid-cols-3 ">
+          <div className="pb-16 pt-10 pr-5 pl-5">
+            <div className="relative pl-6 -mb-12">
+              <div className="text-10xl leading-none font-bold text-blue-300">
+                1
+              </div>
+              <img
+                className="absolute bottom-2 left-0 top-12 mb-4 h-10"
+                src={consultation}
+                alt="Doctor's clipboard icon"
+              />
             </div>
-            <img
-              className="absolute bottom-2 left-0 top-12 mb-4 h-10"
-              src={consultation}
-              alt="Doctor's clipboard icon"
-            />
+            <div className="relative mt-4 z-20">
+              <h3 className="font-bold text-xl">Consultation</h3>
+              <p>
+                First, a discussion of your goals and any previous treatments.
+                Dr Yalda will then recommend the right treatment and plan for
+                you.
+              </p>
+            </div>
           </div>
-          <div className="relative mt-4 z-20">
-            <h3 className="font-bold text-xl">Consultation</h3>
-            <p>
-              First, a discussion of your goals and any previous treatments. Dr
-              Yalda will then recommend the right treatment and plan for you.
-            </p>
+          <div className="pb-16 pt-10 pr-5 pl-5">
+            <div className="relative pl-6 -mb-12">
+              <div className="text-10xl leading-none font-bold text-blue-300">
+                2
+              </div>
+              <img
+                className="absolute bottom-2 left-0 top-12 mb-4 h-10"
+                src={consultation}
+                alt="Doctor's clipboard icon"
+              />
+            </div>
+            <div className="relative mt-4 z-20">
+              <h3 className="font-bold text-xl">Treatment</h3>
+              <p>
+                Most treatments take about 10 minutes, and are not painful
+                because of the minimally invasive nature of non surgical
+                treatments.
+              </p>
+            </div>
+          </div>
+          <div className="pb-16 pt-10 pr-5 pl-5">
+            <div className="relative pl-6 -mb-12">
+              <div className="text-10xl leading-none font-bold text-blue-300">
+                3
+              </div>
+              <img
+                className="absolute bottom-2 left-0 top-12 mb-4 h-10"
+                src={consultation}
+                alt="Doctor's clipboard icon"
+              />
+            </div>
+            <div className="relative mt-4 z-20">
+              <h3 className="font-bold text-xl">Aftercare and advice</h3>
+              <p>
+                You will be briefed about aftercare in your consultation. Dr
+                Yalda will be on hand around the clock for any follow-up
+                questions you might have.
+              </p>
+            </div>
           </div>
         </div>
-        <div className="pb-16 pt-10 pr-5 pl-5">
-          <div className="relative pl-6 -mb-12">
-            <div className="text-10xl leading-none font-bold text-blue-300">
-              2
-            </div>
-            <img
-              className="absolute bottom-2 left-0 top-12 mb-4 h-10"
-              src={consultation}
-              alt="Doctor's clipboard icon"
-            />
-          </div>
-          <div className="relative mt-4 z-20">
-          <h3 className="font-bold text-xl">Treatment</h3>
-            <p>
-            Most treatments take about 10 minutes, and are not painful because of the minimally invasive nature of non surgical treatments.
-            </p>
-          </div>
-        </div>
-        <div className="pb-16 pt-10 pr-5 pl-5">
-          <div className="relative pl-6 -mb-12">
-            <div className="text-10xl leading-none font-bold text-blue-300">
-              3
-            </div>
-            <img
-              className="absolute bottom-2 left-0 top-12 mb-4 h-10"
-              src={consultation}
-              alt="Doctor's clipboard icon"
-            />
-          </div>
-          <div className="relative mt-4 z-20">
-          <h3 className="font-bold text-xl">Aftercare and advice</h3>
-            <p>
-            You will be briefed about aftercare in your consultation. Dr Yalda will be on hand around the clock for any follow-up questions you might have.
-            </p>
-          </div>
-        </div>
-      </div>
       </div>
     </div>
   </Layout>
