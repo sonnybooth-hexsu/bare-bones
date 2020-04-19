@@ -72,36 +72,72 @@ const IndexPage = () => (
               dots: false,
               arrows: false,
               infinite: true,
-              autoplaySpeed: 2000,
+              autoplay: true,
               draggable: false,
-              slidesToShow: 1,
+              autoplaySpeed: 2000,
               waitForAnimate: true,
               swipeToSlide: false,
-              autoplay: true,
               speed: 300,
+              responsive: [
+                {
+                  breakpoint: 768, //Tailwind md default
+                  settings: {
+                    slidesToShow: 2,
+                  },
+                },
+              ],
             }}
           >
-            <img
-              className="h-full p-5 lg:p-4"
-              src={teoxane}
-              alt="Teoxane logo"
-            />
-            <img
-              className="h-full p-5 lg:p-4"
-              src={profhilo}
-              alt="Profhilo logo"
-            />
-            <img className="p-12 lg:p-4" src={zo} alt="Zo Skin Health logo" />
-            <img
-              className="p-12 lg:p-2"
-              src={perfectPeel}
-              alt="Perfect Peel logo"
-            />
-            <img
-              className="h-full p-4 lg:p-4"
-              src={mesoestetic}
-              alt="Mesoestetic logo"
-            />
+            <div>
+              <div className="h-16 flex align-center justify-center">
+                {" "}
+                <img
+                  className="h-full pt-5 pb-5 pr-5 pl-5"
+                  src={teoxane}
+                  alt="Teoxane logo"
+                />
+              </div>
+            </div>
+            <div>
+              <div className="h-16 flex align-center justify-center">
+                {" "}
+                <img
+                  className="h-full pt-5 pb-5 pr-5 pl-5"
+                  src={profhilo}
+                  alt="Profhilo logo"
+                />
+              </div>
+            </div>
+            <div>
+              <div className="h-16 flex align-center justify-center">
+                {" "}
+                <img
+                  className="h-full pt-5 pb-5 pr-5 pl-5"
+                  src={zo}
+                  alt="Zo Skin Health logo"
+                />
+              </div>
+            </div>
+            <div>
+              <div className="h-16 flex align-center justify-center">
+                {" "}
+                <img
+                  className="h-full pt-3 pb-3 pr-3 pl-3"
+                  src={perfectPeel}
+                  alt="Perfect Peel logo"
+                />
+              </div>
+            </div>
+            <div>
+              <div className="h-16 flex align-center justify-center">
+                {" "}
+                <img
+                  className="h-full pt-5 pb-5 pr-5 pl-5"
+                  src={mesoestetic}
+                  alt="Mesoestetic logo"
+                />
+              </div>
+            </div>
           </Carousel>
         </div>
         <div className="gap-6 pl-4 pr-4 hidden md:grid lg:grid-cols-6 ">
