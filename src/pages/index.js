@@ -104,7 +104,7 @@ const IndexPage = () => (
             />
           </Carousel>
         </div>
-        <div className="grid gap-6 pl-4 pr-4 hidden md:block lg:grid-cols-6 ">
+        <div className="gap-6 pl-4 pr-4 hidden md:grid lg:grid-cols-6 ">
           <p className="text-sm font-medium text-center text-gray-600 md:items-center lg:flex lg:text-left ">
             Partnerships with leading aesthetics brands:
           </p>
