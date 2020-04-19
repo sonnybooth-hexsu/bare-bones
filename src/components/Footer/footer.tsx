@@ -19,6 +19,7 @@ export const Footer = ({
   return (
     <div className={styles.footerContainer}>
       <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0">
+      <div className="pl-4 pr-4">
         <div className={styles.footer}>
           <div className={styles.footerLogoContainer}>
             <a href="/" className={styles.footerLogo}>
@@ -42,6 +43,7 @@ export const Footer = ({
             <p>{telephone}</p>
           </div>
         </div>
+      </div>
       </div>
     </div>
   )

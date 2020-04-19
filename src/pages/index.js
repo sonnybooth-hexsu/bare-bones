@@ -33,7 +33,7 @@ const IndexPage = () => (
           <div className="pl-4 pr-4">
             <div className="flex flex-col items-center lg:items-start lg:w-1/2">
               {/* <p className="text-lg uppercase font-semibold tracking-widest mb-4 text-center lg:text-left">Welcome to</p> */}
-              <h1 className="text-center text-4xl leading-tight mb-16 md:text-5xl md:w-2/3 md:mb-4 lg:text-left">
+              <h1 className="text-center text-4xl leading-tight mb-16 md:text-5xl xl:w-2/3 md:mb-4 lg:text-left">
                 Welcome to your new wireframe kit
               </h1>
               <p className="text-sm text-center font-medium mb-8 md:mb-12 md:w-2/3 lg:w-full lg:text-left lg:mb-8">
@@ -297,7 +297,7 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20 flex align-center">
         <div className="pl-4 pr-4">
-          <h2 className="uppercase text-4xl text-center md:text-5xl lg:w-1/2">
+        <h2 className="uppercase text-4xl text-center md:text-5xl lg:w-1/2">
             It&lsquo;s the <i className="lowercase">results</i> that count
           </h2>
           <p className="mb-20 text-center lg:w-1/2">
@@ -382,7 +382,7 @@ const IndexPage = () => (
           </p>
         </div>
         {/* Treatment Content/Overview Attributes */}
-        <div className="lg:col-start-10 lg:col-span-3 bg-gray-100">
+        <div className="lg:col-start-9 lg:col-span-4 xl:col-start-10 lg:col-span-3">
           <dl className="mb-8">
             <div className="flex justify-between pb-5 pt-5 border-solid border-t border-gray-900 flex justify-between">
               <dt>
@@ -487,7 +487,7 @@ const IndexPage = () => (
     {/* About Content */}
     <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid gap-6 pt-20 pb-20">
       <div className="pl-4 pr-4 grid gap-6 lg:grid-cols-2">
-        <h2 className="uppercase text-4xl leading-tight tracking-tight md:text-6xl md:pr-20">
+        <h2 className="uppercase text-4xl leading-tight tracking-tight md:text-6xl xl:pr-20">
           A <i className="lowercase">little bit</i> about Dr Yalda Jamali.
         </h2>
         <div>
@@ -609,10 +609,10 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4">
-          <p className="text-xs uppercase tracking-wider font-semibold mb-6">
+          <p className="text-s uppercase tracking-widest font-semibold mb-2">
             Treatments
           </p>
-          <h1 className="uppercase text-4xl leading-tight tracking-tight mb-16 mt-2 md:text-6xl md:leading-snug md:tracking-tighter">
+          <h1 className="uppercase text-4xl leading-tight tracking-tight mb-20 mt-2 md:text-6xl md:leading-snug md:tracking-tighter">
             Dr Yalda offers a range of <i className="lowercase">non-surgical</i>{" "}
             cosmetic treatments using high quality,{" "}
             <i className="lowercase">medical</i> products.
@@ -640,12 +640,12 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4 flex flex-col">
-          <div className="inline ">
-            <p className="text-center text-xs font-semibold tracking-widest uppercase bg-black text-white rounded-full py-2 px-2 mb-4">
+          <div className="flex justify-center">
+            <p className="inline text-center text-xs font-semibold tracking-widest uppercase bg-black text-white rounded-full py-2 px-4 mb-4">
               Category
             </p>
           </div>
-          <h1 className="uppercase text-4xl leading-tight tracking-tight mb-8 mt-2 text-center font-normal md:text-6xl ">
+          <h1 className="uppercase text-4xl leading-tight tracking-tight mb-8 mt-2 text-center font-normal lg:text-5xl xl:text-6xl">
             Considerations for darker skin types when choosing in-clinic skin
             treatments.
           </h1>
@@ -675,7 +675,7 @@ const IndexPage = () => (
         {/* Blog Post Avatar, Posted by, Date Stamp */}
         <div className="lg:col-span-2">
           <div className="flex items-center">
-            <div className="rounded-full mr-3 overflow-hidden h-16 w-16">
+            <div className="rounded-full mr-3 overflow-hidden h-12 w-12">
               <img
                 className="h-full w-full"
                 src={avatar}
