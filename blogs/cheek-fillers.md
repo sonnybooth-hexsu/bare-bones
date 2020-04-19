@@ -9,6 +9,7 @@ author: Dr Yalda
 category: Category
 image: assets/cheek-filler-image.jpg
 imageLarge: assets/cheek-filler-image.jpg
+authorImage: assets/emma.jpeg
 ---
 When assessing your skin, your practitioner might refer to your 'Fitzpatrick Skin Type'. The Fitzpatrick scale classifies human skin type, based on the colour of your skin, hair and eyes and your sensitivity towards UV radiation.
 
