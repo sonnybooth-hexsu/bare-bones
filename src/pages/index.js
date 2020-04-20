@@ -831,25 +831,7 @@ const IndexPage = () => (
         </div>
         {/* Right hand column (Share Links) */}
         <div className="lg:col-span-2">
-          <div className="flex items-center">
-            <a
-              href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-              className="twitter-share-button"
-              data-show-count="false"
-            >
-              Tweet
-            </a>
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-              charSet="utf-8"
-            ></script>
-          </div>
-          <div
-            className="fb-share-button"
-            data-href="https://www.your-domain.com/your-page.html"
-            data-layout="button_count"
-          ></div>
+          <p>Share links</p>
         </div>
       </div>
     </div>
