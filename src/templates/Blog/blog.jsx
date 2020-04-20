@@ -59,18 +59,18 @@ export default function Template({ data }) {
       <SEO title={title} />
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4 flex flex-col">
-          <div className="inline ">
-            <p className="text-center text-xs font-semibold tracking-widest uppercase bg-black text-white rounded-full py-2 px-2 mb-4">
+          <div className="flex justify-center">
+            <p className="inline text-center text-xs font-semibold tracking-widest uppercase bg-black text-white rounded-full py-2 px-4 mb-4">
               {category}
             </p>
           </div>
-          <h1 className="uppercase text-4xl leading-tight tracking-tight mb-8 mt-2 text-center font-normal md:text-6xl ">
+          <h1 className="uppercase text-4xl leading-tight tracking-tight mb-8 mt-2 text-center font-normal lg:text-5xl xl:text-6xl">
             {title}
           </h1>
           <p className="text-center font-semi-bold">{excerpt}</p>
         </div>
       </div>
-      <div className="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0">
+      <div className="container mx-auto pr-6 pl-6">
         <div className="grid grid-cols-1 gap-6 pt-20 pb-20 pl-4 pr-4 lg:grid-cols-12">
           <div className="lg:col-span-2">
             <div className="flex items-center">

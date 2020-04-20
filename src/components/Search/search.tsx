@@ -53,8 +53,8 @@ export const Search = ({ items }: SearchBarProps) => {
   }, [searchTerm])
 
   return (
-    <div className="flex-grow ml-3 mr-3 h-10 md:relative md:ml-6 md:mr-6 md:flex-grow-0">
-      <form>
+    <div className="flex-grow ml-3 mr-3 h-10 md:relative md:ml-6 md:mr-6 lg:flex-grow-0">
+      <form className="h-full">
         <label className="sr-only" htmlFor="site-search">
           Search site
         </label>
