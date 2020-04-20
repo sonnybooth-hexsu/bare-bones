@@ -34,7 +34,7 @@ const IndexPage = () => (
           <div className="pl-4 pr-4">
             <div className="flex flex-col items-center lg:items-start lg:w-1/2">
               {/* <p className="text-lg uppercase font-semibold tracking-widest mb-4 text-center lg:text-left">Welcome to</p> */}
-              <h1 className="text-center text-4xl leading-tight mb-16 md:text-5xl xl:w-2/3 md:mb-4 lg:text-left">
+              <h1 className="text-center text-4xl leading-tight mb-16 md:text-5xl md:mb-4 lg:text-left  xl:w-2/3">
                 Welcome to your new wireframe kit
               </h1>
               <p className="text-sm text-center font-medium mb-8 md:mb-12 md:w-2/3 lg:w-full lg:text-left lg:mb-8">
@@ -457,7 +457,7 @@ const IndexPage = () => (
           </p>
         </div>
         {/* Treatment Content/Overview Attributes */}
-        <div className="lg:col-start-9 lg:col-span-4 xl:col-start-10 lg:col-span-3">
+        <div className="lg:col-start-9 lg:col-span-4 lg:col-span-3 xl:col-start-10">
           <dl className="mb-8">
             <div className="flex justify-between pb-5 pt-5 border-solid border-t border-gray-900 flex justify-between">
               <dt>
