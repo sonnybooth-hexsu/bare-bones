@@ -1,5 +1,4 @@
 import React from "react"
-import styles from "./footer.module.css"
 
 import { Twitter, Facebook, Linkedin } from "react-feather"
 
@@ -19,11 +18,11 @@ export const Footer = ({
   telephone,
 }: FooterProps) => {
   return (
-    <div className={styles.footerContainer}>
+    <div>
       <div className="bg-black">
         <div className="container mx-auto pl-6 pr-6 pt-16 pb-16">
           <div className="pl-4 pr-4">
-            <div className="grid grid-cols-1 gap-10 grid-col md:gap-6 md:grid-cols-3 lg:grid-cols-12">
+            <div className="grid grid-cols-1 gap-10 md:gap-6 md:grid-cols-3 lg:grid-cols-12">
               {/* Col 1 */}
               <div className="flex items-center justify-center text-white md:col-span-3 lg:col-span-4 lg:items-left">
                 <div className="text-center lg:text-left">
@@ -97,7 +96,7 @@ export const Footer = ({
                   <h6 className="text-sm text-white lg:text-left">
                     Get in touch
                   </h6>
-                  <div className={styles.footerMeta}>
+                  <div>
                     <p className="text-sm text-center text-white lg:text-left">
                       {email}
                     </p>
