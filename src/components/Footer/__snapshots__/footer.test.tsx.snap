@@ -6,72 +6,227 @@ exports[`<Footer /> should match snapshot 1`] = `
     class="footerContainer"
   >
     <div
-      class="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0"
+      class="bg-black"
     >
       <div
-        class="pl-4 pr-4"
+        class="container mx-auto pl-6 pr-6 pt-16 pb-16"
       >
         <div
-          class="footer"
+          class="pl-4 pr-4"
         >
           <div
-            class="footerLogoContainer"
+            class="grid grid-cols-1 gap-10 grid-col md:gap-6 md:grid-cols-3 lg:grid-cols-12"
           >
-            <a
-              class="footerLogo"
-              href="/"
+            <div
+              class="flex items-center justify-center text-white md:col-span-3 lg:col-span-4 lg:items-left"
             >
-              Test Site
-            </a>
-            <p
-              data-testid="footerNavigationDescription"
+              <div
+                class="text-center lg:text-left"
+              >
+                <a
+                  class="bg-white text-black pt-4 pb-4 pr-6 pl-6"
+                  href="/"
+                >
+                  Test Site
+                </a>
+                <p
+                  class="mt-4 mb-10 text-sm"
+                  data-testid="footerNavigationDescription"
+                >
+                  I am test description
+                </p>
+                <div
+                  class=""
+                >
+                  <svg
+                    class="inline mr-2 ml-2 text-white"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                    />
+                  </svg>
+                  <svg
+                    class="inline mr-2 ml-2 text-white"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                    />
+                  </svg>
+                  <svg
+                    class="inline mr-2 ml-2 text-white"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    />
+                    <rect
+                      height="12"
+                      width="4"
+                      x="2"
+                      y="9"
+                    />
+                    <circle
+                      cx="4"
+                      cy="4"
+                      r="2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div
+              class="lg:col-span-2 lg:col-start-6"
             >
-              I am test description
-            </p>
+              <nav
+                class="text-center lg:text-left"
+              >
+                <h6
+                  class="text-sm text-white lg:text-left"
+                >
+                  Title
+                </h6>
+                <ol>
+                  <li
+                    data-testid="footerNavigationLink"
+                  >
+                    <a
+                      class="text-sm text-center text-white"
+                      href="link-1"
+                    >
+                      Link 1
+                    </a>
+                  </li>
+                  <li
+                    data-testid="footerNavigationLink"
+                  >
+                    <a
+                      class="text-sm text-center text-white"
+                      href="link-2"
+                    >
+                      Link 2
+                    </a>
+                  </li>
+                  <li
+                    data-testid="footerNavigationLink"
+                  >
+                    <a
+                      class="text-sm text-center text-white"
+                      href="link-3"
+                    >
+                      Link 3
+                    </a>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <div
+              class="lg:col-span-2"
+            >
+              <nav
+                class="text-center lg:text-left"
+              >
+                <h6
+                  class="text-sm text-white lg:text-left"
+                >
+                  Title
+                </h6>
+                <ol>
+                  <li>
+                    <a
+                      class="text-sm text-center text-white "
+                      href="link-1"
+                    >
+                      Link 1
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-center text-white "
+                      href="link-2"
+                    >
+                      Link 2
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-center text-white "
+                      href="link-3"
+                    >
+                      Link 3
+                    </a>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <div
+              class="lg:col-span-2"
+            >
+              <nav
+                class="text-center"
+              >
+                <h6
+                  class="text-sm text-white lg:text-left"
+                >
+                  Get in touch
+                </h6>
+                <div
+                  class="footerMeta"
+                >
+                  <p
+                    class="text-sm text-center text-white lg:text-left"
+                  >
+                    test@email.com
+                  </p>
+                  <p
+                    class="text-sm text-center text-white lg:text-left"
+                  >
+                    +441111111111
+                  </p>
+                </div>
+              </nav>
+            </div>
           </div>
-          <div>
-            <nav
-              class="footerNav"
-            >
-              <ol>
-                <li
-                  data-testid="footerNavigationLink"
-                >
-                  <a
-                    href="link-1"
-                  >
-                    Link 1
-                  </a>
-                </li>
-                <li
-                  data-testid="footerNavigationLink"
-                >
-                  <a
-                    href="link-2"
-                  >
-                    Link 2
-                  </a>
-                </li>
-                <li
-                  data-testid="footerNavigationLink"
-                >
-                  <a
-                    href="link-3"
-                  >
-                    Link 3
-                  </a>
-                </li>
-              </ol>
-            </nav>
-          </div>
+        </div>
+      </div>
+      <div
+        class="bg-gray-700"
+      >
+        <div
+          class="container mx-auto pl-6 pr-6"
+        >
           <div
-            class="footerMeta"
+            class="pl-4 pr-4"
           >
-            <p>
-              test@email.com
-            </p>
-            <p>
-              +441111111111
+            <p
+              class="text-xs pt-2 pb-2 text-center text-white lg:text-left"
+            >
+              ©2018 - Bare Bones | All right reserved.
             </p>
           </div>
         </div>

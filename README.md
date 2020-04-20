@@ -2,13 +2,13 @@
   Bare Bones
 </h1>
 
-<p>A bare bones website for client development</p>
+<p>A bare bones website for client development.</p>
 
 ## Quick start
 
 1.  **Create a Bare Bones site**
 
-
+s
     ```sh
     # clone
     git clone https://github.com/sonnybooth-hexsu/bare-bones.git

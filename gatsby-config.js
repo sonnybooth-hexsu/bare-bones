@@ -3,7 +3,7 @@
 module.exports = {
   siteMetadata: {
     title: `Bare Bones`,
-    description: `A bare bones website for client development`,
+    description: `A bare bones website for client development lorem ipsum dolor sit amet.`,
     email: `sonnyboothwebdesign@gmail.com`,
     telephone: `+447792471765`,
     author: `@sonnybooth-hexsu`,
