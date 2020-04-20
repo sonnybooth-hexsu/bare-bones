@@ -54,8 +54,6 @@ export const Header = ({
     `
   )
 
-  console.log(pageSelected)
-
   return (
     <div className={styles.headerContainer}>
       <div className="container mx-auto pl-6 pr-6">

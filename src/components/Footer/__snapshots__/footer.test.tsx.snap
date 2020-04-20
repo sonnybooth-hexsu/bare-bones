@@ -2,9 +2,7 @@
 
 exports[`<Footer /> should match snapshot 1`] = `
 <div>
-  <div
-    class="footerContainer"
-  >
+  <div>
     <div
       class="bg-black"
     >
@@ -15,7 +13,7 @@ exports[`<Footer /> should match snapshot 1`] = `
           class="pl-4 pr-4"
         >
           <div
-            class="grid grid-cols-1 gap-10 grid-col md:gap-6 md:grid-cols-3 lg:grid-cols-12"
+            class="grid grid-cols-1 gap-10 md:gap-6 md:grid-cols-3 lg:grid-cols-12"
           >
             <div
               class="flex items-center justify-center text-white md:col-span-3 lg:col-span-4 lg:items-left"
@@ -195,9 +193,7 @@ exports[`<Footer /> should match snapshot 1`] = `
                 >
                   Get in touch
                 </h6>
-                <div
-                  class="footerMeta"
-                >
+                <div>
                   <p
                     class="text-sm text-center text-white lg:text-left"
                   >
@@ -226,7 +222,9 @@ exports[`<Footer /> should match snapshot 1`] = `
             <p
               class="text-xs pt-2 pb-2 text-center text-white lg:text-left"
             >
-              ©2018 - Bare Bones | All right reserved.
+              ©
+              2020
+               - Bare Bones | All right reserved.
             </p>
           </div>
         </div>
