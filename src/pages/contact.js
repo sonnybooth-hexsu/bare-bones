@@ -6,7 +6,7 @@ import { MapPin, Phone, Mail } from "react-feather"
 
 const Contact = () => {
   return (
-    <Layout>
+    <Layout page="Contact">
       <SEO title="Contact" />
       <div className="bg-white">
         <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">

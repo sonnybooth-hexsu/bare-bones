@@ -17,7 +17,7 @@ const Blogs = props => {
   const [blogs, setBlogsState] = useState(blogsDestructured)
 
   return (
-    <Layout>
+    <Layout page="CMS Blogs">
       <SEO title="Blogs" />
       <div className="bg-gray-200">
         <div className="container mx-auto pb-10 pl-6 pr-6">

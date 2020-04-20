@@ -5,7 +5,7 @@ import { X } from "react-feather"
 type HeaderOpenProps = {
   siteTitle: string
   navLinks: Array<{ name: string; page: string; id: number }>
-  navToggle?: () => {}
+  navToggle: () => Function
 }
 
 export const HeaderOpen = ({

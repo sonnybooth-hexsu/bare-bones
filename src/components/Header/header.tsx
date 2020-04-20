@@ -9,9 +9,15 @@ type HeaderProps = {
   siteTitle: string
   navLinks: Array<{ name: string; page: string; id: number }>
   navToggle: () => Function
+  pageSelected: string
 }
 
-export const Header = ({ siteTitle, navLinks, navToggle }: HeaderProps) => {
+export const Header = ({
+  siteTitle,
+  navLinks,
+  navToggle,
+  pageSelected,
+}: HeaderProps) => {
   const data = useStaticQuery(
     graphql`
       query {
@@ -48,6 +54,8 @@ export const Header = ({ siteTitle, navLinks, navToggle }: HeaderProps) => {
     `
   )
 
+  console.log(pageSelected)
+
   return (
     <div className={styles.headerContainer}>
       <div className="container mx-auto pl-6 pr-6">
@@ -60,7 +68,11 @@ export const Header = ({ siteTitle, navLinks, navToggle }: HeaderProps) => {
             <nav className={styles.headerNavigation}>
               <ol>
                 {navLinks.map(({ name, page }, i) => (
-                  <li data-testid="headerNavigationLink" key={i}>
+                  <li
+                    className={`${pageSelected === name ? "underline" : ""}`}
+                    data-testid="headerNavigationLink"
+                    key={i}
+                  >
                     <a href={`${page}`}>{name}</a>
                   </li>
                 ))}

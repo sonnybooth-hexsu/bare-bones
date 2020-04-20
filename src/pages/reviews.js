@@ -15,7 +15,7 @@ const Reviews = props => {
   })
 
   return (
-    <Layout>
+    <Layout page="CMS Reviews">
       <SEO title="Reviews" />
       {/* Review Slider Title */}
       <div className="bg-gray-300">

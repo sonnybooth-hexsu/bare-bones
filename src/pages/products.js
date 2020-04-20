@@ -18,7 +18,7 @@ const Products = props => {
   const [products, setProductsState] = useState(productsDestructured)
 
   return (
-    <Layout>
+    <Layout page="CMS Products">
       <SEO title="Products" />
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4">

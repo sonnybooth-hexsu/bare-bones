@@ -34,6 +34,7 @@ describe("<Header />", () => {
         siteTitle="Test Site"
         navLinks={testNavLinks}
         navToggle={() => Function}
+        pageSelected="Home"
       />
     )
 
@@ -46,6 +47,7 @@ describe("<Header />", () => {
         siteTitle="Test Site"
         navLinks={testNavLinks}
         navToggle={() => Function}
+        pageSelected="Home"
       />
     )
 
