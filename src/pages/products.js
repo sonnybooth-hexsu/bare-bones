@@ -20,6 +20,21 @@ const Products = props => {
   return (
     <Layout>
       <SEO title="Products" />
+      <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
+        <div className="pl-4 pr-4">
+          <p className="text-s uppercase tracking-widest font-semibold mb-2">
+            Treatments
+          </p>
+          <h1 className="uppercase text-4xl leading-tight tracking-tight mb-20 mt-2 md:text-6xl md:leading-snug md:tracking-tighter">
+            Dr Yalda offers a range of <i className="lowercase">non-surgical</i>{" "}
+            cosmetic treatments using high quality,{" "}
+            <i className="lowercase">medical</i> products.
+          </h1>
+          <button className="bg-black hover:bg-gray-900 text-white font-light py-6 px-12 inline">
+            Book a consultation
+          </button>
+        </div>
+      </div>
       <div className="bg-gray-200">
         <div className="container mx-auto pl-6 pr-6 pb-10">
           <div className="grid grid-cols-1 pr-4 pl-4 pt-12 md:grid-cols-5 xl:grid-cols-7 md:gap-12">

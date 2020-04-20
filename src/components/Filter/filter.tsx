@@ -1,26 +1,41 @@
 import React, { useState, SyntheticEvent } from "react"
 import { filterBySelected, createListOfTypes } from "../../utils/functions"
 
+type Product = {
+  id: number
+  layout: string
+  title: string
+  category: string
+  path: string
+  excerpt: string
+  image: string
+  imageLarge: string
+  productAttributeTitleOne: string
+  productAttributeTitleTwo: string
+  productAttributeTitleThree: string
+  productAttributeTitleFour: string
+  productAttributeValueOne: string
+  productAttributeValueTwo: string
+  productAttributeValueThree: string
+  productAttributeValueFour: string
+}
+
 type FilterProps = {
-  items: []
-  setItemsState: (newItemsState: []) => void
-  types: [
-    {
-      title: string
-      uid: string
-    }
-  ]
+  items: Array<Product>
+  setItemsState: (newItemsState: Array<Product>) => void
+  types: Array<{
+    title: string
+    uid: string
+  }>
 }
 
 type FieldsetsProps = {
-  items: []
-  setItemsState: (newItemsState: []) => void
-  types: [
-    {
-      title: string
-      uid: string
-    }
-  ]
+  items: Array<Product>
+  setItemsState: (newItemsState: Array<Product>) => void
+  types: Array<{
+    title: string
+    uid: string
+  }>
 }
 
 type Checkbox = {
@@ -38,11 +53,11 @@ type FieldsetTypeProps = {
 
 type Fieldset = {
   title: string
-  items: []
+  items: Array<Product>
   checkboxes: [Checkbox]
   fieldsetsState: [FieldsetTypeProps]
   setFieldsetsState: (newFieldsetsState: [FieldsetTypeProps]) => void
-  setItemsState: (newItemsState: []) => void
+  setItemsState: (newItemsState: Array<Product>) => void
 }
 
 const Fieldset = ({
@@ -107,7 +122,6 @@ const Fieldset = ({
 
 const Fieldsets = ({ types, items, setItemsState }: FieldsetsProps) => {
   const fieldsetTypes = createListOfTypes(items, types)
-
   const fieldsets = fieldsetTypes.map(
     ({ title, uid, checkboxes }: FieldsetTypeProps) => {
       return {
