@@ -1,7 +1,7 @@
 @value colors: "../../styles/variables.module.css";
 @value mqs: "../../styles/mqs.module.css";
 @value colorPrimary, colorBlack, colorWhite from colors;
-@value fromMedium from mqs;
+@value fromMedium, fromLarge from mqs;
 
 .headerContainer {
   background-color: colorWhite;

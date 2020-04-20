@@ -2,7 +2,7 @@
   Bare Bones
 </h1>
 
-<p>A bare bones website for client development</p>
+<p>A bare bones website for client development lorem ipsum dolor sit amet.</p>
 
 ## Quick start
 

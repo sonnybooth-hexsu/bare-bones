@@ -1,7 +1,7 @@
 {
   "name": "bare-bones",
   "private": true,
-  "description": "A bare bones website for client development",
+  "description": "A bare bones website for client development lorem ipsum dolor sit amet.",
   "version": "0.1.0",
   "author": "Sonny Booth",
   "dependencies": {

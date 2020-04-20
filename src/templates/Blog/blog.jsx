@@ -31,24 +31,48 @@ export default function Template({ data }) {
       })(document, "script", "facebook-jssdk")
     }
 
+    const twitterShare = () => {
+      window.twttr = (function(d, s, id) {
+        const fjs = d.getElementsByTagName(s)[0]
+        const t = window.twttr || {}
+        if (d.getElementById(id)) return t
+        const js = d.createElement(s)
+        js.id = id
+        js.src = "https://platform.twitter.com/widgets.js"
+        fjs.parentNode.insertBefore(js, fjs)
+
+        t._e = []
+        t.ready = function(f) {
+          t._e.push(f)
+        }
+
+        return t
+      })(document, "script", "twitter-wjs")
+    }
+
+    twitterShare()
     fbShare()
   }
 
   return (
     <Layout>
       <SEO title={title} />
-      <div className="bg-gray-500">
-        <div className="container mx-auto text-center pt-12 pb-12 pl-6 pr-6 md:pl-0 md:pr-0 md:pb-20 md:pt-20">
-          <p className="font-bold">{category}</p>
-          <h1 className="leading-none text-5xl pt-2 pb-2 md:text-6xl">
+      <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
+        <div className="pl-4 pr-4 flex flex-col">
+          <div className="flex justify-center">
+            <p className="inline text-center text-xs font-semibold tracking-widest uppercase bg-black text-white rounded-full py-2 px-4 mb-4">
+              {category}
+            </p>
+          </div>
+          <h1 className="uppercase text-4xl leading-tight tracking-tight mb-8 mt-2 text-center font-normal lg:text-5xl xl:text-6xl">
             {title}
           </h1>
-          <h2>{excerpt}</h2>
+          <p className="text-center font-semi-bold">{excerpt}</p>
         </div>
       </div>
-      <div className="container mx-auto mt-12 pl-6 pr-6 md:pl-0 md:pr-0">
-        <div className="grid pb-20 md:grid-cols-12">
-          <div className="md:col-span-3 lg:col-span-2">
+      <div className="container mx-auto pr-6 pl-6">
+        <div className="grid grid-cols-1 gap-6 pt-20 pb-20 pl-4 pr-4 lg:grid-cols-12">
+          <div className="lg:col-span-2">
             <div className="flex items-center">
               <div className="rounded-full h-12 w-12 mr-2 mr-2 overflow-hidden h-16 w-16">
                 <img
@@ -66,18 +90,28 @@ export default function Template({ data }) {
                 </p>
               </div>
             </div>
+          </div>
+          <div
+            className="lg:col-span-8"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+          <div className="lg:col-span-2">
+            <a
+              href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+              className="twitter-share-button"
+              data-show-count="false"
+            >
+              Tweet
+            </a>
             <div
-              className="fb-share-button mt-4"
+              className="fb-share-button"
               data-href={`${domain}${path}`}
-              data-layout="button_count"
+              data-layout="button"
+              data-show-count="false"
             >
               Share to Facebook
             </div>
           </div>
-          <div
-            className="mt-10 md:mt-0 md:col-span-8 md:col-start-5 lg:col-start-4"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
         </div>
       </div>
     </Layout>

@@ -11,6 +11,10 @@ image: assets/cheek-filler-image.jpg
 imageLarge: assets/cheek-filler-image.jpg
 authorImage: assets/emma.jpeg
 ---
+![girls face](assets/cheek-filler-image.jpg "girl touching face")
+
+
+
 When assessing your skin, your practitioner might refer to your 'Fitzpatrick Skin Type'. The Fitzpatrick scale classifies human skin type, based on the colour of your skin, hair and eyes and your sensitivity towards UV radiation.
 
 Doctors worldwide refer to the scale to assess the risk of UV associated skin cancers and to reinforce the need for a broad-spectrum sunscreen in our daily routines. You will fall into one of the six skin tying categories.
@@ -28,8 +32,6 @@ The more melanin your skin has, the darker your skin, hair and iris will be, and
 ## Why is this important for your in-clinic treatments?
 
 The higher your Fitzpatrick skin type, the more melanin your skin has and the darker the appearance of your skin will be. This information is essential when we carry out skin treatments. Not all in-in clinic skin treatments will be safe on all skin types. As a rule of thumb, the darker your skin, the fewer treatment options we may have. This is because darker skin is at a higher risk of developing Post Inflammatory Hyperpigmentation (PIH). PIH, as the name suggests, is pigmentation following inflammation and they can present as pinkish, brown spots on the skin.
-
-## 
 
 ## What do you need to consider?
 

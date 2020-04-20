@@ -1,3 +1,5 @@
 /* mq variables */
 
 @value fromMedium: min-width: 768px;
+
+@value fromLarge: min-width: 1024px;
