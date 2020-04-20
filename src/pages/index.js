@@ -22,7 +22,7 @@ import zo from "../assets/images/brand-logo-zo.png"
 import { Clock, Watch, Calendar, Tag, Check, ArrowRight } from "react-feather"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout page="Home">
     <SEO title="Home" />
     {/* Hero Block */}
     <div className="bg-gray-400">

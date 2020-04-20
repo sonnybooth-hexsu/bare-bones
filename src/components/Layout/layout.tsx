@@ -6,10 +6,11 @@ import { Footer } from "../Footer"
 import { ThemeContext } from "../../context/ThemeContext"
 
 type LayoutProps = {
+  page: string
   children: ReactNode
 }
 
-export const Layout = ({ children }: LayoutProps) => {
+export const Layout = ({ page, children }: LayoutProps) => {
   const { navOpen, navToggle } = useContext(ThemeContext)
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -35,6 +36,7 @@ export const Layout = ({ children }: LayoutProps) => {
           siteTitle={data.site.siteMetadata.title}
           navLinks={data.site.siteMetadata.navLinks}
           navToggle={navToggle}
+          pageSelected={page}
         />
       ) : (
         <HeaderOpen

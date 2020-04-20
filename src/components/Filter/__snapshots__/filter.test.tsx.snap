@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Filter /> should match snapshot 1`] = `
+<div>
+  <form>
+    <fieldset
+      class="mt-3"
+    >
+      <legend>
+        Categories
+      </legend>
+      <div>
+        <label
+          class="inline-flex items-center"
+        >
+          <input
+            class="form-checkbox"
+            id="Eye-0"
+            name="Eye"
+            type="checkbox"
+          />
+          <span
+            class="ml-2"
+          >
+            Eye (1)
+          </span>
+        </label>
+      </div>
+      <div>
+        <label
+          class="inline-flex items-center"
+        >
+          <input
+            class="form-checkbox"
+            id="Face-1"
+            name="Face"
+            type="checkbox"
+          />
+          <span
+            class="ml-2"
+          >
+            Face (1)
+          </span>
+        </label>
+      </div>
+    </fieldset>
+  </form>
+</div>
+`;

@@ -28,6 +28,7 @@ exports[`<Header /> should match snapshot 1`] = `
           >
             <ol>
               <li
+                class=""
                 data-testid="headerNavigationLink"
               >
                 <a
@@ -37,6 +38,7 @@ exports[`<Header /> should match snapshot 1`] = `
                 </a>
               </li>
               <li
+                class=""
                 data-testid="headerNavigationLink"
               >
                 <a
@@ -46,6 +48,7 @@ exports[`<Header /> should match snapshot 1`] = `
                 </a>
               </li>
               <li
+                class=""
                 data-testid="headerNavigationLink"
               >
                 <a
