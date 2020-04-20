@@ -34,7 +34,7 @@ export const Footer = ({
                     {siteTitle}
                   </a>
                   <p
-                    data-testid="footerNavigaYtionDescription"
+                    data-testid="footerNavigationDescription"
                     className="mt-4 mb-10 text-sm"
                   >
                     {description}
@@ -79,7 +79,7 @@ export const Footer = ({
                   <h6 className="text-sm text-white lg:text-left">Title</h6>
                   <ol>
                     {navLinks.map(({ name, page }, i) => (
-                      <li data-testid="footerNavigationLink" key={i}>
+                      <li key={i}>
                         <a
                           href={page}
                           className="text-sm text-center text-white "
