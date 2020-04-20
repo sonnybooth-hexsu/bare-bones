@@ -372,7 +372,7 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20 flex align-center">
         <div className="pl-4 pr-4">
-        <h2 className="uppercase text-4xl text-center md:text-5xl lg:w-1/2">
+          <h2 className="uppercase text-4xl text-center md:text-5xl lg:w-1/2">
             It&lsquo;s the <i className="lowercase">results</i> that count
           </h2>
           <p className="mb-20 text-center lg:w-1/2">
