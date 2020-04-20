@@ -20,7 +20,7 @@
   font-size: 1.5rem;
   font-weight: 600;
 
-  @media (fromMedium) {
+  @media (fromLarge) {
     flex-grow: 1;
     font-size: 2rem;
   }
@@ -30,7 +30,7 @@
   composes: listInline from "../../styles/helpers.module.css";
   display: none;
 
-  @media (fromMedium) {
+  @media (fromLarge) {
     display: flex;
   }
 }
@@ -61,7 +61,7 @@
 .headerMenuIcon {
   cursor: pointer;
 
-  @media (fromMedium) {
+  @media (fromLarge) {
     display: none;
   }
 }

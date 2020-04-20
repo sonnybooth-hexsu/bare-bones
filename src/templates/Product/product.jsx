@@ -26,7 +26,8 @@ export default function Template({ data }) {
       <SEO title={title} />
       <div className="grid lg:grid-cols-2">
         <div className="bg-gray-500 flex flex-col align-center justify-center">
-          <div className="container mx-auto pl-6 pr-6 pt-8 pb-8 lg:pl-0 lg:pr-0 lg:w-screen lg:left-tran-half">
+          <div className="container mx-auto pl-6 pr-6 pt-24 pb-24 lg:w-screen lg:left-tran-half">
+          <div className="pl-4 pr-4">
             <div className="lg:w-1/2">
               <h1>{title}</h1>
               <p className="mt-4">{excerpt}</p>
@@ -36,11 +37,13 @@ export default function Template({ data }) {
             </div>
           </div>
         </div>
+        </div>
         <div className="">
           <img src={`/${imageLarge}`} alt="Product advert" />
         </div>
       </div>
-      <div className="container mx-auto pl-6 pr-6 pt-8 pb-20 md:pl-0 md:pr-0">
+      <div className="container mx-auto pl-6 pr-6 pt-8 pb-20">
+      <div className="pl-4 pr-4">
         <div className="grid md:grid-cols-12">
           <div
             className="mb-6 md:col-span-8 lg:col-span-7 lg:col-start-1"
@@ -101,6 +104,7 @@ export default function Template({ data }) {
                 </dd>
               </div>
             </dl>
+          </div>
           </div>
         </div>
       </div>
