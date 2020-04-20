@@ -113,7 +113,7 @@ export const Footer = ({
           <div className="container mx-auto pl-6 pr-6">
             <div className="pl-4 pr-4">
               <p className="text-xs pt-2 pb-2 text-center text-white lg:text-left">
-                ©2018 - Bare Bones | All right reserved.
+                ©{new Date().getFullYear()} - Bare Bones | All right reserved.
               </p>
             </div>
           </div>
