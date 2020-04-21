@@ -9,16 +9,19 @@ const testNavLinks = [
   {
     name: `Link 1`,
     page: `link-1`,
+    subLinks: [],
     id: 1,
   },
   {
     name: `Link 2`,
     page: `link-2`,
+    subLinks: [],
     id: 2,
   },
   {
     name: `Link 3`,
     page: `link-3`,
+    subLinks: [],
     id: 3,
   },
 ]

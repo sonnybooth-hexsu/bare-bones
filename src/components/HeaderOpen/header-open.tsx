@@ -1,11 +1,40 @@
-import React from "react"
+import React, { useState } from "react"
 import styles from "./header-open.module.css"
-import { X } from "react-feather"
+import { X, ChevronDown, ChevronUp } from "react-feather"
 
 type HeaderOpenProps = {
   siteTitle: string
-  navLinks: Array<{ name: string; page: string; id: number }>
+  navLinks: Array<{
+    name: string
+    page: string
+    id: number
+    subLinks: Array<{ name: string; page: string; id: number }>
+  }>
   navToggle: () => Function
+}
+
+const SubMenuItem = ({ name, subLinks, id }) => {
+  const [openState, setOpenState] = useState(false)
+
+  return (
+    <li
+      key={`navigation-item-${id}`}
+      className={`animate-reveal delay-${id}`}
+      onClick={() => setOpenState(!openState)}
+    >
+      <span className={styles.headerNavigationSubMenu}>
+        {name}
+        {openState ? <ChevronUp /> : <ChevronDown />}
+      </span>
+      <div className={`${openState ? "block" : "hidden"}`}>
+        {subLinks.map(({ name, page, id }) => (
+          <a key={`navigation-sublink-item-${id}`} href={page}>
+            {name}
+          </a>
+        ))}
+      </div>
+    </li>
+  )
 }
 
 export const HeaderOpen = ({
@@ -24,15 +53,19 @@ export const HeaderOpen = ({
         </div>
         <nav className={styles.headerNavigation}>
           <ol>
-            {navLinks.map(({ name, page }, i) => (
-              <li
-                className={`animate-reveal delay-${i}`}
-                data-testid="headerNavigationLink"
-                key={i}
-              >
-                <a href={`${page}`}>{name}</a>
-              </li>
-            ))}
+            {navLinks.map(({ name, page, subLinks, id }) => {
+              return subLinks.length > 0 ? (
+                <SubMenuItem name={name} subLinks={subLinks} id={id} />
+              ) : (
+                <li
+                  className={`animate-reveal delay-${id}`}
+                  data-testid="headerNavigationLink"
+                  key={id}
+                >
+                  <a href={`${page}`}>{name}</a>
+                </li>
+              )
+            })}
           </ol>
         </nav>
       </div>

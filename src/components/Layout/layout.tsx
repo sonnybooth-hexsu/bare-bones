@@ -23,6 +23,12 @@ export const Layout = ({ page, children }: LayoutProps) => {
           navLinks {
             name
             page
+            subLinks {
+              name
+              page
+              id
+            }
+            id
           }
         }
       }

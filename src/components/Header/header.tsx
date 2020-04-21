@@ -1,13 +1,18 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styles from "./header.module.css"
-import { Menu } from "react-feather"
+import { Menu, ChevronDown } from "react-feather"
 import { Search } from "../Search"
 import { Whatsapp } from "../Whatsapp"
 
 type HeaderProps = {
   siteTitle: string
-  navLinks: Array<{ name: string; page: string; id: number }>
+  navLinks: Array<{
+    name: string
+    page: string
+    id: number
+    subLinks: Array<{ name: string; page: string; id: number }>
+  }>
   navToggle: () => Function
   pageSelected: string
 }
@@ -65,15 +70,31 @@ export const Header = ({
             {data && <Search items={data.allFile.edges} />}
             <nav className={styles.headerNavigation}>
               <ol>
-                {navLinks.map(({ name, page }, i) => (
-                  <li
-                    className={`${pageSelected === name ? "underline" : ""}`}
-                    data-testid="headerNavigationLink"
-                    key={i}
-                  >
-                    <a href={`${page}`}>{name}</a>
-                  </li>
-                ))}
+                {navLinks.map(({ name, page, subLinks, id }) => {
+                  return subLinks.length > 0 ? (
+                    <li tabIndex={0} key={`navigation-item-${id}`}>
+                      <span className={styles.headerNavigationSubMenu}>
+                        {name}
+                        <ChevronDown />
+                      </span>
+                      <div>
+                        {subLinks.map(({ name, page, id }) => (
+                          <a key={`navigation-sublink-item-${id}`} href={page}>
+                            {name}
+                          </a>
+                        ))}
+                      </div>
+                    </li>
+                  ) : (
+                    <li
+                      className={`${pageSelected === name ? "underline" : ""}`}
+                      data-testid="headerNavigationLink"
+                      key={`navigation-item-${id}`}
+                    >
+                      <a href={`${page}`}>{name}</a>
+                    </li>
+                  )
+                })}
               </ol>
             </nav>
             {data && <Whatsapp telephone={data.site.siteMetadata.telephone} />}
