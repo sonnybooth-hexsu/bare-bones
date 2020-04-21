@@ -24,13 +24,17 @@ const SubMenuItem = ({ name, subLinks, id }) => {
     <li
       tabIndex={0}
       key={`navigation-item-${id}`}
+      data-testid="subLinkMenu"
       onClick={() => setOpenState(!openState)}
     >
       <span className={styles.headerNavigationSubMenu}>
         {name}
         {openState ? <ChevronUp /> : <ChevronDown />}
       </span>
-      <div className={`${openState ? "block" : "hidden"}`}>
+      <div
+        data-testid="subLinkMenuList"
+        className={`${openState ? "block" : "hidden"}`}
+      >
         {subLinks.map(({ name, page, id }) => (
           <a key={`navigation-sublink-item-${id}`} href={page}>
             {name}

@@ -19,6 +19,7 @@ const SubMenuItem = ({ name, subLinks, id }) => {
   return (
     <li
       key={`navigation-item-${id}`}
+      data-testid="subLinkMenu"
       className={`animate-reveal delay-${id}`}
       onClick={() => setOpenState(!openState)}
     >
@@ -26,7 +27,10 @@ const SubMenuItem = ({ name, subLinks, id }) => {
         {name}
         {openState ? <ChevronUp /> : <ChevronDown />}
       </span>
-      <div className={`${openState ? "block" : "hidden"}`}>
+      <div
+        data-testid="subLinkMenuList"
+        className={`${openState ? "block" : "hidden"}`}
+      >
         {subLinks.map(({ name, page, id }) => (
           <a key={`navigation-sublink-item-${id}`} href={page}>
             {name}

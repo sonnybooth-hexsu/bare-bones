@@ -2,20 +2,32 @@
 
 import React from "react"
 import { render, cleanup } from "@testing-library/react"
-import { queryAllByTestId } from "@testing-library/dom"
+import { queryAllByTestId, fireEvent } from "@testing-library/dom"
 import { HeaderOpen } from "./header-open"
 
 const testNavLinks = [
   {
     name: `Link 1`,
     page: `link-1`,
-    subLinks: [],
+    subLinks: [
+      {
+        name: `Sub Link 1`,
+        page: `Sub link-1`,
+        id: 1,
+      },
+    ],
     id: 1,
   },
   {
     name: `Link 2`,
     page: `link-2`,
-    subLinks: [],
+    subLinks: [
+      {
+        name: `Sub Link 1`,
+        page: `Sub link-1`,
+        id: 1,
+      },
+    ],
     id: 2,
   },
   {
@@ -26,11 +38,14 @@ const testNavLinks = [
   },
 ]
 
+const noneSubLinks = testNavLinks.filter(item => !(item.subLinks.length > 0))
+const hasSubLinks = testNavLinks.filter(item => item.subLinks.length > 0)
+
 afterEach(() => {
   cleanup()
 })
 
-describe("<Header />", () => {
+describe("<HeaderOpen />", () => {
   it("should match snapshot", () => {
     const { container } = render(
       <HeaderOpen
@@ -54,6 +69,27 @@ describe("<Header />", () => {
 
     expect(
       queryAllByTestId(container, "headerOpenNavigationLink")
-    ).toHaveLength(testNavLinks.length)
+    ).toHaveLength(noneSubLinks.length)
+  })
+
+  it("toggles subLink class", () => {
+    const { container } = render(
+      <HeaderOpen
+        siteTitle="Test Site"
+        navLinks={testNavLinks}
+        navToggle={() => Function}
+      />
+    )
+
+    const subLinks = queryAllByTestId(container, "subLinkMenu")
+    expect(subLinks).toHaveLength(hasSubLinks.length)
+
+    const sublinkMenuList = queryAllByTestId(subLinks[0], "subLinkMenuList")[0]
+
+    expect(sublinkMenuList).toHaveClass("hidden")
+
+    fireEvent.click(sublinkMenuList)
+
+    expect(sublinkMenuList).toHaveClass("block")
   })
 })

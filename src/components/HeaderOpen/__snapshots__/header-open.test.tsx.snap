@@ -49,23 +49,73 @@ exports[`<Header /> should match snapshot 1`] = `
         <ol>
           <li
             class="animate-reveal delay-1"
-            data-testid="headerOpenNavigationLink"
+            data-testid="subLinkMenu"
           >
-            <a
-              href="link-1"
+            <span
+              class="headerNavigationSubMenu"
             >
               Link 1
-            </a>
+              <svg
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polyline
+                  points="6 9 12 15 18 9"
+                />
+              </svg>
+            </span>
+            <div
+              class="hidden"
+              data-testid="subLinkMenuList"
+            >
+              <a
+                href="Sub link-1"
+              >
+                Sub Link 1
+              </a>
+            </div>
           </li>
           <li
             class="animate-reveal delay-2"
-            data-testid="headerOpenNavigationLink"
+            data-testid="subLinkMenu"
           >
-            <a
-              href="link-2"
+            <span
+              class="headerNavigationSubMenu"
             >
               Link 2
-            </a>
+              <svg
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polyline
+                  points="6 9 12 15 18 9"
+                />
+              </svg>
+            </span>
+            <div
+              class="hidden"
+              data-testid="subLinkMenuList"
+            >
+              <a
+                href="Sub link-1"
+              >
+                Sub Link 1
+              </a>
+            </div>
           </li>
           <li
             class="animate-reveal delay-3"
