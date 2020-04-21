@@ -8,8 +8,8 @@ import buttons from "../styles/buttons.module.css"
 import lipsBefore from "../assets/images/lips-before.jpg"
 import lipsAfter from "../assets/images/lips-after.jpg"
 import signature from "../assets/images/signature.svg"
-import heroImageSm from "../assets/images/hero-image-sm.jpg"
-import heroImageMd from "../assets/images/hero-image-md.jpg"
+import heroImageSm from "../assets/images/hero-image-sm-2.jpg"
+import heroImageMd from "../assets/images/hero-image-med-4.jpg"
 import yaldaAbout from "../assets/images/yalda-about.jpg"
 import avatar from "../assets/images/avatar.jpg"
 import mesoestetic from "../assets/images/brand-logo-mesoestetic.svg"
@@ -18,6 +18,7 @@ import perfectPeel from "../assets/images/brand-logo-perfect-peel.png"
 import profhilo from "../assets/images/brand-logo-profhilo.svg"
 import teoxane from "../assets/images/brand-logo-teoxane.svg"
 import zo from "../assets/images/brand-logo-zo.png"
+import cover1 from "../assets/images/cover-1.jpg"
 
 import { Clock, Watch, Calendar, Tag, Check, ArrowRight } from "react-feather"
 
@@ -28,7 +29,7 @@ const IndexPage = () => (
     <div className="bg-gray-400">
       <div
         className="pt-10 bg-unset lg:grid-cols-12 lg:bg-cover lg:h-screen-80 lg:flex lg:pt-0 lg:items-end lg:pb-24 lg:bg-bottom"
-        style={{ backgroundImage: `url(${heroImageMd})` }}
+        // style={{ backgroundImage: `url(${heroImageMd})` }}
       >
         <div className="container mx-auto pl-6 pr-6">
           <div className="pl-4 pr-4">
@@ -44,24 +45,28 @@ const IndexPage = () => (
               </p>
               <div>
                 <a
-                  className={`${buttons.btnPrimary} block mb-6 lg:mr-4 lg:inline-block`}
+                  className={`${buttons.btnPrimary} block mb-6 md:mb-0 lg:mr-4 lg:inline-block`}
                   href="#"
                 >
                   Book a consultation
                 </a>
                 <a
-                  className={`${buttons.btnTertiary} block mb-6 lg:inline-block`}
+                  className={`${buttons.btnTertiary} block mb-6 md:mb-0 lg:inline-block`}
                   href="#"
                 >
                   See Treatments{" "}
-                  <ArrowRight color="currentColor" className="inline mr-2" />
+                  <ArrowRight
+                    size="16"
+                    color="currentColor"
+                    className="inline mr-2"
+                  />
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <img className="lg:hidden" src={heroImageSm} alt="Dr Yalda smiling" />
+      <img className="lg:hidden" src={heroImageMd} alt="Dr Yalda smiling" />
     </div>
     {/*  Logo Quilt*/}
     <div className="bg-gray-200">
@@ -223,123 +228,139 @@ const IndexPage = () => (
             href="#"
           >
             See Treatments{" "}
-            <ArrowRight color="currentColor" className="inline mr-2" />
+            <ArrowRight
+              size="16"
+              color="currentColor"
+              className="inline mr-2"
+            />
           </a>
         </div>
       </div>
     </div>
-    {/*  Cover 01 Right Title */}
+    {/*   Platforma Layout Title */}
     <div className="bg-gray-200">
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
           <h2 className="text-2xl pt-8 pb-8">
             <span className="text-3xl text-red-500 font-bold md:text-4xl">
-              Cover 01 Right
+              Platforma Layout
             </span>{" "}
             - To display some text, and an image on the right
           </h2>
         </div>
       </div>
     </div>
-    {/*  Cover 01 Right*/}
+    {/* Platforma Layout */}
     <div className="container mx-auto pl-6 pr-6 pb-10 pt-20 pb-20">
-      <div className="pl-4 pr-4">
-        <div className="md:flex md:flex-wrap lg:flex-col lg:relative">
-          <div className="md:order-1 md:w-1/2 lg:pr-3">
-            <h3 className="uppercase text-4xl leading-tight tracking-tight mb-6 md:text-5xl lg:pr-4">
-              Enhance and <i className="lowercase">restore</i> your{" "}
-              <i className="lowercase">natural</i> beauty.
-            </h3>
-          </div>
-          <div className="md:w-full md:order-3 lg:absolute lg:w-1/2 lg:top-0 lg:right-0">
-            <img
-              className="mb-6"
-              src="https://frosty-ardinghelli-04f7f2.netlify.com/static/home-3-e5af273814dfcb6ee426fd73f696247e.jpg"
-              alt="Dr Yalda pushing a client&lsquo;s hair back, as part of the consultation process."
-            />
-          </div>
-          <div className="md:order-2 md:w-1/2 lg:pr-10 lg:pb-20">
-            <div>
-              <p className="mb-4 text-gray-900">
-                Dr Yalda is an expert in identifying the treatments that will
-                help you look and feel your best. Her experience and artistic
-                eye in conjunction with using the most premium brands allows her
-                to provide her patients with satisfied, long lasting results:
+      <div className="cols-50 rows-fr-auto pl-4 pr-4 grid grid-cols-2 grid-rows-2 gap-10 md:col-gap-5">
+        <div className="col-span-2 flex content-center justify-center md:pr-6 md:col-span-1 md:row-span-2">
+          <img
+            src="/static/cover-1-4b42b6386c67ac1a1074e200b0daf0a4.jpg"
+            alt="ALT"
+          />
+        </div>
+        <div className="col-span-2 md:col-span-1 md:row-span-2 flex flex-col content-center justify-center">
+          <h3 className="uppercase text-4xl leading-tight tracking-tight mb-4 md:text-2xl lg:text-5xl">
+            Enhance and <i className="lowercase">restore</i> your{" "}
+            <i className="lowercase">natural</i> beauty.
+          </h3>
+          <p className="mb-4 text-gray-900 md:text-xs lg:text-sm">
+            Dr Yalda is an expert in identifying the treatments that will help
+            you look and feel your best. Her experience and artistic eye in
+            conjunction with using the most premium brands allows her to provide
+            her patients with satisfied, long lasting results:
+          </p>
+          <ul>
+            <li className="pb-1 pt-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="inline mr-2 text-gray-900"
+              >
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p className="text-gray-900 inline md:text-xs lg:text-sm">
+                Reducing the signs of ageing
               </p>
-              <ul>
-                <li className="pb-1 pt-1">
-                  <Check className="inline mr-2 text-gray-900" />
-                  <p className="text-gray-900 inline">
-                    Reducing the signs of ageing
-                  </p>
-                </li>
-                <li className="pb-1 pt-1">
-                  {" "}
-                  <Check className="inline mr-2 text-gray-900" />
-                  <p className="text-gray-900 inline">
-                    Defining your facial features
-                  </p>
-                </li>
-                <li className="pb-1 pt-1">
-                  {" "}
-                  <Check className="inline mr-2 text-gray-900" />
-                  <p className="text-gray-900 inline">
-                    Improving your overall skin health
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
+            </li>
+            <li className="pb-1 pt-1">
+              {" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="inline mr-2 text-gray-900"
+              >
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p className="text-gray-900 inline md:text-xs lg:text-sm">
+                Define your facial features
+              </p>
+            </li>
+            <li className="pb-1 pt-1">
+              {" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="inline mr-2 text-gray-900"
+              >
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p className="text-gray-900 inline md:text-xs lg:text-sm">
+                Improving your overall skin health
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    {/*  Cover 01 Left Title */}
-    <div className="bg-gray-200">
-      <div className="container mx-auto pr-6 pl-6">
-        <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
-              Cover 01 Left
-            </span>{" "}
-            - To display some text, and an image on the left
-          </h2>
+        {/* Platforma Layout 02 */}
+        <div className="container mx-auto pl-6 pr-6 pb-10 pt-20 pb-20">
+      <div className="cols-50-reverse pl-4 pr-4 grid grid-cols-2 grid-rows-2 gap-10 md:col-gap-5">
+        <div className="col-span-2 flex content-center justify-center md:pl-6 md:col-span-1 md:col-start-2 md:row-span-2">
+          <img
+            src="/static/cover-1-4b42b6386c67ac1a1074e200b0daf0a4.jpg"
+            alt="ALT"
+          />
         </div>
-      </div>
-    </div>
-    {/*  Cover 01 Left */}
-    <div className="container mx-auto pl-6 pr-6 pb-10 pt-20 pb-20">
-      <div className="pl-4 pr-4">
-        <div className="md:flex  md:flex-wrap lg:flex-col lg:relative">
-          <div className="md:order-2 md:w-1/2 lg:pr-3">
-            <h3 className="uppercase text-4xl leading-tight tracking-tight mb-6 md:text-5xl">
-              From a registered, <i className="lowercase">medical</i> doctor,
+        <div className="col-span-2 flex flex-col content-center justify-center md:col-start-1 md:col-span-1 md:row-start-1 md:row-span-2">
+          <h3 className="uppercase text-4xl leading-tight tracking-tight mb-4 md:text-2xl lg:text-5xl">
+          From a registered, <i className="lowercase">medical</i> doctor,
               and Mentor.
-            </h3>
-          </div>
-          <div className="md:w-full md:order-1 lg:w-1/2">
-            <img
-              className="mb-6"
-              src="https://frosty-ardinghelli-04f7f2.netlify.com/static/home-3-e5af273814dfcb6ee426fd73f696247e.jpg"
-              alt="Dr Yalda pushing a client&lsquo;s hair back, as part of the consultation process."
-            />
-          </div>
-          <div className="md:order-3 md:w-1/2 lg:pr-10 lg:pb-20">
-            <div>
-              <p className="mb-10 text-gray-900">
-                Dr Yalda is an expert in identifying the treatments that will
-                help you look and feel your best. Her experience and artistic
-                eye in conjunction with using the most premium brands allows her
-                to provide her patients with satisfied, long lasting results:
-              </p>
-              <button className="bg-black hover:bg-gray-900 text-white font-light py-6 px-12 inline">
-                Book a consultation
-              </button>
-            </div>
-          </div>
+          </h3>
+          <p className="mb-4 text-gray-900 md:text-xs lg:text-sm">
+            Dr Yalda is an expert in identifying the treatments that will help
+            you look and feel your best. Her experience and artistic eye in
+            conjunction with using the most premium brands allows her to provide
+            her patients with satisfied, long lasting results:
+          </p>
+          <a
+            className={`${buttons.btnPrimary} block mt-8 md:inline-block lg:mt-0`}
+            href="#"
+          >Button</a>
         </div>
       </div>
     </div>
-
     {/* CTA Block Title */}
     <div className="bg-gray-200">
       <div className="container mx-auto pr-6 pl-6">
@@ -416,7 +437,7 @@ const IndexPage = () => (
             sweating) and bruxism (involuntary habitual grinding of the teeth).
           </p>
           <div className="border-solid border-l-4 border-red-500 pl-6 lg:pr-48 lg:ml-10">
-            <h5 className="text-2xl leading-tight tracking-tight mt-12 mb-16 md:text-3xl text">
+            <h5 className="font-serif ext-2xl leading-tight tracking-tight mt-12 mb-16 md:text-3xl text">
               &quot;I have had lip fillers with Yalda for a while now and the
               results are <i className="lowercase">amazing.</i> Not only is she
               professional but she makes you feel{" "}
@@ -469,7 +490,7 @@ const IndexPage = () => (
                 </div>
               </dt>
               <dd className="text-right inline">
-                <h6>10 Minutes</h6>
+                <h6 className="font-serif">10 Minutes</h6>
               </dd>
             </div>
             <div className="flex justify-between pb-5 pt-5 border-solid border-t border-gray-900 flex justify-between">
@@ -482,7 +503,7 @@ const IndexPage = () => (
                 </div>
               </dt>
               <dd className="text-right inline">
-                <h6>One day</h6>
+                <h6 className="font-serif">One day</h6>
               </dd>
             </div>
             <div className="flex justify-between pb-5 pt-5 border-solid border-t border-gray-900 flex justify-between">
@@ -495,7 +516,7 @@ const IndexPage = () => (
                 </div>
               </dt>
               <dd className="text-right inline">
-                <h6>3–4 Months</h6>
+                <h6 className="font-serif">3–4 Months</h6>
               </dd>
             </div>
             <div className="flex justify-between pb-5 pt-5 border-solid border-t border-b border-gray-900 flex justify-between">
@@ -508,7 +529,7 @@ const IndexPage = () => (
                 </div>
               </dt>
               <dd className="text-right inline">
-                <h6>From £100</h6>
+                <h6 className="font-serif">From £100</h6>
               </dd>
             </div>
           </dl>

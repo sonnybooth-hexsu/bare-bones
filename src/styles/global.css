@@ -51,6 +51,23 @@
   }
 }
 
+.rows-fr-auto {
+  grid-template-rows: auto 1fr;
+}
+
+.cols-fr-auto {
+  grid-template-columns: auto 1fr;
+}
+
+.cols-50 {
+  grid-template-columns: 7fr 5fr;
+}
+
+.cols-50-reverse {
+  grid-template-columns: 5fr 7fr;
+}
+
+
 h1 {
   @apply text-6xl;
   @apply font-serif;
