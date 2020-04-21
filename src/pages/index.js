@@ -8,8 +8,6 @@ import buttons from "../styles/buttons.module.css"
 import lipsBefore from "../assets/images/lips-before.jpg"
 import lipsAfter from "../assets/images/lips-after.jpg"
 import signature from "../assets/images/signature.svg"
-import heroImageSm from "../assets/images/hero-image-sm-2.jpg"
-import heroImageMd from "../assets/images/hero-image-med-4.jpg"
 import yaldaAbout from "../assets/images/yalda-about.jpg"
 import avatar from "../assets/images/avatar.jpg"
 import mesoestetic from "../assets/images/brand-logo-mesoestetic.svg"
@@ -18,55 +16,58 @@ import perfectPeel from "../assets/images/brand-logo-perfect-peel.png"
 import profhilo from "../assets/images/brand-logo-profhilo.svg"
 import teoxane from "../assets/images/brand-logo-teoxane.svg"
 import zo from "../assets/images/brand-logo-zo.png"
-import cover1 from "../assets/images/cover-1.jpg"
+import hero from "../assets/images/hero.jpg"
 
-import { Clock, Watch, Calendar, Tag, Check, ArrowRight } from "react-feather"
+import { Clock, Watch, Calendar, Tag, ArrowRight } from "react-feather"
 
 const IndexPage = () => (
   <Layout page="Home">
     <SEO title="Home" />
     {/* Hero Block */}
-    <div className="bg-gray-400">
-      <div
-        className="pt-10 bg-unset lg:grid-cols-12 lg:bg-cover lg:h-screen-80 lg:flex lg:pt-0 lg:items-end lg:pb-24 lg:bg-bottom"
-        // style={{ backgroundImage: `url(${heroImageMd})` }}
-      >
-        <div className="container mx-auto pl-6 pr-6">
+    <div className="bg-gray-300">
+      <div className="pt-6 pb-6">
+        <div className="container mx-auto pl-6 pr-6 md:pl-16 md:pr-16 lg:pl-40 lg:pr-40 xl:pl-6 xl:pr-6 ">
           <div className="pl-4 pr-4">
-            <div className="flex flex-col items-center lg:items-start lg:w-1/2">
-              {/* <p className="text-lg uppercase font-semibold tracking-widest mb-4 text-center lg:text-left">Welcome to</p> */}
-              <h1 className="text-center text-4xl leading-tight mb-16 md:text-5xl md:mb-4 lg:text-left  xl:w-2/3">
-                Welcome to your new wireframe kit
-              </h1>
-              <p className="text-sm text-center font-medium mb-8 md:mb-12 md:w-2/3 lg:w-full lg:text-left lg:mb-8">
-                If you&lsquo;re looking for the latest in wireless headphones,
-                look no further. These are perfect for TV, stereo, home, and
-                cell phone.
-              </p>
-              <div>
-                <a
-                  className={`${buttons.btnPrimary} block mb-6 md:mb-0 lg:mr-4 lg:inline-block`}
-                  href="#"
-                >
-                  Book a consultation
-                </a>
-                <a
-                  className={`${buttons.btnTertiary} block mb-6 md:mb-0 lg:inline-block`}
-                  href="#"
-                >
-                  See Treatments{" "}
-                  <ArrowRight
-                    size="16"
-                    color="currentColor"
-                    className="inline mr-2"
-                  />
-                </a>
+            <div className="grid gap-2 xl:grid-cols-hero">
+              <img
+                className="max-w-full"
+                src={hero}
+                alt="Girl in denim jacket smiling"
+              />
+              <div className="bg-gray-400 p-16 md:p-16 md:p-32 flex flex-col justify-center">
+                <p className="text-sm font-medium text-left mb-4 uppercase tracking-wider md:mb-6 md:text-base">
+                  Introducing Bare Bones
+                </p>
+                <h1 className="max-w-full font-medium text-left text-4xl leading-tight mb-4 md:mb-5 md:text-5xl md:text-left lg:text-6xl">
+                  We help convey your message.
+                </h1>
+                <p className="font-light mb-4 md:text-lg md:mb-6 md:text-left lg:mb-8 lg:text-xl">
+                  If you&lsquo;re looking for the latest in wireless headphones.
+                </p>
+                <div>
+                  <a
+                    className={`${buttons.btnPrimary} block mb-4 md:mb-6 xl:mr-4 xl:mb-0 xl:inline-block`}
+                    href="#"
+                  >
+                    Book a consultation
+                  </a>
+                  <a
+                    className={`${buttons.btnSecondaryOutline} block xl:inline-block`}
+                    href="#"
+                  >
+                    See Treatments{" "}
+                    <ArrowRight
+                      size="16"
+                      color="currentColor"
+                      className="inline mr-2"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <img className="lg:hidden" src={heroImageMd} alt="Dr Yalda smiling" />
     </div>
     {/*  Logo Quilt*/}
     <div className="bg-gray-200">
@@ -252,14 +253,14 @@ const IndexPage = () => (
     </div>
     {/* Platforma Layout */}
     <div className="container mx-auto pl-6 pr-6 pb-10 pt-20 pb-20">
-      <div className="cols-50 rows-fr-auto pl-4 pr-4 grid grid-cols-2 grid-rows-2 gap-10 md:col-gap-5">
-        <div className="col-span-2 flex content-center justify-center md:pr-6 md:col-span-1 md:row-span-2">
+      <div className="cols-50 rows-fr-auto pl-4 pr-4 grid grid-cols-2 grid-rows-2 gap-4">
+        <div className="col-span-2 flex content-center justify-center md:col-span-1 md:row-span-2">
           <img
             src="/static/cover-1-4b42b6386c67ac1a1074e200b0daf0a4.jpg"
             alt="ALT"
           />
         </div>
-        <div className="col-span-2 md:col-span-1 md:row-span-2 flex flex-col content-center justify-center">
+        <div className="bg-gray-300 p-16 col-span-2 md:col-span-1 md:row-span-2 flex flex-col content-center justify-center">
           <h3 className="uppercase text-4xl leading-tight tracking-tight mb-4 md:text-2xl lg:text-5xl">
             Enhance and <i className="lowercase">restore</i> your{" "}
             <i className="lowercase">natural</i> beauty.
@@ -271,7 +272,7 @@ const IndexPage = () => (
             her patients with satisfied, long lasting results:
           </p>
           <ul>
-            <li className="pb-1 pt-1">
+            {/* <li className="pb-1 pt-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -329,13 +330,13 @@ const IndexPage = () => (
               <p className="text-gray-900 inline md:text-xs lg:text-sm">
                 Improving your overall skin health
               </p>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
     </div>
-        {/* Platforma Layout 02 */}
-        <div className="container mx-auto pl-6 pr-6 pb-10 pt-20 pb-20">
+    {/* Platforma Layout 02 */}
+    <div className="container mx-auto pl-6 pr-6 pb-10 pt-20 pb-20">
       <div className="cols-50-reverse pl-4 pr-4 grid grid-cols-2 grid-rows-2 gap-10 md:col-gap-5">
         <div className="col-span-2 flex content-center justify-center md:pl-6 md:col-span-1 md:col-start-2 md:row-span-2">
           <img
@@ -345,8 +346,8 @@ const IndexPage = () => (
         </div>
         <div className="col-span-2 flex flex-col content-center justify-center md:col-start-1 md:col-span-1 md:row-start-1 md:row-span-2">
           <h3 className="uppercase text-4xl leading-tight tracking-tight mb-4 md:text-2xl lg:text-5xl">
-          From a registered, <i className="lowercase">medical</i> doctor,
-              and Mentor.
+            From a registered, <i className="lowercase">medical</i> doctor, and
+            Mentor.
           </h3>
           <p className="mb-4 text-gray-900 md:text-xs lg:text-sm">
             Dr Yalda is an expert in identifying the treatments that will help
@@ -357,7 +358,50 @@ const IndexPage = () => (
           <a
             className={`${buttons.btnPrimary} block mt-8 md:inline-block lg:mt-0`}
             href="#"
-          >Button</a>
+          >
+            Button
+          </a>
+        </div>
+      </div>
+    </div>
+    {/* Benefits Title */}
+    <div className="bg-gray-200">
+      <div className="container mx-auto pr-6 pl-6">
+        <div className="pl-4 pr-4">
+          <h2 className="text-2xl pt-8 pb-8">
+            <span className="text-3xl md:text-4xl text-red-500 font-bold">
+              Benefits
+            </span>{" "}
+            - Highlight key benefits to user
+          </h2>
+        </div>
+      </div>
+    </div>
+    {/* Benefits */}
+    <div className="container mx-auto pr-6 pl-6 pt-16 pb-16  text-center">
+      <div className="pl-4 pr-4">
+        <div className="grid gap-16 xl:grid-cols-3 md:pr-48 md:pl-48 lg:pl-56 lg:pr-56 xl:pr-16 xl:pl-16 xl:gap-32">
+          <div className="flex flex-col items-center">
+            <Clock size="40" className="inline mb-4 text-gray-900" />
+            <h5 className="text-xl mb-1">Reduce the signs of ageing</h5>
+            <p className="">
+              Sed suspendisse accumsan, sollicitudin pellentesque lorem non.
+            </p>
+          </div>
+          <div className="flex flex-col items-center">
+            <Clock size="40" className="inline mb-4 text-gray-900" />
+            <h5 className="text-xl mb-1">Reduce the signs of ageing</h5>
+            <p className="">
+              Sed suspendisse accumsan, sollicitudin pellentesque lorem non.
+            </p>
+          </div>
+          <div className="flex flex-col items-center">
+            <Clock size="40" className="inline mb-4 text-gray-900" />
+            <h5 className="text-xl mb-1">Reduce the signs of ageing</h5>
+            <p className="">
+              Sed suspendisse accumsan, sollicitudin pellentesque lorem non.
+            </p>
+          </div>
         </div>
       </div>
     </div>
