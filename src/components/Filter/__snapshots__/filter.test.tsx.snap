@@ -15,6 +15,7 @@ exports[`<Filter /> should match snapshot 1`] = `
         >
           <input
             class="form-checkbox"
+            data-testid="filterCheckbox"
             id="Eye-0"
             name="Eye"
             type="checkbox"
@@ -32,6 +33,7 @@ exports[`<Filter /> should match snapshot 1`] = `
         >
           <input
             class="form-checkbox"
+            data-testid="filterCheckbox"
             id="Face-1"
             name="Face"
             type="checkbox"

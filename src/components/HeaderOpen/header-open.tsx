@@ -64,7 +64,7 @@ export const HeaderOpen = ({
               ) : (
                 <li
                   className={`animate-reveal delay-${id}`}
-                  data-testid="headerNavigationLink"
+                  data-testid="headerOpenNavigationLink"
                   key={`navigation-item-${id}`}
                 >
                   <a href={`${page}`}>{name}</a>

@@ -105,6 +105,7 @@ const Fieldset = ({
         <div key={`category-${i}`}>
           <label className="inline-flex items-center">
             <input
+              data-testid="filterCheckbox"
               type="checkbox"
               className="form-checkbox"
               id={`${title}-${id}`}

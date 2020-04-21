@@ -2,6 +2,7 @@
 
 import React from "react"
 import { render } from "@testing-library/react"
+import { queryAllByTestId } from "@testing-library/dom"
 import { Filter } from "./filter"
 
 const productCategories = [
@@ -63,5 +64,19 @@ describe("<Filter />", () => {
     )
 
     expect(container).toMatchSnapshot()
+  })
+
+  it("should have correct number of checkoboxes", () => {
+    const { container } = render(
+      <Filter
+        types={productCategories}
+        items={productsDestructured}
+        setItemsState={() => {
+          return []
+        }}
+      />
+    )
+
+    expect(queryAllByTestId(container, "filterCheckbox")).toHaveLength(2)
   })
 })

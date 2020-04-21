@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should match snapshot 1`] = `
+<div>
+  <div
+    class="headerContainer"
+  >
+    <div
+      class="container mx-auto pl-6 pr-6 md:pl-0 md:pr-0"
+    >
+      <div
+        class="header"
+      >
+        <a
+          class="headerLogo"
+          href="/"
+        >
+          Test Site
+        </a>
+        <svg
+          class="headerMenuIcon"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            x1="18"
+            x2="6"
+            y1="6"
+            y2="18"
+          />
+          <line
+            x1="6"
+            x2="18"
+            y1="6"
+            y2="18"
+          />
+        </svg>
+      </div>
+      <nav
+        class="headerNavigation"
+      >
+        <ol>
+          <li
+            class="animate-reveal delay-1"
+            data-testid="headerOpenNavigationLink"
+          >
+            <a
+              href="link-1"
+            >
+              Link 1
+            </a>
+          </li>
+          <li
+            class="animate-reveal delay-2"
+            data-testid="headerOpenNavigationLink"
+          >
+            <a
+              href="link-2"
+            >
+              Link 2
+            </a>
+          </li>
+          <li
+            class="animate-reveal delay-3"
+            data-testid="headerOpenNavigationLink"
+          >
+            <a
+              href="link-3"
+            >
+              Link 3
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</div>
+`;
