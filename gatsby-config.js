@@ -10,23 +10,43 @@ module.exports = {
     domain: `https://hexsu-bare-bones.netlify.com`,
     navLinks: [
       {
+        name: `Guides`,
+        page: `/guides`,
+        subLinks: [
+          {
+            name: `Styleguide`,
+            page: `/styleguide`,
+            id: 1,
+          },
+          {
+            name: `Components`,
+            page: `/components`,
+            id: 2,
+          },
+          {
+            name: `Forms`,
+            page: `/forms`,
+            id: 3,
+          },
+        ],
+        id: 1,
+      },
+      {
         name: `CMS Blogs`,
         page: `/blogs`,
-        id: 1,
+        subLinks: [],
+        id: 2,
       },
       {
         name: `CMS Products`,
         page: `/products`,
-        id: 2,
+        subLinks: [],
+        id: 3,
       },
       {
         name: `CMS Reviews`,
         page: `/reviews`,
-        id: 3,
-      },
-      {
-        name: `Contact`,
-        page: `/contact`,
+        subLinks: [],
         id: 4,
       },
     ],

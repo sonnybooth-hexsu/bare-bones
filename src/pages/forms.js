@@ -4,10 +4,10 @@ import { SEO } from "../components/SEO"
 
 import { MapPin, Phone, Mail } from "react-feather"
 
-const Contact = () => {
+const Forms = () => {
   return (
-    <Layout page="Contact">
-      <SEO title="Contact" />
+    <Layout page="Guides">
+      <SEO title="Forms" />
       <div className="bg-white">
         <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
           <div className="pl-4 pr-4">
@@ -151,4 +151,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Forms

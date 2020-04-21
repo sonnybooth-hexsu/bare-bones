@@ -3,7 +3,7 @@
 import React from "react"
 import { render, cleanup } from "@testing-library/react"
 import { queryAllByTestId, fireEvent } from "@testing-library/dom"
-import { Header } from "./header"
+import { HeaderOpen } from "./header-open"
 
 const testNavLinks = [
   {
@@ -21,7 +21,13 @@ const testNavLinks = [
   {
     name: `Link 2`,
     page: `link-2`,
-    subLinks: [],
+    subLinks: [
+      {
+        name: `Sub Link 1`,
+        page: `Sub link-1`,
+        id: 1,
+      },
+    ],
     id: 2,
   },
   {
@@ -39,14 +45,13 @@ afterEach(() => {
   cleanup()
 })
 
-describe("<Header />", () => {
+describe("<HeaderOpen />", () => {
   it("should match snapshot", () => {
     const { container } = render(
-      <Header
+      <HeaderOpen
         siteTitle="Test Site"
         navLinks={testNavLinks}
         navToggle={() => Function}
-        pageSelected="Home"
       />
     )
 
@@ -55,26 +60,24 @@ describe("<Header />", () => {
 
   it("should have the length of links passed through", () => {
     const { container } = render(
-      <Header
+      <HeaderOpen
         siteTitle="Test Site"
         navLinks={testNavLinks}
         navToggle={() => Function}
-        pageSelected="Home"
       />
     )
 
-    expect(queryAllByTestId(container, "headerNavigationLink")).toHaveLength(
-      noneSubLinks.length
-    )
+    expect(
+      queryAllByTestId(container, "headerOpenNavigationLink")
+    ).toHaveLength(noneSubLinks.length)
   })
 
   it("toggles subLink class", () => {
     const { container } = render(
-      <Header
+      <HeaderOpen
         siteTitle="Test Site"
         navLinks={testNavLinks}
         navToggle={() => Function}
-        pageSelected="Home"
       />
     )
 

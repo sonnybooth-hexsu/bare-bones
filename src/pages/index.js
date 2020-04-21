@@ -436,20 +436,22 @@ const IndexPage = () => (
     {/* Product Slider */}
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20 flex align-center">
-        <div className="pl-4 pr-4">
-          <h2 className="uppercase text-4xl text-center md:text-5xl lg:w-1/2">
-            It&lsquo;s the <i className="lowercase">results</i> that count
-          </h2>
-          <p className="mb-20 text-center lg:w-1/2">
-            Dr Yalda is a results-oriented aesthetics doctor that goes above and
-            beyond to ensure clients are completely satisfied.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 pl-4 pr-4">
-          <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
-          <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
-          <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
-          <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
+        <div className="grid md:grid-cols-2">
+          <div className="pl-4 pr-4 lg:pr-12">
+            <h2 className="uppercase text-4xl text-center md:text-5xl">
+              It&lsquo;s the <i className="lowercase">results</i> that count
+            </h2>
+            <p className="mb-20 text-center">
+              Dr Yalda is a results-oriented aesthetics doctor that goes above
+              and beyond to ensure clients are completely satisfied.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
+            <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
+            <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
+            <ProductSlider leftImage={lipsBefore} rightImage={lipsAfter} />
+          </div>
         </div>
       </div>
     </div>

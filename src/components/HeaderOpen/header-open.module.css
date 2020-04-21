@@ -26,6 +26,24 @@
 
 .headerNavigation li {
   margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.headerNavigation li > div {
+  background-color: colorWhite;
+  padding: 0.5rem 1.5rem 0 0;
+  top: 100%;
+}
+
+.headerNavigation li > div a {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.headerNavigationSubMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .headerMenuIcon {

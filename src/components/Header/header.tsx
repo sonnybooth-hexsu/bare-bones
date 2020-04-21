@@ -1,15 +1,48 @@
-import React from "react"
+import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styles from "./header.module.css"
-import { Menu } from "react-feather"
+import { Menu, ChevronDown, ChevronUp } from "react-feather"
 import { Search } from "../Search"
 import { Whatsapp } from "../Whatsapp"
 
 type HeaderProps = {
   siteTitle: string
-  navLinks: Array<{ name: string; page: string; id: number }>
+  navLinks: Array<{
+    name: string
+    page: string
+    id: number
+    subLinks: Array<{ name: string; page: string; id: number }>
+  }>
   navToggle: () => Function
   pageSelected: string
+}
+
+const SubMenuItem = ({ name, subLinks, id }) => {
+  const [openState, setOpenState] = useState(false)
+
+  return (
+    <li
+      tabIndex={0}
+      key={`navigation-item-${id}`}
+      data-testid="subLinkMenu"
+      onClick={() => setOpenState(!openState)}
+    >
+      <span className={styles.headerNavigationSubMenu}>
+        {name}
+        {openState ? <ChevronUp /> : <ChevronDown />}
+      </span>
+      <div
+        data-testid="subLinkMenuList"
+        className={`${openState ? "block" : "hidden"}`}
+      >
+        {subLinks.map(({ name, page, id }) => (
+          <a key={`navigation-sublink-item-${id}`} href={page}>
+            {name}
+          </a>
+        ))}
+      </div>
+    </li>
+  )
 }
 
 export const Header = ({
@@ -54,8 +87,6 @@ export const Header = ({
     `
   )
 
-  console.log(pageSelected)
-
   return (
     <div className={styles.headerContainer}>
       <div className="container mx-auto pl-6 pr-6">
@@ -67,15 +98,24 @@ export const Header = ({
             {data && <Search items={data.allFile.edges} />}
             <nav className={styles.headerNavigation}>
               <ol>
-                {navLinks.map(({ name, page }, i) => (
-                  <li
-                    className={`${pageSelected === name ? "underline" : ""}`}
-                    data-testid="headerNavigationLink"
-                    key={i}
-                  >
-                    <a href={`${page}`}>{name}</a>
-                  </li>
-                ))}
+                {navLinks.map(({ name, page, subLinks, id }) => {
+                  return subLinks.length > 0 ? (
+                    <SubMenuItem
+                      key={`navigation-item-${id}`}
+                      name={name}
+                      subLinks={subLinks}
+                      id={id}
+                    />
+                  ) : (
+                    <li
+                      className={`${pageSelected === name ? "underline" : ""}`}
+                      data-testid="headerNavigationLink"
+                      key={`navigation-item-${id}`}
+                    >
+                      <a href={`${page}`}>{name}</a>
+                    </li>
+                  )
+                })}
               </ol>
             </nav>
             {data && <Whatsapp telephone={data.site.siteMetadata.telephone} />}
@@ -86,5 +126,3 @@ export const Header = ({
     </div>
   )
 }
-
-export default Header

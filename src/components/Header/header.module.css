@@ -41,7 +41,24 @@
 
 .headerNavigation li {
   display: inline-block;
+  position: relative;
   margin-right: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: colorBlack;
+  letter-spacing: 1;
+  cursor: pointer;
+}
+
+.headerNavigation li > div {
+  position: absolute;
+  background-color: colorWhite;
+  padding: 0.5rem 1.5rem 1rem;
+  top: 100%;
+}
+
+.headerNavigation li > div a {
+  margin-top: 0.5rem;
 }
 
 .headerNavigation li:last-of-type {
@@ -53,9 +70,18 @@
   font-size: 1rem;
   color: colorBlack;
   text-decoration: none;
-  font-weight: medium;
   font-weight: 500;
   letter-spacing: 1;
+}
+
+.headerNavigationSubMenu {
+  display: flex;
+  align-items: center;
+}
+
+.headerNavigationSubMenu svg {
+  margin-left: 0.25rem;
+  margin-top: 2px;
 }
 
 .headerMenuIcon {
