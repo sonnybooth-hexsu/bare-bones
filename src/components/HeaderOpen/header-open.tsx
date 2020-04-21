@@ -55,12 +55,17 @@ export const HeaderOpen = ({
           <ol>
             {navLinks.map(({ name, page, subLinks, id }) => {
               return subLinks.length > 0 ? (
-                <SubMenuItem name={name} subLinks={subLinks} id={id} />
+                <SubMenuItem
+                  key={`navigation-item-${id}`}
+                  name={name}
+                  subLinks={subLinks}
+                  id={id}
+                />
               ) : (
                 <li
                   className={`animate-reveal delay-${id}`}
                   data-testid="headerNavigationLink"
-                  key={id}
+                  key={`navigation-item-${id}`}
                 >
                   <a href={`${page}`}>{name}</a>
                 </li>

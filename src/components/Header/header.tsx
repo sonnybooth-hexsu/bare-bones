@@ -1,7 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styles from "./header.module.css"
-import { Menu, ChevronDown } from "react-feather"
+import { Menu, ChevronDown, ChevronUp } from "react-feather"
 import { Search } from "../Search"
 import { Whatsapp } from "../Whatsapp"
 
@@ -15,6 +15,30 @@ type HeaderProps = {
   }>
   navToggle: () => Function
   pageSelected: string
+}
+
+const SubMenuItem = ({ name, subLinks, id }) => {
+  const [openState, setOpenState] = useState(false)
+
+  return (
+    <li
+      tabIndex={0}
+      key={`navigation-item-${id}`}
+      onClick={() => setOpenState(!openState)}
+    >
+      <span className={styles.headerNavigationSubMenu}>
+        {name}
+        {openState ? <ChevronUp /> : <ChevronDown />}
+      </span>
+      <div className={`${openState ? "block" : "hidden"}`}>
+        {subLinks.map(({ name, page, id }) => (
+          <a key={`navigation-sublink-item-${id}`} href={page}>
+            {name}
+          </a>
+        ))}
+      </div>
+    </li>
+  )
 }
 
 export const Header = ({
@@ -72,19 +96,12 @@ export const Header = ({
               <ol>
                 {navLinks.map(({ name, page, subLinks, id }) => {
                   return subLinks.length > 0 ? (
-                    <li tabIndex={0} key={`navigation-item-${id}`}>
-                      <span className={styles.headerNavigationSubMenu}>
-                        {name}
-                        <ChevronDown />
-                      </span>
-                      <div>
-                        {subLinks.map(({ name, page, id }) => (
-                          <a key={`navigation-sublink-item-${id}`} href={page}>
-                            {name}
-                          </a>
-                        ))}
-                      </div>
-                    </li>
+                    <SubMenuItem
+                      key={`navigation-item-${id}`}
+                      name={name}
+                      subLinks={subLinks}
+                      id={id}
+                    />
                   ) : (
                     <li
                       className={`${pageSelected === name ? "underline" : ""}`}

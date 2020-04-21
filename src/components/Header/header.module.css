@@ -51,19 +51,10 @@
 }
 
 .headerNavigation li > div {
-  display: none;
   position: absolute;
   background-color: colorWhite;
   padding: 0.5rem 1.5rem 1rem;
   top: 100%;
-}
-
-.headerNavigation li:hover > div {
-  display: block;
-}
-
-.headerNavigation li:focus > div {
-  display: block;
 }
 
 .headerNavigation li > div a {
