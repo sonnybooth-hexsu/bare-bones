@@ -49,6 +49,19 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .grid-cols-hero {
+    grid-template-columns: 0.65fr 1fr;
+  }
+
+  .cols-50 {
+    grid-template-columns: 7fr 5fr;
+  }
+  
+  .cols-50-reverse {
+    grid-template-columns: 5fr 7fr;
+  }
+
 }
 
 h1 {
