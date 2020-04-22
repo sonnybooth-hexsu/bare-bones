@@ -89,7 +89,7 @@ const Forms = () => {
             </div>
             <div className="md:order-2 md:w-1/2 lg:pr-10 lg:pb-20 md:pl-2 lg:pl-0 ">
               <div className="mb-4 flex align-center">
-                <MapPin className="inline mr-2"/>
+                <MapPin className="inline mr-2" />
                 <p className="inline">
                   <span>
                     <strong>London:</strong>
@@ -98,7 +98,7 @@ const Forms = () => {
                 </p>
               </div>
               <div className="mb-4 flex align-center">
-                <MapPin className="inline mr-2"/>
+                <MapPin className="inline mr-2" />
                 <p className="inline">
                   <span>
                     <strong>Nottingham:</strong>
@@ -107,11 +107,11 @@ const Forms = () => {
                 </p>
               </div>
               <div className="mb-4 flex align-center">
-                <Phone className="inline mr-2"/>
+                <Phone className="inline mr-2" />
                 <p className="inline">(+44)7720756108</p>
               </div>
               <div className="mb-4 flex align-center">
-                <Mail className="inline mr-2"/>
+                <Mail className="inline mr-2" />
                 <a href="mailto:info@dryalda.com">info@dryalda.com</a>
               </div>
             </div>
