@@ -13,7 +13,7 @@ export const Whatsapp = ({ telephone }: WhatsappProps) => {
       rel="noopener noreferrer"
       href={`https://wa.me/${telephone}`}
     >
-      <img src={whatsapp} alt="Whatsapp Logo" className="logo" />
+      <img src={whatsapp} alt="Whatsapp Logo" />
     </a>
   )
 }

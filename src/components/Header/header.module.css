@@ -1,8 +1,11 @@
 @value mqs: "../../styles/mqs.module.css";
 @value fromMedium, fromLarge from mqs;
+@value vars: "../../styles/variables.module.css";
+@value dropDownMenu from vars;
 
 .headerContainer {
   background-color: theme('colors.white');
+  position: relative;
 }
 
 .header {
@@ -39,7 +42,6 @@
 
 .headerNavigation li {
   display: inline-block;
-  position: relative;
   margin-right: 2rem;
   font-size: 1rem;
   font-weight: 500;
@@ -51,8 +53,9 @@
 .headerNavigation li > div {
   position: absolute;
   background-color: theme('colors.white');
-  padding: 0.5rem 1.5rem 1rem;
+  padding: 0.5rem 2.5rem 1rem;
   top: 100%;
+  z-index: dropDownMenu;
 }
 
 .headerNavigation li > div a {

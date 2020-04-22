@@ -1,9 +1,10 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styles from "./header.module.css"
-import { Menu, ChevronDown, ChevronUp } from "react-feather"
+import { Menu } from "react-feather"
 import { Search } from "../Search"
 import { Whatsapp } from "../Whatsapp"
+import arrowDown from "../../assets/icons/arrow-dropdown.svg"
 
 type HeaderProps = {
   siteTitle: string
@@ -17,23 +18,31 @@ type HeaderProps = {
   pageSelected: string
 }
 
-const SubMenuItem = ({ name, subLinks, id }) => {
-  const [openState, setOpenState] = useState(false)
-
+const SubMenuItem = ({ name, subLinks, id, open, openTrigger }) => {
   return (
     <li
       tabIndex={0}
       key={`navigation-item-${id}`}
       data-testid="subLinkMenu"
-      onClick={() => setOpenState(!openState)}
+      onClick={() => {
+        if (open) {
+          openTrigger(0)
+        } else {
+          openTrigger(id)
+        }
+      }}
     >
       <span className={styles.headerNavigationSubMenu}>
         {name}
-        {openState ? <ChevronUp /> : <ChevronDown />}
+        <img
+          src={arrowDown}
+          alt="Open arrow"
+          className={`${open ? "transform rotate-180" : ""}`}
+        />
       </span>
       <div
         data-testid="subLinkMenuList"
-        className={`${openState ? "block" : "hidden"}`}
+        className={`${open ? "block" : "hidden"}`}
       >
         {subLinks.map(({ name, page, id }) => (
           <a key={`navigation-sublink-item-${id}`} href={page}>
@@ -42,6 +51,37 @@ const SubMenuItem = ({ name, subLinks, id }) => {
         ))}
       </div>
     </li>
+  )
+}
+
+const Navigation = ({ navLinks, pageSelected }) => {
+  const [openMenu, setOpenMenu] = useState(0)
+
+  return (
+    <nav className={styles.headerNavigation}>
+      <ol>
+        {navLinks.map(({ name, page, subLinks, id }) => {
+          return subLinks.length > 0 ? (
+            <SubMenuItem
+              key={`navigation-item-${id}`}
+              name={name}
+              subLinks={subLinks}
+              id={id}
+              open={openMenu === id}
+              openTrigger={setOpenMenu}
+            />
+          ) : (
+            <li
+              className={`${pageSelected === name ? "underline" : ""}`}
+              data-testid="headerNavigationLink"
+              key={`navigation-item-${id}`}
+            >
+              <a href={`${page}`}>{name}</a>
+            </li>
+          )
+        })}
+      </ol>
+    </nav>
   )
 }
 
@@ -96,28 +136,7 @@ export const Header = ({
               <a href="/">{siteTitle}</a>
             </div>
             {data && <Search items={data.allFile.edges} />}
-            <nav className={styles.headerNavigation}>
-              <ol>
-                {navLinks.map(({ name, page, subLinks, id }) => {
-                  return subLinks.length > 0 ? (
-                    <SubMenuItem
-                      key={`navigation-item-${id}`}
-                      name={name}
-                      subLinks={subLinks}
-                      id={id}
-                    />
-                  ) : (
-                    <li
-                      className={`${pageSelected === name ? "underline" : ""}`}
-                      data-testid="headerNavigationLink"
-                      key={`navigation-item-${id}`}
-                    >
-                      <a href={`${page}`}>{name}</a>
-                    </li>
-                  )
-                })}
-              </ol>
-            </nav>
+            <Navigation navLinks={navLinks} pageSelected={pageSelected} />
             {data && <Whatsapp telephone={data.site.siteMetadata.telephone} />}
             <Menu onClick={navToggle} className={styles.headerMenuIcon} />
           </div>
