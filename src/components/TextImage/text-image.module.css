@@ -18,7 +18,7 @@
     }
 }
 
-.textImageContainerText {
+.textImageChildren {
     padding: 3rem;
     background-color: theme('colors.gray.100');
     display: flex;
@@ -39,13 +39,13 @@
     }
 }
 
-.textImageContainerTextH2 {
+.textImageChildren h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     line-height: 1.25;
 }
 
-.textImageContainerTextP {
+.textImageChildren p {
     margin-bottom: 1.5rem;
 }
 
