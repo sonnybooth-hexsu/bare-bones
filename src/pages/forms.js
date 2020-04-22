@@ -89,7 +89,7 @@ const Forms = () => {
             </div>
             <div className="md:order-2 md:w-1/2 lg:pr-10 lg:pb-20 md:pl-2 lg:pl-0 ">
               <div className="mb-4 flex align-center">
-                <MapPin className="inline mr-2 " />
+                <MapPin className="inline mr-2"/>
                 <p className="inline">
                   <span>
                     <strong>London:</strong>
@@ -98,7 +98,7 @@ const Forms = () => {
                 </p>
               </div>
               <div className="mb-4 flex align-center">
-                <MapPin className="inline mr-2 " />
+                <MapPin className="inline mr-2"/>
                 <p className="inline">
                   <span>
                     <strong>Nottingham:</strong>
