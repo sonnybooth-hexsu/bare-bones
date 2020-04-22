@@ -201,7 +201,7 @@ const IndexPage = () => (
       </div>
     </div>
     {/* Benefits */}
-    <div className="container mx-auto pr-6 pl-6 pt-16 pb-16  text-center">
+    <div className="container mx-auto pr-6 pl-6 pt-16 pb-16 text-center">
       <div className="pl-4 pr-4">
         <div className="grid gap-16 md:pr-48 md:pl-48 lg:pl-56 lg:pr-56 xl:grid-cols-3 xl:pr-16 xl:pl-16 xl:gap-32">
           <div className="flex flex-col items-center">

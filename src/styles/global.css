@@ -4,6 +4,7 @@
 @value mqs: "../styles/mqs.module.css";
 @value fromSmall, fromMedium, fromLarge fromXL from mqs;
 
+
 /* Tailwind extends */
 @responsive {
   .h-screen-80 {
