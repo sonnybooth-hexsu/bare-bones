@@ -53,27 +53,16 @@
   .grid-cols-hero {
     grid-template-columns: 0.65fr 1fr;
   }
+
+  .cols-50 {
+    grid-template-columns: 7fr 5fr;
+  }
   
+  .cols-50-reverse {
+    grid-template-columns: 5fr 7fr;
+  }
+
 }
-
-.rows-fr-auto {
-  grid-template-rows: auto 1fr;
-}
-
-.cols-fr-auto {
-  grid-template-columns: auto 1fr;
-}
-
-.cols-50 {
-  grid-template-columns: 6fr 4fr;
-}
-
-.cols-50-reverse {
-  grid-template-columns: 5fr 5fr;
-}
-
-lg:pr-6 lg:pr-4
-
 
 h1 {
   @apply text-6xl;

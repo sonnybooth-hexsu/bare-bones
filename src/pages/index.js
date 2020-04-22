@@ -189,181 +189,6 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    {/* Buttons Title */}
-    <div className="bg-gray-200">
-      <div className="container mx-auto pr-6 pl-6">
-        <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl text-red-500 font-bold md:text-4xl">
-              Buttons
-            </span>{" "}
-            - For clicking
-          </h2>
-        </div>
-      </div>
-    </div>
-    {/* Buttons */}
-    <div className="bg-white">
-      <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid pt-20 pb-20">
-        <div className="pl-4 pr-4 text-center lg:flex lg:justify-between">
-          <a
-            className={`${buttons.btnPrimary} block mt-8 md:inline-block lg:mt-0`}
-            href="#"
-          >
-            Book a consultation
-          </a>
-          <a
-            className={`${buttons.btnSecondary} block mt-8 md:ml-2 md:mr-2  md:inline-block lg:ml-0 lg:mr-0 lg:mt-0`}
-            href="#"
-          >
-            Book a consultation
-          </a>
-          <a
-            className={`${buttons.btnSecondaryOutline} block mt-8 lg:mt-0  md:inline-block`}
-            href="#"
-          >
-            Book a consultation
-          </a>
-          <a
-            className={`${buttons.btnTertiary} block mt-8 md:inline-block md:ml-2 lg:ml-0 lg:mt-0`}
-            href="#"
-          >
-            See Treatments{" "}
-            <ArrowRight
-              size="16"
-              color="currentColor"
-              className="inline mr-2"
-            />
-          </a>
-        </div>
-      </div>
-    </div>
-    {/*   Platforma Layout Title */}
-    <div className="bg-gray-200">
-      <div className="container mx-auto pr-6 pl-6">
-        <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl text-red-500 font-bold md:text-4xl">
-              Platforma Layout
-            </span>{" "}
-            - To display some text, and an image on the right
-          </h2>
-        </div>
-      </div>
-    </div>
-    {/* Platforma Layout */}
-    <div className="container mx-auto pl-6 pr-6 pb-10 pt-20 pb-20">
-      <div className="cols-50 rows-fr-auto pl-4 pr-4 grid grid-cols-2 grid-rows-2 gap-4">
-        <div className="col-span-2 flex content-center justify-center md:col-span-1 md:row-span-2">
-          <img
-            src="/static/cover-1-4b42b6386c67ac1a1074e200b0daf0a4.jpg"
-            alt="ALT"
-          />
-        </div>
-        <div className="bg-gray-300 p-16 col-span-2 md:col-span-1 md:row-span-2 flex flex-col content-center justify-center">
-          <h3 className="uppercase text-4xl leading-tight tracking-tight mb-4 md:text-2xl lg:text-5xl">
-            Enhance and <i className="lowercase">restore</i> your{" "}
-            <i className="lowercase">natural</i> beauty.
-          </h3>
-          <p className="mb-4 text-gray-900 md:text-xs lg:text-sm">
-            Dr Yalda is an expert in identifying the treatments that will help
-            you look and feel your best. Her experience and artistic eye in
-            conjunction with using the most premium brands allows her to provide
-            her patients with satisfied, long lasting results:
-          </p>
-          <ul>
-            {/* <li className="pb-1 pt-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="inline mr-2 text-gray-900"
-              >
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-              <p className="text-gray-900 inline md:text-xs lg:text-sm">
-                Reducing the signs of ageing
-              </p>
-            </li>
-            <li className="pb-1 pt-1">
-              {" "}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="inline mr-2 text-gray-900"
-              >
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-              <p className="text-gray-900 inline md:text-xs lg:text-sm">
-                Define your facial features
-              </p>
-            </li>
-            <li className="pb-1 pt-1">
-              {" "}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="inline mr-2 text-gray-900"
-              >
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-              <p className="text-gray-900 inline md:text-xs lg:text-sm">
-                Improving your overall skin health
-              </p>
-            </li> */}
-          </ul>
-        </div>
-      </div>
-    </div>
-    {/* Platforma Layout 02 */}
-    <div className="container mx-auto pl-6 pr-6 pb-10 pt-20 pb-20">
-      <div className="cols-50-reverse pl-4 pr-4 grid grid-cols-2 grid-rows-2 gap-10 md:col-gap-5">
-        <div className="col-span-2 flex content-center justify-center md:pl-6 md:col-span-1 md:col-start-2 md:row-span-2">
-          <img
-            src="/static/cover-1-4b42b6386c67ac1a1074e200b0daf0a4.jpg"
-            alt="ALT"
-          />
-        </div>
-        <div className="col-span-2 flex flex-col content-center justify-center md:col-start-1 md:col-span-1 md:row-start-1 md:row-span-2">
-          <h3 className="uppercase text-4xl leading-tight tracking-tight mb-4 md:text-2xl lg:text-5xl">
-            From a registered, <i className="lowercase">medical</i> doctor, and
-            Mentor.
-          </h3>
-          <p className="mb-4 text-gray-900 md:text-xs lg:text-sm">
-            Dr Yalda is an expert in identifying the treatments that will help
-            you look and feel your best. Her experience and artistic eye in
-            conjunction with using the most premium brands allows her to provide
-            her patients with satisfied, long lasting results:
-          </p>
-          <a
-            className={`${buttons.btnPrimary} block mt-8 md:inline-block lg:mt-0`}
-            href="#"
-          >
-            Button
-          </a>
-        </div>
-      </div>
-    </div>
     {/* Benefits Title */}
     <div className="bg-gray-200">
       <div className="container mx-auto pr-6 pl-6">
@@ -380,25 +205,25 @@ const IndexPage = () => (
     {/* Benefits */}
     <div className="container mx-auto pr-6 pl-6 pt-16 pb-16  text-center">
       <div className="pl-4 pr-4">
-        <div className="grid gap-16 xl:grid-cols-3 md:pr-48 md:pl-48 lg:pl-56 lg:pr-56 xl:pr-16 xl:pl-16 xl:gap-32">
+        <div className="grid gap-16 md:pr-48 md:pl-48 lg:pl-56 lg:pr-56 xl:grid-cols-3 xl:pr-16 xl:pl-16 xl:gap-32">
           <div className="flex flex-col items-center">
             <Clock size="40" className="inline mb-4 text-gray-900" />
             <h5 className="text-xl mb-1">Reduce the signs of ageing</h5>
-            <p className="">
+            <p>
               Sed suspendisse accumsan, sollicitudin pellentesque lorem non.
             </p>
           </div>
           <div className="flex flex-col items-center">
             <Clock size="40" className="inline mb-4 text-gray-900" />
             <h5 className="text-xl mb-1">Reduce the signs of ageing</h5>
-            <p className="">
+            <p>
               Sed suspendisse accumsan, sollicitudin pellentesque lorem non.
             </p>
           </div>
           <div className="flex flex-col items-center">
             <Clock size="40" className="inline mb-4 text-gray-900" />
             <h5 className="text-xl mb-1">Reduce the signs of ageing</h5>
-            <p className="">
+            <p>
               Sed suspendisse accumsan, sollicitudin pellentesque lorem non.
             </p>
           </div>
