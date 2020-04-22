@@ -21,11 +21,9 @@ const Reviews = props => {
       <div className="bg-gray-300">
         <div className="container mx-auto pr-6 pl-6">
           <div className="pl-4 pr-4">
-            <h2 className="text-2xl pt-8 pb-8">
-              <span className="text-3xl text-red-500 font-bold md:text-4xl">
-                Review Slider CMS content
-              </span>{" "}
-              - add new testimonials at /admin
+            <h2 className="pt-8 pb-8 text-3xl">
+              <span className="font-bold">Review Slider CMS content</span> - add
+              new testimonials at /admin
             </h2>
           </div>
         </div>
@@ -51,11 +49,8 @@ const Reviews = props => {
       <div className="bg-gray-300">
         <div className="container mx-auto pr-6 pl-6">
           <div className="pl-4 pr-4">
-            <h2 className="text-2xl pt-8 pb-8">
-              <span className="text-3xl text-red-500 font-bold md:text-4xl">
-                Reviews 2
-              </span>{" "}
-              - Lorem
+            <h2 className="pt-8 pb-8 text-3xl">
+              <span className="font-bold">Reviews 2</span> - Lorem
             </h2>
           </div>
         </div>
@@ -65,7 +60,7 @@ const Reviews = props => {
         <div className="container mx-auto grid grid-cols-12 gap-4">
           <div className="col-span-12 text-center md:pr-8 md:col-span-10 md:text-left lg:col-span-4">
             <div className="pr-4 pl-4">
-              <h2 className="text-4xl mb-6">Client Testimonials</h2>
+              <h3 className="mb-6">Client Testimonials</h3>
               <p className="mb-6">
                 A description about reviews, a description about reviews, a
                 description about reviews, a description about reviews, a

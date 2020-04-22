@@ -12,7 +12,7 @@ exports[`<CTABlock /> should match snapshot 1`] = `
         class="pl-4 pr-4"
       >
         <h2
-          class="uppercase text-4xl mb-2 leading-tight md:text-6xl"
+          class="uppercase mb-2 md:text-6xl"
         >
           Book your appointment 
           <i
