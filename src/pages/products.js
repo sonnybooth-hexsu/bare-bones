@@ -20,27 +20,12 @@ const Products = props => {
   return (
     <Layout page="CMS Products">
       <SEO title="Products" />
-      <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
-        <div className="pl-4 pr-4">
-          <p className="text-s uppercase tracking-widest font-semibold mb-2">
-            Treatments
-          </p>
-          <h1 className="uppercase text-4xl leading-tight tracking-tight mb-20 mt-2 md:text-6xl md:leading-snug md:tracking-tighter">
-            Dr Yalda offers a range of <i className="lowercase">non-surgical</i>{" "}
-            cosmetic treatments using high quality,{" "}
-            <i className="lowercase">medical</i> products.
-          </h1>
-          <button className="bg-black hover:bg-gray-900 text-white font-light py-6 px-12 inline">
-            Book a consultation
-          </button>
-        </div>
-      </div>
       <div className="bg-gray-200">
         <div className="container mx-auto pl-6 pr-6 pb-10">
           <div className="grid grid-cols-1 pr-4 pl-4 pt-12 md:grid-cols-5 xl:grid-cols-7 md:gap-12">
             <div className="grid-cols-1 md:col-span-2 xl:col-span-2">
               <div className="bg-white p-10 pt-6">
-                <h3 className="text-2xl ">Filter</h3>
+                <h3>Filter</h3>
                 <Filter
                   types={productCategories}
                   items={productsDestructured}
@@ -49,12 +34,6 @@ const Products = props => {
               </div>
             </div>
             <div className="col-span-3 xl:col-span-5">
-              <h2 className="text-2xl pb-8">
-                <span className="text-3xl md:text-4xl text-red-500 font-bold">
-                  Product list CMS content cards (one)
-                </span>{" "}
-                - add new products at /admin
-              </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-12">
                 {products.map(({ title, path, excerpt, image }, i) => (
                   <ProductCard

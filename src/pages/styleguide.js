@@ -16,7 +16,7 @@ const Styleguide = () => {
         <div className="container mx-auto pl-6 pr-6 pt-20 pb-20 md:pl-16 md:pr-16 lg:pl-40 lg:pr-40 xl:pl-6 xl:pr-6 ">
           <div className="grid grid-cols-2 gap-20 cols-50-reverse">
             <div className="bg-white p-10">
-              <h2>Colours</h2>
+              <h4>Colours</h4>
             </div>
             <div>
               <div className="grid grid-cols-2 grid-rows-2 gap-2">
@@ -121,26 +121,35 @@ const Styleguide = () => {
         <div className="container mx-auto pl-6 pr-6 pt-20 pb-20 md:pl-16 md:pr-16 lg:pl-40 lg:pr-40 xl:pl-6 xl:pr-6 ">
           <div className="grid grid-cols-2 gap-20 cols-50-reverse">
             <div className="bg-white p-10">
-              <h2>Typography</h2>
+              <h4>Typography</h4>
             </div>
             <div className="grid grid-cols-1 grid-rows-12 gap-2">
               <div className="">
-                <h1>Heading 1</h1>
+                <h1>Heading One</h1>
               </div>
               <div className="">
-                <h2>Heading 2</h2>
+                <h2>Heading Two</h2>
               </div>
               <div className="">
-                <h3>Heading 3</h3>
+                <h3>Heading Three</h3>
               </div>
               <div className="">
-                <h4>Heading 4</h4>
+                <h4>Heading Four</h4>
               </div>
               <div className="">
-                <h5>Heading 5</h5>
+                <h5>Heading Five</h5>
               </div>
               <div className="">
-                <h6>Heading 6</h6>
+                <h6>Heading Six</h6>
+              </div>
+              <div className="">
+                <p className="large-text">Large Text</p>
+              </div>
+              <div className="">
+                <p>Body Text</p>
+              </div>
+              <div className="overline">
+                <p>Overline Text</p>
               </div>
             </div>
           </div>
@@ -148,7 +157,7 @@ const Styleguide = () => {
         <div className="container mx-auto pl-6 pr-6 pt-20 pb-20 md:pl-16 md:pr-16 lg:pl-40 lg:pr-40 xl:pl-6 xl:pr-6 ">
           <div className="grid grid-cols-2 gap-20 cols-50-reverse">
             <div className="bg-white p-10">
-              <h2>Buttons</h2>
+              <h4>Buttons</h4>
             </div>
             <div className="grid grid-cols-1 grid-rows-12 gap-2">
               <a

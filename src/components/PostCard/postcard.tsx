@@ -19,13 +19,11 @@ export const PostCard = ({
     <div className="flex flex-col bg-white h-full relative">
       <div className="relative">
         <img width="100%" src={`/${image}`} alt="Post" />
-        <div className="p-4 bg-red-500 inline-block inline-block absolute bottom-0">
-          {category}
-        </div>
+        <div className="chip__dark">{category}</div>
       </div>
       <div className="flex flex-col flex-grow p-6">
-        <h3 className="flex-grow pb-20 text-2xl leading-tight">{title}</h3>
-        <p>{date}</p>
+        <h3 className="flex-grow pb-20 text-3xl leading-tight">{title}</h3>
+        <p className="caption">{date}</p>
       </div>
       <a className="absolute top-0 bottom-0 left-0 right-0" href={path}>
         <span className="sr-only">{title}</span>

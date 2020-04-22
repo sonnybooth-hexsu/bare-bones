@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@value mqs: "../styles/mqs.module.css";
+@value fromSmall, fromMedium, fromLarge fromXL from mqs;
 
 /* Tailwind extends */
 @responsive {
@@ -65,18 +67,59 @@
 }
 
 h1 {
-  @apply text-6xl;
+  @apply text-4xl;
   @apply font-serif;
+
+    @media (fromMedium) {
+      @apply text-5xl;
+      @apply tracking-tight;
+      @apply leading-tight;
+  }
+
+  @media (fromLarge) {
+    @apply text-6xl;
+    @apply leading-snug;
+    @apply tracking-tighter;
+  }
 }
 
 h2 {
-  @apply text-xl;
+  @apply text-5xl;
+  @apply tracking-tight;
+  @apply leading-tight;
   @apply font-serif;
+
+  @media (fromMedium) {
+    @apply text-6xl;
+    @apply leading-snug;
+    @apply tracking-tighter;
+}
 }
 
 h3 {
-  @apply text-lg;
+  @apply text-4xl;
   @apply font-serif;
+}
+
+h4 {
+  @apply text-3xl;
+  @apply font-serif;
+}
+
+h5 {
+  @apply text-2xl;
+  @apply font-sans;
+
+  @media (fromMedium) {
+    @apply text-3xl;
+}
+
+}
+
+h6 {
+  @apply text-xl;
+  @apply font-sans;
+  @aaply font-semibold;
 }
 
 /* Hacky code */
@@ -87,15 +130,78 @@ body {
   font-size: 17.6px;
 }
 
+.overline {
+  @apply text-sm;
+  @apply font-semibold;
+  @apply tracking-wider;
+
+  text-transform: uppercase;
+
+      @media (fromMedium) {
+          @apply text-base;
+      }
+
+      @media (fromLarge) {
+        @apply text-lg;
+    }
+}
+
+.caption {
+  @apply text-sm;
+  @apply font-medium;
+  @apply leading-none;
+  @apply text-gray-600;
+}
+
 p {
-  letter-spacing: 1;
+  @apply tracking-wide;
+  color: red;
+}
+
+.chip__dark {
+  @apply inline;
+  @apply text-center;
+  @apply text-xs;
+  @apply font-semibold;
+  @apply tracking-widest;
+  @apply uppercase;
+  @apply bg-black;
+  @apply text-white;
+  @apply rounded-full;
+  @apply py-2;
+  @apply px-4;          
+}
+
+.large-text {
+  @apply tracking-wide;
+  @apply font-light;
+
+      @media (fromMedium) {
+        @apply text-base;
+    }
+
+      @media (fromLarge) {
+        @apply text-xl;
+    }
+
+}
+
+.x-large-text {
+  @apply tracking-wide;
+  @apply font-light;
+  @apply leading-relaxed;
+  @apply text-xl;
+
+      @media (fromMedium) {
+        @apply text-2xl;
+    }
+
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   font-style: normal;
   font-feature-settings: 'calt', 'clig', 'kern', 'liga', 'locl', 'rlig';
-  letter-spacing: 0.025em;
 }
 
 @keyframes reveal {

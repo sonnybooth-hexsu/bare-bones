@@ -26,8 +26,8 @@ export const TestimonialCard = ({
           />
         </div>
         <div>
-          <h3 className="text-lg mb-1">{name}</h3>
-          <p className="text-xs leading-5 font-semibold">Client</p>
+          <h4 className="mb-1">{name}</h4>
+          <p className="caption">Client</p>
         </div>
       </div>
       <p data-testid="testimonialCardMessage">{message}</p>

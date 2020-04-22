@@ -35,13 +35,13 @@ const IndexPage = () => (
                 alt="Girl in denim jacket smiling"
               />
               <div className="bg-gray-400 p-16 md:p-16 md:p-32 flex flex-col justify-center">
-                <p className="text-sm font-medium text-left mb-4 uppercase tracking-wider md:mb-6 md:text-base">
+                <p className="overline text-left mb-4 md:mb-6">
                   Introducing Bare Bones
                 </p>
-                <h1 className="max-w-full font-medium text-left text-4xl leading-tight mb-4 md:mb-5 md:text-5xl md:text-left lg:text-6xl">
+                <h1 className="max-w-full text-left mb-4 md:mb-5 md:text-5xl md:text-left lg:text-6xl">
                   We help convey your message.
                 </h1>
-                <p className="font-light mb-4 md:text-lg md:mb-6 md:text-left lg:mb-8 lg:text-xl">
+                <p className="large-text mb-4 md:mb-6 md:text-left lg:mb-8">
                   If you&lsquo;re looking for the latest in wireless headphones.
                 </p>
                 <div>
@@ -193,11 +193,9 @@ const IndexPage = () => (
     <div className="bg-gray-200">
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
-              Benefits
-            </span>{" "}
-            - Highlight key benefits to user
+          <h2 className="pt-8 pb-8 text-3xl">
+            <span className="font-bold">Benefits</span> - Highlight key benefits
+            to user
           </h2>
         </div>
       </div>
@@ -208,21 +206,21 @@ const IndexPage = () => (
         <div className="grid gap-16 md:pr-48 md:pl-48 lg:pl-56 lg:pr-56 xl:grid-cols-3 xl:pr-16 xl:pl-16 xl:gap-32">
           <div className="flex flex-col items-center">
             <Clock size="40" className="inline mb-4 text-gray-900" />
-            <h5 className="text-xl mb-1">Reduce the signs of ageing</h5>
+            <h6 className="mb-1">Reduce the signs of ageing</h6>
             <p>
               Sed suspendisse accumsan, sollicitudin pellentesque lorem non.
             </p>
           </div>
           <div className="flex flex-col items-center">
             <Clock size="40" className="inline mb-4 text-gray-900" />
-            <h5 className="text-xl mb-1">Reduce the signs of ageing</h5>
+            <h6 className="mb-1">Reduce the signs of ageing</h6>
             <p>
               Sed suspendisse accumsan, sollicitudin pellentesque lorem non.
             </p>
           </div>
           <div className="flex flex-col items-center">
             <Clock size="40" className="inline mb-4 text-gray-900" />
-            <h5 className="text-xl mb-1">Reduce the signs of ageing</h5>
+            <h6 className="mb-1">Reduce the signs of ageing</h6>
             <p>
               Sed suspendisse accumsan, sollicitudin pellentesque lorem non.
             </p>
@@ -234,11 +232,9 @@ const IndexPage = () => (
     <div className="bg-gray-200">
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
-              Call To Action
-            </span>{" "}
-            - Used to usher users to info/sale points
+          <h2 className="pt-8 pb-8 text-3xl">
+            <span className="font-bold">Call To Action</span> - Used to usher
+            users to info/sale points
           </h2>
         </div>
       </div>
@@ -249,11 +245,9 @@ const IndexPage = () => (
     <div className="bg-gray-200">
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl text-red-500 font-bold md:text-4xl">
-              Product Slider
-            </span>{" "}
-            - For before and after images of clients/products
+          <h2 className="pt-8 pb-8 text-3xl">
+            <span className="font-bold">Product Slider</span> - For before and
+            after images of clients/products
           </h2>
         </div>
       </div>
@@ -263,10 +257,10 @@ const IndexPage = () => (
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20 flex align-center">
         <div className="grid md:grid-cols-2">
           <div className="pl-4 pr-4 lg:pr-12">
-            <h2 className="uppercase text-4xl text-center md:text-5xl">
+            <h2 className="uppercase text-left">
               It&lsquo;s the <i className="lowercase">results</i> that count
             </h2>
-            <p className="mb-20 text-center">
+            <p className="mb-20 text-left">
               Dr Yalda is a results-oriented aesthetics doctor that goes above
               and beyond to ensure clients are completely satisfied.
             </p>
@@ -284,11 +278,9 @@ const IndexPage = () => (
     <div className="bg-gray-200">
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl text-red-500 font-bold md:text-4xl ">
-              Treatment Content
-            </span>{" "}
-            - Used to describe a treatment or service
+          <h2 className="pt-8 pb-8 text-3xl">
+            <span className="font-bold">Treatment Content</span> - Used to
+            describe a treatment or service
           </h2>
         </div>
       </div>
@@ -297,7 +289,7 @@ const IndexPage = () => (
     <div className="container mx-auto pr-6 pl-6">
       <div className="grid grid-cols-1 grid lg:grid-cols-12 gap-6 pt-20 pb-20 pl-4 pr-4">
         <div className="lg:col-span-8">
-          <p className="font-semibold">About This Treatment</p>
+          <h6>About This Treatment</h6>
           <p className="mb-8">
             The revolutionary treatment has been around since the 1980’s and
             with very few risks and no recovery time it still remains one of the
@@ -308,16 +300,16 @@ const IndexPage = () => (
             sweating) and bruxism (involuntary habitual grinding of the teeth).
           </p>
           <div className="border-solid border-l-4 border-red-500 pl-6 lg:pr-48 lg:ml-10">
-            <h5 className="font-serif ext-2xl leading-tight tracking-tight mt-12 mb-16 md:text-3xl text">
+            <h6 className="font-serif ext-2xl leading-tight tracking-tight mt-12 mb-16 md:text-3xl text">
               &quot;I have had lip fillers with Yalda for a while now and the
               results are <i className="lowercase">amazing.</i> Not only is she
               professional but she makes you feel{" "}
               <i className="lowercase">at ease.</i> It’s been nearly{" "}
               <i className="lowercase">6 months</i> since my fillers and my lips
               are still juicy as ever!&quot;
-            </h5>
+            </h6>
           </div>
-          <p className="font-semibold">About This Treatment</p>
+          <h6>About This Treatment</h6>
           <p className="mb-8">
             The revolutionary treatment has been around since the 1980’s and
             with very few risks and no recovery time it still remains one of the
@@ -327,7 +319,7 @@ const IndexPage = () => (
             months. They are also used for treatment of hyperhidrosis (excess
             sweating) and bruxism (involuntary habitual grinding of the teeth).
           </p>
-          <p className="font-semibold">About This Treatment</p>
+          <h6>About This Treatment</h6>
           <p className="mb-8">
             The revolutionary treatment has been around since the 1980’s and
             with very few risks and no recovery time it still remains one of the
@@ -337,7 +329,7 @@ const IndexPage = () => (
             months. They are also used for treatment of hyperhidrosis (excess
             sweating) and bruxism (involuntary habitual grinding of the teeth).
           </p>
-          <p className="font-semibold">About This Treatment</p>
+          <h6>About This Treatment</h6>
           <p className="mb-8">
             The revolutionary treatment has been around since the 1980’s and
             with very few risks and no recovery time it still remains one of the
@@ -411,11 +403,8 @@ const IndexPage = () => (
     <div className="bg-gray-200">
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl text-red-500 font-bold md:text-4xl">
-              Text Block 01
-            </span>{" "}
-            - For text
+          <h2 className="pt-8 pb-8 text-3xl">
+            <span className="font-bold">Text Block 01</span> - For text
           </h2>
         </div>
       </div>
@@ -424,11 +413,11 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid gap-6 pt-20 pb-20">
         <div className="pl-4 pr-4 grid gap-6 lg:grid-cols-2">
-          <h2 className="uppercase text-4xl leading-tight tracking-tight md:text-6xl md:pr-10">
+          <h2 className="uppercase md:pr-10">
             Look and <i className="lowercase">feel</i> your{" "}
             <i className="lowercase">very</i> best.
           </h2>
-          <p className="leading-relaxed tracking-wide text-xl md:text-2xl ">
+          <p className="x-large-text">
             Dr Yalda offers a range of cosmetic injectables and skin treatment
             plans tailored to your concerns. From facial contouring to subtle
             but effective &apos;tweakments&apos; and the use of medical-grade
@@ -442,11 +431,9 @@ const IndexPage = () => (
     <div className="bg-gray-200">
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl text-red-500 font-bold md:text-4xl">
-              About Content Block
-            </span>{" "}
-            - To display about content
+          <h2 className="pt-8 pb-8 text-3xl">
+            <span className="font-bold">About Content Block</span> - To display
+            about content
           </h2>
         </div>
       </div>
@@ -454,7 +441,7 @@ const IndexPage = () => (
     {/* About Content */}
     <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid gap-6 pt-20 pb-20">
       <div className="pl-4 pr-4 grid gap-6 lg:grid-cols-2">
-        <h2 className="uppercase text-4xl leading-tight tracking-tight md:text-6xl xl:pr-20">
+        <h2 className="uppercase xl:pr-20">
           A <i className="lowercase">little bit</i> about Dr Yalda Jamali.
         </h2>
         <div>
@@ -498,11 +485,9 @@ const IndexPage = () => (
     <div className="bg-gray-200">
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl text-red-500 font-bold md:text-4xl">
-              Fullwidth Image
-            </span>{" "}
-            - To display a fullwidth image
+          <h2 className="pt-8 pb-8 text-3xl">
+            <span className="font-bold">Fullwidth Image</span> - To display a
+            fullwidth image
           </h2>
         </div>
       </div>
@@ -521,11 +506,9 @@ const IndexPage = () => (
     <div className="bg-gray-200">
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl text-red-500 font-bold md:text-4xl">
-              Contact Title
-            </span>{" "}
-            - Just another hero title, with anchor links
+          <h2 className="pt-8 pb-8 text-3xl">
+            <span className="font-bold">Contact Title</span> - Just another hero
+            title, with anchor links
           </h2>
         </div>
       </div>
@@ -534,10 +517,7 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4">
-          <h1 className="normal-case mb-12 text-4xl leading-tight tracking-tight pt-20 pb-20 md:text-6xl md:leading-snug md:tracking-tighter">
-            {/* <p className="text-xs uppercase tracking-wider font-semibold mb-6">
-              Get in touch
-            </p> */}
+          <h1 className="normal-case mb-12 pt-20 pb-20">
             Send an{" "}
             <i className="border-b-2 border-solid border-black normal-case">
               email
@@ -563,11 +543,9 @@ const IndexPage = () => (
     <div className="bg-gray-200">
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl text-red-500 font-bold md:text-4xl ">
-              Treatment Title
-            </span>{" "}
-            - Just another hero title, with a CTA button
+          <h2 className="pt-8 pb-8 text-3xl">
+            <span className="font-bold">Treatment Title</span> - Just another
+            hero title, with a CTA button
           </h2>
         </div>
       </div>
@@ -576,10 +554,8 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4">
-          <p className="text-s uppercase tracking-widest font-semibold mb-2">
-            Treatments
-          </p>
-          <h1 className="uppercase text-4xl leading-tight tracking-tight mb-20 mt-2 md:text-6xl md:leading-snug md:tracking-tighter">
+          <p className="overline mb-2">Treatments</p>
+          <h1 className="uppercase mb-20 mt-2">
             Dr Yalda offers a range of <i className="lowercase">non-surgical</i>{" "}
             cosmetic treatments using high quality,{" "}
             <i className="lowercase">medical</i> products.
@@ -594,11 +570,9 @@ const IndexPage = () => (
     <div className="bg-gray-200">
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl md:text-4xl text-red-500 font-bold">
-              Blog Post Title
-            </span>{" "}
-            - Just another hero title, aligned center
+          <h2 className="pt-8 pb-8 text-3xl">
+            <span className="font-bold">Blog Post Title</span> - Just another
+            hero title, aligned center
           </h2>
         </div>
       </div>
@@ -608,15 +582,13 @@ const IndexPage = () => (
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4 flex flex-col">
           <div className="flex justify-center">
-            <p className="inline text-center text-xs font-semibold tracking-widest uppercase bg-black text-white rounded-full py-2 px-4 mb-4">
-              Category
-            </p>
+            <p className="chip__dark  mb-4">Category</p>
           </div>
-          <h1 className="uppercase text-4xl leading-tight tracking-tight mb-8 mt-2 text-center font-normal lg:text-5xl xl:text-6xl">
+          <h1 className="uppercase mb-8 mt-2 text-center">
             Considerations for darker skin types when choosing in-clinic skin
             treatments.
           </h1>
-          <p className="text-center font-semi-bold">
+          <p className="large-text text-center">
             Cleansing is an essential step in any skin regime. Learn how to
             properly double cleanse your skin.
           </p>
@@ -627,11 +599,8 @@ const IndexPage = () => (
     <div className="bg-gray-200">
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl text-red-500 font-bold md:text-4xl">
-              Blog Post
-            </span>{" "}
-            - Blog post
+          <h2 className="pt-8 pb-8 text-3xl">
+            <span className="font-bold">Blog Post</span> - Blog post
           </h2>
         </div>
       </div>
@@ -650,12 +619,8 @@ const IndexPage = () => (
               />
             </div>
             <div>
-              <p className="text-md font-medium tracking-wide leading-none mb-1">
-                By Dr Yalda
-              </p>
-              <p className="text-gray-600 text-sm font-medium leading-none">
-                8th Oct, 2020
-              </p>
+              <p className="mb-0 font-semibold">By Dr Yalda</p>
+              <p className="caption">8th Oct, 2020</p>
             </div>
           </div>
         </div>
@@ -680,7 +645,7 @@ const IndexPage = () => (
             months. They are also used for treatment of hyperhidrosis (excess
             sweating) and bruxism (involuntary habitual grinding of the teeth).
           </p>
-          <p className="font-semibold">About This Treatment</p>
+          <h6>About This Treatment</h6>
           <p className="mb-8">
             The revolutionary treatment has been around since the 1980’s and
             with very few risks and no recovery time it still remains one of the
@@ -690,7 +655,7 @@ const IndexPage = () => (
             months. They are also used for treatment of hyperhidrosis (excess
             sweating) and bruxism (involuntary habitual grinding of the teeth).
           </p>
-          <p className="font-semibold">About This Treatment</p>
+          <h6>About This Treatment</h6>
           <p className="mb-8">
             The revolutionary treatment has been around since the 1980’s and
             with very few risks and no recovery time it still remains one of the
@@ -700,7 +665,7 @@ const IndexPage = () => (
             months. They are also used for treatment of hyperhidrosis (excess
             sweating) and bruxism (involuntary habitual grinding of the teeth).
           </p>
-          <p className="font-semibold">About This Treatment</p>
+          <h6>About This Treatment</h6>
           <p className="mb-8">
             The revolutionary treatment has been around since the 1980’s and
             with very few risks and no recovery time it still remains one of the
@@ -710,7 +675,7 @@ const IndexPage = () => (
             months. They are also used for treatment of hyperhidrosis (excess
             sweating) and bruxism (involuntary habitual grinding of the teeth).
           </p>
-          <p className="font-semibold">About This Treatment</p>
+          <h6>About This Treatment</h6>
           <p className="mb-8">
             The revolutionary treatment has been around since the 1980’s and
             with very few risks and no recovery time it still remains one of the
@@ -731,11 +696,9 @@ const IndexPage = () => (
     <div className="bg-gray-200">
       <div className="container mx-auto pr-6 pl-6">
         <div className="pl-4 pr-4">
-          <h2 className="text-2xl pt-8 pb-8">
-            <span className="text-3xl text-red-500 font-bold md:text-4xl">
-              How It Works
-            </span>{" "}
-            - To explain product or services step by step
+          <h2 className="pt-8 pb-8 text-3xl">
+            <span className="font-bold">How It Works</span> - To explain product
+            or services step by step
           </h2>
         </div>
       </div>
@@ -743,7 +706,7 @@ const IndexPage = () => (
     {/* How it works */}
     <div className="container mx-auto pr-6 pl-6">
       <div className="pt-20 pb-20 pl-4 pr-4">
-        <h2 className="text-4xl text-center mb-10 md:text-5xl">How it works</h2>
+        <h2 className="text-center">How it works</h2>
         <div className="grid gap-6 pl-4 pr-4 lg:grid-cols-3 ">
           <div className="pb-16 pt-10 pr-5 pl-5">
             <div className="relative pl-6 -mb-12">
@@ -757,7 +720,7 @@ const IndexPage = () => (
               />
             </div>
             <div className="relative mt-4 z-20">
-              <h3 className="font-bold text-xl">Consultation</h3>
+              <h5 className="font-bold">Consultation</h5>
               <p>
                 First, a discussion of your goals and any previous treatments.
                 Dr Yalda will then recommend the right treatment and plan for
@@ -777,7 +740,7 @@ const IndexPage = () => (
               />
             </div>
             <div className="relative mt-4 z-20">
-              <h3 className="font-bold text-xl">Treatment</h3>
+              <h5 className="font-bold">Treatment</h5>
               <p>
                 Most treatments take about 10 minutes, and are not painful
                 because of the minimally invasive nature of non surgical
@@ -797,7 +760,7 @@ const IndexPage = () => (
               />
             </div>
             <div className="relative mt-4 z-20">
-              <h3 className="font-bold text-xl">Aftercare and advice</h3>
+              <h5 className="font-bold">Aftercare and advice</h5>
               <p>
                 You will be briefed about aftercare in your consultation. Dr
                 Yalda will be on hand around the clock for any follow-up
