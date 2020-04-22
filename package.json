@@ -42,10 +42,13 @@
     "react-helmet": "^5.2.1",
     "react-slick": "^0.25.2",
     "react-test-renderer": "^16.13.1",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
     "tailwindcss": "^1.2.0",
     "typescript": "^3.8.3"
   },
   "devDependencies": {
+    "gatsby-plugin-stylelint": "^3.2.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -59,8 +62,9 @@
     "start": "yarn run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
-    "lint:fix": "eslint --fix --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "lint:js": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "lint:css": "stylelint 'src/**/*.{css, js, jsx, ts, tsx}'",
+    "lint:js:fix": "eslint --fix --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
     "test": "jest",
     "test:snapshot": "jest -u",
     "full": "yarn install; yarn run build; yarn develop"
