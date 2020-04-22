@@ -147,8 +147,11 @@ const Styleguide = () => {
               <div className="">
                 <p>Body Text</p>
               </div>
-              <div className="overline">
-                <p>Overline Text</p>
+              <div>
+                <p className="overline">Overline Text</p>
+              </div>
+              <div>
+                <p className="caption">Caption Text</p>
               </div>
             </div>
           </div>

@@ -85,42 +85,53 @@ h1 {
 }
 
 h2 {
-  @apply text-5xl;
+  @apply text-3xl;
   @apply tracking-tight;
   @apply leading-tight;
   @apply font-serif;
 
-  @media (fromMedium) {
-    @apply text-6xl;
-    @apply leading-snug;
-    @apply tracking-tighter;
-}
+    @media (fromMedium) {
+      @apply text-4xl;
+      @apply tracking-tight;
+      @apply leading-tight;
+  }
 }
 
 h3 {
-  @apply text-4xl;
+  @apply text-2xl;
   @apply font-serif;
+
+    @media (fromMedium) {
+      @apply text-3xl;
+  }
 }
 
 h4 {
-  @apply text-3xl;
+  @apply text-xl;
   @apply font-serif;
+
+    @media (fromMedium) {
+      @apply text-2xl;
+  }
 }
 
 h5 {
-  @apply text-2xl;
+  @apply text-lg;
   @apply font-sans;
 
-  @media (fromMedium) {
-    @apply text-3xl;
-}
-
+      @media (fromMedium) {
+        @apply text-xl;
+    }
 }
 
 h6 {
-  @apply text-xl;
+  @apply text-base;
   @apply font-sans;
   @aaply font-semibold;
+
+  @media (fromMedium) {
+    @apply text-lg;
+}
 }
 
 /* Hacky code */
@@ -138,7 +149,7 @@ body {
   text-transform: uppercase;
 
       @media (fromMedium) {
-          @apply text-base;
+        @apply text-base;
       }
 
       @media (fromLarge) {
@@ -173,12 +184,9 @@ p {
 }
 
 .large-text {
+  @apply text-lg;
   @apply tracking-wide;
   @apply font-light;
-
-      @media (fromMedium) {
-        @apply text-base;
-    }
 
       @media (fromLarge) {
         @apply text-xl;
