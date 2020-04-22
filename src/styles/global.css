@@ -135,7 +135,6 @@ body {
   @apply text-sm;
   @apply font-semibold;
   @apply tracking-wider;
-
   text-transform: uppercase;
 
       @media (fromMedium) {
