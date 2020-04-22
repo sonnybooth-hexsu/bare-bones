@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styles from "./header.module.css"
 import { Menu } from "react-feather"
@@ -16,6 +16,8 @@ type HeaderProps = {
   }>
   navToggle: () => Function
   pageSelected: string
+  openMenu: number
+  menuToggle: () => Function
 }
 
 const SubMenuItem = ({ name, subLinks, id, open, openTrigger }) => {
@@ -54,9 +56,7 @@ const SubMenuItem = ({ name, subLinks, id, open, openTrigger }) => {
   )
 }
 
-const Navigation = ({ navLinks, pageSelected }) => {
-  const [openMenu, setOpenMenu] = useState(0)
-
+const Navigation = ({ navLinks, pageSelected, openMenu, menuToggle }) => {
   return (
     <nav className={styles.headerNavigation}>
       <ol>
@@ -68,7 +68,7 @@ const Navigation = ({ navLinks, pageSelected }) => {
               subLinks={subLinks}
               id={id}
               open={openMenu === id}
-              openTrigger={setOpenMenu}
+              openTrigger={menuToggle}
             />
           ) : (
             <li
@@ -90,6 +90,8 @@ export const Header = ({
   navLinks,
   navToggle,
   pageSelected,
+  openMenu,
+  menuToggle,
 }: HeaderProps) => {
   const data = useStaticQuery(
     graphql`
@@ -136,7 +138,12 @@ export const Header = ({
               <a href="/">{siteTitle}</a>
             </div>
             {data && <Search items={data.allFile.edges} />}
-            <Navigation navLinks={navLinks} pageSelected={pageSelected} />
+            <Navigation
+              navLinks={navLinks}
+              pageSelected={pageSelected}
+              openMenu={openMenu}
+              menuToggle={menuToggle}
+            />
             {data && <Whatsapp telephone={data.site.siteMetadata.telephone} />}
             <Menu onClick={navToggle} className={styles.headerMenuIcon} />
           </div>

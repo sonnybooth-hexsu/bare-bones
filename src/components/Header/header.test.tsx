@@ -2,7 +2,7 @@
 
 import React from "react"
 import { render, cleanup } from "@testing-library/react"
-import { queryAllByTestId, fireEvent } from "@testing-library/dom"
+import { queryAllByTestId } from "@testing-library/dom"
 import { Header } from "./header"
 
 const testNavLinks = [
@@ -46,6 +46,8 @@ describe("<Header />", () => {
         siteTitle="Test Site"
         navLinks={testNavLinks}
         navToggle={() => Function}
+        openMenu={0}
+        menuToggle={() => Function}
         pageSelected="Home"
       />
     )
@@ -59,6 +61,8 @@ describe("<Header />", () => {
         siteTitle="Test Site"
         navLinks={testNavLinks}
         navToggle={() => Function}
+        openMenu={0}
+        menuToggle={() => Function}
         pageSelected="Home"
       />
     )
@@ -74,6 +78,8 @@ describe("<Header />", () => {
         siteTitle="Test Site"
         navLinks={testNavLinks}
         navToggle={() => Function}
+        openMenu={1}
+        menuToggle={() => Function}
         pageSelected="Home"
       />
     )
@@ -82,10 +88,6 @@ describe("<Header />", () => {
     expect(subLinks).toHaveLength(hasSubLinks.length)
 
     const sublinkMenuList = queryAllByTestId(subLinks[0], "subLinkMenuList")[0]
-
-    expect(sublinkMenuList).toHaveClass("hidden")
-
-    fireEvent.click(sublinkMenuList)
 
     expect(sublinkMenuList).toHaveClass("block")
   })

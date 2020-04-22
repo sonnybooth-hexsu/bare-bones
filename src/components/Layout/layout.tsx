@@ -11,7 +11,7 @@ type LayoutProps = {
 }
 
 export const Layout = ({ page, children }: LayoutProps) => {
-  const { navOpen, navToggle } = useContext(ThemeContext)
+  const { navOpen, navToggle, openMenu, menuToggle } = useContext(ThemeContext)
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -43,6 +43,8 @@ export const Layout = ({ page, children }: LayoutProps) => {
           navLinks={data.site.siteMetadata.navLinks}
           navToggle={navToggle}
           pageSelected={page}
+          openMenu={openMenu}
+          menuToggle={menuToggle}
         />
       ) : (
         <HeaderOpen
@@ -51,7 +53,7 @@ export const Layout = ({ page, children }: LayoutProps) => {
           navToggle={navToggle}
         />
       )}
-      <main>{children}</main>
+      <main onClick={() => menuToggle(0)}>{children}</main>
       <Footer
         siteTitle={data.site.siteMetadata.title}
         navLinks={data.site.siteMetadata.navLinks}
