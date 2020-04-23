@@ -130,6 +130,7 @@ p {
 
 body {
   font-size: 17.6px;
+  @apply text-gray-900;
 }
 
 p {

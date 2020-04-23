@@ -59,7 +59,8 @@ export default function Template({ data }) {
   return (
     <Layout>
       <SEO title={title} />
-      <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
+      <div className="bg-gray-200">
+      <div className="container mx-auto pl-6 pr-6 pt-24 pb-24">
         <div className="pl-4 pr-4 flex flex-col">
           <div className="flex justify-center">
           <p className={`${helpers.chipDark} mb-4`}>
@@ -71,6 +72,7 @@ export default function Template({ data }) {
           </h1>
           <p className="large-text text-center">{excerpt}</p>
         </div>
+      </div>
       </div>
       <div className="container mx-auto pr-6 pl-6">
         <div className="grid grid-cols-1 gap-6 pt-20 pb-20 pl-4 pr-4 lg:grid-cols-12">

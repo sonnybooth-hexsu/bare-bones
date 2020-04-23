@@ -14,12 +14,32 @@
     line-height: 1.625;
 }
 
-.ul li {
-    font-weight: 300;
+.blogContent img {
+    margin-bottom: 3rem;
 }
 
-.li {
-    font-weight: 300;
+.blogContent li::before {
+    display: inline-block;
+    content: '';
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    margin-right: 1rem;
+    margin-left: 2rem;
+    @apply bg-gray-600;
+    transform: translateY(-2px);
+    font-family: myriad-pro, sans-serif;
 }
 
-/* Did you want me to do the @apply thing here?  */
+.blogContent ul li {
+    @apply text-gray-900;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.625;
+}
+
+.blogContent ul {
+    margin-bottom: 2.5rem;
+    margin-top: -1.5rem;
+}
