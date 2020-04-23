@@ -2,6 +2,7 @@ import React from "react"
 import { Layout } from "../../components/Layout"
 import { SEO } from "../../components/SEO"
 import { graphql } from "gatsby"
+import helpers from "../../styles/helpers.module.css"
 
 export default function Template({ data }) {
   const domain = data.site.siteMetadata.domain
@@ -60,21 +61,21 @@ export default function Template({ data }) {
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4 flex flex-col">
           <div className="flex justify-center">
-            <p className="inline text-center text-xs font-semibold tracking-widest uppercase bg-black text-white rounded-full py-2 px-4 mb-4">
+          <p className={`${helpers.chipDark} mb-4`}>
               {category}
             </p>
           </div>
-          <h1 className="uppercase text-4xl leading-tight tracking-tight mb-8 mt-2 text-center font-normal lg:text-5xl xl:text-6xl">
+          <h1 className="uppercase mb-8 mt-2 text-center">
             {title}
           </h1>
-          <p className="text-center font-semi-bold">{excerpt}</p>
+          <p className="large-text text-center">{excerpt}</p>
         </div>
       </div>
       <div className="container mx-auto pr-6 pl-6">
         <div className="grid grid-cols-1 gap-6 pt-20 pb-20 pl-4 pr-4 lg:grid-cols-12">
           <div className="lg:col-span-2">
             <div className="flex items-center">
-              <div className="rounded-full h-12 w-12 mr-2 mr-2 overflow-hidden h-16 w-16">
+              <div className="rounded-full h-12 w-12 mr-2 mr-2 overflow-hidden">
                 <img
                   className="h-full w-full"
                   src={`/${authorImage}`}
@@ -82,10 +83,10 @@ export default function Template({ data }) {
                 />
               </div>
               <div>
-                <p className="pb-0 mb-0 text-md font-medium tracking-wide">
+              <p className="mb-0 font-semibold">
                   {author}
                 </p>
-                <p className="pb-0 mb-0 text-gray-600 text-sm font-medium">
+                <p className={`${helpers.caption}`}>
                   {date}
                 </p>
               </div>
