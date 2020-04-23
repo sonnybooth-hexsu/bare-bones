@@ -34,11 +34,13 @@ module.exports = {
       {
         name: `CMS Blogs`,
         page: `/blogs`,
-        subLinks: [{
-          name: `Styleguide`,
-          page: `/styleguide`,
-          id: 1,
-        },],
+        subLinks: [
+          {
+            name: `Styleguide`,
+            page: `/styleguide`,
+            id: 1,
+          },
+        ],
         id: 2,
       },
       {
@@ -57,15 +59,15 @@ module.exports = {
     productCategories: [
       {
         title: "Categories",
-        uid: "category"
+        uid: "category",
       },
     ],
     blogCategories: [
       {
         title: "Author",
-        uid: "author"
+        uid: "author",
       },
-    ]
+    ],
   },
   plugins: [
     {
@@ -131,6 +133,5 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-netlify-cms`,
-    "gatsby-plugin-stylelint",
   ],
 }

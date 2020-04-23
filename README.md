@@ -9,10 +9,7 @@
 1.  **Create a Bare Bones site**
 
 s
-    ```sh
-    # clone
-    git clone https://github.com/sonnybooth-hexsu/bare-bones.git
-    ```
+`sh # clone git clone https://github.com/sonnybooth-hexsu/bare-bones.git`
 
 2.  **Start developing**
 

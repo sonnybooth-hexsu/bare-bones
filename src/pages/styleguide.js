@@ -1,8 +1,8 @@
 import React from "react"
 import { Layout } from "../components/Layout"
 import { SEO } from "../components/SEO"
-import buttons from "../styles/buttons.module.css"
 import { ArrowRight } from "react-feather"
+import buttons from "../styles/buttons.module.css"
 
 const Styleguide = () => {
   return (
@@ -10,7 +10,7 @@ const Styleguide = () => {
       <SEO title="Styleguide" />
       <div className="bg-gray-200">
         <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
-          <h1>Styleguide</h1>
+          <h1>Styleguide lol</h1>
         </div>
         <div className="container mx-auto pl-6 pr-6 pt-20 pb-20 md:pl-16 md:pr-16 lg:pl-40 lg:pr-40 xl:pl-6 xl:pr-6 ">
           <div className="grid grid-cols-2 gap-20 cols-50-reverse">
