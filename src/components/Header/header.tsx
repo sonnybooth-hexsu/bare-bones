@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styles from "./header.module.css"
 import { Menu } from "react-feather"
-import { Search } from "../Search"
 import { Whatsapp } from "../Whatsapp"
 import arrowDown from "../../assets/icons/arrow-dropdown.svg"
 
@@ -137,7 +136,6 @@ export const Header = ({
             <div className={styles.headerLogo}>
               <a href="/">{siteTitle}</a>
             </div>
-            {data && <Search items={data.allFile.edges} />}
             <Navigation
               navLinks={navLinks}
               pageSelected={pageSelected}

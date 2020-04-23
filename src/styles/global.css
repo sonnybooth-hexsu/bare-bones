@@ -134,7 +134,7 @@ body {
 
 p {
   @apply tracking-wide;
-  color: red;
+  @apply font-light;
 }
 
 .large-text {

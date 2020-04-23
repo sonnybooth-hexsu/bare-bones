@@ -1,0 +1,25 @@
+@tailwind utilities;
+
+.blogContent h2 {
+    margin-top: 3rem;
+    font-family: myriad-pro, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.625;
+}
+
+.blogContent p {
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 1.625;
+}
+
+.ul li {
+    font-weight: 300;
+}
+
+.li {
+    font-weight: 300;
+}
+
+/* Did you want me to do the @apply thing here?  */
