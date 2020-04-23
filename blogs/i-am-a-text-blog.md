@@ -7,9 +7,9 @@ title: I am a text blog
 excerpt: I am a test blog excerpt
 author: Sonny and Bab
 category: Love
-image: assets/cheek-filler-image.jpg
-imageLarge: assets/cheek-filler-image.jpg
-authorImage: assets/amelia.jpeg
+image: /assets/cheek-filler-image.jpg
+imageLarge: /assets/cheek-filler-image.jpg
+authorImage: /assets/amelia.jpeg
 ---
 **Lol**
 

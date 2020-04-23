@@ -16,7 +16,7 @@ export const ProductCardIcon = ({
 }: ProductCardIconProps) => {
   return (
     <div className="bg-white pr-12 pt-12 pb-12 pl-12 relative">
-      <img className="h-12" src={`/${image}`} alt="Lips" />
+      <img className="h-12" src={image} alt="Lips" />
       <h2
         data-testid="productCardIconTitle"
         className="mt-8 mb-2 text-3xl tracking-wide"

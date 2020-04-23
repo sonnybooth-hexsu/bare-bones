@@ -11,7 +11,7 @@ exports[`<ProductCard /> should match snapshot 1`] = `
       <img
         alt="Lips"
         class="h-20"
-        src="//test-product.jpg"
+        src="/test-product.jpg"
       />
     </div>
     <div

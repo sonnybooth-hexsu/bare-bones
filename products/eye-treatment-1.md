@@ -5,8 +5,8 @@ path: /eye-treatment-1
 title: Eye treatment 1
 excerpt: I am eye treatment 1
 category: Eye
-image: assets/eye.svg
-imageLarge: assets/cheek-filler-image.jpg
+image: /assets/eye.svg
+imageLarge: /assets/cheek-filler-image.jpg
 productAttributeTitleOne: Attr 1
 productAttributeValueOne: '100'
 productAttributeTitleTwo: Attr 2

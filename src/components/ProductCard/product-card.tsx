@@ -16,7 +16,7 @@ export const ProductCard = ({
   return (
     <div className="bg-white">
       <div className="bg-red-200 pt-16 pb-16 flex justify-center">
-        <img className="h-20" src={`/${image}`} alt="Lips" />
+        <img className="h-20" src={image} alt="Lips" />
       </div>
       <div className="pr-8 pb-8 pl-8">
         <h2

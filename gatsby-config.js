@@ -115,17 +115,19 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `products`,
-        path: `${__dirname}/products`,
+        path: `${__dirname}/products/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `reviews`,
-        path: `${__dirname}/reviews`,
+        path: `${__dirname}/reviews/`,
       },
     },
     `gatsby-transformer-remark`,
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+    },
   ],
 }

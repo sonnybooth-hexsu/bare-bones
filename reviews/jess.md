@@ -6,5 +6,5 @@ name: Jess
 id: 2
 message: 'This is a review by Jess, this is a review by Jess'
 author: Jessica
-image: assets/amelia.jpeg
+image: /assets/amelia.jpeg
 ---

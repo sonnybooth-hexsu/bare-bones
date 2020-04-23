@@ -76,11 +76,7 @@ export default function Template({ data }) {
           <div className="lg:col-span-2">
             <div className="flex items-center">
               <div className="rounded-full h-12 w-12 mr-2 mr-2 overflow-hidden h-16 w-16">
-                <img
-                  className="h-full w-full"
-                  src={`/${authorImage}`}
-                  alt={author}
-                />
+                <img className="h-full w-full" src={authorImage} alt={author} />
               </div>
               <div>
                 <p className="pb-0 mb-0 text-md font-medium tracking-wide">
