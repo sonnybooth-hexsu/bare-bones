@@ -4,6 +4,7 @@ import { SEO } from "../../components/SEO"
 import { graphql } from "gatsby"
 import helpers from "../../styles/helpers.module.css"
 import styles from "./blog.module.css"
+import { CTABlock } from "../../components/CTABlock"
 
 export default function Template({ data }) {
   const domain = data.site.siteMetadata.domain
@@ -118,6 +119,7 @@ export default function Template({ data }) {
           </div>
         </div>
       </div>
+      <CTABlock />
     </Layout>
   )
 }
