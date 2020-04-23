@@ -1,4 +1,5 @@
 import React from "react"
+import helpers from "../../styles/helpers.module.css"
 
 type TestimonialCardProps = {
   name: string
@@ -27,7 +28,7 @@ export const TestimonialCard = ({
         </div>
         <div>
           <h4 className="mb-1">{name}</h4>
-          <p className="caption">Client</p>
+          <p className={`${helpers.caption}`}>Client</p>
         </div>
       </div>
       <p data-testid="testimonialCardMessage">{message}</p>

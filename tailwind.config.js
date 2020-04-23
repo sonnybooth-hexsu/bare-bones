@@ -4,6 +4,10 @@ module.exports = {
       sans: ["myriad-pro", "sans-serif"],
       serif: ["orpheuspro", "sans-serif"],
     },
+    inset: {
+      "0": "0",
+      "1": "1.5rem",
+    },
     extend: {
       colors: {
         jacarta: "#2E2C73;",
