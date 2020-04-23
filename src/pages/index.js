@@ -628,7 +628,7 @@ const IndexPage = () => (
         {/* Fullwidth Blog Image */}
         <div className="lg:col-span-8">
           <div className="mt-0 mb-8">
-            <div className="">
+            <div>
               <img
                 className="w-full"
                 src={yaldaAbout}

@@ -7,7 +7,7 @@ import styles from "./blog.module.css"
 export default function Template({ data }) {
   const domain = data.site.siteMetadata.domain
   const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter, html, fields } = markdownRemark
   const {
     date,
     title,
@@ -17,6 +17,9 @@ export default function Template({ data }) {
     excerpt,
     authorImage,
   } = frontmatter
+
+  const { readingTime } = fields
+
   const isSSR = typeof window === "undefined"
 
   if (!isSSR) {
@@ -88,6 +91,7 @@ export default function Template({ data }) {
               </div>
             </div>
           </div>
+          <p>{readingTime.text}</p>
           <div
             className={`${styles.blogContent} lg:col-span-8`}
             dangerouslySetInnerHTML={{ __html: html }}
@@ -127,6 +131,11 @@ export const pageQuery = graphql`
         category
         excerpt
         authorImage
+      }
+      fields {
+        readingTime {
+          text
+        }
       }
     }
     site {

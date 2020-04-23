@@ -33,9 +33,7 @@ exports[`<Footer /> should match snapshot 1`] = `
                 >
                   I am test description
                 </p>
-                <div
-                  class=""
-                >
+                <div>
                   <svg
                     class="inline mr-2 ml-2 text-white"
                     fill="none"

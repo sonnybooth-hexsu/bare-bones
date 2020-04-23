@@ -125,9 +125,12 @@ module.exports = {
         path: `${__dirname}/reviews/`,
       },
     },
-    `gatsby-transformer-remark`,
     {
-      resolve: `gatsby-plugin-netlify-cms`,
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-reading-time`],
+      },
     },
+    `gatsby-plugin-netlify-cms`,
   ],
 }
