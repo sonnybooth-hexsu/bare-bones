@@ -130,22 +130,18 @@ export const Header = ({
 
   return (
     <div className={styles.headerContainer}>
-      <div className="container mx-auto pl-6 pr-6">
-        <div className="pl-4 pr-4">
-          <div className={styles.header}>
-            <div className={styles.headerLogo}>
-              <a href="/">{siteTitle}</a>
-            </div>
-            <Navigation
-              navLinks={navLinks}
-              pageSelected={pageSelected}
-              openMenu={openMenu}
-              menuToggle={menuToggle}
-            />
-            {data && <Whatsapp telephone={data.site.siteMetadata.telephone} />}
-            <Menu onClick={navToggle} className={styles.headerMenuIcon} />
-          </div>
+      <div className={styles.header}>
+        <Menu onClick={navToggle} className={styles.headerMenuIcon} />
+        <div className={styles.headerLogo}>
+          <a href="/">{siteTitle}</a>
         </div>
+        <Navigation
+          navLinks={navLinks}
+          pageSelected={pageSelected}
+          openMenu={openMenu}
+          menuToggle={menuToggle}
+        />
+        {data && <Whatsapp telephone={data.site.siteMetadata.telephone} />}
       </div>
     </div>
   )

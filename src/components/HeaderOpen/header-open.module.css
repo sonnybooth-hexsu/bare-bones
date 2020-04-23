@@ -10,6 +10,8 @@
   color: theme('colors.black');
   font-size: 1.8rem;
   padding: 1rem 0;
+  @apply pl-6;
+  @apply pr-6;
 }
 
 .headerLogo {
@@ -24,6 +26,8 @@
 .headerNavigation li {
   margin-bottom: 1rem;
   cursor: pointer;
+  @apply pl-6;
+  @apply pr-6;
 }
 
 .headerNavigation li > div {
