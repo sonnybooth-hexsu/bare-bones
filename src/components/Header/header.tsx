@@ -1,9 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styles from "./header.module.css"
+import buttons from "../../styles/buttons.module.css"
 import { Menu } from "react-feather"
-import { Whatsapp } from "../Whatsapp"
 import arrowDown from "../../assets/icons/arrow-dropdown.svg"
+import logo from "../../assets/icons/logo.svg"
 
 type HeaderProps = {
   siteTitle: string
@@ -133,7 +134,9 @@ export const Header = ({
       <div className={styles.header}>
         <Menu onClick={navToggle} className={styles.headerMenuIcon} />
         <div className={styles.headerLogo}>
-          <a href="/">{siteTitle}</a>
+          <a href="/">
+            <img src={logo} alt={siteTitle} />
+          </a>
         </div>
         <Navigation
           navLinks={navLinks}
@@ -141,7 +144,12 @@ export const Header = ({
           openMenu={openMenu}
           menuToggle={menuToggle}
         />
-        {data && <Whatsapp telephone={data.site.siteMetadata.telephone} />}
+        <a
+          className={`${buttons.btnSecondaryOutline} ${buttons.btnSmall} ml-6`}
+          href="#"
+        >
+          Book a consultation
+        </a>
       </div>
     </div>
   )

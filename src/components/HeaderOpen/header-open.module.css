@@ -15,12 +15,15 @@
 }
 
 .headerLogo {
-  font-size: 1.5rem;
+  @apply h-6;
 
-  @media (fromMedium) {
-    flex-grow: 1;
-    font-size: 2rem;
+  @media (fromLarge) {
+    @apply h-8;
   }
+}
+
+.headerLogo img {
+  @apply h-full;
 }
 
 .headerNavigation li {

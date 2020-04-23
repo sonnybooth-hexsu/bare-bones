@@ -55,3 +55,8 @@
   color: theme('colors.white');
   transition: color .30s ease-in-out,background-color .30s ease-in-out,border-color .30s ease-in-out,box-shadow .30s ease-in-out; 
 }
+
+.btnSmall {
+  @apply p-3;
+  @apply text-sm;
+}

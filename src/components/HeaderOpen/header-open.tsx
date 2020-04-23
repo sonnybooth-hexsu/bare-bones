@@ -1,6 +1,7 @@
 import React, { useState } from "react"
-import styles from "./header-open.module.css"
 import { X, ChevronDown, ChevronUp } from "react-feather"
+import logo from "../../assets/icons/logo.svg"
+import styles from "./header-open.module.css"
 
 type HeaderOpenProps = {
   siteTitle: string
@@ -50,7 +51,7 @@ export const HeaderOpen = ({
     <div className={styles.headerContainer}>
       <div className={styles.header}>
         <a href="/" className={styles.headerLogo}>
-          {siteTitle}
+          <img src={logo} alt={siteTitle} />
         </a>
         <X className={styles.headerMenuIcon} onClick={navToggle} />
       </div>
