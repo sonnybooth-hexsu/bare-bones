@@ -5,6 +5,7 @@ import { CTABlock } from "../components/CTABlock"
 import { Carousel } from "../components/Carousel"
 import { ProductSlider } from "../components/ProductSlider"
 import buttons from "../styles/buttons.module.css"
+import helpers from "../styles/helpers.module.css"
 import lipsBefore from "../assets/images/lips-before.jpg"
 import lipsAfter from "../assets/images/lips-after.jpg"
 import signature from "../assets/images/signature.svg"
@@ -35,7 +36,7 @@ const IndexPage = () => (
                 alt="Girl in denim jacket smiling"
               />
               <div className="bg-gray-400 p-16 md:p-16 md:p-32 flex flex-col justify-center">
-                <p className="overline text-left mb-4 md:mb-6">
+                <p className={`${helpers.overline} text-left mb-4 md:mb-6`}>
                   Introducing Bare Bones
                 </p>
                 <h1 className="max-w-full text-left mb-4 md:mb-5 md:text-5xl md:text-left lg:text-6xl">
@@ -554,7 +555,7 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4">
-          <p className="overline mb-2">Treatments</p>
+          <p className={`${helpers.overline} mb-2`}>Treatments</p>
           <h1 className="uppercase mb-20 mt-2">
             Dr Yalda offers a range of <i className="lowercase">non-surgical</i>{" "}
             cosmetic treatments using high quality,{" "}
@@ -582,7 +583,7 @@ const IndexPage = () => (
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
         <div className="pl-4 pr-4 flex flex-col">
           <div className="flex justify-center">
-            <p className="chip__dark  mb-4">Category</p>
+            <p className={`${helpers.chipDark} mb-4`}>Category</p>
           </div>
           <h1 className="uppercase mb-8 mt-2 text-center">
             Considerations for darker skin types when choosing in-clinic skin
@@ -620,7 +621,7 @@ const IndexPage = () => (
             </div>
             <div>
               <p className="mb-0 font-semibold">By Dr Yalda</p>
-              <p className="caption">8th Oct, 2020</p>
+              <p className={`${helpers.caption}`}>8th Oct, 2020</p>
             </div>
           </div>
         </div>
@@ -714,7 +715,7 @@ const IndexPage = () => (
                 1
               </div>
               <img
-                className="absolute bottom-2 left-0 top-12 mb-4 h-10"
+                className="absolute bottom-1 left-0 top-12 mb-4 h-10"
                 src={consultation}
                 alt="Doctor's clipboard icon"
               />
@@ -734,7 +735,7 @@ const IndexPage = () => (
                 2
               </div>
               <img
-                className="absolute bottom-2 left-0 top-12 mb-4 h-10"
+                className="absolute bottom-1 left-0 top-12 mb-4 h-10"
                 src={consultation}
                 alt="Doctor's clipboard icon"
               />
@@ -754,7 +755,7 @@ const IndexPage = () => (
                 3
               </div>
               <img
-                className="absolute bottom-2 left-0 top-12 mb-4 h-10"
+                className="absolute bottom-1 left-0 top-12 mb-4 h-10"
                 src={consultation}
                 alt="Doctor's clipboard icon"
               />

@@ -1,5 +1,41 @@
 /* Helper classes */
 
 .listInline li {
-  display: inline;
+  @apply inline;
+}
+
+.chipDark {
+  @apply inline;
+  @apply text-center;
+  @apply text-xs;
+  @apply font-semibold;
+  @apply tracking-widest;
+  @apply uppercase;
+  @apply bg-black;
+  @apply text-white;
+  @apply rounded-full;
+  @apply py-2;
+  @apply px-4;
+}
+
+.overline {
+  @apply text-sm;
+  @apply font-semibold;
+  @apply tracking-wider;
+  @apply uppercase;
+
+  @media (fromMedium) {
+    @apply text-base;
+  }
+
+  @media (fromLarge) {
+    @apply text-lg;
+  }
+}
+
+.caption {
+  @apply text-sm;
+  @apply font-medium;
+  @apply leading-none;
+  @apply text-gray-600;
 }

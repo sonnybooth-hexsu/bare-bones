@@ -34,13 +34,7 @@ module.exports = {
       {
         name: `CMS Blogs`,
         page: `/blogs`,
-        subLinks: [
-          {
-            name: `Styleguide`,
-            page: `/styleguide`,
-            id: 1,
-          },
-        ],
+        subLinks: [],
         id: 2,
       },
       {

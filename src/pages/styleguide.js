@@ -3,6 +3,7 @@ import { Layout } from "../components/Layout"
 import { SEO } from "../components/SEO"
 import { ArrowRight } from "react-feather"
 import buttons from "../styles/buttons.module.css"
+import helpers from "../styles/helpers.module.css"
 
 const Styleguide = () => {
   return (
@@ -10,7 +11,7 @@ const Styleguide = () => {
       <SEO title="Styleguide" />
       <div className="bg-gray-200">
         <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
-          <h1>Styleguide lol</h1>
+          <h1>Styleguide</h1>
         </div>
         <div className="container mx-auto pl-6 pr-6 pt-20 pb-20 md:pl-16 md:pr-16 lg:pl-40 lg:pr-40 xl:pl-6 xl:pr-6 ">
           <div className="grid grid-cols-2 gap-20 cols-50-reverse">
@@ -148,10 +149,10 @@ const Styleguide = () => {
                 <p>Body Text</p>
               </div>
               <div>
-                <p className="overline">Overline Text</p>
+                <p className={`${helpers.overline}`}>Overline Text</p>
               </div>
               <div>
-                <p className="caption">Caption Text</p>
+                <p className={`${helpers.caption}`}>Caption Text</p>
               </div>
             </div>
           </div>

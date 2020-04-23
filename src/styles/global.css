@@ -57,6 +57,7 @@
   .cols-50 {
     grid-template-columns: 7fr 5fr;
   }
+
   .cols-50-reverse {
     grid-template-columns: 5fr 7fr;
   }
@@ -131,40 +132,9 @@ body {
   font-size: 17.6px;
 }
 
-.overline {
-  @apply text-sm;
-  @apply font-semibold;
-  @apply tracking-wider;
-  @apply uppercase;
-
-    @media (fromMedium) {
-      @apply text-base;
-    }
-
-    @media (fromLarge) {
-      @apply text-lg;
-    }
-}
-
-.caption {
-  @apply text-sm;
-  @apply font-medium;
-  @apply leading-none;
-  @apply text-gray-600;
-}
-
-.chip__dark {
-  @apply inline;
-  @apply text-center;
-  @apply text-xs;
-  @apply font-semibold;
-  @apply tracking-widest;
-  @apply uppercase;
-  @apply bg-black;
-  @apply text-white;
-  @apply rounded-full;
-  @apply py-2;
-  @apply px-4;
+p {
+  @apply tracking-wide;
+  color: red;
 }
 
 .large-text {
