@@ -23,7 +23,12 @@ export const PostCard = ({
         <div className={helpers.chipDark}>{category}</div>
       </div>
       <div className="flex flex-col flex-grow p-6">
-        <h3 className="flex-grow pb-20 text-3xl leading-tight">{title}</h3>
+        <h3
+          data-testid="postcardTitle"
+          className="flex-grow pb-20 text-3xl leading-tight"
+        >
+          {title}
+        </h3>
         <p className={`${helpers.caption}`}>{date}</p>
       </div>
       <a className="absolute top-0 bottom-0 left-0 right-0" href={path}>

@@ -2,6 +2,7 @@ import React from "react"
 import { Layout } from "../../components/Layout"
 import { SEO } from "../../components/SEO"
 import { graphql } from "gatsby"
+import styles from "./blog.module.css"
 
 export default function Template({ data }) {
   const domain = data.site.siteMetadata.domain
@@ -92,7 +93,7 @@ export default function Template({ data }) {
             </div>
           </div>
           <div
-            className="lg:col-span-8"
+            className={`${styles.blogContent} lg:col-span-8`}
             dangerouslySetInnerHTML={{ __html: html }}
           />
           <div className="lg:col-span-2">
