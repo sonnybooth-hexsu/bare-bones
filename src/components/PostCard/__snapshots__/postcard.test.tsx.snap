@@ -10,7 +10,7 @@ exports[`<PostCard /> should match snapshot 1`] = `
     >
       <img
         alt="Post"
-        src="//test-image.jpg"
+        src="/test-image.jpg"
         width="100%"
       />
       <div

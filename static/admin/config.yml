@@ -2,7 +2,7 @@ backend:
   name: github
   repo: sonnybooth-hexsu/bare-bones
 media_folder: static/assets
-public_folder: assets
+public_folder: /assets
 collections:
   - name: review
     label: Review

@@ -19,7 +19,7 @@ export const PostCard = ({
   return (
     <div className="flex flex-col bg-white h-full relative">
       <div className="relative">
-        <img width="100%" src={`/${image}`} alt="Post" />
+        <img width="100%" src={image} alt="Post" />
         <div className={helpers.chipDark}>{category}</div>
       </div>
       <div className="flex flex-col flex-grow p-6">

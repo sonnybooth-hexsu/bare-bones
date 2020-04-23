@@ -79,7 +79,7 @@ export default function Template({ data }) {
               <div className="rounded-full h-12 w-12 mr-2 mr-2 overflow-hidden">
                 <img
                   className="h-full w-full"
-                  src={`/${authorImage}`}
+                  src={authorImage}
                   alt={author}
                 />
               </div>

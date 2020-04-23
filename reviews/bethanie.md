@@ -8,5 +8,5 @@ message: >-
   brilliant and has done a fantastic job. I will not go anywhere else, she’s
   amazing and I recommend her one hundred percent.
 author: Bethanie
-image: assets/emma.jpeg
+image: /assets/emma.jpeg
 ---

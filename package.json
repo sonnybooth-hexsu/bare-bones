@@ -65,7 +65,7 @@
     "clean": "gatsby clean",
     "lint:js": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
     "lint:css": "stylelint 'src/**/*.{css, js, jsx, ts, tsx}'",
-    "lint:js:fix": "eslint --fix --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "lint:format": "yarn format; eslint --fix --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
     "test": "jest",
     "test:snapshot": "jest -u",
     "full": "yarn install; yarn run build; yarn develop"

@@ -7,9 +7,9 @@ title: Considerations for darker skin types when choosing in-clinic skin treatme
 excerpt: Cheek Fillers excerpt
 author: Dr Yalda
 category: Category
-image: assets/cheek-filler-image.jpg
-imageLarge: assets/cheek-filler-image.jpg
-authorImage: assets/emma.jpeg
+image: /assets/cheek-filler-image.jpg
+imageLarge: /assets/cheek-filler-image.jpg
+authorImage: /assets/emma.jpeg
 ---
 ![girls face](assets/cheek-filler-image.jpg "girl touching face")
 

@@ -10,5 +10,5 @@ message: >-
   immediately. It’s been 6 months since my fillers and my lips are as juicy as
   ever!
 author: Amelie
-image: assets/emma.jpeg
+image: /assets/emma.jpeg
 ---
