@@ -64,75 +64,70 @@
 
 h1 {
   @apply text-4xl;
-  @apply font-serif;
 
-  @media (fromMedium) {
-    @apply text-5xl;
-    @apply tracking-tight;
-    @apply leading-tight;
-  }
+    @media (fromMedium) {
+      @apply text-5xl;
+      @apply tracking-tight;
+      @apply leading-tight;
+    }
 
-  @media (fromLarge) {
-    @apply text-6xl;
-    @apply leading-snug;
-    @apply tracking-tighter;
-  }
+    @media (fromLarge) {
+      @apply text-6xl;
+      @apply leading-snug;
+      @apply tracking-tighter;
+    }
 }
 
 h2 {
   @apply text-3xl;
   @apply tracking-tight;
   @apply leading-tight;
-  @apply font-serif;
 
-  @media (fromMedium) {
-    @apply text-4xl;
-    @apply tracking-tight;
-    @apply leading-tight;
-  }
+    @media (fromMedium) {
+      @apply text-4xl;
+      @apply tracking-tight;
+      @apply leading-tight;
+    }
 }
 
 h3 {
   @apply text-2xl;
-  @apply font-serif;
 
-  @media (fromMedium) {
-    @apply text-3xl;
-  }
+    @media (fromMedium) {
+      @apply text-3xl;
+    }
 }
 
 h4 {
   @apply text-xl;
-  @apply font-serif;
 
-  @media (fromMedium) {
-    @apply text-2xl;
-  }
+    @media (fromMedium) {
+      @apply text-2xl;
+    }
 }
 
 h5 {
   @apply text-lg;
-  @apply font-sans;
 
-  @media (fromMedium) {
-    @apply text-xl;
-  }
+    @media (fromMedium) {
+      @apply text-xl;
+    }
 }
 
 h6 {
   @apply text-base;
-  @apply font-sans;
   @apply font-semibold;
 
-  @media (fromMedium) {
-    @apply text-lg;
-  }
+    @media (fromMedium) {
+      @apply text-lg;
+    }
+}
+
+p {
+  @apply tracking-wide;
 }
 
 body {
-  font-weight: 300;
-  font-style: normal;
-  letter-spacing: 1;
   font-size: 17.6px;
 }
 
@@ -140,15 +135,15 @@ body {
   @apply text-sm;
   @apply font-semibold;
   @apply tracking-wider;
-  text-transform: uppercase;
+  @apply uppercase;
 
-  @media (fromMedium) {
-    @apply text-base;
-  }
+    @media (fromMedium) {
+      @apply text-base;
+    }
 
-  @media (fromLarge) {
-    @apply text-lg;
-  }
+    @media (fromLarge) {
+      @apply text-lg;
+    }
 }
 
 .caption {
@@ -156,11 +151,6 @@ body {
   @apply font-medium;
   @apply leading-none;
   @apply text-gray-600;
-}
-
-p {
-  @apply tracking-wide;
-  color: red;
 }
 
 .chip__dark {
@@ -199,10 +189,17 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-  font-style: normal;
   font-feature-settings: 'calt', 'clig', 'kern', 'liga', 'locl', 'rlig';
 }
+
+h1, h2, h3, h4 {
+  @apply font-serif;
+}
+
+h5, h6 {
+  @apply font-sans;
+}
+
 
 @keyframes reveal {
   0% {
