@@ -24,14 +24,11 @@ const Products = props => {
         <div className="container mx-auto pl-6 pr-6 pb-10">
           <div className="grid grid-cols-1 pr-4 pl-4 pt-12 md:grid-cols-5 xl:grid-cols-7 md:gap-12">
             <div className="grid-cols-1 md:col-span-2 xl:col-span-2">
-              <div className="bg-white p-10 pt-6">
-                <h3>Filter</h3>
-                <Filter
-                  types={productCategories}
-                  items={productsDestructured}
-                  setItemsState={setProductsState}
-                />
-              </div>
+              <Filter
+                types={productCategories}
+                items={productsDestructured}
+                setItemsState={setProductsState}
+              />
             </div>
             <div className="col-span-3 xl:col-span-5">
               <div className="grid grid-cols-1 gap-4 mb-12 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3">

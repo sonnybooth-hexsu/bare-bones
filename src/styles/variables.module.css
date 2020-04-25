@@ -1,4 +1,5 @@
 /* Variables */
 
 /* ZIndexes */
-@value dropDownMenu: 900
+@value FilterMenu: 999;
+@value dropDownMenu: 900;

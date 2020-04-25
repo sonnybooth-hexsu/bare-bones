@@ -2,7 +2,70 @@
 
 exports[`<Filter /> should match snapshot 1`] = `
 <div>
-  <form>
+  <button
+    class="btnSecondaryOutline w-full mb-8 md:hidden"
+  >
+    <div
+      class="flex align-center justify-between"
+    >
+      Filters
+      <svg
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="12"
+          x2="12"
+          y1="5"
+          y2="19"
+        />
+        <line
+          x1="5"
+          x2="19"
+          y1="12"
+          y2="12"
+        />
+      </svg>
+    </div>
+  </button>
+  <form
+    class="hidden absolute top-0 right-0 bg-white h-screen z-999 pt-4 pr-8 pl-8 pb-8 md:block md:static md:h-auto"
+  >
+    <div
+      class="flex justify-end cursor-pointer md:hidden"
+    >
+      <svg
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="18"
+          x2="6"
+          y1="6"
+          y2="18"
+        />
+        <line
+          x1="6"
+          x2="18"
+          y1="6"
+          y2="18"
+        />
+      </svg>
+    </div>
     <fieldset
       class="mt-3"
     >
