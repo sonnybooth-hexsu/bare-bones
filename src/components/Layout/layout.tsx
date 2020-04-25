@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Header } from "../Header"
 import { HeaderOpen } from "../HeaderOpen"
 import { Footer } from "../Footer"
+import { Whatsapp } from "../Whatsapp"
 import { ThemeContext } from "../../context/ThemeContext"
 
 type LayoutProps = {
@@ -61,6 +62,7 @@ export const Layout = ({ page, children }: LayoutProps) => {
         email={data.site.siteMetadata.email}
         telephone={data.site.siteMetadata.telephone}
       />
+      {data && <Whatsapp telephone={data.site.siteMetadata.telephone} />}
     </>
   )
 }

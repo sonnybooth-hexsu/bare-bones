@@ -10,20 +10,27 @@
   color: theme('colors.black');
   font-size: 1.8rem;
   padding: 1rem 0;
+  @apply pl-6;
+  @apply pr-6;
 }
 
 .headerLogo {
-  font-size: 1.5rem;
+  @apply h-6;
 
-  @media (fromMedium) {
-    flex-grow: 1;
-    font-size: 2rem;
+  @media (fromLarge) {
+    @apply h-8;
   }
+}
+
+.headerLogo img {
+  @apply h-full;
 }
 
 .headerNavigation li {
   margin-bottom: 1rem;
   cursor: pointer;
+  @apply pl-6;
+  @apply pr-6;
 }
 
 .headerNavigation li > div {

@@ -124,28 +124,28 @@ const Styleguide = () => {
               <h4>Typography</h4>
             </div>
             <div className="grid grid-cols-1 grid-rows-12 gap-2">
-              <div className="">
+              <div>
                 <h1>Heading One</h1>
               </div>
-              <div className="">
+              <div>
                 <h2>Heading Two</h2>
               </div>
-              <div className="">
+              <div>
                 <h3>Heading Three</h3>
               </div>
-              <div className="">
+              <div>
                 <h4>Heading Four</h4>
               </div>
-              <div className="">
+              <div>
                 <h5>Heading Five</h5>
               </div>
-              <div className="">
+              <div>
                 <h6>Heading Six</h6>
               </div>
-              <div className="">
+              <div>
                 <p className="large-text">Large Text</p>
               </div>
-              <div className="">
+              <div>
                 <p>Body Text</p>
               </div>
               <div>

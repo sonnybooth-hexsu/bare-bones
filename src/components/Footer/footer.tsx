@@ -38,7 +38,7 @@ export const Footer = ({
                   >
                     {description}
                   </p>
-                  <div className="">
+                  <div>
                     <Facebook
                       size="24"
                       className="inline mr-2 ml-2 text-white"

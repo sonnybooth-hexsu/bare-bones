@@ -6,25 +6,30 @@
 .headerContainer {
   background-color: theme('colors.white');
   position: relative;
+  @apply pl-6;
+  @apply pr-6;
 }
 
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   color: theme('colors.black');
   font-size: 1.8rem;
-  padding: .5rem 0;
+  padding: 1rem 0;
 }
 
 .headerLogo {
-  font-size: 1.5rem;
-  font-weight: 600;
+  flex-grow: 1;
+  @apply ml-6;
+  @apply h-6;
 
   @media (fromLarge) {
-    flex-grow: 1;
-    font-size: 2rem;
+    @apply h-8;
   }
+}
+
+.headerLogo img {
+  @apply h-full;
 }
 
 .headerNavigation {

@@ -38,7 +38,7 @@ export default function Template({ data }) {
             </div>
           </div>
         </div>
-        <div className="">
+        <div>
           <img src={imageLarge} alt="Product advert" />
         </div>
       </div>
