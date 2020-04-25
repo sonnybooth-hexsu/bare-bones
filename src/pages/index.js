@@ -10,7 +10,6 @@ import lipsBefore from "../assets/images/lips-before.jpg"
 import lipsAfter from "../assets/images/lips-after.jpg"
 import signature from "../assets/images/signature.svg"
 import yaldaAbout from "../assets/images/yalda-about.jpg"
-import avatar from "../assets/images/avatar.jpg"
 import mesoestetic from "../assets/images/brand-logo-mesoestetic.svg"
 import consultation from "../assets/images/consultation.svg"
 import perfectPeel from "../assets/images/brand-logo-perfect-peel.png"
@@ -24,25 +23,27 @@ import { Clock, Watch, Calendar, Tag, ArrowRight } from "react-feather"
 const IndexPage = () => (
   <Layout page="Home">
     <SEO title="Home" />
-    {/* Hero Block */}
+    {/* Hero Block 01 */}
     <div className="bg-gray-300">
       <div className="pt-6 pb-6">
         <div className="container mx-auto pl-6 pr-6 md:pl-16 md:pr-16 lg:pl-40 lg:pr-40 xl:pl-6 xl:pr-6 ">
           <div className="pl-4 pr-4">
-            <div className="grid gap-2 xl:grid-cols-hero">
+            <div className="grid gap-4 xl:grid-cols-hero">
               <img
                 className="max-w-full"
                 src={hero}
                 alt="Girl in denim jacket smiling"
               />
               <div className="bg-gray-400 p-16 md:p-16 md:p-32 flex flex-col justify-center">
-                <p className={`${helpers.overline} text-left mb-4 md:mb-6`}>
-                  Introducing Bare Bones
+                <p
+                  className={`${helpers.overline} text-center mb-4 lg:text-left`}
+                >
+                  Introducing Bare Bones 01
                 </p>
-                <h1 className="max-w-full text-left mb-4 md:mb-5 md:text-5xl md:text-left lg:text-6xl">
+                <h1 className="leading-none max-w-full mb-6">
                   We help convey your message.
                 </h1>
-                <p className="large-text mb-4 md:mb-6 md:text-left lg:mb-8">
+                <p className="large-text text-center mb-8 lg:text-left">
                   If you&lsquo;re looking for the latest in wireless headphones.
                 </p>
                 <div>
@@ -64,6 +65,106 @@ const IndexPage = () => (
                     />
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {/* Hero Block 02 */}
+    <div>
+      <div className="pt-6 pb-6 lg:pt-24 lg:pb-24">
+        <div className="container mx-auto pl-6 pr-6 md:pl-16 md:pr-16 lg:pl-0 lg:pr-0 xl:pl-6 xl:pr-6 ">
+          <div className="pl-4 pr-4">
+            <div className="grid gap-4 lg:grid-cols-2">
+              <div className="pt-12 pb-12 flex flex-col justify-center lg:max-width lg:pt-40 lg:pb-32 lg:pr-32">
+                <p
+                  className={`${helpers.overline} text-center mb-4 lg:text-left`}
+                >
+                  Introducing Bare Bones 02
+                </p>
+                <h1 className="max-w-full text-center mb-4 md:mb-6 lg:text-left leading-none">
+                  We help businesses shine online.
+                </h1>
+                <p className="large-text text-center mb-8 lg:text-left">
+                  A brand new look for your consultancy business.
+                </p>
+                <div>
+                  <a
+                    className={`${buttons.btnPrimary} block mb-4 md:mb-6 xl:mr-4 xl:mb-0 xl:inline-block`}
+                    href="#"
+                  >
+                    Book a consultation
+                  </a>
+                  <a
+                    className={`${buttons.btnSecondaryOutline} block xl:inline-block`}
+                    href="#"
+                  >
+                    See Treatments{" "}
+                    <ArrowRight
+                      size="16"
+                      color="currentColor"
+                      className="inline mr-2"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div className="bg-gray-200 flex justify-center content-center pt-8 pb-8">
+                <img
+                  className="w-2/4 self-center"
+                  src={hero}
+                  alt="Girl in denim jacket smiling"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {/* Hero Block 03 */}
+    <div>
+      <div className="pt-6 pb-6 lg:pt-24 lg:pb-24">
+        <div className="container mx-auto pl-6 pr-6 md:pl-16 md:pr-16 lg:pl-0 lg:pr-0 xl:pl-6 xl:pr-6 ">
+          <div className="pl-4 pr-4">
+            <div className="grid gap-4 lg:grid-cols-2">
+              <div className="pt-12 pb-12 flex flex-col justify-center lg:max-width lg:pt-40 lg:pb-32 lg:pr-32">
+                <p
+                  className={`${helpers.overline} text-center mb-4 lg:text-left`}
+                >
+                  Introducing Bare Bones 03
+                </p>
+                <h1 className="max-w-full text-center mb-4 md:mb-6 lg:text-left leading-none">
+                  We help businesses shine online.
+                </h1>
+                <p className="large-text text-center mb-8 lg:text-left">
+                  A brand new look for your consultancy business.
+                </p>
+                <div>
+                  <a
+                    className={`${buttons.btnPrimary} block mb-4 md:mb-6 xl:mr-4 xl:mb-0 xl:inline-block`}
+                    href="#"
+                  >
+                    Book a consultation
+                  </a>
+                  <a
+                    className={`${buttons.btnSecondaryOutline} block xl:inline-block`}
+                    href="#"
+                  >
+                    See Treatments{" "}
+                    <ArrowRight
+                      size="16"
+                      color="currentColor"
+                      className="inline mr-2"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div className="bg-gray-200 flex justify-center content-center pt-8 pb-8">
+                <img
+                  className="w-2/4 self-center"
+                  src={hero}
+                  alt="Girl in denim jacket smiling"
+                />
               </div>
             </div>
           </div>
@@ -258,10 +359,10 @@ const IndexPage = () => (
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20 flex align-center">
         <div className="grid md:grid-cols-2">
           <div className="pl-4 pr-4 lg:pr-12">
-            <h2 className="uppercase text-left">
+            <h2 className="uppercase">
               It&lsquo;s the <i className="lowercase">results</i> that count
             </h2>
-            <p className="mb-20 text-left">
+            <p className="mb-20">
               Dr Yalda is a results-oriented aesthetics doctor that goes above
               and beyond to ensure clients are completely satisfied.
             </p>
@@ -564,132 +665,6 @@ const IndexPage = () => (
           <button className="bg-black hover:bg-gray-900 text-white font-light py-6 px-12 inline">
             Book a consultation
           </button>
-        </div>
-      </div>
-    </div>
-    {/*  Blog Post Title Title */}
-    <div className="bg-gray-200">
-      <div className="container mx-auto pr-6 pl-6">
-        <div className="pl-4 pr-4">
-          <h2 className="pt-8 pb-8 text-3xl">
-            <span className="font-bold">Blog Post Title</span> - Just another
-            hero title, aligned center
-          </h2>
-        </div>
-      </div>
-    </div>
-    {/*  Blog Post Title */}
-    <div className="bg-white">
-      <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
-        <div className="pl-4 pr-4 flex flex-col">
-          <div className="flex justify-center">
-            <p className={`${helpers.chipDark} mb-4`}>Category</p>
-          </div>
-          <h1 className="uppercase mb-8 mt-2 text-center">
-            Considerations for darker skin types when choosing in-clinic skin
-            treatments.
-          </h1>
-          <p className="large-text text-center">
-            Cleansing is an essential step in any skin regime. Learn how to
-            properly double cleanse your skin.
-          </p>
-        </div>
-      </div>
-    </div>
-    {/*  Blog Post Title  */}
-    <div className="bg-gray-200">
-      <div className="container mx-auto pr-6 pl-6">
-        <div className="pl-4 pr-4">
-          <h2 className="pt-8 pb-8 text-3xl">
-            <span className="font-bold">Blog Post</span> - Blog post
-          </h2>
-        </div>
-      </div>
-    </div>
-    {/* Blog Post */}
-    <div className="container mx-auto pr-6 pl-6">
-      <div className="grid grid-cols-1 grid lg:grid-cols-12 gap-6 pt-20 pb-20 pl-4 pr-4">
-        {/* Blog Post Avatar, Posted by, Date Stamp */}
-        <div className="lg:col-span-2">
-          <div className="flex items-center">
-            <div className="rounded-full mr-3 overflow-hidden h-12 w-12">
-              <img
-                className="h-full w-full"
-                src={avatar}
-                alt="Dr Yalda Avatar"
-              />
-            </div>
-            <div>
-              <p className="mb-0 font-semibold">By Dr Yalda</p>
-              <p className={`${helpers.caption}`}>8th Oct, 2020</p>
-            </div>
-          </div>
-        </div>
-        {/* Fullwidth Blog Image */}
-        <div className="lg:col-span-8">
-          <div className="mt-0 mb-8">
-            <div>
-              <img
-                className="w-full"
-                src={yaldaAbout}
-                alt="Dr Yalda slightly smiling"
-              />
-            </div>
-          </div>
-          {/* Main body blog content */}
-          <p className="mb-8">
-            The revolutionary treatment has been around since the 1980’s and
-            with very few risks and no recovery time it still remains one of the
-            most popular non-surical cosmetic treatments. Botulinum Toxin
-            injections minimises the appearance of lines and wrinkles by
-            temporarily relaxing specific muscles, with results lasting 3 to 4
-            months. They are also used for treatment of hyperhidrosis (excess
-            sweating) and bruxism (involuntary habitual grinding of the teeth).
-          </p>
-          <h6>About This Treatment</h6>
-          <p className="mb-8">
-            The revolutionary treatment has been around since the 1980’s and
-            with very few risks and no recovery time it still remains one of the
-            most popular non-surical cosmetic treatments. Botulinum Toxin
-            injections minimises the appearance of lines and wrinkles by
-            temporarily relaxing specific muscles, with results lasting 3 to 4
-            months. They are also used for treatment of hyperhidrosis (excess
-            sweating) and bruxism (involuntary habitual grinding of the teeth).
-          </p>
-          <h6>About This Treatment</h6>
-          <p className="mb-8">
-            The revolutionary treatment has been around since the 1980’s and
-            with very few risks and no recovery time it still remains one of the
-            most popular non-surical cosmetic treatments. Botulinum Toxin
-            injections minimises the appearance of lines and wrinkles by
-            temporarily relaxing specific muscles, with results lasting 3 to 4
-            months. They are also used for treatment of hyperhidrosis (excess
-            sweating) and bruxism (involuntary habitual grinding of the teeth).
-          </p>
-          <h6>About This Treatment</h6>
-          <p className="mb-8">
-            The revolutionary treatment has been around since the 1980’s and
-            with very few risks and no recovery time it still remains one of the
-            most popular non-surical cosmetic treatments. Botulinum Toxin
-            injections minimises the appearance of lines and wrinkles by
-            temporarily relaxing specific muscles, with results lasting 3 to 4
-            months. They are also used for treatment of hyperhidrosis (excess
-            sweating) and bruxism (involuntary habitual grinding of the teeth).
-          </p>
-          <h6>About This Treatment</h6>
-          <p className="mb-8">
-            The revolutionary treatment has been around since the 1980’s and
-            with very few risks and no recovery time it still remains one of the
-            most popular non-surical cosmetic treatments. Botulinum Toxin
-            injections minimises the appearance of lines and wrinkles by
-            temporarily relaxing specific muscles, with results lasting 3 to 4
-            months. They are also used for treatment of hyperhidrosis (excess
-            sweating) and bruxism (involuntary habitual grinding of the teeth).
-          </p>
-        </div>
-        {/* Right hand column (Share Links) */}
-        <div className="lg:col-span-2">
-          <p>Share links</p>
         </div>
       </div>
     </div>

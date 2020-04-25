@@ -19,14 +19,10 @@
 }
 
 .overline {
-  @apply text-sm;
-  @apply font-semibold;
+  @apply text-base;
+  @apply font-medium;
   @apply tracking-wider;
   @apply uppercase;
-
-  @media (fromMedium) {
-    @apply text-base;
-  }
 
   @media (fromLarge) {
     @apply text-lg;
@@ -38,4 +34,13 @@
   @apply font-medium;
   @apply leading-none;
   @apply text-gray-600;
+}
+
+.max-width {
+  width: 100%;
+  max-width: 486px;
+}
+
+.height-648 {
+  min-height: 648px;
 }

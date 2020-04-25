@@ -1,7 +1,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      sans: ["myriad-pro", "sans-serif"],
+      sans: ["futura-pt, sans-serif;"],
       serif: ["orpheuspro", "sans-serif"],
     },
     inset: {

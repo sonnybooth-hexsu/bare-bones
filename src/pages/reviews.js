@@ -50,7 +50,7 @@ const Reviews = props => {
         <div className="container mx-auto pr-6 pl-6">
           <div className="pl-4 pr-4">
             <h2 className="pt-8 pb-8 text-3xl">
-              <span className="font-bold">Reviews 2</span> - Lorem
+              <span className="font-bold">Reviews 2</span>
             </h2>
           </div>
         </div>
@@ -76,7 +76,7 @@ const Reviews = props => {
           </div>
           <div className="col-span-12 lg:col-span-8">
             <div className="pr-4 pl-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
+              <div className="grid grid-cols-1 gap-4 mb-12 sm:grid-cols-2">
                 {reviews.map(({ name, message, image }, i) => (
                   <TestimonialCard
                     classes={`mb-4`}

@@ -2,7 +2,9 @@ import React from "react"
 import { Layout } from "../../components/Layout"
 import { SEO } from "../../components/SEO"
 import { graphql } from "gatsby"
+import helpers from "../../styles/helpers.module.css"
 import styles from "./blog.module.css"
+import { CTABlock } from "../../components/CTABlock"
 
 export default function Template({ data }) {
   const domain = data.site.siteMetadata.domain
@@ -61,33 +63,27 @@ export default function Template({ data }) {
   return (
     <Layout>
       <SEO title={title} />
-      <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
-        <div className="pl-4 pr-4 flex flex-col">
-          <div className="flex justify-center">
-            <p className="inline text-center text-xs font-semibold tracking-widest uppercase bg-black text-white rounded-full py-2 px-4 mb-4">
-              {category}
-            </p>
+      <div className="bg-gray-200">
+        <div className="container mx-auto pl-6 pr-6 pt-24 pb-24">
+          <div className="pl-4 pr-4 flex flex-col">
+            <div className="flex justify-center">
+              <p className={`${helpers.chipDark} mb-4`}>{category}</p>
+            </div>
+            <h1 className="uppercase mb-8 mt-2 text-center">{title}</h1>
+            <p className="large-text text-center">{excerpt}</p>
           </div>
-          <h1 className="uppercase text-4xl leading-tight tracking-tight mb-8 mt-2 text-center font-normal lg:text-5xl xl:text-6xl">
-            {title}
-          </h1>
-          <p className="text-center font-semi-bold">{excerpt}</p>
         </div>
       </div>
       <div className="container mx-auto pr-6 pl-6">
         <div className="grid grid-cols-1 gap-6 pt-20 pb-20 pl-4 pr-4 lg:grid-cols-12">
           <div className="lg:col-span-2">
             <div className="flex items-center">
-              <div className="rounded-full h-12 w-12 mr-2 mr-2 overflow-hidden h-16 w-16">
+              <div className="rounded-full h-12 w-12 mr-2 mr-2 overflow-hidden">
                 <img className="h-full w-full" src={authorImage} alt={author} />
               </div>
               <div>
-                <p className="pb-0 mb-0 text-md font-medium tracking-wide">
-                  {author}
-                </p>
-                <p className="pb-0 mb-0 text-gray-600 text-sm font-medium">
-                  {date}
-                </p>
+                <p className="mb-0 font-semibold">{author}</p>
+                <p className={`${helpers.caption}`}>{date}</p>
               </div>
             </div>
           </div>
@@ -115,6 +111,7 @@ export default function Template({ data }) {
           </div>
         </div>
       </div>
+      <CTABlock />
     </Layout>
   )
 }

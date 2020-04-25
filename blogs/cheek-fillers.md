@@ -11,7 +11,7 @@ image: /assets/cheek-filler-image.jpg
 imageLarge: /assets/cheek-filler-image.jpg
 authorImage: /assets/emma.jpeg
 ---
-![girls face](assets/cheek-filler-image.jpg "girl touching face")
+![girls face](/assets/cheek-filler-image.jpg "girl touching face")
 
 
 
