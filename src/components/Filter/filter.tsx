@@ -1,5 +1,8 @@
-import React, { useState, SyntheticEvent } from "react"
+import React, { useState, useContext, SyntheticEvent } from "react"
+import { Plus, X } from "react-feather"
 import { filterBySelected, createListOfTypes } from "../../utils/functions"
+import { ThemeContext } from "../../context/ThemeContext"
+import buttons from "../../styles/buttons.module.css"
 
 type Product = {
   id: number
@@ -32,6 +35,7 @@ type FilterProps = {
 type FieldsetsProps = {
   items: Array<Product>
   setItemsState: (newItemsState: Array<Product>) => void
+  setFiltersSelected: (newFiltersSelected: number) => void
   types: Array<{
     title: string
     uid: string
@@ -58,6 +62,7 @@ type Fieldset = {
   fieldsetsState: [FieldsetTypeProps]
   setFieldsetsState: (newFieldsetsState: [FieldsetTypeProps]) => void
   setItemsState: (newItemsState: Array<Product>) => void
+  setFiltersSelected: (newFiltersSelected: number) => void
 }
 
 const Fieldset = ({
@@ -67,6 +72,7 @@ const Fieldset = ({
   fieldsetsState,
   setFieldsetsState,
   setItemsState,
+  setFiltersSelected,
 }: Fieldset) => {
   const handleCheck = (event: SyntheticEvent) => {
     const target = event.target as HTMLInputElement
@@ -96,6 +102,7 @@ const Fieldset = ({
     const newItemsState = filterBySelected(items, checkedTypes, checkedItems)
 
     setItemsState(newItemsState)
+    setFiltersSelected(checkedItems.length)
   }
 
   return (
@@ -121,7 +128,12 @@ const Fieldset = ({
   )
 }
 
-const Fieldsets = ({ types, items, setItemsState }: FieldsetsProps) => {
+const Fieldsets = ({
+  types,
+  items,
+  setItemsState,
+  setFiltersSelected,
+}: FieldsetsProps) => {
   const fieldsetTypes = createListOfTypes(items, types)
   const fieldsets = fieldsetTypes.map(
     ({ title, uid, checkboxes }: FieldsetTypeProps) => {
@@ -156,6 +168,7 @@ const Fieldsets = ({ types, items, setItemsState }: FieldsetsProps) => {
             fieldsetsState={fieldsetsState}
             setFieldsetsState={setFieldsetsState}
             setItemsState={setItemsState}
+            setFiltersSelected={setFiltersSelected}
           />
         )
       )}
@@ -164,9 +177,47 @@ const Fieldsets = ({ types, items, setItemsState }: FieldsetsProps) => {
 }
 
 export const Filter = ({ items, setItemsState, types }: FilterProps) => {
+  const { filterLockToggle } = useContext(ThemeContext)
+  const [filterOpen, setFilterOpen] = useState(false)
+  const [filtersSelected, setFiltersSelected] = useState(0)
+
   return (
-    <form>
-      <Fieldsets types={types} items={items} setItemsState={setItemsState} />
-    </form>
+    <>
+      <button
+        className={`${buttons.btnSecondaryOutline} w-full mb-8 md:hidden`}
+        onClick={() => {
+          setFilterOpen(true)
+          filterLockToggle(true)
+        }}
+      >
+        <div className="flex align-center justify-between">
+          Filters
+          <Plus />
+        </div>
+      </button>
+      <form
+        className={`${
+          filterOpen ? "inline-block" : "hidden"
+        } absolute top-0 right-0 bg-white h-screen z-999 pt-4 pr-8 pl-8 pb-8 min-w-3/4 md:block md:static md:h-auto`}
+      >
+        <div className="flex justify-end cursor-pointer md:hidden">
+          <X
+            onClick={() => {
+              setFilterOpen(false)
+              filterLockToggle(false)
+            }}
+          />
+        </div>
+        <Fieldsets
+          types={types}
+          items={items}
+          setItemsState={setItemsState}
+          setFiltersSelected={setFiltersSelected}
+        />
+      </form>
+      {filtersSelected > 0 && (
+        <p className="mb-8">Filters selected: {filtersSelected}</p>
+      )}
+    </>
   )
 }

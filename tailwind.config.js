@@ -14,6 +14,14 @@ module.exports = {
         kimberly: "#7271A6",
         black: "#191919",
       },
+      zIndex: {
+        "999": 999,
+      },
+      minWidth: {
+        "1/4": "25%",
+        "1/2": "50%",
+        "3/4": "75%",
+      },
     },
   },
   variants: {},

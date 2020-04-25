@@ -1,9 +1,10 @@
-import React, { useState } from "react"
+import React, { useState, createContext } from "react"
 
-export const ThemeContext = React.createContext()
+export const ThemeContext = createContext()
 
 export const Provider = props => {
   const [navOpen, setNavOpen] = useState(false)
+  const [filterLock, setFilterLock] = useState(false)
   const [openMenu, setOpenMenu] = useState(0)
 
   return (
@@ -13,6 +14,8 @@ export const Provider = props => {
         navToggle: () => setNavOpen(!navOpen),
         openMenu,
         menuToggle: id => setOpenMenu(id),
+        filterLock,
+        filterLockToggle: bool => setFilterLock(bool),
       }}
     >
       {props.children}
