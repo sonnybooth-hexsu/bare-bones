@@ -96,7 +96,9 @@ const Fieldset = ({
     const checkedTypes = fieldsetsState.map(({ uid }) => uid).flat()
 
     if (!checkedItems.length) {
-      return setItemsState(items)
+      setItemsState(items)
+      setFiltersSelected(0)
+      return
     }
 
     const newItemsState = filterBySelected(items, checkedTypes, checkedItems)
