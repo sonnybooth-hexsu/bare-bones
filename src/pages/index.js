@@ -17,6 +17,7 @@ import profhilo from "../assets/images/brand-logo-profhilo.svg"
 import teoxane from "../assets/images/brand-logo-teoxane.svg"
 import zo from "../assets/images/brand-logo-zo.png"
 import hero from "../assets/images/hero.jpg"
+import cover2 from "../assets/images/cover-2.jpg"
 
 import { Clock, Watch, Calendar, Tag, ArrowRight } from "react-feather"
 
@@ -77,7 +78,7 @@ const IndexPage = () => (
         <div className="container mx-auto pl-6 pr-6 md:pl-16 md:pr-16 lg:pl-0 lg:pr-0 xl:pl-6 xl:pr-6 ">
           <div className="pl-4 pr-4">
             <div className="grid gap-4 lg:grid-cols-2">
-              <div className="pt-12 pb-12 flex flex-col justify-center lg:max-width lg:pt-40 lg:pb-32 lg:pr-32">
+              <div className="pt-12 pb-12 pr-4 pl-4 flex flex-col justify-center md:pr-0 md:pl-0 lg:max-width lg:pt-40 lg:pb-32 lg:pr-32">
                 <p
                   className={`${helpers.overline} text-center mb-4 lg:text-left`}
                 >
@@ -123,11 +124,11 @@ const IndexPage = () => (
     </div>
     {/* Hero Block 03 */}
     <div>
-      <div className="pt-6 pb-6 lg:pt-24 lg:pb-24">
+      <div className="bg-gray-400 pt-6 pb-6 lg:pt-24 lg:pb-24">
         <div className="container mx-auto pl-6 pr-6 md:pl-16 md:pr-16 lg:pl-0 lg:pr-0 xl:pl-6 xl:pr-6 ">
           <div className="pl-4 pr-4">
             <div className="grid gap-4 lg:grid-cols-2">
-              <div className="pt-12 pb-12 flex flex-col justify-center lg:max-width lg:pt-40 lg:pb-32 lg:pr-32">
+              <div className="pt-12 pb-12 pr-4 pl-4 flex flex-col justify-center md:pr-0 md:pl-0 lg:max-width lg:pt-40 lg:pb-32 lg:pr-32">
                 <p
                   className={`${helpers.overline} text-center mb-4 lg:text-left`}
                 >
@@ -159,9 +160,14 @@ const IndexPage = () => (
                   </a>
                 </div>
               </div>
-              <div className="bg-gray-200 flex justify-center content-center pt-8 pb-8">
+              <div className="flex pb-0 mb-0 w-64 h-64">
                 <img
-                  className="w-2/4 self-center"
+                  className="relative"
+                  src={cover2}
+                  alt="Girl in denim jacket smiling"
+                />
+                <img
+                  className="w-64 absolute bottom-6 left-6"
                   src={hero}
                   alt="Girl in denim jacket smiling"
                 />
@@ -249,7 +255,7 @@ const IndexPage = () => (
           </Carousel>
         </div>
         <div className="gap-6 pl-4 pr-4 hidden md:grid lg:grid-cols-6 ">
-          <p className="text-sm font-medium text-center text-gray-600 md:items-center lg:flex lg:text-left ">
+          <p className="text-sm font-medium text-center text-gray-600 leading-tight md:items-center lg:flex lg:text-left">
             Partnerships with leading aesthetics brands:
           </p>
           <div className="w-full h-16 flex items-center justify-center mb-5 lg:mb-0">

@@ -19,6 +19,7 @@
 }
 
 .blogContent li::before {
+    @apply bg-gray-600;
     display: inline-block;
     content: '';
     border-radius: 50%;
@@ -26,7 +27,6 @@
     width: 8px;
     margin-right: 1rem;
     margin-left: 2rem;
-    @apply bg-gray-600;
     transform: translateY(-2px);
     font-family: myriad-pro, sans-serif;
 }
