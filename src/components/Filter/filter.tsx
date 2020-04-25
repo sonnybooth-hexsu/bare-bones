@@ -179,18 +179,14 @@ const Fieldsets = ({
 }
 
 export const Filter = ({ items, setItemsState, types }: FilterProps) => {
-  const { filterLockToggle } = useContext(ThemeContext)
-  const [filterOpen, setFilterOpen] = useState(false)
+  const { filterOpen, filterOpenToggle } = useContext(ThemeContext)
   const [filtersSelected, setFiltersSelected] = useState(0)
 
   return (
     <>
       <button
         className={`${buttons.btnSecondaryOutline} w-full mb-8 md:hidden`}
-        onClick={() => {
-          setFilterOpen(true)
-          filterLockToggle(true)
-        }}
+        onClick={() => filterOpenToggle(true)}
       >
         <div className="flex align-center justify-between">
           Filters
@@ -203,12 +199,7 @@ export const Filter = ({ items, setItemsState, types }: FilterProps) => {
         } absolute top-0 right-0 bg-white h-screen z-999 pt-4 pr-8 pl-8 pb-8 min-w-3/4 md:block md:static md:h-auto`}
       >
         <div className="flex justify-end cursor-pointer md:hidden">
-          <X
-            onClick={() => {
-              setFilterOpen(false)
-              filterLockToggle(false)
-            }}
-          />
+          <X onClick={() => filterOpenToggle(false)} />
         </div>
         <Fieldsets
           types={types}
