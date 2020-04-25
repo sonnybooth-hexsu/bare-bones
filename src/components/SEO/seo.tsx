@@ -11,7 +11,7 @@ type SEOProps = {
 }
 
 export const SEO = ({ description, lang, meta, title }: SEOProps) => {
-  const { navOpen, filterLock } = useContext(ThemeContext)
+  const { navOpen, filterOpen } = useContext(ThemeContext)
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -35,7 +35,7 @@ export const SEO = ({ description, lang, meta, title }: SEOProps) => {
       }}
       bodyAttributes={{
         class: `${navOpen ? "overflow-hidden" : ""} ${
-          filterLock ? "overflow-hidden" : ""
+          filterOpen ? "overflow-hidden" : ""
         }`,
       }}
       title={title}

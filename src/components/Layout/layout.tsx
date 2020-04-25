@@ -46,9 +46,8 @@ export const Layout = ({ page, children }: LayoutProps) => {
   return (
     <div
       onClick={() => {
-        if (filterOpen) {
-          filterOpenToggle(false)
-        }
+        if (openMenu > 0) menuToggle(0)
+        if (filterOpen) filterOpenToggle(false)
       }}
     >
       {!navOpen ? (
@@ -67,7 +66,7 @@ export const Layout = ({ page, children }: LayoutProps) => {
           navToggle={navToggle}
         />
       )}
-      <main onClick={menuToggle(0)}>{children}</main>
+      <main>{children}</main>
       <Footer
         siteTitle={data.site.siteMetadata.title}
         navLinks={data.site.siteMetadata.navLinks}

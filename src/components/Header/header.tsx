@@ -26,10 +26,11 @@ const SubMenuItem = ({ name, subLinks, id, open, openTrigger }) => {
       tabIndex={0}
       key={`navigation-item-${id}`}
       data-testid="subLinkMenu"
-      onClick={() => {
+      onClick={e => {
         if (open) {
           openTrigger(0)
         } else {
+          e.stopPropagation()
           openTrigger(id)
         }
       }}
