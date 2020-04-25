@@ -61,38 +61,26 @@ export default function Template({ data }) {
     <Layout>
       <SEO title={title} />
       <div className="bg-gray-200">
-      <div className="container mx-auto pl-6 pr-6 pt-24 pb-24">
-        <div className="pl-4 pr-4 flex flex-col">
-          <div className="flex justify-center">
-          <p className={`${helpers.chipDark} mb-4`}>
-              {category}
-            </p>
+        <div className="container mx-auto pl-6 pr-6 pt-24 pb-24">
+          <div className="pl-4 pr-4 flex flex-col">
+            <div className="flex justify-center">
+              <p className={`${helpers.chipDark} mb-4`}>{category}</p>
+            </div>
+            <h1 className="uppercase mb-8 mt-2 text-center">{title}</h1>
+            <p className="large-text text-center">{excerpt}</p>
           </div>
-          <h1 className="uppercase mb-8 mt-2 text-center">
-            {title}
-          </h1>
-          <p className="large-text text-center">{excerpt}</p>
         </div>
-      </div>
       </div>
       <div className="container mx-auto pr-6 pl-6">
         <div className="grid grid-cols-1 gap-6 pt-20 pb-20 pl-4 pr-4 lg:grid-cols-12">
           <div className="lg:col-span-2">
             <div className="flex items-center">
               <div className="rounded-full h-12 w-12 mr-2 mr-2 overflow-hidden">
-                <img
-                  className="h-full w-full"
-                  src={authorImage}
-                  alt={author}
-                />
+                <img className="h-full w-full" src={authorImage} alt={author} />
               </div>
               <div>
-              <p className="mb-0 font-semibold">
-                  {author}
-                </p>
-                <p className={`${helpers.caption}`}>
-                  {date}
-                </p>
+                <p className="mb-0 font-semibold">{author}</p>
+                <p className={`${helpers.caption}`}>{date}</p>
               </div>
             </div>
           </div>

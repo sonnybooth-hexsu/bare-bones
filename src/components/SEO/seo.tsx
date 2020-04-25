@@ -72,7 +72,7 @@ export const SEO = ({ description, lang, meta, title }: SEOProps) => {
           content: metaDescription,
         },
       ].concat(meta)}
-    >s
+    >
       <link
         rel="stylesheet"
         type="text/css"

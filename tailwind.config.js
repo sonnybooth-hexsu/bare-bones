@@ -3,7 +3,6 @@ module.exports = {
     fontFamily: {
       sans: ["futura-pt, sans-serif;"],
       serif: ["orpheuspro", "sans-serif"],
-      serif: ["futura-pt, sans-serif;"],
     },
     inset: {
       "0": "0",

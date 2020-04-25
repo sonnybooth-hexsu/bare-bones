@@ -33,7 +33,7 @@ const Blogs = props => {
               </div>
             </div>
             <div className="col-span-3 xl:col-span-5">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 mb-12">
+              <div className="grid grid-cols-1 gap-4 mb-12 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 {blogs.map(
                   (
                     { title, category, path, date, excerpt, image, imageLarge },

@@ -35,7 +35,9 @@ const IndexPage = () => (
                 alt="Girl in denim jacket smiling"
               />
               <div className="bg-gray-400 p-16 md:p-16 md:p-32 flex flex-col justify-center">
-              <p className={`${helpers.overline} text-center mb-4 lg:text-left`}>
+                <p
+                  className={`${helpers.overline} text-center mb-4 lg:text-left`}
+                >
                   Introducing Bare Bones 01
                 </p>
                 <h1 className="leading-none max-w-full mb-6">
@@ -69,21 +71,23 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-      {/* Hero Block 02 */}
-      <div>
+    {/* Hero Block 02 */}
+    <div>
       <div className="pt-6 pb-6 lg:pt-24 lg:pb-24">
         <div className="container mx-auto pl-6 pr-6 md:pl-16 md:pr-16 lg:pl-0 lg:pr-0 xl:pl-6 xl:pr-6 ">
           <div className="pl-4 pr-4">
-          <div className="grid gap-4 lg:grid-cols-2">
+            <div className="grid gap-4 lg:grid-cols-2">
               <div className="pt-12 pb-12 flex flex-col justify-center lg:max-width lg:pt-40 lg:pb-32 lg:pr-32">
-                <p className={`${helpers.overline} text-center mb-4 lg:text-left`}>
+                <p
+                  className={`${helpers.overline} text-center mb-4 lg:text-left`}
+                >
                   Introducing Bare Bones 02
                 </p>
                 <h1 className="max-w-full text-center mb-4 md:mb-6 lg:text-left leading-none">
-                We help businesses shine online.
+                  We help businesses shine online.
                 </h1>
                 <p className="large-text text-center mb-8 lg:text-left">
-                A brand new look for your consultancy business.
+                  A brand new look for your consultancy business.
                 </p>
                 <div>
                   <a
@@ -106,32 +110,34 @@ const IndexPage = () => (
                 </div>
               </div>
               <div className="bg-gray-200 flex justify-center content-center pt-8 pb-8">
-              <img
-                className="w-2/4 self-center"
-                src={hero}
-                alt="Girl in denim jacket smiling"
-              />
-            </div>
+                <img
+                  className="w-2/4 self-center"
+                  src={hero}
+                  alt="Girl in denim jacket smiling"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-      {/* Hero Block 03 */}
-      <div>
+    {/* Hero Block 03 */}
+    <div>
       <div className="pt-6 pb-6 lg:pt-24 lg:pb-24">
         <div className="container mx-auto pl-6 pr-6 md:pl-16 md:pr-16 lg:pl-0 lg:pr-0 xl:pl-6 xl:pr-6 ">
           <div className="pl-4 pr-4">
-          <div className="grid gap-4 lg:grid-cols-2">
+            <div className="grid gap-4 lg:grid-cols-2">
               <div className="pt-12 pb-12 flex flex-col justify-center lg:max-width lg:pt-40 lg:pb-32 lg:pr-32">
-                <p className={`${helpers.overline} text-center mb-4 lg:text-left`}>
+                <p
+                  className={`${helpers.overline} text-center mb-4 lg:text-left`}
+                >
                   Introducing Bare Bones 03
                 </p>
                 <h1 className="max-w-full text-center mb-4 md:mb-6 lg:text-left leading-none">
-                We help businesses shine online.
+                  We help businesses shine online.
                 </h1>
                 <p className="large-text text-center mb-8 lg:text-left">
-                A brand new look for your consultancy business.
+                  A brand new look for your consultancy business.
                 </p>
                 <div>
                   <a
@@ -154,12 +160,12 @@ const IndexPage = () => (
                 </div>
               </div>
               <div className="bg-gray-200 flex justify-center content-center pt-8 pb-8">
-              <img
-                className="w-2/4 self-center"
-                src={hero}
-                alt="Girl in denim jacket smiling"
-              />
-            </div>
+                <img
+                  className="w-2/4 self-center"
+                  src={hero}
+                  alt="Girl in denim jacket smiling"
+                />
+              </div>
             </div>
           </div>
         </div>

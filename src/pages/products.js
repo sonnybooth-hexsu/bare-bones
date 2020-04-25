@@ -34,7 +34,7 @@ const Products = props => {
               </div>
             </div>
             <div className="col-span-3 xl:col-span-5">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-12">
+              <div className="grid grid-cols-1 gap-4 mb-12 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3">
                 {products.map(({ title, path, excerpt, image }, i) => (
                   <ProductCard
                     key={`product-card-${i}`}
@@ -51,7 +51,7 @@ const Products = props => {
                 </span>{" "}
                 - add new products at /admin
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 mb-12">
+              <div className="grid grid-cols-1 gap-4 mb-12 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
                 {products.map(({ title, path, excerpt, image }, i) => (
                   <ProductCardIcon
                     key={`product-card-image-${i}`}

@@ -20,10 +20,11 @@ export const PostCard = ({
     <div className="flex flex-col bg-white h-full relative">
       <div className="relative">
         <img width="100%" src={image} alt="Post" />
-
       </div>
       <div className="flex flex-col flex-grow p-12">
-      <div className={`${helpers.chipDark} mb-4 inline-block`}>{category}</div>
+        <div className={`${helpers.chipDark} mb-4 inline-block`}>
+          {category}
+        </div>
         <h3
           data-testid="postcardTitle"
           className="flex-grow pb-20 text-3xl leading-tight"
