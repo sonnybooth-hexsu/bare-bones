@@ -64,7 +64,9 @@
 }
 
 h1 {
-  @apply text-4xl;
+  @apply text-5xl;
+  @apply tracking-tight;
+  @apply leading-tight;
 
     @media (fromMedium) {
       @apply text-5xl;
@@ -140,13 +142,14 @@ p {
 
 .large-text {
   @apply text-lg;
-  @apply tracking-wide;
+  @apply tracking-tight;
   @apply font-light;
 
   @media (fromLarge) {
-    @apply text-xl;
+    @apply text-2xl;
+    @apply tracking-tight;
   }
-}
+}s
 
 .x-large-text {
   @apply tracking-wide;

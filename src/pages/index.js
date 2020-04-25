@@ -28,20 +28,20 @@ const IndexPage = () => (
       <div className="pt-6 pb-6">
         <div className="container mx-auto pl-6 pr-6 md:pl-16 md:pr-16 lg:pl-40 lg:pr-40 xl:pl-6 xl:pr-6 ">
           <div className="pl-4 pr-4">
-            <div className="grid gap-2 xl:grid-cols-hero">
+            <div className="grid gap-4 xl:grid-cols-hero">
               <img
                 className="max-w-full"
                 src={hero}
                 alt="Girl in denim jacket smiling"
               />
               <div className="bg-gray-400 p-16 md:p-16 md:p-32 flex flex-col justify-center">
-                <p className={`${helpers.overline} text-left mb-4 md:mb-6`}>
+              <p className={`${helpers.overline} text-center mb-4 lg:text-left`}>
                   Introducing Bare Bones
                 </p>
-                <h1 className="max-w-full text-left mb-4 md:mb-5 md:text-5xl md:text-left lg:text-6xl">
+                <h1 className="leading-none max-w-full mb-6">
                   We help convey your message.
                 </h1>
-                <p className="large-text mb-4 md:mb-6 md:text-left lg:mb-8">
+                <p className="large-text text-center mb-8 lg:text-left">
                   If you&lsquo;re looking for the latest in wireless headphones.
                 </p>
                 <div>
@@ -64,6 +64,54 @@ const IndexPage = () => (
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      {/* Hero Block 02 */}
+      <div>
+      <div className="pt-6 pb-6 lg:pt-24 lg:pb-24">
+        <div className="container mx-auto pl-6 pr-6 md:pl-16 md:pr-16 lg:pl-0 lg:pr-0 xl:pl-6 xl:pr-6 ">
+          <div className="pl-4 pr-4">
+          <div className="grid gap-4 lg:grid-cols-2">
+              <div className="pt-10 pb-10 flex flex-col justify-center lg:max-width lg:pt-40 lg:pb-32 lg:pr-32">
+                <p className={`${helpers.overline} text-center mb-4 lg:text-left`}>
+                  Introducing Bare Bones
+                </p>
+                <h1 className="max-w-full text-center mb-4 md:mb-6 lg:text-left leading-none">
+                We help businesses shine online.
+                </h1>
+                <p className="large-text text-center mb-8 lg:text-left">
+                A brand new look for your consultancy business.
+                </p>
+                <div>
+                  <a
+                    className={`${buttons.btnPrimary} block mb-4 md:mb-6 xl:mr-4 xl:mb-0 xl:inline-block`}
+                    href="#"
+                  >
+                    Book a consultation
+                  </a>
+                  <a
+                    className={`${buttons.btnSecondaryOutline} block xl:inline-block`}
+                    href="#"
+                  >
+                    See Treatments{" "}
+                    <ArrowRight
+                      size="16"
+                      color="currentColor"
+                      className="inline mr-2"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div className="bg-gray-200 flex justify-center content-center pt-8 pb-8">
+              <img
+                className="w-2/4 self-center"
+                src={hero}
+                alt="Girl in denim jacket smiling"
+              />
+            </div>
             </div>
           </div>
         </div>
@@ -257,10 +305,10 @@ const IndexPage = () => (
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20 flex align-center">
         <div className="grid md:grid-cols-2">
           <div className="pl-4 pr-4 lg:pr-12">
-            <h2 className="uppercase text-left">
+            <h2 className="uppercase">
               It&lsquo;s the <i className="lowercase">results</i> that count
             </h2>
-            <p className="mb-20 text-left">
+            <p className="mb-20">
               Dr Yalda is a results-oriented aesthetics doctor that goes above
               and beyond to ensure clients are completely satisfied.
             </p>
