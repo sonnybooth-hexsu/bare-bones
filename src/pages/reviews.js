@@ -50,7 +50,7 @@ const Reviews = props => {
         <div className="container mx-auto pr-6 pl-6">
           <div className="pl-4 pr-4">
             <h2 className="pt-8 pb-8 text-3xl">
-              <span className="font-bold">Reviews 2</span> - Lorem
+              <span className="font-bold">Reviews 2</span>
             </h2>
           </div>
         </div>
