@@ -141,13 +141,13 @@ p {
 }
 
 .large-text {
-  @apply text-lg;
+  @apply text-xl;
   @apply tracking-tight;
+  @apply leading-tight;
   @apply font-light;
 
   @media (fromLarge) {
     @apply text-2xl;
-    @apply tracking-tight;
   }
 }s
 
