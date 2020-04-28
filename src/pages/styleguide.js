@@ -194,10 +194,10 @@ const Styleguide = () => {
               </a>
               <a className={buttons.btnLink} href="#">
                 Button Link
-             </a>
-             <a className={buttons.btnLinkWhite} href="#">
-               Button Link
-             </a>
+              </a>
+              <a className={buttons.btnLinkLight} href="#">
+                Button Link
+              </a>
             </div>
           </div>
         </div>

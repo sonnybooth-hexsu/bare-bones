@@ -73,14 +73,11 @@
   @apply text-sm;
 }
 
-.btnLinkWhite {
-  @apply transition-all;
-  @apply duration-700;
-  @apply ease-in-out;
+.btnLinkLight {
+  composes: btnLink;
   @apply text-white;
-  @apply p-3;
 }
 
-.btnLinkWhite:hover {
+.btnLinkLight:hover {
   @apply text-gray-300;
 }
