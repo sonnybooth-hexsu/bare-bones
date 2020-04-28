@@ -521,7 +521,7 @@ const IndexPage = () => (
     <div className="bg-white">
       <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid gap-6 pt-20 pb-20">
         <div className="pl-4 pr-4 grid gap-6 lg:grid-cols-2">
-          <h2 className="uppercase md:pr-10">
+          <h2 className="uppercase md:pr-10 lg:text-6xl">
             Look and <i className="lowercase">feel</i> your{" "}
             <i className="lowercase">very</i> best.
           </h2>
@@ -549,8 +549,8 @@ const IndexPage = () => (
     {/* About Content */}
     <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid gap-6 pt-20 pb-20">
       <div className="pl-4 pr-4 grid gap-6 lg:grid-cols-2">
-        <h2 className="uppercase xl:pr-20">
-          A <i className="lowercase">little bit</i> about Dr Yalda Jamali.
+        <h2 className="uppercase lg:text-6xl xl:pr-20">
+          A <i className="lowercase ">little bit</i> about Dr Yalda Jamali.
         </h2>
         <div>
           <p className="mb-4">
@@ -702,7 +702,7 @@ const IndexPage = () => (
               />
             </div>
             <div className="relative mt-4 z-20">
-              <h5 className="font-bold">Consultation</h5>
+              <h5 className="font-semibold">Consultation</h5>
               <p>
                 First, a discussion of your goals and any previous treatments.
                 Dr Yalda will then recommend the right treatment and plan for
