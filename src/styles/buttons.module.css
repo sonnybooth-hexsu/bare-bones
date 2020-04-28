@@ -60,15 +60,27 @@
   @apply transition-all;
   @apply duration-700;
   @apply ease-in-out;
-  @apply bg-blue-500;
+  @apply text-blue-500;
   @apply p-3;
 }
 
 .btnLink:hover {
-  @apply bg-red-500;
+  @apply text-blue-300;
 }
 
 .btnSmall {
   @apply p-3;
   @apply text-sm;
+}
+
+.btnLinkWhite {
+  @apply transition-all;
+  @apply duration-700;
+  @apply ease-in-out;
+  @apply text-white;
+  @apply p-3;
+}
+
+.btnLinkWhite:hover {
+  @apply text-gray-300;
 }

@@ -166,7 +166,7 @@ const IndexPage = () => (
                   </a>
                 </div>
               </div>
-              <div className="flex pb-0 mb-0 w-64 h-64">
+              <div className="flex w-64 h-64">
                 <img
                   className="relative"
                   src={cover2}
@@ -556,7 +556,7 @@ const IndexPage = () => (
     <div className="container mx-auto pl-6 pr-6 grid grid-cols-1 grid gap-6 pt-20 pb-20">
       <div className="pl-4 pr-4 grid gap-6 lg:grid-cols-2">
         <h2 className="uppercase lg:text-6xl xl:pr-20">
-          A <i className="lowercase ">little bit</i> about Dr Yalda Jamali.
+          A <i className="lowercase">little bit</i> about Dr Yalda Jamali.
         </h2>
         <div>
           <p className="mb-4">

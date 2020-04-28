@@ -164,25 +164,25 @@ const Styleguide = () => {
             </div>
             <div className="grid grid-cols-1 grid-rows-12 gap-2">
               <a
-                className={`${buttons.btnPrimary} block mt-8 md:inline-block lg:mt-0`}
+                className={`${buttons.btnPrimary} mt-8 inline-block lg:mt-0`}
                 href="#"
               >
                 Book a consultation
               </a>
               <a
-                className={`${buttons.btnSecondary} block mt-8 md:ml-2 md:mr-2 md:inline-block lg:ml-0 lg:mr-0 lg:mt-0`}
+                className={`${buttons.btnSecondary} mt-8 md:ml-2 md:mr-2 inline-block lg:ml-0 lg:mr-0 lg:mt-0`}
                 href="#"
               >
                 Book a consultation
               </a>
               <a
-                className={`${buttons.btnSecondaryOutline} block mt-8 lg:mt-0 md:inline-block`}
+                className={`${buttons.btnSecondaryOutline} mt-8 lg:mt-0 inline-block`}
                 href="#"
               >
                 Book a consultation
               </a>
               <a
-                className={`${buttons.btnTertiary} block mt-8 md:inline-block md:ml-2 lg:ml-0 lg:mt-0`}
+                className={`${buttons.btnTertiary} mt-8 inline-block md:ml-2 lg:ml-0 lg:mt-0`}
                 href="#"
               >
                 See Treatments{" "}
@@ -192,6 +192,12 @@ const Styleguide = () => {
                   className="inline mr-2"
                 />
               </a>
+              <a className={buttons.btnLink} href="#">
+                Button Link
+             </a>
+             <a className={buttons.btnLinkWhite} href="#">
+               Button Link
+             </a>
             </div>
           </div>
         </div>
