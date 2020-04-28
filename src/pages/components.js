@@ -10,7 +10,7 @@ const Components = () => {
     <Layout page="Guides">
       <SEO title="Components" />
       <div className="container mx-auto pl-6 pr-6 pt-20 pb-20">
-        <h1>Components</h1>
+        <h1 className="mb-20">Components</h1>
         <TextImage image={cover1} imageAlt="Girl smiling">
           <h2>
             ENHANCE AND <i>restore</i> YOUR <i>natural</i> BEAUTY.

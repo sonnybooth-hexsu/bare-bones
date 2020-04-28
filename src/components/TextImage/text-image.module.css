@@ -6,9 +6,10 @@
   grid-template-rows: auto 1fr;
   grid-template-columns: 1fr;
   grid-row-gap: 1rem;
+  margin-bottom: 4rem;
 
   @media (fromMedium) {
-    padding: 0 4rem;
+    padding: 0 6rem;
   }
 
   @media (fromLarge) {
@@ -23,7 +24,7 @@
   background-color: theme('colors.gray.100');
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   justify-content: center;
 
   @media (fromMedium) {
@@ -31,20 +32,20 @@
   }
 
   @media (fromLarge) {
-    padding: 4rem;
-  }
-
-  @media (fromXL) {
-    padding: 5rem;
+    padding: 6rem;
   }
 }
 
 .textImageChildren h2 {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   line-height: 1.25;
+
+  @media (fromMedium) {
+    font-size: 2.5rem;
+  }
 }
 
 .textImageChildren p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }

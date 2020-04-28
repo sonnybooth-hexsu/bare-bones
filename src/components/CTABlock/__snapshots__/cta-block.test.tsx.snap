@@ -9,27 +9,30 @@ exports[`<CTABlock /> should match snapshot 1`] = `
       class="container mx-auto pl-6 pr-6 pt-24 pb-24"
     >
       <div
-        class="pl-4 pr-4 flex flex-col md:flex-row"
+        class="pl-4 pr-4 grid gap-4 md:grid-cols-12 md:items-center"
       >
-        <div>
+        <div
+          class="col-span-8"
+        >
           <h2
             class="uppercase mb-2 text-white"
           >
             Book your appointment with Dr Yalda
+             
             <i
               class="lowercase"
             >
-              today.
+               today.
             </i>
           </h2>
           <p
-            class="mt-6 mx-auto mb-4 text-white"
+            class="mt-6 mx-auto mb-4 text-white md:mb-0"
           >
             Book your appointment with Dr Yalda today. A bespoke consultation, without obligation, is provided before each treatment.
           </p>
         </div>
         <a
-          class="btnPrimary inline-block mt-8"
+          class="btnPrimary inline-block mt-8 md:mt-0 md:col-start-10 md:col-span-2"
           href="/contact"
         >
           Book a consultation
