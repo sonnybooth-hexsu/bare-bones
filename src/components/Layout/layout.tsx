@@ -12,7 +12,14 @@ type LayoutProps = {
 }
 
 export const Layout = ({ page, children }: LayoutProps) => {
-  const { navOpen, navToggle, openMenu, menuToggle } = useContext(ThemeContext)
+  const {
+    navOpen,
+    navToggle,
+    openMenu,
+    menuToggle,
+    filterOpenToggle,
+    filterOpen,
+  } = useContext(ThemeContext)
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -37,7 +44,12 @@ export const Layout = ({ page, children }: LayoutProps) => {
   `)
 
   return (
-    <>
+    <div
+      onClick={() => {
+        if (openMenu > 0) menuToggle(0)
+        if (filterOpen) filterOpenToggle(false)
+      }}
+    >
       {!navOpen ? (
         <Header
           siteTitle={data.site.siteMetadata.title}
@@ -54,7 +66,7 @@ export const Layout = ({ page, children }: LayoutProps) => {
           navToggle={navToggle}
         />
       )}
-      <main onClick={() => menuToggle(0)}>{children}</main>
+      <main>{children}</main>
       <Footer
         siteTitle={data.site.siteMetadata.title}
         navLinks={data.site.siteMetadata.navLinks}
@@ -63,7 +75,7 @@ export const Layout = ({ page, children }: LayoutProps) => {
         telephone={data.site.siteMetadata.telephone}
       />
       {data && <Whatsapp telephone={data.site.siteMetadata.telephone} />}
-    </>
+    </div>
   )
 }
 

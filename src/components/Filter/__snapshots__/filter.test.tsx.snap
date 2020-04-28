@@ -36,7 +36,7 @@ exports[`<Filter /> should match snapshot 1`] = `
     </div>
   </button>
   <form
-    class="hidden absolute top-0 right-0 bg-white h-screen z-999 pt-4 pr-8 pl-8 pb-8 md:block md:static md:h-auto"
+    class="hidden absolute top-0 right-0 bg-white h-screen z-999 pt-4 pr-8 pl-8 pb-8 min-w-3/4 md:block md:static md:h-auto"
   >
     <div
       class="flex justify-end cursor-pointer md:hidden"

@@ -1,17 +1,15 @@
 /* eslint no-undef: 0 */
-
 import React from "react"
 import { render } from "@testing-library/react"
 import { queryAllByTestId } from "@testing-library/dom"
 import { Filter } from "./filter"
-
+import Provider from "../../context/ThemeContext"
 const productCategories = [
   {
     title: "Categories",
     uid: "category",
   },
 ]
-
 const productsDestructured = [
   {
     id: 1,
@@ -50,33 +48,33 @@ const productsDestructured = [
     productAttributeValueFour: "400",
   },
 ]
-
 describe("<Filter />", () => {
   it("should match snapshot", () => {
     const { container } = render(
-      <Filter
-        types={productCategories}
-        items={productsDestructured}
-        setItemsState={() => {
-          return []
-        }}
-      />
+      <Provider>
+        <Filter
+          types={productCategories}
+          items={productsDestructured}
+          setItemsState={() => {
+            return []
+          }}
+        />
+      </Provider>
     )
-
     expect(container).toMatchSnapshot()
   })
-
   it("should have correct number of checkoboxes", () => {
     const { container } = render(
-      <Filter
-        types={productCategories}
-        items={productsDestructured}
-        setItemsState={() => {
-          return []
-        }}
-      />
+      <Provider>
+        <Filter
+          types={productCategories}
+          items={productsDestructured}
+          setItemsState={() => {
+            return []
+          }}
+        />
+      </Provider>
     )
-
     expect(queryAllByTestId(container, "filterCheckbox")).toHaveLength(2)
   })
 })

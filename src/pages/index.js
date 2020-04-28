@@ -74,6 +74,12 @@ const IndexPage = () => (
     </div>
     {/* Hero Block 02 */}
     <div>
+      <h3>New buttons for bab</h3>
+      <a className={buttons.btnLink} href="#">
+        Button Link
+      </a>
+    </div>
+    <div>
       <div className="pt-6 pb-6 lg:pt-24 lg:pb-24">
         <div className="container mx-auto pl-6 pr-6 md:pl-16 md:pr-16 lg:pl-0 lg:pr-0 xl:pl-6 xl:pr-6 ">
           <div className="pl-4 pr-4">
