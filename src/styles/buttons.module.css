@@ -56,6 +56,18 @@
   transition: color .30s ease-in-out,background-color .30s ease-in-out,border-color .30s ease-in-out,box-shadow .30s ease-in-out; 
 }
 
+.btnLink {
+  @apply transition-all;
+  @apply duration-700;
+  @apply ease-in-out;
+  @apply bg-blue-500;
+  @apply p-3;
+}
+
+.btnLink:hover {
+  @apply bg-red-500;
+}
+
 .btnSmall {
   @apply p-3;
   @apply text-sm;
