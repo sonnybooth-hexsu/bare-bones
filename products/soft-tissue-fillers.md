@@ -2,13 +2,13 @@
 id: 1
 layout: product
 path: /treatments/soft-tissue-fillers
-title: Soft Tissue Fillers lol
+title: Soft Tissue Fillers
 excerpt: >-
   Instantly soften fine lines & wrinkles, restore age-related volume loss and
   augment and contour facial features.
 category: Lips
 image: /assets/lips.svg
-imageLarge: /assets/lips.svg
+imageLarge: /assets/cheek-filler-image.jpg
 productAttributeTitleOne: Treatment Time
 productAttributeValueOne: 10 Minutes
 productAttributeTitleTwo: Downtime
